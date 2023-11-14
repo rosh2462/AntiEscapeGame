@@ -1,0 +1,63 @@
+title: room1_enter
+tags:
+color: red
+position: 25,-434
+---
+-> Open the door.
+    <<if visited_count("Room1_enter") == 0>>
+        <<setsprite "door1crate" open>>
+        <<transition_start>>
+    <<else>>
+        <<removesprite "door1crate">>
+        <<setsprite "extra1scroll" active>>
+        <<transition_end>>
+    <<endif>>
+    //Characters enter the room
+    <<if visited_count("Room1_enter") == 0>>
+        Nanditha: Why did the lights go out?
+        Hugh: I guess this is supposed to be a jumpscare?
+        Mathilda: I hope the lights come back on again or we won't be able to do anything in here.
+        Marzanna: Nnnnh...
+        <<transition_end>>
+        Ashok: Oh.
+        Mathilda: It looks better than I expected in here. Pretty realistic.
+        Nanditha: Let's search for clues!
+    <<elseif visited_count("Room1_enter") == 1>>
+        <<setsprite "extra1scroll" triggered>>
+        Mathilda: How many rooms does this thing have?
+        <<transition_end>>
+        Hugh: What the hell?
+        Mathilda: This door wasn't there before, I'm confused.
+    <<elseif visited_count("Room1_enter") > 1>>
+        <<setsprite "extra1scroll" triggered>>
+        Dialogue
+        <<transition_end>>
+        Dialogue
+    <<endif>>
+===
+
+title: room2_enter
+tags:
+color: green
+position: 25,-434
+---
+-> Open the door.
+    <<transition_start>>
+    //Characters enter the room
+    <<if visited_count("Room1_enter") == 0>>
+        Hugh: So I guess that is how new rooms are introduced to us? 
+        Mathilda: Hidden in the dark, yes.
+        Nanditha: I think it increases the suspense.
+        <<transition_end>>
+        Dialogue
+    <<elseif visited_count("Room1_enter") == 1>>
+        Dialogue
+        <<transition_end>>
+        Dialogue
+    <<elseif visited_count("Room1_enter") > 1>>
+        Dialogue
+        <<transition_end>>
+        Dialogue
+    <<endif>>
+===
+

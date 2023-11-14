@@ -1,0 +1,127 @@
+title: room0
+tags:
+color: white
+position: 25,-434
+---
+<<declare $marzanna = true>>
+<<declare $hugh = true>>
+<<declare $mathilda = true>>
+<<declare $nanditha = true>>
+<<declare $ashok = true>>
+
+<<declare $sanitymarzanna = 5>>
+<<declare $sanityhugh = 5>>
+<<declare $sanitymathilda = 5>>
+<<declare $sanitynanditha = 5>>
+<<declare $sanityashok = 5>>
+
+<<declare $trap1crate = false>>
+<<declare $trap1animal = false>>
+<<declare $trap1chemicals = false>>
+<<declare $trap1tools = false>>
+<<declare $trap1corpse = false>>
+
+<<declare $trap2plants = false>>
+<<declare $trap2rack = false>>
+<<declare $trap2equipment = false>>
+<<declare $trap2soil = false>>
+<<declare $trap2window = false>>
+
+<<declare $trap3letters = false>>
+<<declare $trap3telescope = false>>
+<<declare $trap3orrery = false>>
+<<declare $trap3bookcase = false>>
+<<declare $trap3globe = false>>
+
+<<declare $trap4altar = false>>
+<<declare $trap4vase = false>>
+<<declare $trap4divination = false>>
+<<declare $trap4effigy = false>>
+<<declare $trap4crystal = false>>
+
+<<declare $trap5apparatus = false>>
+<<declare $trap5storage = false>>
+<<declare $trap5generator = false>>
+<<declare $trap5cage = false>>
+<<declare $trap5burner = false>>
+
+<<declare $door1crate = false>>
+<<declare $door2window = false>>
+<<declare $door3book = false>>
+<<declare $door3safe = false>>
+
+<<declare $door12 = false>>
+<<declare $door23 = false>>
+<<declare $door34 = false>>
+<<declare $door45 = false>>
+<<declare $door51 = false>>
+
+<<declare $ashok1key = false>>
+<<declare $marzanna2key = false>>
+<<declare $nanditha3key = false>>
+<<declare $mathilda4key = false>>
+<<declare $hugh5key = false>>
+
+<<declare $item1foot = false>>
+<<declare $item1arsenic = false>>
+<<declare $item1knife = false>>
+<<declare $item1eye = false>>
+
+<<declare $item2fruit = false>>
+<<declare $item2herbs = false>>
+<<declare $item2poison = false>>
+<<declare $item2finger = false>>
+<<declare $item2glass = false>>
+
+<<declare $item3opener = false>>
+<<declare $item3lense = false>>
+<<declare $item3marble = false>>
+<<declare $item3grimoire = false>>
+<<declare $item3flask = false>>
+
+<<declare $item4candle = false>>
+<<declare $item4vase = false>>
+<<declare $item4pendulum = false>>
+<<declare $item4needle = false>>
+<<declare $item4crystal = false>>
+
+<<declare $item5acid = false>>
+<<declare $item5bezoar = false>>
+<<declare $item5code = false>>
+<<declare $item5remote = false>>
+
+<<declare $note1 = false>>
+<<declare $note2 = false>>
+<<declare $note3 = false>>
+<<declare $note4 = false>>
+<<declare $note5 = false>>
+
+<<declare $light = true>>
+<<declare $candle = true>>
+
+Nanditha: Oh, I'm so excited. Thank you Ashok, this is an awesome birthday present!
+Hugh: Calm down, it hasn't even started yet.
+Mathilda: And this room is not exactly thrilling. Also, I want my phone back!
+Ashok: I guess they have to set up the next room first... And it's more immersive without phones, don't you think?
+Nanditha: Hey Anna, are you alright?
+Marzanna: It's so dark in here.
+Hugh: Who had the brilliant idea to invite this coward?
+Mathilda: Well, it's funnier if someone is actually afraid.
+Nanditha: Hey, don't be so harsh to her! I am glad that you are here, Anna.
+
+-> Play the sounds.
+    <<playsound "filename">> //noise of a struggle and a scream
+        <<jump room0_soundreaction>>
+===
+
+title: room0_soundreaction
+tags:
+color: white
+position: 25,-434
+---
+    <<wait  10>>
+    Marzanna: Uuuuh. I hate Escape Rooms.
+    Ashok: I think it's starting!
+//switch scene to room 1
+<<jump trap_choice>>
+===

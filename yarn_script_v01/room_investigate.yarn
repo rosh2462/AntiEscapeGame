@@ -1,0 +1,144 @@
+title: room1_crate
+tags:
+color: red
+position: 25,-434
+---
+<<if $trap1crate == false>>
+normal Dialogue
+    <<if $note1 == false>>
+        Slip a Note?
+        <<setsprite "popup1note">>
+            -> Yes
+                <<set $note1 = true>>
+                Hugh reads the Note
+                <<set $sanityhugh = $sanityhugh - 1>>
+            -> No
+    <<endif>>
+<<else>>
+<<setsprite "trap1crate" triggered>>
+Reaction to trap
+<<set $sanityhugh = $sanityhugh - 1>>
+<<endif>>
+===
+
+title: room1_animal
+tags:
+color: red
+position: 25,-434
+---
+<<if $trap1animal == false>>
+normal Dialogue
+    <<if $item1foot == false && visited_count("room1_enter") < 2>>
+        Offer Rabbit's foot?
+        <<setsprite "popup1foot">>
+            -> Yes
+                <<set $item1foot = true>>
+                Nanditha keeps the foot
+            -> No
+    <<endif>>
+<<else>>
+<<setsprite "trap1animal" triggered>>
+Reaction to trap
+<<set $sanitynanditha = $sanitynanditha - 1>>
+<<endif>>
+===
+
+title: room1_chemicals
+tags:
+color: red
+position: 25,-434
+---
+<<if $trap1chemicals == false>>
+normal Dialogue
+    <<if $item1arsenic == false && (visited_count("room1_enter") == 2 || visited_count("room1_enter") == 3)>>
+        Offer Arsenic Trioxide?
+        <<setsprite "popup1arsenic">>
+            -> Yes
+                <<set $item1arsenic = true>>
+                Marzanna keeps the Arsenic Trioxide
+            -> No
+    <<endif>>
+<<else>>
+<<setsprite "trap1chemicals" triggered>>
+Reaction to trap
+<<set $marzanna = false>>
+<<set $sanityhugh = $sanityhugh - 1 >>
+<<set $sanitymathilda = $sanitymathilda - 1 >>
+<<set $sanitynanditha = $sanitynanditha - 1 >>
+<<set $sanityashok = $sanityashok - 1 >>
+<<endif>>
+===
+
+title: room1_tools
+tags:
+color: red
+position: 25,-434
+---
+<<if $trap1tools == false>>
+normal Dialogue
+    <<if $item1knife == false && (visited_count("room1_enter") == 2 || visited_count("room1_enter") == 3)>>
+        Offer Skinning Knife?
+        <<setsprite "popup1knife">>
+            -> Yes
+                <<set $item1knife = true>>
+                Mathilda keeps the Skinning Knife
+            -> No
+    <<endif>>
+<<else>>
+<<setsprite "trap1tools" triggered>>
+Reaction to trap
+<<set $mathilda = false>>
+<<set $sanitymarzanna = $sanitymarzanna - 1 >>
+<<set $sanityhugh = $sanityhugh - 1 >>
+<<set $sanitynanditha = $sanitynanditha - 1 >>
+<<set $sanityashok = $sanityashok - 1 >>
+<<endif>>
+===
+
+title: room1_corpse
+tags:
+color: red
+position: 25,-434
+---
+<<if $trap1corpse == false>>
+normal Dialogue
+    <<if $ashok1key == false>>
+        Offer the Key?
+        <<setsprite "popup1key">>
+        -> Yes
+        <<set $ashok1key = true>>
+            Dialogue
+        -> No
+    <<elseif $item1eye == false && (visited_count("room1_enter") == 2 || visited_count("room1_enter") == 3)>>
+        Offer Glass Eye?
+        <<setsprite "popup1eye">>
+            -> Yes
+                <<set $item1eye = true>>
+                Mathilda keeps the Skinning Knife
+            -> No
+    <<endif>>
+<<else>>
+<<setsprite "trap1corpse" triggered>>
+Reaction to trap
+<<set $ashok = false>>
+<<set $sanitymarzanna = $sanitymarzanna - 1 >>
+<<set $sanityhugh = $sanityhugh - 1 >>
+<<set $sanitymathilda = $sanitymathilda - 1 >>
+<<set $sanitynanditha = $sanitynanditha - 1 >>
+<<endif>>
+===
+
+title: room1_door
+tags:
+color: red
+position: 25,-434
+---
+<<if $ashok1key == false>>
+Characters comment on door
+<<else>>
+<<setsprite "door1exit" open>>
+<<transition_start>>
+Dialogue
+//Characters leave the room
+<<endif>>
+===
