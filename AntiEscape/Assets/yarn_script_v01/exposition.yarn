@@ -1,4 +1,4 @@
-title: room0
+title: list
 tags:
 color: white
 position: 25,-434
@@ -98,6 +98,13 @@ position: 25,-434
 
 <<declare $light = true>>
 <<declare $candle = true>>
+
+===
+
+title: room0
+tags:
+color: white
+position: 25,-434
 
 Nanditha: Oh, I'm so excited. Thank you Ashok, this is an awesome birthday present!
 Hugh: Calm down, it hasn't even started yet.

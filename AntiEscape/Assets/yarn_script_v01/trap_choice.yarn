@@ -1,11 +1,11 @@
 title: room1_setup
 tags:
 color: red
-position: 25,-434
+position: 0,-402
 ---
-Set up a trap?
+Sabotage?
 -> Yes
-    Choose a trap.
+    Choose place to set up your trap.
     //objects now become interactive, player has to click on object - link objects to nodes
 -> No
     <<jump room1_enter>>
@@ -14,7 +14,7 @@ Set up a trap?
 title: trap1_crate
 tags:
 color: red
-position: 25,-434
+position: 149,-548
 ---
 <<if visited_count("room1_enter") < 2>>
 //activated on click but only in round 1 & 2
@@ -27,7 +27,7 @@ position: 25,-434
 title: trap1_animal
 tags:
 color: red
-position: 25,-434
+position: -234,-413
 ---
 <<if visited_count("room1_enter") < 2>>
 //activated on click but only in round 1 & 2
@@ -40,7 +40,7 @@ position: 25,-434
 title: trap1_chemicals
 tags:
 color: red
-position: 25,-434
+position: -112,-589
 ---
 <<if visited_count("room1_enter") == 2 || visited_count("room1_enter") == 3>>
 //activated on click but only in round 3 & 4
@@ -53,7 +53,7 @@ position: 25,-434
 title: trap1_tools
 tags:
 color: red
-position: 25,-434
+position: 234,-321
 ---
 <<if visited_count("room1_enter") == 2 || visited_count("room1_enter") == 3>>
 //activated on click but only in round 3 & 4
@@ -66,7 +66,7 @@ position: 25,-434
 title: trap1_corpse
 tags:
 color: red
-position: 25,-434
+position: 10,-230
 ---
 <<if visited_count("room1_enter") > 3>>
 //activated on click but only from round 5
