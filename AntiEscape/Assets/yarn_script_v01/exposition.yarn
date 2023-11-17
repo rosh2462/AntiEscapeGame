@@ -2,7 +2,7 @@ title: list
 tags:
 color: white
 group: room0
-position: 25,-434
+position: 30,-637
 ---
 //this is a list of every variable in the game andin its original state - running this node resets the game
 
@@ -114,31 +114,31 @@ title: room0
 tags:
 color: white
 group: room0
-position: 25,-434
+position: 32,-501
 ---
-<<setsprite "emotionnanditha" happy>> //here, the setsprite command lets the sprite "emotionnanditha_happy.png" appear in the emotionbox of the UI
+<<setsprite emotionnanditha happy>> //here, the setsprite command lets the sprite "emotionnanditha_happy.png" appear in the emotionbox of the UI
 Nanditha: Oh, I'm so excited. Thank you Ashok, this is an awesome birthday present!
-<<setsprite "emotionhugh" idle>> //here, the setsprite command replaces the previous .png (the one of nanditha) in the emotionbox by "emotionhugh_idle.png" 
+<<setsprite emotionhugh idle>> //here, the setsprite command replaces the previous .png (the one of nanditha) in the emotionbox by "emotionhugh_idle.png" 
 Hugh: Calm down, it hasn't even started yet.
-<<setsprite "emotionmathilda" annoyed>>
+<<setsprite emotionmathilda annoyed>>
 Mathilda: And this room is not exactly thrilling. Also, I want my phone back!
-<<setsprite "emotionashok" happy>>
+<<setsprite emotionashok happy>>
 Ashok: I guess they have to set up the next room first... And it's more immersive without phones, don't you think?
-<<setsprite "emotionnanditha" happy>>
+<<setsprite emotionnanditha happy>>
 Nanditha: Hey Anna, are you alright?
-<<setsprite "emotionmarzanna" idle>>
+<<setsprite emotionmarzanna idle>>
 Marzanna: It's so dark in here.
-<<setsprite "emotionhugh" annoyed>>
+<<setsprite emotionhugh annoyed>>
 Hugh: Who had the brilliant idea to invite this coward?
-<<setsprite "emotionmathilda" happy>>
+<<setsprite emotionmathilda happy>>
 Mathilda: Well, it's funnier if someone is actually afraid.
-<<setsprite "emotionnanditha" angry>>
+<<setsprite emotionnanditha angry>>
 Nanditha: Hey, don't be so harsh to her!
-<<setsprite "emotionnanditha" happy>>
+<<setsprite emotionnanditha happy>>
 Nanditha: I am glad that you are here, Anna.
 
 -> Play the sounds.
-    //<<playsound "filename">> noise of a struggle and a scream
+    //<<playsound filename>> noise of a struggle and a scream
         <<jump room0_soundreaction>>
 
 ===
@@ -147,12 +147,12 @@ title: room0_soundreaction
 tags:
 color: white
 group: room0
-position: 25,-434
+position: 287,-502
 ---
     <<wait  5>> //the dialogue waits 5 seconds (I'll adapt the duration of the sound file) until it continues
-    <<setsprite "emotionmarzanna" idle>>
+    <<setsprite emotionmarzanna idle>>
     Marzanna: Uuuuh. I hate Escape Rooms.
-    <<setsprite "emotionashok" happy>>
+    <<setsprite emotionashok happy>>
     Ashok: I think it's starting!
 //switch scene to room 1
 <<jump trap_choice>>
