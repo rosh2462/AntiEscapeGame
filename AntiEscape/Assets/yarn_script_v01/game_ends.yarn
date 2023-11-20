@@ -1,0 +1,29 @@
+title: win
+tags:
+color: white
+group: ending
+position: 30,-637
+---
+Congratulations! You killed them all.
+//<<jump start_menu>>
+===
+
+title: fail
+tags:
+color: white
+group: ending
+position: 31,-498
+---
+Was this just a regular escape room?
+//<<jump start_menu>>
+===
+
+title: escape
+tags:
+color: white
+group: ending
+position: 34,-359
+---
+They actually escaped!
+//<<jump start_menu>>
+===

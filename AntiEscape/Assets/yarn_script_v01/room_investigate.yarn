@@ -31,7 +31,7 @@ position: -195,-377
 ---
 <<if $trap1animal == false>>
 normal Dialogue
-    <<if $item1foot == false && visited_count("room1_enter") < 2>> //this item can only be offered if it has not been offered before and only in round 1 and 2
+    <<if $item1foot == false && visited_count("room1_start") < 2>> //this item can only be offered if it has not been offered before and only in round 1 and 2
         Offer Rabbit's foot?
         <<setsprite popup1foot>>
             -> Yes
@@ -55,7 +55,7 @@ position: -129,-574
 ---
 <<if $trap1chemicals == false>>
 normal dialogue //placeholder
-    <<if $item1arsenic == false && (visited_count("room1_enter") == 2 || visited_count("room1_enter") == 3)>> //only possible in round 3 and 4
+    <<if $item1arsenic == false && (visited_count("room1_start") == 2 || visited_count("room1_start") == 3)>> //only possible in round 3 and 4
         Offer Arsenic Trioxide?
         <<setsprite popup1arsenic>>
             -> Yes
@@ -82,7 +82,7 @@ position: 210,-340
 ---
 <<if $trap1tools == false>>
 normal dialogue //placeholder
-    <<if $item1knife == false && (visited_count("room1_enter") == 2 || visited_count("room1_enter") == 3)>>
+    <<if $item1knife == false && (visited_count("room1_start") == 2 || visited_count("room1_start") == 3)>>
         Offer Skinning Knife?
         <<setsprite popup1knife>>
             -> Yes
@@ -116,7 +116,7 @@ normal dialogue //placeholder
             <<set $ashok1key = true>> //without the key being true, the door to room 2 can't be opened
             Dialogue //placeholder
         -> No
-    <<elseif $item1eye == false && visited_count("room1_enter") > 3>> //this item can only be accessed from round 5 
+    <<elseif $item1eye == false && visited_count("room1_start") > 3>> //this item can only be accessed from round 5 
         Offer Glass Eye?
         <<setsprite popup1eye>>
             -> Yes
@@ -141,9 +141,9 @@ color: red
 group: room1
 position: -396,-234
 ---
-<<if visited_count("room1_enter") == 0 && $ashok1key == false>> //if the player not given Ashok the key yet (only round 1)
+<<if visited_count("room1_start") == 0 && $ashok1key == false>> //if the player not given Ashok the key yet (only round 1)
 Characters comment on closed door //placeholder
-<<elseif visited_count("room1_enter") > 0 && $door12 == false>>
+<<elseif visited_count("room1_start") > 0 && $door12 == false>>
 Prepare the next room?
     -> Yes
         <<set $door12 = true>>
