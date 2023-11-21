@@ -33,9 +33,9 @@ Material:
     - _Glossiness: 0.5
     - _Grayscale: 0
     - _Metallic: 0
-    - _Noise: 0.4
+    - _Noise: 1.56
     - _Speed: 5
-    - _Strength: 0.9
+    - _Strength: 1.22
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
