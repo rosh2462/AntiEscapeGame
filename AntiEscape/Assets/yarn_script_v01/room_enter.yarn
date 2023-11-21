@@ -5,14 +5,14 @@ group: room1
 position: 9,-521
 ---
 -> Open the door.
-<<set $door51 = false>>
-<<setsprite door5exit closed>> //the door in room 5 is closed again
+//<<set $door51 = false>>
+//<<setsprite door5exit closed>> //the door in room 5 is closed again
 <<if visited_count("Room1_start") == 0>> //this means if this node is run for the first time - it counts the rounds and the actions in every room depend on it
-    <<setsprite door1crate open>> //the crate's door opens
+    <<setsprite door1crate door1crate_open>> //the crate's door opens
     // <<transition_start>> // flickering to black initiated
 <<else>> //this means if it's not the first time
     // <<removesprite door1crate>> // this is the opposite of the setsprite command and removes sprites from the scene 
-    <<setsprite extra1scroll active>> //this happens in between transition_start and transition_end so the player will see the scroll in idle mode - black - and when the lights come back on again, the scroll has changed
+   // <<setsprite extra1scroll active>> //this happens in between transition_start and transition_end so the player will see the scroll in idle mode - black - and when the lights come back on again, the scroll has changed
     // <<transition_end>> // this command should trigger a transition from the blackout back to everything being visible
 <<endif>>
     //Characters enter the room during darkness
