@@ -12,18 +12,18 @@ public class DialogueManager : MonoBehaviour
     public SpriteRenderer spriteRendererAnimal;
 
     public Sprite door1crate;
-    public Sprite emotionnanditha;
-    public Sprite emotionhugh;
-    public Sprite emotionmathilda;
-    public Sprite emotionmarzanna;
+    // public Sprite emotionnanditha;
+    // public Sprite emotionhugh;
+    // public Sprite emotionmathilda;
+    // public Sprite emotionmarzanna;
     public Sprite trap1animal;
 
-    public Sprite emotionashok;
+    // public Sprite emotionashok;
 
   //  public Sprite extra1scroll;
 
     private Sprite[] characters; // Array to hold character sprites
-    private int currentIndex; // Index to keep track of the current character sprite
+    //private int currentIndex; // Index to keep track of the current character sprite
  
     void Start()
     {
@@ -46,15 +46,16 @@ public class DialogueManager : MonoBehaviour
                 spriteRendererAnimal.sprite = trap1animal;
                 break;
 
-            case "idle":
+            // case "idle":
 
-                spriteRenderer.sprite = characters[currentIndex];
-                currentIndex = (currentIndex + 1) % characters.Length;
-                break;
+            //     spriteRenderer.sprite = characters[currentIndex];
+            //     currentIndex = (currentIndex + 1) % characters.Length;
+            //     Debug.Log(currentIndex+"ID");
+            //     break;
 
-            case "scared":
-                spriteRenderer.sprite = emotionmarzanna;
-                break;
+            // case "scared":
+            //     spriteRenderer.sprite = emotionmarzanna;
+            //     break;
 
             // case "extra1scroll_idle":
             //     spriteRenderer.sprite = extra1scroll;
