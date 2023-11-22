@@ -41,14 +41,19 @@ if (audioSource == null)
         foreach (GameObject obj in objectsToEnable)
         {
             obj.SetActive(true);
+             
         }
     }
+    
+
+    
 
     void PlayClickSound()
     {
         if (audioSource != null && clickSound != null)
         {
             audioSource.PlayOneShot(clickSound);
+            Debug.Log("Sound Plays");
         }
     }
 }
