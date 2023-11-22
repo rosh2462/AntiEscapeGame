@@ -9,7 +9,7 @@ Sabotage? //I renamed "set trap" here
 -> Yes
     Choose a place to set up your trap. //objects now become interactive, player has to click on object - link objects to nodes
 -> No
-<<jump room1_start>> //this node is in the "room_start" file but that should work as long as they are both in the same project
+    <<jump room1_start>> //this node is in the "room_start" file but that should work as long as they are both in the same project
 ===
 
 title: trap1_crate
@@ -33,7 +33,7 @@ position: -234,-413
 ---
 <<if visited_count("room1_start") < 2>> //activated on click but only in round 1 & 2
 <<set $trap1animal = true>>
-<<setsprite trap1animal activated>> //changes the trap1animal_idle sprite to the trap1animal_activated sprite
+<<setsprite trap1animal trap1animal_activated>> //changes the trap1animal_idle sprite to the trap1animal_activated sprite
 <<endif>>
 <<jump room1_start>>
 ===
