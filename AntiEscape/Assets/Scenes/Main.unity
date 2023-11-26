@@ -318,7 +318,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &148327948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -334,12 +334,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 148327949}
   spriteRendererAnimal: {fileID: 0}
   door1crate: {fileID: 0}
-  emotionnanditha: {fileID: 0}
-  emotionhugh: {fileID: 0}
-  emotionmathilda: {fileID: 21300000, guid: 106fde6c397313e4f868116fcdf9ef4f, type: 3}
-  emotionmarzanna: {fileID: 0}
   trap1animal: {fileID: 0}
-  emotionashok: {fileID: 0}
 --- !u!212 &148327949
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -424,7 +419,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &373349792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -440,12 +435,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 373349793}
   spriteRendererAnimal: {fileID: 0}
   door1crate: {fileID: 0}
-  emotionnanditha: {fileID: 0}
-  emotionhugh: {fileID: 0}
-  emotionmathilda: {fileID: 0}
-  emotionmarzanna: {fileID: 21300000, guid: 68a38e62ccba05a43be5eb08288ad44b, type: 3}
   trap1animal: {fileID: 0}
-  emotionashok: {fileID: 21300000, guid: be06550d4ff22c244bcf50fbb71e73ca, type: 3}
 --- !u!212 &373349793
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -614,6 +604,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversationStartNode: trap1_animal
+  clickSound: {fileID: 8300000, guid: 822c36219ab9b7145a9c05d9afbe52cd, type: 3}
 --- !u!61 &435211573
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -671,15 +662,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e743d78c2de898c4180a49d8e8c65be7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 1733959786}
   spriteRendererAnimal: {fileID: 435211570}
   door1crate: {fileID: 21300000, guid: fbe118b2b61c6a7488c6481502a3581d, type: 3}
-  emotionnanditha: {fileID: 21300000, guid: b1763b732a3a8b24fa4c2e2ffa4347a9, type: 3}
-  emotionhugh: {fileID: 21300000, guid: ffe8b8e06d2fb764ea6e763d2fa96cef, type: 3}
-  emotionmathilda: {fileID: 21300000, guid: 106fde6c397313e4f868116fcdf9ef4f, type: 3}
-  emotionmarzanna: {fileID: 21300000, guid: 68a38e62ccba05a43be5eb08288ad44b, type: 3}
   trap1animal: {fileID: 21300000, guid: c522fe7fb541a3e42b1cc5cd932cdde3, type: 3}
-  emotionashok: {fileID: 21300000, guid: be06550d4ff22c244bcf50fbb71e73ca, type: 3}
 --- !u!1 &462238684
 GameObject:
   m_ObjectHideFlags: 0
@@ -697,7 +683,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &462238685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -713,12 +699,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 462238686}
   spriteRendererAnimal: {fileID: 0}
   door1crate: {fileID: 0}
-  emotionnanditha: {fileID: 21300000, guid: b1763b732a3a8b24fa4c2e2ffa4347a9, type: 3}
-  emotionhugh: {fileID: 0}
-  emotionmathilda: {fileID: 0}
-  emotionmarzanna: {fileID: 0}
   trap1animal: {fileID: 0}
-  emotionashok: {fileID: 0}
 --- !u!212 &462238686
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -931,7 +912,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &596415719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -947,12 +928,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 596415720}
   spriteRendererAnimal: {fileID: 0}
   door1crate: {fileID: 0}
-  emotionnanditha: {fileID: 0}
-  emotionhugh: {fileID: 0}
-  emotionmathilda: {fileID: 0}
-  emotionmarzanna: {fileID: 0}
   trap1animal: {fileID: 0}
-  emotionashok: {fileID: 21300000, guid: be06550d4ff22c244bcf50fbb71e73ca, type: 3}
 --- !u!212 &596415720
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1020,6 +996,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &895387454
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 895387456}
+  - component: {fileID: 895387455}
+  m_Layer: 0
+  m_Name: SceneController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &895387455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895387454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a692de9815fd07478884394ba7827b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runner: {fileID: 7612646322262730892}
+--- !u!4 &895387456
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895387454}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.8272532, y: 0.9239347, z: -0.5967281}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1153228954
 GameObject:
   m_ObjectHideFlags: 0
@@ -1037,7 +1058,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1153228955
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1120,12 +1141,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 1153228955}
   spriteRendererAnimal: {fileID: 0}
   door1crate: {fileID: 0}
-  emotionnanditha: {fileID: 0}
-  emotionhugh: {fileID: 21300000, guid: ffe8b8e06d2fb764ea6e763d2fa96cef, type: 3}
-  emotionmathilda: {fileID: 0}
-  emotionmarzanna: {fileID: 0}
   trap1animal: {fileID: 0}
-  emotionashok: {fileID: 0}
 --- !u!1 &1242467629
 GameObject:
   m_ObjectHideFlags: 0
@@ -1321,12 +1337,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 1733959786}
   spriteRendererAnimal: {fileID: 435211570}
   door1crate: {fileID: 21300000, guid: fbe118b2b61c6a7488c6481502a3581d, type: 3}
-  emotionnanditha: {fileID: 21300000, guid: b1763b732a3a8b24fa4c2e2ffa4347a9, type: 3}
-  emotionhugh: {fileID: 21300000, guid: ffe8b8e06d2fb764ea6e763d2fa96cef, type: 3}
-  emotionmathilda: {fileID: 21300000, guid: 106fde6c397313e4f868116fcdf9ef4f, type: 3}
-  emotionmarzanna: {fileID: 21300000, guid: 68a38e62ccba05a43be5eb08288ad44b, type: 3}
   trap1animal: {fileID: 21300000, guid: c522fe7fb541a3e42b1cc5cd932cdde3, type: 3}
-  emotionashok: {fileID: 21300000, guid: be06550d4ff22c244bcf50fbb71e73ca, type: 3}
 --- !u!4 &66817513368248747
 Transform:
   m_ObjectHideFlags: 0
@@ -3120,3 +3131,4 @@ SceneRoots:
   - {fileID: 148327950}
   - {fileID: 373349794}
   - {fileID: 596415721}
+  - {fileID: 895387456}

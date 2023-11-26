@@ -26,6 +26,7 @@ group: room1
 position: 9,-521
 ---
 <<if visited_count("Room1_start") == 0>>
+    <<LoadScene "Scene_2">>
     <<setsprite emotionnanditha idle>>
     Nanditha: Why did the lights go out?
     <<setsprite emotionhugh idle>>

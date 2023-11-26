@@ -240,12 +240,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 148327949}
   spriteRendererAnimal: {fileID: 0}
   door1crate: {fileID: 0}
-  emotionnanditha: {fileID: 0}
-  emotionhugh: {fileID: 0}
-  emotionmathilda: {fileID: 21300000, guid: 106fde6c397313e4f868116fcdf9ef4f, type: 3}
-  emotionmarzanna: {fileID: 0}
   trap1animal: {fileID: 0}
-  emotionashok: {fileID: 0}
 --- !u!212 &148327949
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -346,12 +341,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 373349793}
   spriteRendererAnimal: {fileID: 0}
   door1crate: {fileID: 0}
-  emotionnanditha: {fileID: 0}
-  emotionhugh: {fileID: 0}
-  emotionmathilda: {fileID: 0}
-  emotionmarzanna: {fileID: 21300000, guid: 68a38e62ccba05a43be5eb08288ad44b, type: 3}
   trap1animal: {fileID: 0}
-  emotionashok: {fileID: 21300000, guid: be06550d4ff22c244bcf50fbb71e73ca, type: 3}
 --- !u!212 &373349793
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -519,6 +509,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversationStartNode: trap1_animal
+  clickSound: {fileID: 0}
 --- !u!61 &435211573
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -579,12 +570,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   spriteRendererAnimal: {fileID: 435211570}
   door1crate: {fileID: 21300000, guid: fbe118b2b61c6a7488c6481502a3581d, type: 3}
-  emotionnanditha: {fileID: 21300000, guid: b1763b732a3a8b24fa4c2e2ffa4347a9, type: 3}
-  emotionhugh: {fileID: 21300000, guid: ffe8b8e06d2fb764ea6e763d2fa96cef, type: 3}
-  emotionmathilda: {fileID: 21300000, guid: 106fde6c397313e4f868116fcdf9ef4f, type: 3}
-  emotionmarzanna: {fileID: 21300000, guid: 68a38e62ccba05a43be5eb08288ad44b, type: 3}
   trap1animal: {fileID: 21300000, guid: c522fe7fb541a3e42b1cc5cd932cdde3, type: 3}
-  emotionashok: {fileID: 21300000, guid: be06550d4ff22c244bcf50fbb71e73ca, type: 3}
 --- !u!1 &462238684
 GameObject:
   m_ObjectHideFlags: 0
@@ -618,12 +604,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 462238686}
   spriteRendererAnimal: {fileID: 0}
   door1crate: {fileID: 0}
-  emotionnanditha: {fileID: 21300000, guid: b1763b732a3a8b24fa4c2e2ffa4347a9, type: 3}
-  emotionhugh: {fileID: 0}
-  emotionmathilda: {fileID: 0}
-  emotionmarzanna: {fileID: 0}
   trap1animal: {fileID: 0}
-  emotionashok: {fileID: 0}
 --- !u!212 &462238686
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -865,12 +846,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 596415720}
   spriteRendererAnimal: {fileID: 0}
   door1crate: {fileID: 0}
-  emotionnanditha: {fileID: 0}
-  emotionhugh: {fileID: 0}
-  emotionmathilda: {fileID: 0}
-  emotionmarzanna: {fileID: 0}
   trap1animal: {fileID: 0}
-  emotionashok: {fileID: 21300000, guid: be06550d4ff22c244bcf50fbb71e73ca, type: 3}
 --- !u!212 &596415720
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1017,7 +993,7 @@ Transform:
   m_GameObject: {fileID: 774546312}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.59637, y: 0.96795, z: -0.55}
+  m_LocalPosition: {x: -0.59637, y: 0.79, z: -0.55}
   m_LocalScale: {x: 36.74421, y: 12.508324, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1138,12 +1114,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 1153228955}
   spriteRendererAnimal: {fileID: 0}
   door1crate: {fileID: 0}
-  emotionnanditha: {fileID: 0}
-  emotionhugh: {fileID: 21300000, guid: ffe8b8e06d2fb764ea6e763d2fa96cef, type: 3}
-  emotionmathilda: {fileID: 0}
-  emotionmarzanna: {fileID: 0}
   trap1animal: {fileID: 0}
-  emotionashok: {fileID: 0}
 --- !u!1 &1242467629
 GameObject:
   m_ObjectHideFlags: 0
@@ -1339,12 +1310,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 1733959786}
   spriteRendererAnimal: {fileID: 435211570}
   door1crate: {fileID: 21300000, guid: fbe118b2b61c6a7488c6481502a3581d, type: 3}
-  emotionnanditha: {fileID: 21300000, guid: b1763b732a3a8b24fa4c2e2ffa4347a9, type: 3}
-  emotionhugh: {fileID: 21300000, guid: ffe8b8e06d2fb764ea6e763d2fa96cef, type: 3}
-  emotionmathilda: {fileID: 21300000, guid: 106fde6c397313e4f868116fcdf9ef4f, type: 3}
-  emotionmarzanna: {fileID: 21300000, guid: 68a38e62ccba05a43be5eb08288ad44b, type: 3}
   trap1animal: {fileID: 21300000, guid: c522fe7fb541a3e42b1cc5cd932cdde3, type: 3}
-  emotionashok: {fileID: 21300000, guid: be06550d4ff22c244bcf50fbb71e73ca, type: 3}
 --- !u!4 &66817513368248747
 Transform:
   m_ObjectHideFlags: 0

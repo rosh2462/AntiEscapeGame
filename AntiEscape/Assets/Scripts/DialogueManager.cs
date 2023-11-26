@@ -22,13 +22,13 @@ public class DialogueManager : MonoBehaviour
 
   //  public Sprite extra1scroll;
 
-    private Sprite[] characters; // Array to hold character sprites
+    //private Sprite[] characters; // Array to hold character sprites
     //private int currentIndex; // Index to keep track of the current character sprite
  
     void Start()
     {
-        characters = new Sprite[] { emotionnanditha, emotionhugh, emotionmathilda};
-        currentIndex = 0; // Start with the first character
+        // characters = new Sprite[] { emotionnanditha, emotionhugh, emotionmathilda};
+        // currentIndex = 0; // Start with the first character
     }
 
     [YarnCommand("setsprite")]
@@ -42,7 +42,7 @@ public class DialogueManager : MonoBehaviour
                 spriteRenderer.sprite = door1crate;
                 break;
 
-            case "animal_activated":
+            case "animal_active":
                 spriteRendererAnimal.sprite = trap1animal;
                 break;
 
