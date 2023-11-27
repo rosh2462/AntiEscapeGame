@@ -123,100 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &125402658
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 125402659}
-  - component: {fileID: 125402661}
-  - component: {fileID: 125402660}
-  m_Layer: 0
-  m_Name: trap1animal_trigger
-  m_TagString: TrapAnimal
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &125402659
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 125402658}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.56249976, y: 0.19999996, z: -12.198162}
-  m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 435211571}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &125402660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 125402658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfd1482d1cb566c4b852567dcc6eb6ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultCursorTexture: {fileID: 2800000, guid: dae3a1f6fadeea542941e854f844963a, type: 3}
-  hoverCursorTexture: {fileID: 2800000, guid: 4db39d50b44ee9f46a91cd207c7fb992, type: 3}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
---- !u!61 &125402661
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 125402658}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.2382021, y: -0.09161615}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.9161615, y: 2.8689704}
-  m_EdgeRadius: 0
 --- !u!1 &138365872
 GameObject:
   m_ObjectHideFlags: 0
@@ -318,7 +224,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &148327948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -334,7 +240,12 @@ MonoBehaviour:
   spriteRenderer: {fileID: 148327949}
   spriteRendererAnimal: {fileID: 0}
   door1crate: {fileID: 0}
+  emotionnanditha: {fileID: 0}
+  emotionhugh: {fileID: 0}
+  emotionmathilda: {fileID: 21300000, guid: 106fde6c397313e4f868116fcdf9ef4f, type: 3}
+  emotionmarzanna: {fileID: 0}
   trap1animal: {fileID: 0}
+  emotionashok: {fileID: 0}
 --- !u!212 &148327949
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -396,7 +307,7 @@ Transform:
   m_GameObject: {fileID: 148327947}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.8800006, y: -3.78, z: -0.17}
+  m_LocalPosition: {x: -8.09, y: -3.78, z: -0.17}
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -419,7 +330,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &373349792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -435,7 +346,12 @@ MonoBehaviour:
   spriteRenderer: {fileID: 373349793}
   spriteRendererAnimal: {fileID: 0}
   door1crate: {fileID: 0}
+  emotionnanditha: {fileID: 0}
+  emotionhugh: {fileID: 0}
+  emotionmathilda: {fileID: 0}
+  emotionmarzanna: {fileID: 21300000, guid: 68a38e62ccba05a43be5eb08288ad44b, type: 3}
   trap1animal: {fileID: 0}
+  emotionashok: {fileID: 21300000, guid: be06550d4ff22c244bcf50fbb71e73ca, type: 3}
 --- !u!212 &373349793
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -497,7 +413,7 @@ Transform:
   m_GameObject: {fileID: 373349791}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.8800006, y: -3.78, z: -0.17}
+  m_LocalPosition: {x: -8.09, y: -3.78, z: -0.17}
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -564,7 +480,7 @@ SpriteRenderer:
   m_SortingLayerID: -1097399477
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e3778a3adf097184186c5918599dc4e1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c522fe7fb541a3e42b1cc5cd932cdde3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -587,8 +503,7 @@ Transform:
   m_LocalPosition: {x: -7.27, y: 1.47, z: -0.19}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 125402659}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &435211572
@@ -604,7 +519,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversationStartNode: trap1_animal
-  clickSound: {fileID: 8300000, guid: 822c36219ab9b7145a9c05d9afbe52cd, type: 3}
 --- !u!61 &435211573
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -662,10 +576,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e743d78c2de898c4180a49d8e8c65be7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 1733959786}
+  spriteRenderer: {fileID: 0}
   spriteRendererAnimal: {fileID: 435211570}
   door1crate: {fileID: 21300000, guid: fbe118b2b61c6a7488c6481502a3581d, type: 3}
+  emotionnanditha: {fileID: 21300000, guid: b1763b732a3a8b24fa4c2e2ffa4347a9, type: 3}
+  emotionhugh: {fileID: 21300000, guid: ffe8b8e06d2fb764ea6e763d2fa96cef, type: 3}
+  emotionmathilda: {fileID: 21300000, guid: 106fde6c397313e4f868116fcdf9ef4f, type: 3}
+  emotionmarzanna: {fileID: 21300000, guid: 68a38e62ccba05a43be5eb08288ad44b, type: 3}
   trap1animal: {fileID: 21300000, guid: c522fe7fb541a3e42b1cc5cd932cdde3, type: 3}
+  emotionashok: {fileID: 21300000, guid: be06550d4ff22c244bcf50fbb71e73ca, type: 3}
 --- !u!1 &462238684
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,7 +602,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &462238685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -699,7 +618,12 @@ MonoBehaviour:
   spriteRenderer: {fileID: 462238686}
   spriteRendererAnimal: {fileID: 0}
   door1crate: {fileID: 0}
+  emotionnanditha: {fileID: 21300000, guid: b1763b732a3a8b24fa4c2e2ffa4347a9, type: 3}
+  emotionhugh: {fileID: 0}
+  emotionmathilda: {fileID: 0}
+  emotionmarzanna: {fileID: 0}
   trap1animal: {fileID: 0}
+  emotionashok: {fileID: 0}
 --- !u!212 &462238686
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -761,7 +685,7 @@ Transform:
   m_GameObject: {fileID: 462238684}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.84, y: -3.75, z: -0.16}
+  m_LocalPosition: {x: -8.11, y: -3.79, z: -0.16}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -780,6 +704,7 @@ GameObject:
   - component: {fileID: 519420029}
   - component: {fileID: 519420033}
   - component: {fileID: 519420034}
+  - component: {fileID: 519420035}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -891,10 +816,22 @@ MonoBehaviour:
   on: 1
   grayscale: 0
   amount: 800
-  strength: 1.03
-  noise: 1.35
+  strength: 1.22
+  noise: 1.56
   speed: 5
   material: {fileID: 2100000, guid: 34707840cacc149bbae1e03a783fcb40, type: 2}
+--- !u!114 &519420035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a684c6a425ae49842b22fb47b337e937, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &596415718
 GameObject:
   m_ObjectHideFlags: 0
@@ -912,7 +849,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &596415719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -928,7 +865,12 @@ MonoBehaviour:
   spriteRenderer: {fileID: 596415720}
   spriteRendererAnimal: {fileID: 0}
   door1crate: {fileID: 0}
+  emotionnanditha: {fileID: 0}
+  emotionhugh: {fileID: 0}
+  emotionmathilda: {fileID: 0}
+  emotionmarzanna: {fileID: 0}
   trap1animal: {fileID: 0}
+  emotionashok: {fileID: 21300000, guid: be06550d4ff22c244bcf50fbb71e73ca, type: 3}
 --- !u!212 &596415720
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -990,53 +932,8 @@ Transform:
   m_GameObject: {fileID: 596415718}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.8800006, y: -3.78, z: -0.17}
+  m_LocalPosition: {x: -8.09, y: -3.78, z: -0.17}
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &895387454
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 895387456}
-  - component: {fileID: 895387455}
-  m_Layer: 0
-  m_Name: SceneController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &895387455
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 895387454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a692de9815fd07478884394ba7827b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  runner: {fileID: 7612646322262730892}
---- !u!4 &895387456
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 895387454}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.8272532, y: 0.9239347, z: -0.5967281}
-  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1058,7 +955,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1153228955
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1120,7 +1017,7 @@ Transform:
   m_GameObject: {fileID: 1153228954}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.8800006, y: -3.78, z: -0.17}
+  m_LocalPosition: {x: -8.09, y: -3.78, z: -0.17}
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1141,7 +1038,12 @@ MonoBehaviour:
   spriteRenderer: {fileID: 1153228955}
   spriteRendererAnimal: {fileID: 0}
   door1crate: {fileID: 0}
+  emotionnanditha: {fileID: 0}
+  emotionhugh: {fileID: 21300000, guid: ffe8b8e06d2fb764ea6e763d2fa96cef, type: 3}
+  emotionmathilda: {fileID: 0}
+  emotionmarzanna: {fileID: 0}
   trap1animal: {fileID: 0}
+  emotionashok: {fileID: 0}
 --- !u!1 &1242467629
 GameObject:
   m_ObjectHideFlags: 0
@@ -1182,7 +1084,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1242467629}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfd1482d1cb566c4b852567dcc6eb6ed, type: 3}
   m_Name: 
@@ -1295,7 +1197,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 594dbdae929e3a84399ccbc9246337fb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fbe118b2b61c6a7488c6481502a3581d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1337,7 +1239,12 @@ MonoBehaviour:
   spriteRenderer: {fileID: 1733959786}
   spriteRendererAnimal: {fileID: 435211570}
   door1crate: {fileID: 21300000, guid: fbe118b2b61c6a7488c6481502a3581d, type: 3}
+  emotionnanditha: {fileID: 21300000, guid: b1763b732a3a8b24fa4c2e2ffa4347a9, type: 3}
+  emotionhugh: {fileID: 21300000, guid: ffe8b8e06d2fb764ea6e763d2fa96cef, type: 3}
+  emotionmathilda: {fileID: 21300000, guid: 106fde6c397313e4f868116fcdf9ef4f, type: 3}
+  emotionmarzanna: {fileID: 21300000, guid: 68a38e62ccba05a43be5eb08288ad44b, type: 3}
   trap1animal: {fileID: 21300000, guid: c522fe7fb541a3e42b1cc5cd932cdde3, type: 3}
+  emotionashok: {fileID: 21300000, guid: be06550d4ff22c244bcf50fbb71e73ca, type: 3}
 --- !u!4 &66817513368248747
 Transform:
   m_ObjectHideFlags: 0
@@ -1439,7 +1346,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!222 &415471909608940861
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1623,7 +1530,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1888975313231913907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1837,7 +1744,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!225 &2693097525541815032
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2031,7 +1938,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &3625150462928718330
 GameObject:
   m_ObjectHideFlags: 0
@@ -2043,6 +1950,7 @@ GameObject:
   - component: {fileID: 4775284577877830348}
   - component: {fileID: 7612646322262730892}
   - component: {fileID: 3629888463424125690}
+  - component: {fileID: 7612646322262730893}
   m_Layer: 0
   m_Name: Dialogue System
   m_TagString: Untagged
@@ -2115,7 +2023,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4775284577877830348
 Transform:
   m_ObjectHideFlags: 0
@@ -2199,7 +2107,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 7.3, y: -0.86, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2523,15 +2431,15 @@ SpriteRenderer:
   m_SortingLayerID: -1097399477
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4953b606e80346a41b83097b18611769, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fc9b81433280a244b8804f3befce3082, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.88, y: 4.54}
+  m_Size: {x: 3.3, y: 4.71}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &6319466494807833437
@@ -2676,7 +2584,7 @@ SpriteRenderer:
   m_SortingLayerID: -1097399477
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f1ade704bf2b7914ba4257e9b50474a4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 051f486a1108a30429a9a302d9107ffa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2684,7 +2592,7 @@ SpriteRenderer:
   m_Size: {x: 2.01, y: 6.43}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &6962293218602769967
@@ -2763,15 +2671,15 @@ SpriteRenderer:
   m_SortingLayerID: -1097399477
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b4271fd45e884b84791f80d53c303fe5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7d0e13829cd77a9408ceb9846ea3c6b2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.01, y: 5.86}
+  m_Size: {x: 3.12, y: 6.04}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &7501088782150907850
@@ -2801,12 +2709,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bec29c0a230741bdac901dba8da47ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yarnProject: {fileID: 7545569452688597077, guid: 78eaf8e7b76489042b9825e5f8573247, type: 3}
+  yarnProject: {fileID: 7545569452688597077, guid: a82504cd858102d46bf32c5435d008ab, type: 3}
   _variableStorage: {fileID: 3629888463424125690}
   dialogueViews:
   - {fileID: 6962293218602769967}
   - {fileID: 6027794228400368987}
-  startNode: room1_setup
+  startNode: room1_enter
   startAutomatically: 1
   runSelectedOptionAsLine: 0
   lineProvider: {fileID: 0}
@@ -2826,6 +2734,18 @@ MonoBehaviour:
   onCommand:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &7612646322262730893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3625150462928718330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a684c6a425ae49842b22fb47b337e937, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7891065063601323370
 GameObject:
   m_ObjectHideFlags: 0
@@ -2921,15 +2841,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 97aedbd36ad4e3341bbf2b0b4fd8495e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a6ba01a3e6580cf4fa46919439d57179, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.28, y: 5.79}
+  m_Size: {x: 3.81, y: 6.04}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &8304008023134674735
@@ -3052,7 +2972,7 @@ GameObject:
   - component: {fileID: 4836389854157083920}
   m_Layer: 0
   m_Name: traptrigger
-  m_TagString: TrapAnimal
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3131,4 +3051,3 @@ SceneRoots:
   - {fileID: 148327950}
   - {fileID: 373349794}
   - {fileID: 596415721}
-  - {fileID: 895387456}

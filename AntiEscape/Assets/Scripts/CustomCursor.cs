@@ -32,7 +32,7 @@ public class CustomCursor : MonoBehaviour
         {
             // Check if the object has a specific tag or component to indicate hover
            
-            if (hit.collider.CompareTag("Tools1"))
+            if (hit.collider.CompareTag("TrapAnimal"))
             {
                 Cursor.SetCursor(hoverCursorTexture, hotSpot, cursorMode);
             }

@@ -10,12 +10,12 @@ position: 9,-521
 <<if visited_count("Room1_start") == 0>> //this means if this node is run for the first time - it counts the rounds and the actions in every room depend on it
     <<setsprite door1crate door1crate_open>> //the crate's door opens
     // <<transition_start>> // flickering to black initiated
-<<else>> //this means if it's not the first time
-    // <<removesprite door1crate>> // this is the opposite of the setsprite command and removes sprites from the scene 
-   // <<setsprite extra1scroll active>> //this happens in between transition_start and transition_end so the player will see the scroll in idle mode - black - and when the lights come back on again, the scroll has changed
-    // <<transition_end>> // this command should trigger a transition from the blackout back to everything being visible
+// <<else>> //this means if it's not the first time
+//     // <<removesprite door1crate>> // this is the opposite of the setsprite command and removes sprites from the scene 
+//    // <<setsprite extra1scroll active>> //this happens in between transition_start and transition_end so the player will see the scroll in idle mode - black - and when the lights come back on again, the scroll has changed
+//     // <<transition_end>> // this command should trigger a transition from the blackout back to everything being visible
 <<endif>>
-    //Characters enter the room during darkness
+//     //Characters enter the room during darkness
 <<jump room1_enter>>
 ===
 
@@ -26,6 +26,7 @@ group: room1
 position: 9,-521
 ---
 <<if visited_count("Room1_start") == 0>>
+    <<LoadScene "Scene_2">>
     <<setsprite emotionnanditha idle>>
     Nanditha: Why did the lights go out?
     <<setsprite emotionhugh idle>>
@@ -41,51 +42,51 @@ position: 9,-521
     Mathilda: It looks better than I expected in here. Pretty realistic.
     <<setsprite emotionnanditha happy>>
     Nanditha: Let's search for clues!
-<<elseif visited_count("Room1_start") == 1>> //this dialogue happens when they enter the room for the second time, it's not finished
-    <<setsprite extra1scroll triggered>>
-    <<setsprite emotionmathilda annoyed>>
-    Mathilda: How many rooms does this thing have?
-    //<<transition_end>>
-    <<setsprite emotionhugh afraid>>
-    Hugh: What the hell?
-    <<setsprite emotionmathilda afraid>>
-    Mathilda: This door wasn't there before, I'm confused.
-<<elseif visited_count("Room1_start") > 1>> //this dialogue happens from round 3 but it will get more complicated from here because some characters might be dead and everything will turn highly conditional
-    <<setsprite extra1scroll triggered>>
-    Dialogue
-    // <<transition_end>>
-    Dialogue
+// <<elseif visited_count("Room1_start") == 1>> //this dialogue happens when they enter the room for the second time, it's not finished
+//     <<setsprite extra1scroll triggered>>
+//     <<setsprite emotionmathilda annoyed>>
+//     Mathilda: How many rooms does this thing have?
+//     //<<transition_end>>
+//     <<setsprite emotionhugh afraid>>
+//     Hugh: What the hell?
+//     <<setsprite emotionmathilda afraid>>
+//     Mathilda: This door wasn't there before, I'm confused.
+// <<elseif visited_count("Room1_start") > 1>> //this dialogue happens from round 3 but it will get more complicated from here because some characters might be dead and everything will turn highly conditional
+//     <<setsprite extra1scroll triggered>>
+//     Dialogue
+//     // <<transition_end>>
+//     Dialogue
 <<endif>>
 ===
 
-title: room2_enter
-tags:
-color: green
-group: room2
-position: 10,-200
----
--> Open the door. //allows a new transition and characters entering the room
-   // <<transition_start>>
-    //Characters enter the room
-<<set $door12 = false>>
-<<setsprite door1exit closed>> //the door in room 1 is closed again
-    <<if visited_count("Room1_start") == 0>> // this dialogue only appears if they enter the room for the first time
-         <<setsprite emotionhugh annoyed>>
-        Hugh: So I guess that is how new rooms are introduced to us?
-         <<setsprite emotionmathilda annoyed>>
-        Mathilda: Hidden in the dark, yes.
-         <<setsprite emotionnanditha happy>>
-        Nanditha: I think it increases the suspense.
-      //<<transition_end>>
-        Dialogue continues
-    <<elseif visited_count("Room1_start") == 1>>
-        Dialogue
-       //<<transition_end>>
-        Dialogue
-    <<elseif visited_count("Room1_start") > 1>>
-        Dialogue
-      //<<transition_end>>
-        Dialogue
-    <<endif>>
-===
+// title: room2_enter
+// tags:
+// color: green
+// group: room2
+// position: 10,-200
+// ---
+// -> Open the door. //allows a new transition and characters entering the room
+//    // <<transition_start>>
+//     //Characters enter the room
+// <<set $door12 = false>>
+// <<setsprite door1exit closed>> //the door in room 1 is closed again
+//     <<if visited_count("Room1_start") == 0>> // this dialogue only appears if they enter the room for the first time
+//          <<setsprite emotionhugh annoyed>>
+//         Hugh: So I guess that is how new rooms are introduced to us?
+//          <<setsprite emotionmathilda annoyed>>
+//         Mathilda: Hidden in the dark, yes.
+//          <<setsprite emotionnanditha happy>>
+//         Nanditha: I think it increases the suspense.
+//       //<<transition_end>>
+//         Dialogue continues
+//     <<elseif visited_count("Room1_start") == 1>>
+//         Dialogue
+//        //<<transition_end>>
+//         Dialogue
+//     <<elseif visited_count("Room1_start") > 1>>
+//         Dialogue
+//       //<<transition_end>>
+//         Dialogue
+//     <<endif>>
+// ===
 

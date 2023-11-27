@@ -9,7 +9,7 @@ Sabotage? //I renamed "set trap" here
 -> Yes
     Choose a place to set up your trap. //objects now become interactive, player has to click on object - link objects to nodes
 -> No
-<<jump room1_start>> //this node is in the "room_start" file but that should work as long as they are both in the same project
+    <<jump room1_start>> //this node is in the "room_start" file but that should work as long as they are both in the same project
 ===
 
 title: trap1_crate
@@ -33,61 +33,61 @@ position: -234,-413
 ---
 <<if visited_count("room1_start") < 2>> //activated on click but only in round 1 & 2
 <<set $trap1animal = true>>
-<<setsprite trap1animal activated>> //changes the trap1animal_idle sprite to the trap1animal_activated sprite
+<<setsprite trap1animal animal_active>> //changes the trap1animal_idle sprite to the trap1animal_activated sprite
 <<endif>>
 <<jump room1_start>>
 ===
 
-title: trap1_chemicals
-tags:
-color: red
-group: room1
-position: -112,-589
----
-<<if visited_count("room1_start") == 2 || visited_count("room1_start") == 3>> //activated on click but only in round 3 & 4
-<<set $trap1chemicals = true>>
-<<setsprite trap1chemicals activated>> //changes the trap1chemicals_idle sprite to the trap1chemicals_activated sprite
-<<endif>>
-<<jump room1_start>>
-===
+// title: trap1_chemicals
+// tags:
+// color: red
+// group: room1
+// position: -112,-589
+// ---
+// <<if visited_count("room1_start") == 2 || visited_count("room1_start") == 3>> //activated on click but only in round 3 & 4
+// <<set $trap1chemicals = true>>
+// <<setsprite trap1chemicals activated>> //changes the trap1chemicals_idle sprite to the trap1chemicals_activated sprite
+// <<endif>>
+// <<jump room1_start>>
+// ===
 
-title: trap1_tools
-tags:
-color: red
-group: room1
-position: 234,-321
----
-<<if visited_count("room1_start") == 2 || visited_count("room1_start") == 3>> //activated on click but only in round 3 & 4
-<<set $trap1tools = true>>
-<<setsprite trap1tools activated>> //changes the trap1tools_idle sprite to the trap1tools_activated sprite
-<<endif>>
-<<jump room1_start>>
-===
+// title: trap1_tools
+// tags:
+// color: red
+// group: room1
+// position: 234,-321
+// ---
+// <<if visited_count("room1_start") == 2 || visited_count("room1_start") == 3>> //activated on click but only in round 3 & 4
+// <<set $trap1tools = true>>
+// <<setsprite trap1tools activated>> //changes the trap1tools_idle sprite to the trap1tools_activated sprite
+// <<endif>>
+// <<jump room1_start>>
+// ===
 
-title: trap1_corpse
-tags:
-color: red
-group: room1
-position: 10,-230
----
-<<if visited_count("room1_start") > 3>> //activated on click but only from round 5
-<<set $trap1corpse = true>>
-<<setsprite trap1corpse activated>> //changes the trap1corpse_idle sprite to the trap1corpse_activated sprite
-<<endif>>
-<<jump room1_start>>
-===
+// title: trap1_corpse
+// tags:
+// color: red
+// group: room1
+// position: 10,-230
+// ---
+// <<if visited_count("room1_start") > 3>> //activated on click but only from round 5
+// <<set $trap1corpse = true>>
+// <<setsprite trap1corpse activated>> //changes the trap1corpse_idle sprite to the trap1corpse_activated sprite
+// <<endif>>
+// <<jump room1_start>>
+// ===
 
 
-title: room2_setup
-tags:
-color: green
-group: room2
-position: 41,72
----
-Sabotage? //I renamed "set trap" here
--> Yes
-    Choose place to set up your trap. //objects now become interactive, player has to click on object - link objects to nodes
--> No
-    <<jump room2_start>> //this node is in the "room_start" file but that should work
-===
+// title: room2_setup
+// tags:
+// color: green
+// group: room2
+// position: 41,72
+// ---
+// Sabotage? //I renamed "set trap" here
+// -> Yes
+//     Choose place to set up your trap. //objects now become interactive, player has to click on object - link objects to nodes
+// -> No
+//     <<jump room2_start>> //this node is in the "room_start" file but that should work
+// ===
 
