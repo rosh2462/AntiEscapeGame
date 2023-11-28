@@ -33,7 +33,10 @@ position: -234,-413
 ---
 <<if visited_count("room1_start") < 2>> //activated on click but only in round 1 & 2
 <<set $trap1animal = true>>
-<<setsprite trap1animal animal_active>> //changes the trap1animal_idle sprite to the trap1animal_activated sprite
+ 
+<<setsprite trap1animal animal_active>> 
+//<<PlayAnimation "">>
+//changes the trap1animal_idle sprite to the trap1animal_activated sprite
 <<endif>>
 <<jump room1_start>>
 ===

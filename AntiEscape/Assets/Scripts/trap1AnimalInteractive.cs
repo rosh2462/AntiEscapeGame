@@ -11,10 +11,17 @@ public class trap1AnimalInteractive : MonoBehaviour
     private AudioSource audioSource;
     public AudioClip clickSound;
 
+    private AudioSource audioSource;
+    public AudioClip clickSound;
+  
+
+
 
     // Start is called before the first frame update
     void Start()
     {
+         
+
          dialogueRunner = FindObjectOfType<Yarn.Unity.DialogueRunner>();
           audioSource = GetComponent<AudioSource>();
           if (audioSource == null)
@@ -56,6 +63,14 @@ public void OnMouseDown() {
     // Update is called once per frame
     void Update()
     {
+    }
         
+    void PlayClickSound()
+    {
+        if (audioSource != null && clickSound != null)
+        {
+            audioSource.PlayOneShot(clickSound);
+            Debug.Log("Sound Plays");
+        }
     }
 }
