@@ -9,6 +9,8 @@ position: 9,-521
 //<<setsprite door5exit closed>> //the door in room 5 is closed again
 <<if visited_count("Room1_start") == 0>> //this means if this node is run for the first time - it counts the rounds and the actions in every room depend on it
     <<setsprite door1crate door1crate_open>> //the crate's door opens
+     
+     <<LoadScene "Scene_2">> 
     // <<transition_start>> // flickering to black initiated
 // <<else>> //this means if it's not the first time
 //     // <<removesprite door1crate>> // this is the opposite of the setsprite command and removes sprites from the scene 
@@ -26,7 +28,9 @@ group: room1
 position: 9,-521
 ---
 <<if visited_count("Room1_start") == 0>>
+ 
     <<setsprite emotionnanditha idle>>
+    <<DisableScript "camerafollowscript">>
     Nanditha: Why did the lights go out?
     <<setsprite emotionhugh idle>>
     Hugh: I guess this is supposed to be a jumpscare?
@@ -56,6 +60,7 @@ position: 9,-521
 //     // <<transition_end>>
 //     Dialogue
 <<endif>>
+<<jump room1_investigate>>
 ===
 
 // title: room2_enter
