@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class animalanimate : MonoBehaviour
 {
-
+//test
 
     private Animator animator;
      
