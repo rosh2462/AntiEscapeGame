@@ -11,8 +11,7 @@ public class trap1AnimalInteractive : MonoBehaviour
     private AudioSource audioSource;
     public AudioClip clickSound;
 
-    private AudioSource audioSource;
-    public AudioClip clickSound;
+    
   
 
 
@@ -65,12 +64,5 @@ public void OnMouseDown() {
     {
     }
         
-    void PlayClickSound()
-    {
-        if (audioSource != null && clickSound != null)
-        {
-            audioSource.PlayOneShot(clickSound);
-            Debug.Log("Sound Plays");
-        }
-    }
+     
 }
