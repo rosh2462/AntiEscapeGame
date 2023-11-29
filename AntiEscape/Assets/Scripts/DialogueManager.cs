@@ -12,15 +12,19 @@ public class DialogueManager : MonoBehaviour
     public SpriteRenderer spriteRendererAnimal;
 
     public Sprite door1crate;
+<<<<<<< Updated upstream
      
     public Sprite trap1animal;
 
      
 
+=======
+    public Sprite trap1animal;
+
+>>>>>>> Stashed changes
     [YarnCommand("setsprite")]
     public void SetSprite(string expression)
     {
-
         switch (expression)
         {
 
@@ -32,7 +36,13 @@ public class DialogueManager : MonoBehaviour
                 spriteRendererAnimal.sprite = trap1animal;
                 break;
 
+<<<<<<< Updated upstream
              
+=======
+            // case "extra1scroll_idle":
+            //     spriteRenderer.sprite = extra1scroll;
+            //     break;
+>>>>>>> Stashed changes
             default:
                 Debug.LogWarning("Unknown expression: " + expression);
                 break;

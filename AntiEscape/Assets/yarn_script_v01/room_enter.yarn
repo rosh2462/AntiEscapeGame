@@ -9,7 +9,12 @@ position: 9,-521
 //<<setsprite door5exit closed>> //the door in room 5 is closed again
 <<if visited_count("Room1_start") == 0>> //this means if this node is run for the first time - it counts the rounds and the actions in every room depend on it
     <<setsprite door1crate door1crate_open>> //the crate's door opens
+<<<<<<< Updated upstream
      <<LoadScene "Scene_2">> 
+=======
+    <<LoadScene "Scene_2">>
+
+>>>>>>> Stashed changes
     // <<transition_start>> // flickering to black initiated
 // <<else>> //this means if it's not the first time
 //     // <<removesprite door1crate>> // this is the opposite of the setsprite command and removes sprites from the scene 
@@ -27,23 +32,28 @@ group: room1
 position: 9,-521
 ---
 <<if visited_count("Room1_start") == 0>>
+<<<<<<< Updated upstream
  
     <<setsprite emotionnanditha idle>>
     <<DisableScript "camerafollowscript">>
+=======
+     <<setsprites "emotionnanditha_idle" "emotionnanditha_idle">>
+>>>>>>> Stashed changes
     Nanditha: Why did the lights go out?
-    <<setsprite emotionhugh idle>>
+    <<setsprites "emotionhugh_idle" "emotionhugh_idle">>
     Hugh: I guess this is supposed to be a jumpscare?
-    <<setsprite emotionmathilda idle>>
+    <<setsprites "emotionmathilda_idle" "emotionmathilda_idle">>
     Mathilda: I hope the lights come back on again or we won't be able to do anything in here.
-    <<setsprite emotionmarzanna scared>>
+    <<setsprites "emotionmarzanna_idle" "emotionmarzanna_idle">>
     Marzanna: Nnnnh...
-    // <<transition_end>>
-    <<setsprite emotionashok idle>>
+     // <<transition_end>>
+    <<setsprites "emotionashok_idle" "emotionashok_idle">>
     Ashok: Oh.
-    <<setsprite emotionmathilda happy>>
+    <<setsprites "emotionmathilda_happy" "emotionmathilda_happy">>
     Mathilda: It looks better than I expected in here. Pretty realistic.
-    <<setsprite emotionnanditha happy>>
+    <<setsprites "emotionnanditha_happy" "emotionnanditha_happy">>
     Nanditha: Let's search for clues!
+    <<destroysprite "emotionnanditha_happy" "nanditha_happy">>
 // <<elseif visited_count("Room1_start") == 1>> //this dialogue happens when they enter the room for the second time, it's not finished
 //     <<setsprite extra1scroll triggered>>
 //     <<setsprite emotionmathilda annoyed>>
