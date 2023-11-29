@@ -7,6 +7,8 @@ TagManager:
   - Selectable
   - Tools1
   - TrapAnimal
+  - nanditha_happy
+  - Square_Tag
   layers:
   - Default
   - TransparentFX
