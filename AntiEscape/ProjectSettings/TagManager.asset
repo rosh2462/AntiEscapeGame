@@ -9,6 +9,7 @@ TagManager:
   - TrapAnimal
   - nanditha_happy
   - Square_Tag
+  - popup1note
   layers:
   - Default
   - TransparentFX

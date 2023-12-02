@@ -17,8 +17,9 @@ position: 82,-477
 normal Dialogue
     <<if $note1 == false>> //means that note1 is still available and has not been used
         Slip a Note?
-        <<setsprite popup1note>> //it says "no way out" and is a foreshadowing of what the game is all about
+//it says "no way out" and is a foreshadowing of what the game is all about
             -> Yes
+                <<Enablepopup popup1 popup1note>> 
                 <<set $note1 = true>>
                 Hugh reads the Note //placeholder
                 <<set $sanityhugh = $sanityhugh - 1>> //notes always decrease the sanity of the person that finds it

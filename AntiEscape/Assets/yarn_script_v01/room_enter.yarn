@@ -30,6 +30,7 @@ position: 9,-521
 <<if visited_count("Room1_start") == 0>>
     
     <<DisableScript "camerafollowscript">>
+   // <<Blackout >>
    <<setsprites "emotionnanditha_idle" "emotionnanditha_idle">>  
     Nanditha: Why did the lights go out?
     <<setsprites "emotionhugh_idle" "emotionhugh_idle">>

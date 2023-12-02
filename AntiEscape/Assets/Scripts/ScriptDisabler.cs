@@ -14,7 +14,7 @@ public class ScriptDisabler : MonoBehaviour
     public void DisableScript(string scriptName)
     {
         // Find the GameObject with the specified script and disable it
-        GameObject varGameObject = GameObject.FindWithTag("MainCamera"); 
+    GameObject varGameObject = GameObject.FindWithTag("MainCamera"); 
     varGameObject.GetComponent<camerafollowscript>().enabled = false;
        
     }
