@@ -23,6 +23,7 @@ normal Dialogue
                 <<set $note1 = true>>
                 Hugh reads the Note //placeholder
                 <<set $sanityhugh = $sanityhugh - 1>> //notes always decrease the sanity of the person that finds it
+                <<disablePopup "popup1" "popup1note">>
                 <<jump room1_investigate>>
             -> No //the player can save this note for a later round
     <<jump room1_investigate>>

@@ -24,5 +24,14 @@ public class popups : MonoBehaviour
         }
     }
 
+    [YarnCommand("disablePopup")]
+    public void DestroySprite(string tagToFind)
+    {
+        GameObject myObject = GameObject.FindGameObjectWithTag(tagToFind);
+        Debug.Log("Tag found");
+        myObject.SetActive(false);
+    }
+
+
 
 }
