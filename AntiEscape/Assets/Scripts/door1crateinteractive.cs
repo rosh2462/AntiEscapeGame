@@ -8,8 +8,8 @@ public class door1crateinteractive : MonoBehaviour
 [SerializeField] private string conversationStartNode;
     private DialogueRunner dialogueRunner;
     private bool interactable = true;
-    private AudioSource audioSource;
-    public AudioClip clickSound;
+    // private AudioSource audioSource;
+    // public AudioClip clickSound;
 
     
   
@@ -22,19 +22,19 @@ public class door1crateinteractive : MonoBehaviour
          
 
          dialogueRunner = FindObjectOfType<Yarn.Unity.DialogueRunner>();
-          audioSource = GetComponent<AudioSource>();
-          if (audioSource == null)
-        {
-            audioSource = gameObject.AddComponent<AudioSource>();
-        }
-         audioSource.clip = clickSound;
+        //  audioSource = GetComponent<AudioSource>();
+        //   if (audioSource == null)
+        // {
+        //     audioSource = gameObject.AddComponent<AudioSource>();
+        // }
+        //  audioSource.clip = clickSound;
          
     }
 public void OnMouseDown() {
         if (interactable && !dialogueRunner.IsDialogueRunning) {
             StartConversation();
-            Debug.Log("Trap Set");
-            PlayClickSound();
+            Debug.Log("Crate Active");
+            // PlayClickSound();
         }
     }
     
@@ -48,14 +48,14 @@ public void OnMouseDown() {
     
     
     
-    void PlayClickSound()
-    {
-        if (audioSource != null && clickSound != null)
-        {
-            audioSource.PlayOneShot(clickSound);
-            Debug.Log("Sound Plays");
-        }
-    }
+    // void PlayClickSound()
+    // {
+    //     // if (audioSource != null && clickSound != null)
+    //     // {
+    //     //     // audioSource.PlayOneShot(clickSound);
+    //     //     Debug.Log("Sound Plays");
+    //     // }
+    // }
     
     
     
