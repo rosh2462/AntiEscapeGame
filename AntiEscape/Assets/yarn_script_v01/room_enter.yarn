@@ -9,7 +9,7 @@ position: 9,-521
 //<<setsprite door5exit closed>> //the door in room 5 is closed again
 <<if visited_count("Room1_start") == 0>> //this means if this node is run for the first time - it counts the rounds and the actions in every room depend on it
     <<setsprite door1crate door1crate_open>>
-    <<wait 1>> //the crate's door opens
+    <<wait 0.5>> //the crate's door opens
      <<LoadScene "Scene_2">> 
     // <<transition_start>> // flickering to black initiated
 // <<else>> //this means if it's not the first time

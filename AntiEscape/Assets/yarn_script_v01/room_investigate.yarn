@@ -4,6 +4,7 @@ color: red
 group: room1
 position: 82,-477
 ---
+<<EnableScript "camerafollowscript">>
 Choose an object to investigate.
 ===
 

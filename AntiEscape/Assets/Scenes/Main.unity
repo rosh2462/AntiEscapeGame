@@ -123,100 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &125402658
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 125402659}
-  - component: {fileID: 125402661}
-  - component: {fileID: 125402660}
-  m_Layer: 0
-  m_Name: trap1animal_trigger
-  m_TagString: TrapAnimal
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &125402659
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 125402658}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.56249976, y: 0.19999996, z: -12.198162}
-  m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 435211571}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &125402660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 125402658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfd1482d1cb566c4b852567dcc6eb6ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultCursorTexture: {fileID: 2800000, guid: dae3a1f6fadeea542941e854f844963a, type: 3}
-  hoverCursorTexture: {fileID: 2800000, guid: 4db39d50b44ee9f46a91cd207c7fb992, type: 3}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
---- !u!61 &125402661
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 125402658}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.2382021, y: -0.09161615}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.9161615, y: 2.8689704}
-  m_EdgeRadius: 0
 --- !u!1 &138365872
 GameObject:
   m_ObjectHideFlags: 0
@@ -316,6 +222,7 @@ GameObject:
   - component: {fileID: 435211574}
   - component: {fileID: 435211575}
   - component: {fileID: 435211576}
+  - component: {fileID: 435211577}
   m_Layer: 0
   m_Name: trap1animal
   m_TagString: Untagged
@@ -387,8 +294,7 @@ Transform:
   m_LocalPosition: {x: -7.27, y: 1.47, z: -0.19}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 125402659}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &435211572
@@ -499,6 +405,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b5861aa4acc5624680c40a416a091c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &435211577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435211569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd1482d1cb566c4b852567dcc6eb6ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursorTexture: {fileID: 2800000, guid: dae3a1f6fadeea542941e854f844963a, type: 3}
+  hoverCursorTexture: {fileID: 2800000, guid: 4db39d50b44ee9f46a91cd207c7fb992, type: 3}
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &516398401
 GameObject:
   m_ObjectHideFlags: 0
@@ -672,100 +594,6 @@ MonoBehaviour:
   noise: 0.47
   speed: 5
   material: {fileID: 2100000, guid: 34707840cacc149bbae1e03a783fcb40, type: 2}
---- !u!1 &1242467629
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1242467630}
-  - component: {fileID: 1242467632}
-  - component: {fileID: 1242467631}
-  m_Layer: 0
-  m_Name: doortrigger
-  m_TagString: Tools1
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1242467630
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1242467629}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.72, y: -0.86, z: 0.015803896}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1733959787}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1242467631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1242467629}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfd1482d1cb566c4b852567dcc6eb6ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultCursorTexture: {fileID: 2800000, guid: dae3a1f6fadeea542941e854f844963a, type: 3}
-  hoverCursorTexture: {fileID: 2800000, guid: 4db39d50b44ee9f46a91cd207c7fb992, type: 3}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
---- !u!61 &1242467632
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1242467629}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -2.5509715, y: 1.7680004}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 6.101943, y: 5.243201}
-  m_EdgeRadius: 0
 --- !u!1001 &1458817157
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -913,8 +741,7 @@ Transform:
   m_LocalPosition: {x: 1.01, y: 1.11, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1242467630}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1733959788
@@ -1740,7 +1567,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2192675009782233076}
   - component: {fileID: 5866406854428116327}
-  - component: {fileID: 5866406854428116328}
   m_Layer: 0
   m_Name: background
   m_TagString: Untagged
@@ -1957,18 +1783,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5866406854428116328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4783267398447463318}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a684c6a425ae49842b22fb47b337e937, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &5870505719076059583
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2750,7 +2564,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &8876711539465412954
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -32,7 +32,9 @@ public class animalanimate : MonoBehaviour
     public void OnMouseDown() 
     {  
             animator.enabled=false;
-            Debug.Log("clicked");        
+            Debug.Log("clicked");     
+               
+
     }
 
 

@@ -10,8 +10,11 @@ public class CustomCursor : MonoBehaviour
     public CursorMode cursorMode = CursorMode.Auto;
     public Vector2 hotSpot = Vector2.zero;
 
- 
-    private void OnMouseEnter()
+ private void Start()
+ {
+    OnMouseExit();
+ }
+    private void OnMouseOver()
     {
         Cursor.SetCursor(hoverCursorTexture, hotSpot, cursorMode);
     }
@@ -22,29 +25,26 @@ public class CustomCursor : MonoBehaviour
     }
 
  
-    private void Update()
-    {
-        // Perform a raycast to check if the cursor is hovering over an object
-        RaycastHit hit;
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+    // private void Update()
+    // {
+        
+    //     RaycastHit hit;
+    //     Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        if (Physics.Raycast(ray, out hit))
-        {
-            // Check if the object has a specific tag or component to indicate hover
+    //     if (Physics.Raycast(ray, out hit))
+    //     {
            
-            if (hit.collider.CompareTag("TrapAnimal"))
-            {
-                Cursor.SetCursor(hoverCursorTexture, hotSpot, cursorMode);
-            }
-            else
-            {
-                Cursor.SetCursor(defaultCursorTexture, Vector2.zero, CursorMode.Auto);
-            }
-        }
-        else
-        {
-            // If not hitting any object, switch back to default cursor
-            Cursor.SetCursor(defaultCursorTexture, Vector2.zero, CursorMode.Auto);
-        }
+           
+    //         if (hit.collider.CompareTag("Test1"))
+    //         {
+    //             Cursor.SetCursor(hoverCursorTexture, hotSpot, cursorMode);
+    //              Debug.Log("hover texture");
+    //         }
+    //         else
+    //         {
+    //             Cursor.SetCursor(defaultCursorTexture, Vector2.zero, CursorMode.Auto);
+    //                  Debug.Log("not hover texture");
+    //         }
+        
     }
-}
+
