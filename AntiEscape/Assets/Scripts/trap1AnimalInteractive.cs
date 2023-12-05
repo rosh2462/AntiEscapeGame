@@ -33,7 +33,7 @@ public class trap1AnimalInteractive : MonoBehaviour
 public void OnMouseDown() {
         if (interactable && !dialogueRunner.IsDialogueRunning) {
             StartConversation();
-            Debug.Log("Trap Set");
+           // Debug.Log("Trap Set");
             PlayClickSound();
         }
     }
