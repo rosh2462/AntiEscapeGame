@@ -46,12 +46,12 @@ position: 30,-637
 <<declare $item2finger = false>>
 <<declare $item2carrot = false>>
 
-<<declare $item3grimoire = false>>
 <<declare $item3code = false>>
 
 <<declare $item4candle = false>>
 <<declare $item4needle = false>>
 
+<<declare $item5grimoire = false>>
 <<declare $item5remote = false>>
 
 <<declare $light = true>> //as long as the light is true, the player can see everything, if it turns false, the scene will turn to black (except for the UI) and objects have to be found by blindly searching for interactive objects in the dark (indicated by the changing cursor)
@@ -65,14 +65,49 @@ color: white
 group: room0
 position: 32,-501
 ---
-<<emotionsprite "emotionnanditha_idle" "idle">>
-Exposition Dialogue
-<<emotionsprite "emotionhugh_idle" "idle">>
-Exposition Dialogue
-<<emotionsprite "emotionnanditha_happy" "happy">>
-Exposition Dialogue
-<<destroyemotion "emotionnanditha_happy" "nanditha_happy">>
--> Release them
+<<wait  3>>
+<<emotionsprite "emotionashok_idle" "a_idle">>
+Ashok: Hmmm... Where am I?
+<<emotionsprite "emotionnanditha_idle" "n_idle">>
+Nanditha: Ashok! Good, I'm not alone.
+<<emotionsprite "emotionhugh_idle" "h_idle">>
+Hugh: Hey, keep it down! Some people want to sleep.
+<<emotionsprite "emotionashok_idle" "a_idle">>
+Ashok: Do you know where we are?
+<<emotionsprite "emotionnanditha_idle" "n_idle">>
+Nanditha: I don't remember much but... probably someones living room?
+<<emotionsprite "emotionmathilda_idle" "mt_idle">>
+Mathilda: Urgh I hate sleeping on the floor.
+<<emotionsprite "emotionnanditha_happy" "n_happy">>
+Nanditha: Mathilda! Do you know how we got here?
+<<emotionsprite "emotionhugh_idle" "h_idle">>
+Hugh: Classic story: went to a party, drank to much, slept in at a random place, lost memory in the morning.
+<<emotionsprite "emotionashok_annoyed" "a_annoyed">>
+Ashok: Noone asked you, Hugh.
+<<emotionsprite "emotionmathilda_idle" "mt_idle">>
+Mathilda: He might be right though.
+<<emotionsprite "emotionnanditha_idle" "n_idle">>
+Nanditha: Let's search for a light switch or something, it's so dark in here, I can't even see you guys.
+<<destroyemotion "emotionnanditha_idle" "n_idle">>
+
+Find the light switch. //continue with room0_exit when clicking on the door
+===
+
+title: room0_exit
+tags:
+color: white
+group: room0
+position: 32,-501
+---
+<<emotionsprite "emotionmarzanna_idle" "mz_idle">>
+Marzanna: I found a door.
+<<emotionsprite "emotionhugh_afraid" "h_afraid">>
+Hugh: You were here the whole time? You creep!
+<<emotionsprite "emotionashok_idle" "a_idle">>
+Ashok: Shut up, Hugh. Marzanna, can you open it?
+<<destroyemotion "emotionashok_idle" "a_idle">>
+
+-> Open the door.
     <<set $actions = $actions - 1>>
     <<jump room1_start>>
 ===
@@ -83,13 +118,37 @@ color: red
 group: room1
 position: 82,-477
 ---
-<<emotionsprite "emotionnanditha_idle" "idle">>
-Exposition Dialogue
-<<emotionsprite "emotionhugh_idle" "idle">>
-Exposition Dialogue
-<<emotionsprite "emotionnanditha_happy" "happy">>
-Exposition Dialogue
-<<destroyemotion "emotionnanditha_happy" "nanditha_happy">>
+<<emotionsprite "emotionhugh_afraid" "h_afraid">>
+Hugh: This is not someone's living room.
+<<emotionsprite "emotionnanditha_afraid" "n_afraid">>
+Nanditha: Maybe it's a prank.
+<<emotionsprite "emotionmathilda_afraid" "mt_afraid">>
+Mathilda: Is that a human body?!?
+<<destroyemotion "emotionmathilda_afraid" "mt_afraid">>
+
+<<start transition>> //lights flicker and go out
+
+<<emotionsprite "emotionmarzanna_afraid" "mz_afraid">>
+Marzanna: Oh nooo.
+<<emotionsprite "emotionhugh_idle" "h_idle">>
+Hugh: And again, we're in the dark. I saw a door over there, we should get out of here. Try not to fall over the corpse.
+<<destroyemotion "emotionhugh_idle" "h_idle">>
+
+// <<playsound stumble>>
+<<emotionsprite "emotionmathilda_afraid" "mt_afraid">>
+Mathilda: What was that?
+<<destroyemotion "emotionmathilda_afraid" "mt_afraid">>
+
+<<end transition>> //lights flicker and come back, characters are scattered
+
+<<emotionsprite "emotionnanditha_idle" "n_idle">>
+Nanditha: Nice, the light is back on again.
+<<emotionsprite "emotionashok_afraid" "a_afraid">>
+Ashok: Aaaaah! This body is real!
+<<emotionsprite "emotionhugh_afraid" "h_afraid">>
+Hugh: What the hell is going on here?
+<<destroyemotion "emotionhugh_afraid" "h_afraid">>
+
 <<jump room_investigate>>
 ===
 
@@ -99,7 +158,11 @@ color: black
 group: common
 position: 82,-477
 ---
-Choose an object to investigate.
+<<if $actions == 0>>
+    <<jump fail>>
+<<else>>
+    Choose an object to investigate.
+<<endif>>
 ===
 
 title: interaction1animal
@@ -110,25 +173,22 @@ position: 82,-477
 ---
 <<if $item2carrot == false>>
     <<objectsprite "animal_triggered" "animal_triggered">>
-    <<emotionsprite "emotionnanditha_idle" "idle">>
-    Commenting on Object
-    <<emotionsprite "emotionhugh_idle" "idle">>
-    Commenting on Object
-    <<emotionsprite "emotionnanditha_happy" "happy">>
-    Commenting on Object
-    <<destroyemotion "emotionnanditha_happy" "nanditha_happy">>
+    <<emotionsprite "emotionnanditha_afraid" "n_afraid">>
+    Nanditha: Ouch! This creature just bit me!
+    <<emotionsprite "emotionhugh_annoyed" "h_annoyed">>
+    Hugh: It's dead and can't do anything. You are just clumsy.
+    <<emotionsprite "emotionnanditha_annoyed" "n_annoyed">>
+    Nanditha: I swear it just did! I got the marks on my hand.
+    <<destroyemotion "emotionnanditha_annoyed" "n_annoyed">>
 <<else>>
     <<set $item1eye = true>>
     <<popupsprite "popup1eye" "popup1eye">>
     Nanditha found a glass eye!
     <<destroypopup "popup1eye" "popup1eye">>
-    <<emotionsprite "emotionnanditha_idle" "idle">>
-    Reaction
-    <<emotionsprite "emotionhugh_idle" "idle">>
-    Reaction
-    <<emotionsprite "emotionnanditha_happy" "happy">>
-    Reaction
-    <<destroyemotion "emotionnanditha_happy" "nanditha_happy">>
+   <<emotionsprite "emotionnanditha_happy" "n_happy">>
+    Nanditha: Oh, one of its eyes fell off.
+    <<destroyemotion "emotionnanditha_happy" "n_happy">>
+    Nanditha keeps the glass eye.
 <<endif>>
 <<set $actions = $actions - 1>>
 <<jump room_investigate>>
