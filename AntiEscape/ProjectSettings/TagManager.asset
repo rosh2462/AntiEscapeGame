@@ -10,6 +10,8 @@ TagManager:
   - nanditha_happy
   - popup1note
   - Test1
+  - n_idle
+  - a_idle
   layers:
   - Default
   - TransparentFX
