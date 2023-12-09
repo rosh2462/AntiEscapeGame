@@ -1,0 +1,184 @@
+title: room1_investigate
+tags:
+color: red
+group: room1
+position: 82,-477
+---
+<<EnableScript "camerafollowscript">>
+Choose an object to investigate.
+===
+
+title: room1_crate
+tags:
+color: red
+group: room1
+position: 82,-477
+---
+<<if $trap1crate == false>> //means that this object has not been sabotaged
+normal Dialogue
+    <<if $note1 == false>> //means that note1 is still available and has not been used
+        Slip a Note?
+//it says "no way out" and is a foreshadowing of what the game is all about
+            -> Yes
+                <<Enablepopup popup1 popup1note>> 
+                <<set $note1 = true>>
+                Hugh reads the Note //placeholder
+                <<set $sanityhugh = $sanityhugh - 1>> //notes always decrease the sanity of the person that finds it
+                <<disablePopup "popup1" "popup1note">>
+                <<jump room1_investigate>>
+            -> No //the player can save this note for a later round
+    <<jump room1_investigate>>
+    <<endif>>
+<<else>> //means if trap1crate is true
+<<setsprite trap1crate triggered>>
+Reaction to trap //this is a dialogue placeholder
+<<set $statushugh = false>> //this trap is not lethal but it injures hugh
+<<set $sanityhugh = $sanityhugh - 1>> //and his sanity count is reduced by 1
+<<endif>>
+<<jump room1_investigate>>
+===
+
+title: room1_animal
+tags:
+color: red
+group: room1
+position: -195,-377
+---
+<<if $trap1animal == false>>
+normal Dialogue
+    <<if $item1foot == false && visited_count("room1_start") < 2>> //this item can only be offered if it has not been offered before and only in round 1 and 2
+        Offer Rabbit's foot?
+        <<setsprite popup1foot>>
+            -> Yes
+                <<set $item1foot = true>> //now all sprites of the foot will disappear for the rest of the game (exept for the popup that will return when the foot is used) because it's in Nanditha's inventory now, the notebook entry png for this item will appear in the notebook
+                Nanditha keeps the foot //this is a placeholder text, there will be dialogue instead
+                <<jump room1_investigate>>
+            -> No //if the player chooses No they can click on other objects again because the interaction is over
+    <<jump room1_investigate>>
+    <<endif>>
+<<else>>
+<<setsprite trap1animal triggered>>
+Reaction to trap //placeholder
+<<set $statusnanditha = false>> //this trap is not lethal but it injures nanditha 
+<<set $sanitynanditha = $sanitynanditha - 1>> //the injury reduces her sanity count
+<<jump room1_investigate>>
+<<endif>>
+===
+
+title: room1_chemicals
+tags:
+color: red
+group: room1
+position: -129,-574
+---
+<<if $trap1chemicals == false>>
+normal dialogue //placeholder
+    // <<if $item1arsenic == false && (visited_count("room1_start") == 2 || visited_count("room1_start") == 3)>> //only possible in round 3 and 4
+    //     Offer Arsenic Trioxide?
+    //     <<setsprite popup1arsenic>>
+    //         -> Yes
+    //             <<set $item1arsenic = true>>
+    //             Marzanna keeps the Arsenic Trioxide //placeholder
+    //         -> No
+    // <<endif>>
+// <<else>>
+// <<setsprite trap1chemicals triggered>>
+// Reaction to trap //placeholder
+// <<set $marzanna = false>> //Marzanna got killed by this trap because this one is lethal
+// <<set $sanityhugh = $sanityhugh - 1 >> //if a character dies, all the other characters loose sanity
+// <<set $sanitymathilda = $sanitymathilda - 1 >>
+// <<set $sanitynanditha = $sanitynanditha - 1 >>
+// <<set $sanityashok = $sanityashok - 1 >>
+<<jump room1_investigate>>
+<<endif>>
+===
+
+title: room1_tools
+tags:
+color: red
+group: room1
+position: 210,-340
+---
+<<if $trap1tools == false>>
+normal dialogue //placeholder
+//     <<if $item1knife == false && (visited_count("room1_start") == 2 || visited_count("room1_start") == 3)>>
+//         Offer Skinning Knife?
+//         <<setsprite popup1knife>>
+//             -> Yes
+//                 <<set $item1knife = true>>
+//                 Mathilda keeps the Skinning Knife //placeholder
+//             -> No
+//     <<endif>>
+// <<else>>
+// <<setsprite trap1tools triggered>>
+// Reaction to trap //placeholder
+// <<set $mathilda = false>>
+// <<set $sanitymarzanna = $sanitymarzanna - 1 >>
+// <<set $sanityhugh = $sanityhugh - 1 >>
+// <<set $sanitynanditha = $sanitynanditha - 1 >>
+// <<set $sanityashok = $sanityashok - 1 >>
+<<jump room1_investigate>>
+<<endif>>
+===
+
+title: room1_corpse
+tags:
+color: red
+group: room1
+position: -7,-244
+---
+<<if $trap1corpse == false>>
+normal dialogue //placeholder
+    <<if $ashok1key == false>>
+        Offer the Key? //this is needed only in round 1 and acts as a mislead to make it look like a standard escape room
+        <<setsprite popup1key>>
+        -> Yes
+            <<set $ashok1key = true>> //without the key being true, the door to room 2 can't be opened
+            Dialogue //placeholder
+        -> No //dead end - back to choosing an interaction
+//     <<elseif $item1eye == false && visited_count("room1_start") > 3>> //this item can only be accessed from round 5 
+//         Offer Glass Eye?
+//         <<setsprite popup1eye>>
+//             -> Yes
+//                 <<set $item1eye = true>>
+//                 Ashok keeps the Glass Eye //placeholder
+//             -> No
+    <<jump room1_investigate>>
+    <<endif>>
+// <<else>>
+// <<setsprite trap1corpse triggered>>
+// Reaction to trap //placeholder
+// <<set $ashok = false>>
+// <<set $sanitymarzanna = $sanitymarzanna - 1 >>
+// <<set $sanityhugh = $sanityhugh - 1 >>
+// <<set $sanitymathilda = $sanitymathilda - 1 >>
+// <<set $sanitynanditha = $sanitynanditha - 1 >>
+<<jump room1_investigate>>
+<<endif>>
+===
+
+title: room1_door
+tags:
+color: red
+group: room1
+position: -396,-234
+---
+<<if visited_count("room1_start") == 0 && $ashok1key == false>> //if the player not given Ashok the key yet (only round 1)
+Characters comment on closed door //placeholder
+// <<elseif visited_count("room1_start") > 0 && $door12 == false>>
+// Prepare the next room?
+//     -> Yes
+//         <<set $door12 = true>>
+//         <<setsprite door1exit open>>
+//         Characters are happy about the open door //placeholder
+//         <<jump room2_setup>> //this node is in the trap_choice file
+//     -> No //continue investigating room 1
+// <<else>> //this is a failsafe option
+// <<set $door12 = true>>
+// <<setsprite door1exit open>>
+// // <<transition_start>>
+// Dialogue //placeholder
+// //characters leave the room
+<<jump room1_investigate>>
+<<endif>>
+===

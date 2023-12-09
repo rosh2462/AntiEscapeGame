@@ -91,6 +91,7 @@ Nanditha: Let's search for a light switch or something, it's so dark in here, I 
 <<destroyemotion "emotionnanditha_idle" "n_idle">>
 
 Find the light switch. //continue with room0_exit when clicking on the door
+<<jump room0_exit>>
 ===
 
 title: room0_exit
@@ -99,6 +100,7 @@ color: white
 group: room0
 position: 32,-501
 ---
+<<activateemotion "emotionnanditha_idle" "n_idle">>
 <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
 Marzanna: I found a door.
 <<emotionsprite "emotionhugh_afraid" "h_afraid">>
@@ -118,6 +120,7 @@ color: red
 group: room1
 position: 82,-477
 ---
+<<activateemotion "emotionashok_idle" "a_idle">>
 <<emotionsprite "emotionhugh_afraid" "h_afraid">>
 Hugh: This is not someone's living room.
 <<emotionsprite "emotionnanditha_afraid" "n_afraid">>
@@ -126,7 +129,7 @@ Nanditha: Maybe it's a prank.
 Mathilda: Is that a human body?!?
 <<destroyemotion "emotionmathilda_afraid" "mt_afraid">>
 
-<<start transition>> //lights flicker and go out
+// <<start transition>> //lights flicker and go out
 
 <<emotionsprite "emotionmarzanna_afraid" "mz_afraid">>
 Marzanna: Oh nooo.
@@ -139,7 +142,7 @@ Hugh: And again, we're in the dark. I saw a door over there, we should get out o
 Mathilda: What was that?
 <<destroyemotion "emotionmathilda_afraid" "mt_afraid">>
 
-<<end transition>> //lights flicker and come back, characters are scattered
+// <<end transition>> //lights flicker and come back, characters are scattered
 
 <<emotionsprite "emotionnanditha_idle" "n_idle">>
 Nanditha: Nice, the light is back on again.
@@ -388,7 +391,7 @@ position: -396,-234
 // //<<jump start_menu>>
 // ===
 
-// title: escape
+title: escape
 tags:
 color: white
 group: ending

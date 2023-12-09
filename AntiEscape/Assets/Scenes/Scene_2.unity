@@ -217,7 +217,6 @@ GameObject:
   m_Component:
   - component: {fileID: 148327950}
   - component: {fileID: 148327949}
-  - component: {fileID: 148327948}
   - component: {fileID: 148327951}
   m_Layer: 0
   m_Name: emotionmathilda_idle
@@ -226,22 +225,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &148327948
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 148327947}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e743d78c2de898c4180a49d8e8c65be7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 148327949}
-  spriteRendererAnimal: {fileID: 0}
-  door1crate: {fileID: 0}
-  trap1animal: {fileID: 0}
 --- !u!212 &148327949
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -283,12 +266,12 @@ SpriteRenderer:
   m_SortingLayerID: -1097399477
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 106fde6c397313e4f868116fcdf9ef4f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.14, y: 3.08}
+  m_Size: {x: 3.14, y: 3.19}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -303,7 +286,7 @@ Transform:
   m_GameObject: {fileID: 148327947}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.2851577, y: -4.267017, z: 1.4143585}
+  m_LocalPosition: {x: -6.2851577, y: -4.267017, z: 0.7}
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -328,13 +311,150 @@ MonoBehaviour:
   spriteRenderer4: {fileID: 596415720}
   spriteRenderer5: {fileID: 1915392045}
   spriteRenderer6: {fileID: 986564227}
-  emotionnanditha_idle: {fileID: 21300000, guid: b1763b732a3a8b24fa4c2e2ffa4347a9, type: 3}
-  emotionhugh_idle: {fileID: 21300000, guid: ffe8b8e06d2fb764ea6e763d2fa96cef, type: 3}
-  emotionmathilda_idle: {fileID: 21300000, guid: 106fde6c397313e4f868116fcdf9ef4f, type: 3}
-  emotionmarzanna_idle: {fileID: 21300000, guid: 68a38e62ccba05a43be5eb08288ad44b, type: 3}
-  emotionashok_idle: {fileID: 21300000, guid: be06550d4ff22c244bcf50fbb71e73ca, type: 3}
-  emotionmathilda_happy: {fileID: 21300000, guid: 9a83eba0d209442499eabebdc82d00d2, type: 3}
-  emotionnanditha_happy: {fileID: 21300000, guid: 2a73b3b61b5476147a0263622aa62338, type: 3}
+  spriteRenderer7: {fileID: 1448681493}
+  spriteRenderer8: {fileID: 205772869}
+  spriteRenderer9: {fileID: 466033074}
+  spriteRenderer10: {fileID: 1388756735}
+  spriteRenderer11: {fileID: 1434588879}
+  spriteRenderer12: {fileID: 304563660}
+  emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
+  emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
+  emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
+  emotionmarzanna_idle: {fileID: 21300000, guid: 6aa9888e40f59a140aef28f94df53835, type: 3}
+  emotionashok_idle: {fileID: 21300000, guid: 32c23a4a88b75e9449cc2cfee3d08867, type: 3}
+  emotionmathilda_happy: {fileID: 21300000, guid: 7877e5410b0fe764bb0c3bac4ce4ef70, type: 3}
+  emotionnanditha_happy: {fileID: 21300000, guid: b58a5f42b2a19ac4e81f3607ad0ff3f9, type: 3}
+  emotionashok_annoyed: {fileID: 21300000, guid: b9da7c01febe53340955260f3a0b372f, type: 3}
+  emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
+  emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
+  emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
+  emotionmarzanna_afraid: {fileID: 21300000, guid: 7adf3685dce1d4d47ab661001f7e7633, type: 3}
+  emotionashok_afraid: {fileID: 21300000, guid: 43dde12cd2def5e47bf643992155896c, type: 3}
+  myObject: {fileID: 148327947}
+--- !u!1 &205772867
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 205772868}
+  - component: {fileID: 205772870}
+  - component: {fileID: 205772869}
+  m_Layer: 0
+  m_Name: emotionhugh_afraid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &205772868
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205772867}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.37, y: -4.29, z: 0.68}
+  m_LocalScale: {x: 0.68, y: 0.67, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1105179149}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &205772869
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205772867}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1097399477
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: eafbcdd4491be5649bd2f5477daaab75, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 3.14, y: 3.08}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &205772870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205772867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a93edf0c59653d642bd4c7e3b5abc3e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 462238686}
+  spriteRenderer1: {fileID: 1153228955}
+  spriteRenderer2: {fileID: 148327949}
+  spriteRenderer3: {fileID: 373349793}
+  spriteRenderer4: {fileID: 596415720}
+  spriteRenderer5: {fileID: 1915392045}
+  spriteRenderer6: {fileID: 986564227}
+  spriteRenderer7: {fileID: 1448681493}
+  spriteRenderer8: {fileID: 205772869}
+  spriteRenderer9: {fileID: 466033074}
+  spriteRenderer10: {fileID: 1388756735}
+  spriteRenderer11: {fileID: 1434588879}
+  spriteRenderer12: {fileID: 304563660}
+  emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
+  emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
+  emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
+  emotionmarzanna_idle: {fileID: 21300000, guid: 6aa9888e40f59a140aef28f94df53835, type: 3}
+  emotionashok_idle: {fileID: 21300000, guid: 32c23a4a88b75e9449cc2cfee3d08867, type: 3}
+  emotionmathilda_happy: {fileID: 21300000, guid: 7877e5410b0fe764bb0c3bac4ce4ef70, type: 3}
+  emotionnanditha_happy: {fileID: 21300000, guid: b58a5f42b2a19ac4e81f3607ad0ff3f9, type: 3}
+  emotionashok_annoyed: {fileID: 21300000, guid: b9da7c01febe53340955260f3a0b372f, type: 3}
+  emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
+  emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
+  emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
+  emotionmarzanna_afraid: {fileID: 21300000, guid: 7adf3685dce1d4d47ab661001f7e7633, type: 3}
+  emotionashok_afraid: {fileID: 21300000, guid: 43dde12cd2def5e47bf643992155896c, type: 3}
+  myObject: {fileID: 205772867}
 --- !u!1 &212977661
 GameObject:
   m_ObjectHideFlags: 0
@@ -482,6 +602,130 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.73, y: 0.68}
   m_EdgeRadius: 0
+--- !u!1 &304563657
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 304563658}
+  - component: {fileID: 304563660}
+  - component: {fileID: 304563659}
+  m_Layer: 0
+  m_Name: emotionashok_afraid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &304563658
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304563657}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.37, y: -4.29, z: 0.68}
+  m_LocalScale: {x: 0.68, y: 0.68, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1105179149}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &304563659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304563657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a93edf0c59653d642bd4c7e3b5abc3e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 462238686}
+  spriteRenderer1: {fileID: 1153228955}
+  spriteRenderer2: {fileID: 148327949}
+  spriteRenderer3: {fileID: 373349793}
+  spriteRenderer4: {fileID: 596415720}
+  spriteRenderer5: {fileID: 1915392045}
+  spriteRenderer6: {fileID: 986564227}
+  spriteRenderer7: {fileID: 1448681493}
+  spriteRenderer8: {fileID: 205772869}
+  spriteRenderer9: {fileID: 466033074}
+  spriteRenderer10: {fileID: 1388756735}
+  spriteRenderer11: {fileID: 1434588879}
+  spriteRenderer12: {fileID: 304563660}
+  emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
+  emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
+  emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
+  emotionmarzanna_idle: {fileID: 21300000, guid: 6aa9888e40f59a140aef28f94df53835, type: 3}
+  emotionashok_idle: {fileID: 21300000, guid: 32c23a4a88b75e9449cc2cfee3d08867, type: 3}
+  emotionmathilda_happy: {fileID: 21300000, guid: 7877e5410b0fe764bb0c3bac4ce4ef70, type: 3}
+  emotionnanditha_happy: {fileID: 21300000, guid: b58a5f42b2a19ac4e81f3607ad0ff3f9, type: 3}
+  emotionashok_annoyed: {fileID: 21300000, guid: b9da7c01febe53340955260f3a0b372f, type: 3}
+  emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
+  emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
+  emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
+  emotionmarzanna_afraid: {fileID: 21300000, guid: 7adf3685dce1d4d47ab661001f7e7633, type: 3}
+  emotionashok_afraid: {fileID: 21300000, guid: 43dde12cd2def5e47bf643992155896c, type: 3}
+  myObject: {fileID: 304563657}
+--- !u!212 &304563660
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304563657}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1097399477
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &373349791
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,7 +736,6 @@ GameObject:
   m_Component:
   - component: {fileID: 373349794}
   - component: {fileID: 373349793}
-  - component: {fileID: 373349792}
   - component: {fileID: 373349795}
   m_Layer: 0
   m_Name: emotionmarzanna_idle
@@ -501,22 +744,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &373349792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 373349791}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e743d78c2de898c4180a49d8e8c65be7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 373349793}
-  spriteRendererAnimal: {fileID: 0}
-  door1crate: {fileID: 0}
-  trap1animal: {fileID: 0}
 --- !u!212 &373349793
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -558,7 +785,7 @@ SpriteRenderer:
   m_SortingLayerID: -1097399477
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 68a38e62ccba05a43be5eb08288ad44b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6aa9888e40f59a140aef28f94df53835, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -578,7 +805,7 @@ Transform:
   m_GameObject: {fileID: 373349791}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.2851577, y: -4.267017, z: 1.4143585}
+  m_LocalPosition: {x: -6.2851577, y: -4.267017, z: 0.84}
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -603,13 +830,26 @@ MonoBehaviour:
   spriteRenderer4: {fileID: 596415720}
   spriteRenderer5: {fileID: 1915392045}
   spriteRenderer6: {fileID: 986564227}
-  emotionnanditha_idle: {fileID: 21300000, guid: b1763b732a3a8b24fa4c2e2ffa4347a9, type: 3}
-  emotionhugh_idle: {fileID: 21300000, guid: ffe8b8e06d2fb764ea6e763d2fa96cef, type: 3}
-  emotionmathilda_idle: {fileID: 21300000, guid: 106fde6c397313e4f868116fcdf9ef4f, type: 3}
-  emotionmarzanna_idle: {fileID: 21300000, guid: 68a38e62ccba05a43be5eb08288ad44b, type: 3}
-  emotionashok_idle: {fileID: 21300000, guid: be06550d4ff22c244bcf50fbb71e73ca, type: 3}
-  emotionmathilda_happy: {fileID: 21300000, guid: 9a83eba0d209442499eabebdc82d00d2, type: 3}
-  emotionnanditha_happy: {fileID: 21300000, guid: 2a73b3b61b5476147a0263622aa62338, type: 3}
+  spriteRenderer7: {fileID: 1448681493}
+  spriteRenderer8: {fileID: 205772869}
+  spriteRenderer9: {fileID: 466033074}
+  spriteRenderer10: {fileID: 1388756735}
+  spriteRenderer11: {fileID: 1434588879}
+  spriteRenderer12: {fileID: 304563660}
+  emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
+  emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
+  emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
+  emotionmarzanna_idle: {fileID: 21300000, guid: 6aa9888e40f59a140aef28f94df53835, type: 3}
+  emotionashok_idle: {fileID: 21300000, guid: 32c23a4a88b75e9449cc2cfee3d08867, type: 3}
+  emotionmathilda_happy: {fileID: 21300000, guid: 7877e5410b0fe764bb0c3bac4ce4ef70, type: 3}
+  emotionnanditha_happy: {fileID: 21300000, guid: b58a5f42b2a19ac4e81f3607ad0ff3f9, type: 3}
+  emotionashok_annoyed: {fileID: 21300000, guid: b9da7c01febe53340955260f3a0b372f, type: 3}
+  emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
+  emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
+  emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
+  emotionmarzanna_afraid: {fileID: 21300000, guid: 7adf3685dce1d4d47ab661001f7e7633, type: 3}
+  emotionashok_afraid: {fileID: 21300000, guid: 43dde12cd2def5e47bf643992155896c, type: 3}
+  myObject: {fileID: 373349791}
 --- !u!1 &433744477
 GameObject:
   m_ObjectHideFlags: 0
@@ -817,7 +1057,6 @@ GameObject:
   m_Component:
   - component: {fileID: 462238687}
   - component: {fileID: 462238686}
-  - component: {fileID: 462238685}
   - component: {fileID: 462238688}
   m_Layer: 0
   m_Name: emotionnanditha_idle
@@ -826,22 +1065,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &462238685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 462238684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e743d78c2de898c4180a49d8e8c65be7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 462238686}
-  spriteRendererAnimal: {fileID: 0}
-  door1crate: {fileID: 0}
-  trap1animal: {fileID: 0}
 --- !u!212 &462238686
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -883,7 +1106,7 @@ SpriteRenderer:
   m_SortingLayerID: -1097399477
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b1763b732a3a8b24fa4c2e2ffa4347a9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -903,7 +1126,7 @@ Transform:
   m_GameObject: {fileID: 462238684}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.2851577, y: -4.267017, z: 1.4143585}
+  m_LocalPosition: {x: -6.2851577, y: -4.267017, z: 0.82}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -928,13 +1151,150 @@ MonoBehaviour:
   spriteRenderer4: {fileID: 596415720}
   spriteRenderer5: {fileID: 1915392045}
   spriteRenderer6: {fileID: 986564227}
-  emotionnanditha_idle: {fileID: 21300000, guid: b1763b732a3a8b24fa4c2e2ffa4347a9, type: 3}
-  emotionhugh_idle: {fileID: 21300000, guid: ffe8b8e06d2fb764ea6e763d2fa96cef, type: 3}
-  emotionmathilda_idle: {fileID: 21300000, guid: 106fde6c397313e4f868116fcdf9ef4f, type: 3}
-  emotionmarzanna_idle: {fileID: 21300000, guid: 68a38e62ccba05a43be5eb08288ad44b, type: 3}
-  emotionashok_idle: {fileID: 21300000, guid: be06550d4ff22c244bcf50fbb71e73ca, type: 3}
-  emotionmathilda_happy: {fileID: 21300000, guid: 9a83eba0d209442499eabebdc82d00d2, type: 3}
-  emotionnanditha_happy: {fileID: 21300000, guid: 2a73b3b61b5476147a0263622aa62338, type: 3}
+  spriteRenderer7: {fileID: 1448681493}
+  spriteRenderer8: {fileID: 205772869}
+  spriteRenderer9: {fileID: 466033074}
+  spriteRenderer10: {fileID: 1388756735}
+  spriteRenderer11: {fileID: 1434588879}
+  spriteRenderer12: {fileID: 304563660}
+  emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
+  emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
+  emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
+  emotionmarzanna_idle: {fileID: 21300000, guid: 6aa9888e40f59a140aef28f94df53835, type: 3}
+  emotionashok_idle: {fileID: 21300000, guid: 32c23a4a88b75e9449cc2cfee3d08867, type: 3}
+  emotionmathilda_happy: {fileID: 21300000, guid: 7877e5410b0fe764bb0c3bac4ce4ef70, type: 3}
+  emotionnanditha_happy: {fileID: 21300000, guid: b58a5f42b2a19ac4e81f3607ad0ff3f9, type: 3}
+  emotionashok_annoyed: {fileID: 21300000, guid: b9da7c01febe53340955260f3a0b372f, type: 3}
+  emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
+  emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
+  emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
+  emotionmarzanna_afraid: {fileID: 21300000, guid: 7adf3685dce1d4d47ab661001f7e7633, type: 3}
+  emotionashok_afraid: {fileID: 21300000, guid: 43dde12cd2def5e47bf643992155896c, type: 3}
+  myObject: {fileID: 462238684}
+--- !u!1 &466033072
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 466033073}
+  - component: {fileID: 466033075}
+  - component: {fileID: 466033074}
+  m_Layer: 0
+  m_Name: emotionmathilda_afraid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &466033073
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466033072}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.37, y: -4.29, z: 0.68}
+  m_LocalScale: {x: 0.68, y: 0.68, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1105179149}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &466033074
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466033072}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1097399477
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &466033075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466033072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a93edf0c59653d642bd4c7e3b5abc3e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 462238686}
+  spriteRenderer1: {fileID: 1153228955}
+  spriteRenderer2: {fileID: 148327949}
+  spriteRenderer3: {fileID: 373349793}
+  spriteRenderer4: {fileID: 596415720}
+  spriteRenderer5: {fileID: 1915392045}
+  spriteRenderer6: {fileID: 986564227}
+  spriteRenderer7: {fileID: 1448681493}
+  spriteRenderer8: {fileID: 205772869}
+  spriteRenderer9: {fileID: 466033074}
+  spriteRenderer10: {fileID: 1388756735}
+  spriteRenderer11: {fileID: 1434588879}
+  spriteRenderer12: {fileID: 304563660}
+  emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
+  emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
+  emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
+  emotionmarzanna_idle: {fileID: 21300000, guid: 6aa9888e40f59a140aef28f94df53835, type: 3}
+  emotionashok_idle: {fileID: 21300000, guid: 32c23a4a88b75e9449cc2cfee3d08867, type: 3}
+  emotionmathilda_happy: {fileID: 21300000, guid: 7877e5410b0fe764bb0c3bac4ce4ef70, type: 3}
+  emotionnanditha_happy: {fileID: 21300000, guid: b58a5f42b2a19ac4e81f3607ad0ff3f9, type: 3}
+  emotionashok_annoyed: {fileID: 21300000, guid: b9da7c01febe53340955260f3a0b372f, type: 3}
+  emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
+  emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
+  emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
+  emotionmarzanna_afraid: {fileID: 21300000, guid: 7adf3685dce1d4d47ab661001f7e7633, type: 3}
+  emotionashok_afraid: {fileID: 21300000, guid: 43dde12cd2def5e47bf643992155896c, type: 3}
+  myObject: {fileID: 466033072}
 --- !u!1 &511229611
 GameObject:
   m_ObjectHideFlags: 0
@@ -1255,7 +1615,6 @@ GameObject:
   m_Component:
   - component: {fileID: 596415721}
   - component: {fileID: 596415720}
-  - component: {fileID: 596415719}
   - component: {fileID: 596415722}
   m_Layer: 0
   m_Name: emotionashok_idle
@@ -1264,22 +1623,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &596415719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 596415718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e743d78c2de898c4180a49d8e8c65be7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 596415720}
-  spriteRendererAnimal: {fileID: 0}
-  door1crate: {fileID: 0}
-  trap1animal: {fileID: 0}
 --- !u!212 &596415720
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1321,7 +1664,7 @@ SpriteRenderer:
   m_SortingLayerID: -1097399477
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: be06550d4ff22c244bcf50fbb71e73ca, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 32c23a4a88b75e9449cc2cfee3d08867, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1341,7 +1684,7 @@ Transform:
   m_GameObject: {fileID: 596415718}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.2851577, y: -4.267017, z: 1.4143585}
+  m_LocalPosition: {x: -6.2851577, y: -4.267017, z: 0.77}
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1366,13 +1709,26 @@ MonoBehaviour:
   spriteRenderer4: {fileID: 596415720}
   spriteRenderer5: {fileID: 1915392045}
   spriteRenderer6: {fileID: 986564227}
-  emotionnanditha_idle: {fileID: 21300000, guid: b1763b732a3a8b24fa4c2e2ffa4347a9, type: 3}
-  emotionhugh_idle: {fileID: 21300000, guid: ffe8b8e06d2fb764ea6e763d2fa96cef, type: 3}
-  emotionmathilda_idle: {fileID: 21300000, guid: 106fde6c397313e4f868116fcdf9ef4f, type: 3}
-  emotionmarzanna_idle: {fileID: 21300000, guid: 68a38e62ccba05a43be5eb08288ad44b, type: 3}
-  emotionashok_idle: {fileID: 21300000, guid: be06550d4ff22c244bcf50fbb71e73ca, type: 3}
-  emotionmathilda_happy: {fileID: 21300000, guid: 9a83eba0d209442499eabebdc82d00d2, type: 3}
-  emotionnanditha_happy: {fileID: 21300000, guid: 2a73b3b61b5476147a0263622aa62338, type: 3}
+  spriteRenderer7: {fileID: 1448681493}
+  spriteRenderer8: {fileID: 205772869}
+  spriteRenderer9: {fileID: 466033074}
+  spriteRenderer10: {fileID: 1388756735}
+  spriteRenderer11: {fileID: 1434588879}
+  spriteRenderer12: {fileID: 304563660}
+  emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
+  emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
+  emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
+  emotionmarzanna_idle: {fileID: 21300000, guid: 6aa9888e40f59a140aef28f94df53835, type: 3}
+  emotionashok_idle: {fileID: 21300000, guid: 32c23a4a88b75e9449cc2cfee3d08867, type: 3}
+  emotionmathilda_happy: {fileID: 21300000, guid: 7877e5410b0fe764bb0c3bac4ce4ef70, type: 3}
+  emotionnanditha_happy: {fileID: 21300000, guid: b58a5f42b2a19ac4e81f3607ad0ff3f9, type: 3}
+  emotionashok_annoyed: {fileID: 21300000, guid: b9da7c01febe53340955260f3a0b372f, type: 3}
+  emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
+  emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
+  emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
+  emotionmarzanna_afraid: {fileID: 21300000, guid: 7adf3685dce1d4d47ab661001f7e7633, type: 3}
+  emotionashok_afraid: {fileID: 21300000, guid: 43dde12cd2def5e47bf643992155896c, type: 3}
+  myObject: {fileID: 596415718}
 --- !u!1 &622744883
 GameObject:
   m_ObjectHideFlags: 0
@@ -1637,7 +1993,7 @@ SpriteRenderer:
   m_SortingLayerID: -1097399477
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2a73b3b61b5476147a0263622aa62338, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b58a5f42b2a19ac4e81f3607ad0ff3f9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1667,13 +2023,26 @@ MonoBehaviour:
   spriteRenderer4: {fileID: 596415720}
   spriteRenderer5: {fileID: 1915392045}
   spriteRenderer6: {fileID: 986564227}
-  emotionnanditha_idle: {fileID: 21300000, guid: b1763b732a3a8b24fa4c2e2ffa4347a9, type: 3}
-  emotionhugh_idle: {fileID: 21300000, guid: ffe8b8e06d2fb764ea6e763d2fa96cef, type: 3}
-  emotionmathilda_idle: {fileID: 21300000, guid: 106fde6c397313e4f868116fcdf9ef4f, type: 3}
-  emotionmarzanna_idle: {fileID: 21300000, guid: 68a38e62ccba05a43be5eb08288ad44b, type: 3}
-  emotionashok_idle: {fileID: 21300000, guid: be06550d4ff22c244bcf50fbb71e73ca, type: 3}
-  emotionmathilda_happy: {fileID: 21300000, guid: 9a83eba0d209442499eabebdc82d00d2, type: 3}
-  emotionnanditha_happy: {fileID: 21300000, guid: 2a73b3b61b5476147a0263622aa62338, type: 3}
+  spriteRenderer7: {fileID: 1448681493}
+  spriteRenderer8: {fileID: 205772869}
+  spriteRenderer9: {fileID: 466033074}
+  spriteRenderer10: {fileID: 1388756735}
+  spriteRenderer11: {fileID: 1434588879}
+  spriteRenderer12: {fileID: 304563660}
+  emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
+  emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
+  emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
+  emotionmarzanna_idle: {fileID: 21300000, guid: 6aa9888e40f59a140aef28f94df53835, type: 3}
+  emotionashok_idle: {fileID: 21300000, guid: 32c23a4a88b75e9449cc2cfee3d08867, type: 3}
+  emotionmathilda_happy: {fileID: 21300000, guid: 7877e5410b0fe764bb0c3bac4ce4ef70, type: 3}
+  emotionnanditha_happy: {fileID: 21300000, guid: b58a5f42b2a19ac4e81f3607ad0ff3f9, type: 3}
+  emotionashok_annoyed: {fileID: 21300000, guid: b9da7c01febe53340955260f3a0b372f, type: 3}
+  emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
+  emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
+  emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
+  emotionmarzanna_afraid: {fileID: 21300000, guid: 7adf3685dce1d4d47ab661001f7e7633, type: 3}
+  emotionashok_afraid: {fileID: 21300000, guid: 43dde12cd2def5e47bf643992155896c, type: 3}
+  myObject: {fileID: 986564226}
 --- !u!4 &986564229
 Transform:
   m_ObjectHideFlags: 0
@@ -1683,7 +2052,7 @@ Transform:
   m_GameObject: {fileID: 986564226}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.2851577, y: -4.267017, z: 1.4143585}
+  m_LocalPosition: {x: -6.2851577, y: -4.267017, z: 0.75}
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1813,7 +2182,7 @@ Transform:
   m_GameObject: {fileID: 1105179148}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.204842, y: 0.55501693, z: 0.15564153}
+  m_LocalPosition: {x: -1.42, y: 0.91, z: 0.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1824,6 +2193,12 @@ Transform:
   - {fileID: 596415721}
   - {fileID: 1915392047}
   - {fileID: 986564229}
+  - {fileID: 1448681491}
+  - {fileID: 205772868}
+  - {fileID: 466033073}
+  - {fileID: 1388756733}
+  - {fileID: 1434588878}
+  - {fileID: 304563658}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1153228954
@@ -1836,7 +2211,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1153228956}
   - component: {fileID: 1153228955}
-  - component: {fileID: 1153228957}
   - component: {fileID: 1153228958}
   m_Layer: 0
   m_Name: emotionhugh_idle
@@ -1886,7 +2260,7 @@ SpriteRenderer:
   m_SortingLayerID: -1097399477
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ffe8b8e06d2fb764ea6e763d2fa96cef, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1906,28 +2280,12 @@ Transform:
   m_GameObject: {fileID: 1153228954}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.2851577, y: -4.267017, z: 1.4143585}
+  m_LocalPosition: {x: -6.2851577, y: -4.267017, z: 0.77}
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1105179149}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1153228957
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1153228954}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e743d78c2de898c4180a49d8e8c65be7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 1153228955}
-  spriteRendererAnimal: {fileID: 0}
-  door1crate: {fileID: 0}
-  trap1animal: {fileID: 0}
 --- !u!114 &1153228958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1947,13 +2305,26 @@ MonoBehaviour:
   spriteRenderer4: {fileID: 596415720}
   spriteRenderer5: {fileID: 1915392045}
   spriteRenderer6: {fileID: 986564227}
-  emotionnanditha_idle: {fileID: 21300000, guid: b1763b732a3a8b24fa4c2e2ffa4347a9, type: 3}
-  emotionhugh_idle: {fileID: 21300000, guid: ffe8b8e06d2fb764ea6e763d2fa96cef, type: 3}
-  emotionmathilda_idle: {fileID: 21300000, guid: 106fde6c397313e4f868116fcdf9ef4f, type: 3}
-  emotionmarzanna_idle: {fileID: 21300000, guid: 68a38e62ccba05a43be5eb08288ad44b, type: 3}
-  emotionashok_idle: {fileID: 21300000, guid: be06550d4ff22c244bcf50fbb71e73ca, type: 3}
-  emotionmathilda_happy: {fileID: 21300000, guid: 9a83eba0d209442499eabebdc82d00d2, type: 3}
-  emotionnanditha_happy: {fileID: 21300000, guid: 2a73b3b61b5476147a0263622aa62338, type: 3}
+  spriteRenderer7: {fileID: 1448681493}
+  spriteRenderer8: {fileID: 205772869}
+  spriteRenderer9: {fileID: 466033074}
+  spriteRenderer10: {fileID: 1388756735}
+  spriteRenderer11: {fileID: 1434588879}
+  spriteRenderer12: {fileID: 304563660}
+  emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
+  emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
+  emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
+  emotionmarzanna_idle: {fileID: 21300000, guid: 6aa9888e40f59a140aef28f94df53835, type: 3}
+  emotionashok_idle: {fileID: 21300000, guid: 32c23a4a88b75e9449cc2cfee3d08867, type: 3}
+  emotionmathilda_happy: {fileID: 21300000, guid: 7877e5410b0fe764bb0c3bac4ce4ef70, type: 3}
+  emotionnanditha_happy: {fileID: 21300000, guid: b58a5f42b2a19ac4e81f3607ad0ff3f9, type: 3}
+  emotionashok_annoyed: {fileID: 21300000, guid: b9da7c01febe53340955260f3a0b372f, type: 3}
+  emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
+  emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
+  emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
+  emotionmarzanna_afraid: {fileID: 21300000, guid: 7adf3685dce1d4d47ab661001f7e7633, type: 3}
+  emotionashok_afraid: {fileID: 21300000, guid: 43dde12cd2def5e47bf643992155896c, type: 3}
+  myObject: {fileID: 1153228954}
 --- !u!1 &1234754918
 GameObject:
   m_ObjectHideFlags: 0
@@ -2038,6 +2409,378 @@ Transform:
   m_Children: []
   m_Father: {fileID: 895022173}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1388756732
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1388756733}
+  - component: {fileID: 1388756735}
+  - component: {fileID: 1388756734}
+  m_Layer: 0
+  m_Name: emotionnanditha_afraid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1388756733
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388756732}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.37, y: -4.29, z: 0.68}
+  m_LocalScale: {x: 0.68, y: 0.68, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1105179149}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1388756734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388756732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a93edf0c59653d642bd4c7e3b5abc3e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 462238686}
+  spriteRenderer1: {fileID: 1153228955}
+  spriteRenderer2: {fileID: 148327949}
+  spriteRenderer3: {fileID: 373349793}
+  spriteRenderer4: {fileID: 596415720}
+  spriteRenderer5: {fileID: 1915392045}
+  spriteRenderer6: {fileID: 986564227}
+  spriteRenderer7: {fileID: 1448681493}
+  spriteRenderer8: {fileID: 205772869}
+  spriteRenderer9: {fileID: 466033074}
+  spriteRenderer10: {fileID: 1388756735}
+  spriteRenderer11: {fileID: 1434588879}
+  spriteRenderer12: {fileID: 304563660}
+  emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
+  emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
+  emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
+  emotionmarzanna_idle: {fileID: 21300000, guid: 6aa9888e40f59a140aef28f94df53835, type: 3}
+  emotionashok_idle: {fileID: 21300000, guid: 32c23a4a88b75e9449cc2cfee3d08867, type: 3}
+  emotionmathilda_happy: {fileID: 21300000, guid: 7877e5410b0fe764bb0c3bac4ce4ef70, type: 3}
+  emotionnanditha_happy: {fileID: 21300000, guid: b58a5f42b2a19ac4e81f3607ad0ff3f9, type: 3}
+  emotionashok_annoyed: {fileID: 21300000, guid: b9da7c01febe53340955260f3a0b372f, type: 3}
+  emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
+  emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
+  emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
+  emotionmarzanna_afraid: {fileID: 21300000, guid: 7adf3685dce1d4d47ab661001f7e7633, type: 3}
+  emotionashok_afraid: {fileID: 21300000, guid: 43dde12cd2def5e47bf643992155896c, type: 3}
+  myObject: {fileID: 1388756732}
+--- !u!212 &1388756735
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388756732}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1097399477
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &1434588877
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1434588878}
+  - component: {fileID: 1434588880}
+  - component: {fileID: 1434588879}
+  m_Layer: 0
+  m_Name: emotionmarzanna_afraid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1434588878
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434588877}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.37, y: -4.29, z: 0.68}
+  m_LocalScale: {x: 0.68, y: 0.68, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1105179149}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1434588879
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434588877}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1097399477
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &1434588880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434588877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a93edf0c59653d642bd4c7e3b5abc3e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 462238686}
+  spriteRenderer1: {fileID: 1153228955}
+  spriteRenderer2: {fileID: 148327949}
+  spriteRenderer3: {fileID: 373349793}
+  spriteRenderer4: {fileID: 596415720}
+  spriteRenderer5: {fileID: 1915392045}
+  spriteRenderer6: {fileID: 986564227}
+  spriteRenderer7: {fileID: 1448681493}
+  spriteRenderer8: {fileID: 205772869}
+  spriteRenderer9: {fileID: 466033074}
+  spriteRenderer10: {fileID: 1388756735}
+  spriteRenderer11: {fileID: 1434588879}
+  spriteRenderer12: {fileID: 304563660}
+  emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
+  emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
+  emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
+  emotionmarzanna_idle: {fileID: 21300000, guid: 6aa9888e40f59a140aef28f94df53835, type: 3}
+  emotionashok_idle: {fileID: 21300000, guid: 32c23a4a88b75e9449cc2cfee3d08867, type: 3}
+  emotionmathilda_happy: {fileID: 21300000, guid: 7877e5410b0fe764bb0c3bac4ce4ef70, type: 3}
+  emotionnanditha_happy: {fileID: 21300000, guid: b58a5f42b2a19ac4e81f3607ad0ff3f9, type: 3}
+  emotionashok_annoyed: {fileID: 21300000, guid: b9da7c01febe53340955260f3a0b372f, type: 3}
+  emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
+  emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
+  emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
+  emotionmarzanna_afraid: {fileID: 21300000, guid: 7adf3685dce1d4d47ab661001f7e7633, type: 3}
+  emotionashok_afraid: {fileID: 21300000, guid: 43dde12cd2def5e47bf643992155896c, type: 3}
+  myObject: {fileID: 1434588877}
+--- !u!1 &1448681490
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1448681491}
+  - component: {fileID: 1448681493}
+  - component: {fileID: 1448681492}
+  m_Layer: 0
+  m_Name: emotionashok_annoyed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1448681491
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448681490}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.003577939, y: 0, z: 0, w: 0.9999936}
+  m_LocalPosition: {x: -6.27, y: -4.27, z: 0.8}
+  m_LocalScale: {x: 0.69, y: 0.67, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1105179149}
+  m_LocalEulerAnglesHint: {x: 0.41, y: 0, z: 0}
+--- !u!114 &1448681492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448681490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a93edf0c59653d642bd4c7e3b5abc3e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 462238686}
+  spriteRenderer1: {fileID: 1153228955}
+  spriteRenderer2: {fileID: 148327949}
+  spriteRenderer3: {fileID: 373349793}
+  spriteRenderer4: {fileID: 596415720}
+  spriteRenderer5: {fileID: 1915392045}
+  spriteRenderer6: {fileID: 986564227}
+  spriteRenderer7: {fileID: 1448681493}
+  spriteRenderer8: {fileID: 205772869}
+  spriteRenderer9: {fileID: 466033074}
+  spriteRenderer10: {fileID: 1388756735}
+  spriteRenderer11: {fileID: 1434588879}
+  spriteRenderer12: {fileID: 304563660}
+  emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
+  emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
+  emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
+  emotionmarzanna_idle: {fileID: 21300000, guid: 6aa9888e40f59a140aef28f94df53835, type: 3}
+  emotionashok_idle: {fileID: 21300000, guid: 32c23a4a88b75e9449cc2cfee3d08867, type: 3}
+  emotionmathilda_happy: {fileID: 21300000, guid: 7877e5410b0fe764bb0c3bac4ce4ef70, type: 3}
+  emotionnanditha_happy: {fileID: 21300000, guid: b58a5f42b2a19ac4e81f3607ad0ff3f9, type: 3}
+  emotionashok_annoyed: {fileID: 21300000, guid: b9da7c01febe53340955260f3a0b372f, type: 3}
+  emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
+  emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
+  emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
+  emotionmarzanna_afraid: {fileID: 21300000, guid: 7adf3685dce1d4d47ab661001f7e7633, type: 3}
+  emotionashok_afraid: {fileID: 21300000, guid: 43dde12cd2def5e47bf643992155896c, type: 3}
+  myObject: {fileID: 1448681490}
+--- !u!212 &1448681493
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448681490}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1097399477
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b9da7c01febe53340955260f3a0b372f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 3.14, y: 3.08}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1513516993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2458,7 +3201,7 @@ SpriteRenderer:
   m_SortingLayerID: -1097399477
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9a83eba0d209442499eabebdc82d00d2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7877e5410b0fe764bb0c3bac4ce4ef70, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2488,13 +3231,26 @@ MonoBehaviour:
   spriteRenderer4: {fileID: 596415720}
   spriteRenderer5: {fileID: 1915392045}
   spriteRenderer6: {fileID: 986564227}
-  emotionnanditha_idle: {fileID: 21300000, guid: b1763b732a3a8b24fa4c2e2ffa4347a9, type: 3}
-  emotionhugh_idle: {fileID: 21300000, guid: ffe8b8e06d2fb764ea6e763d2fa96cef, type: 3}
-  emotionmathilda_idle: {fileID: 21300000, guid: 106fde6c397313e4f868116fcdf9ef4f, type: 3}
-  emotionmarzanna_idle: {fileID: 21300000, guid: 68a38e62ccba05a43be5eb08288ad44b, type: 3}
-  emotionashok_idle: {fileID: 21300000, guid: be06550d4ff22c244bcf50fbb71e73ca, type: 3}
-  emotionmathilda_happy: {fileID: 21300000, guid: 9a83eba0d209442499eabebdc82d00d2, type: 3}
-  emotionnanditha_happy: {fileID: 21300000, guid: 2a73b3b61b5476147a0263622aa62338, type: 3}
+  spriteRenderer7: {fileID: 1448681493}
+  spriteRenderer8: {fileID: 205772869}
+  spriteRenderer9: {fileID: 466033074}
+  spriteRenderer10: {fileID: 1388756735}
+  spriteRenderer11: {fileID: 1434588879}
+  spriteRenderer12: {fileID: 304563660}
+  emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
+  emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
+  emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
+  emotionmarzanna_idle: {fileID: 21300000, guid: 6aa9888e40f59a140aef28f94df53835, type: 3}
+  emotionashok_idle: {fileID: 21300000, guid: 32c23a4a88b75e9449cc2cfee3d08867, type: 3}
+  emotionmathilda_happy: {fileID: 21300000, guid: 7877e5410b0fe764bb0c3bac4ce4ef70, type: 3}
+  emotionnanditha_happy: {fileID: 21300000, guid: b58a5f42b2a19ac4e81f3607ad0ff3f9, type: 3}
+  emotionashok_annoyed: {fileID: 21300000, guid: b9da7c01febe53340955260f3a0b372f, type: 3}
+  emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
+  emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
+  emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
+  emotionmarzanna_afraid: {fileID: 21300000, guid: 7adf3685dce1d4d47ab661001f7e7633, type: 3}
+  emotionashok_afraid: {fileID: 21300000, guid: 43dde12cd2def5e47bf643992155896c, type: 3}
+  myObject: {fileID: 1915392044}
 --- !u!4 &1915392047
 Transform:
   m_ObjectHideFlags: 0
@@ -2504,7 +3260,7 @@ Transform:
   m_GameObject: {fileID: 1915392044}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.2851577, y: -4.267017, z: 1.4143585}
+  m_LocalPosition: {x: -6.2851577, y: -4.267017, z: 0.76}
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4058,12 +4814,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bec29c0a230741bdac901dba8da47ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yarnProject: {fileID: 7545569452688597077, guid: 78eaf8e7b76489042b9825e5f8573247, type: 3}
+  yarnProject: {fileID: 7545569452688597077, guid: e97564888817164479fb44760155bddc, type: 3}
   _variableStorage: {fileID: 3629888463424125690}
   dialogueViews:
   - {fileID: 6962293218602769967}
   - {fileID: 6027794228400368987}
-  startNode: room1_enter
+  startNode: room0
   startAutomatically: 1
   runSelectedOptionAsLine: 0
   lineProvider: {fileID: 0}

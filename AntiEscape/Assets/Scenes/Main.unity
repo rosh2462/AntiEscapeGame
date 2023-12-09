@@ -2309,12 +2309,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bec29c0a230741bdac901dba8da47ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yarnProject: {fileID: 7545569452688597077, guid: 78eaf8e7b76489042b9825e5f8573247, type: 3}
+  yarnProject: {fileID: 7545569452688597077, guid: e97564888817164479fb44760155bddc, type: 3}
   _variableStorage: {fileID: 3629888463424125690}
   dialogueViews:
   - {fileID: 6962293218602769967}
   - {fileID: 6027794228400368987}
-  startNode: room1_setup
+  startNode: room0
   startAutomatically: 1
   runSelectedOptionAsLine: 0
   lineProvider: {fileID: 0}
