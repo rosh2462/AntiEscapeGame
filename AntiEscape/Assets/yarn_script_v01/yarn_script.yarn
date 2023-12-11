@@ -65,7 +65,9 @@ color: white
 group: room0
 position: 32,-501
 ---
-<<wait  3>>
+//<<wait  3>>
+<<enableScene1>>
+//<<DisableCameraScript "camerafollowscript">>
 <<emotionsprite "emotionashok_idle" "a_idle">>
 Ashok: Hmmm... Where am I?
 <<emotionsprite "emotionnanditha_idle" "n_idle">>
@@ -89,9 +91,10 @@ Mathilda: He might be right though.
 <<emotionsprite "emotionnanditha_idle" "n_idle">>
 Nanditha: Let's search for a light switch or something, it's so dark in here, I can't even see you guys.
 <<destroyemotion "emotionnanditha_idle" "n_idle">>
-
+//<<EnableCameraScript "camerafollowscript">>
 Find the light switch. //continue with room0_exit when clicking on the door
-<<jump room0_exit>>
+
+//<<jump room0_exit>>
 ===
 
 title: room0_exit
@@ -100,6 +103,7 @@ color: white
 group: room0
 position: 32,-501
 ---
+//
 <<activateemotion "emotionnanditha_idle" "n_idle">>
 <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
 Marzanna: I found a door.
@@ -109,7 +113,9 @@ Hugh: You were here the whole time? You creep!
 Ashok: Shut up, Hugh. Marzanna, can you open it?
 <<destroyemotion "emotionashok_idle" "a_idle">>
 
+
 -> Open the door.
+
     <<set $actions = $actions - 1>>
     <<jump room1_start>>
 ===
@@ -120,6 +126,9 @@ color: red
 group: room1
 position: 82,-477
 ---
+<<disableScene1>>
+<<enableScene2>>
+//<<DisableCameraScript "camerafollowscript">>
 <<activateemotion "emotionashok_idle" "a_idle">>
 <<emotionsprite "emotionhugh_afraid" "h_afraid">>
 Hugh: This is not someone's living room.
@@ -129,6 +138,7 @@ Nanditha: Maybe it's a prank.
 Mathilda: Is that a human body?!?
 <<destroyemotion "emotionmathilda_afraid" "mt_afraid">>
 
+<<flicker>>
 // <<start transition>> //lights flicker and go out
 
 <<emotionsprite "emotionmarzanna_afraid" "mz_afraid">>
@@ -142,6 +152,7 @@ Hugh: And again, we're in the dark. I saw a door over there, we should get out o
 Mathilda: What was that?
 <<destroyemotion "emotionmathilda_afraid" "mt_afraid">>
 
+<<endflicker>>
 // <<end transition>> //lights flicker and come back, characters are scattered
 
 <<emotionsprite "emotionnanditha_idle" "n_idle">>

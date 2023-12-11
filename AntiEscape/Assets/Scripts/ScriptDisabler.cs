@@ -8,8 +8,8 @@ public class ScriptDisabler : MonoBehaviour
 
     void Awake()
     {
-        runner.AddCommandHandler<string>("DisableScript", DisableScript);
-        runner.AddCommandHandler<string>("EnableScript", EnableScript);
+        runner.AddCommandHandler<string>("DisableCameraScript", DisableScript);
+        runner.AddCommandHandler<string>("EnableCameraScript", EnableScript);
     }
 
     public void DisableScript(string scriptName)
