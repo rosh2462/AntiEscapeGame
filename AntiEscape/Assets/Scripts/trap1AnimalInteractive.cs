@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Yarn.Unity;
+using TMPro;
 public class trap1AnimalInteractive : MonoBehaviour
 {
 
@@ -11,16 +12,17 @@ public class trap1AnimalInteractive : MonoBehaviour
     private AudioSource audioSource;
     public AudioClip clickSound;
 
-    
+      public TextMeshProUGUI consoleOutputText;
   
-
+ float actions;
+    private InMemoryVariableStorage variableStorage;
 
 
     // Start is called before the first frame update
     void Start()
     {
          
-
+ variableStorage = GameObject.FindObjectOfType<InMemoryVariableStorage>();
          dialogueRunner = FindObjectOfType<Yarn.Unity.DialogueRunner>();
           audioSource = GetComponent<AudioSource>();
           if (audioSource == null)
@@ -30,9 +32,23 @@ public class trap1AnimalInteractive : MonoBehaviour
          audioSource.clip = clickSound;
          
     }
+
+
+  void Update()
+    {
+        variableStorage.TryGetValue("$actions", out actions);
+        consoleOutputText.text = "" + actions.ToString();
+    }
+
+
+
 public void OnMouseDown() {
         if (interactable && !dialogueRunner.IsDialogueRunning) {
             StartConversation();
+            variableStorage.TryGetValue("$actions", out actions);
+variableStorage.SetValue("$actions", actions);
+//Debug.Log("Value:"+actions);
+consoleOutputText.text = "" + actions.ToString();
            // Debug.Log("Trap Set");
             PlayClickSound();
         }
@@ -59,10 +75,7 @@ public void OnMouseDown() {
     
     
     
-    // Update is called once per frame
-    void Update()
-    {
-    }
+     
         
      
 }

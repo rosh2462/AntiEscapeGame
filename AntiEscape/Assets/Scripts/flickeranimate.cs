@@ -11,12 +11,12 @@ public Yarn.Unity.DialogueRunner runner;
   private Animator animator;
     void Start()
     {
-        runner.AddCommandHandler("flicker", Flicker);
-        runner.AddCommandHandler("endflicker",FlickerEnd);
+        runner.AddCommandHandler("flickerlights", Flickerlight);
+        runner.AddCommandHandler("endflickerlights",FlickerEndlight);
         animator = GetComponent<Animator>();
     }
     
-    public void Flicker()
+    public void Flickerlight()
     {
 
         
@@ -28,7 +28,7 @@ public Yarn.Unity.DialogueRunner runner;
              
         }
 
-         public void FlickerEnd()
+         public void FlickerEndlight()
     {
 
 blackout.GetComponent<SpriteRenderer>().enabled = false;
