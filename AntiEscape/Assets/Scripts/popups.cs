@@ -5,18 +5,18 @@ using System.Collections.Generic;
 
 public class popups : MonoBehaviour
 {
-    public SpriteRenderer spriteRendererPOP;
-    public Sprite popup1note;
+    public SpriteRenderer spriteRendererMAT;
+    public Sprite emotionmathilda_death;
 
-    [YarnCommand("Enablepopup")]
+    [YarnCommand("popupsprite")]
     public void Setpop(string expression)
     {
 
         switch (expression)
         {
 
-            case "popup1note":
-                spriteRendererPOP.sprite = popup1note;
+            case "mt_death":
+                spriteRendererMAT.sprite = emotionmathilda_death;
                 break;
             default:
                 Debug.LogWarning("Unknown expression: " + expression);

@@ -14,6 +14,17 @@ public class EnableDisableScript : MonoBehaviour
 
      public GameObject targetGameObject3;
 
+
+     public GameObject death;
+
+          public GameObject MathildadeathSprite;
+
+           public GameObject toolsdisable;
+
+           public GameObject knifeitem;
+
+           public GameObject MathildaCorpse;
+
     private void Start()
     {
         // Ensure the dialogueRunner is assigned
@@ -26,11 +37,17 @@ public class EnableDisableScript : MonoBehaviour
         dialogueRunner.AddCommandHandler("enableScene1", EnableScene1);
         dialogueRunner.AddCommandHandler("enableScene2", EnableScene2);
          dialogueRunner.AddCommandHandler("enableScene3", EnableScene3);
-
+        dialogueRunner.AddCommandHandler("enabledeathMathilda", EnableDeathMat);
+        dialogueRunner.AddCommandHandler("enableMathildaCorpse", EnableMathildaCorpse);
         
         dialogueRunner.AddCommandHandler("disableScene1", DisableScene1);
         dialogueRunner.AddCommandHandler("disableScene2", DisableScene2);
         dialogueRunner.AddCommandHandler("disableScene3", DisableScene3);
+        dialogueRunner.AddCommandHandler("disabledeathMathilda", DisableDeathMat);
+        dialogueRunner.AddCommandHandler("disableMathilda", DisableMathildaSprite);
+        dialogueRunner.AddCommandHandler("disabletoolsitem", DisableTools1);
+         dialogueRunner.AddCommandHandler("disableknife", DisableKnife);
+
 
     }
 
@@ -60,6 +77,22 @@ private void EnableScene2()
     }
 
 
+ private void EnableDeathMat()
+    {
+        if (death != null)
+        {
+            death.SetActive(true);
+        }
+    }
+
+    private void EnableMathildaCorpse()
+    {
+        if (MathildaCorpse != null)
+        {
+            MathildaCorpse.SetActive(true);
+        }
+    }
+
 
 
     // Yarn command to disable the target game object
@@ -86,6 +119,45 @@ private void EnableScene2()
             targetGameObject3.SetActive(false);
         }
     }
+
+ private void DisableDeathMat()
+    {
+        if (death != null)
+        {
+            death.SetActive(false);
+            
+        }
+    }
+private void DisableMathildaSprite()
+    {
+        if (MathildadeathSprite != null)
+        {
+            MathildadeathSprite.SetActive(false);
+            
+        }
+    }
+
+
+private void DisableTools1()
+    {
+        if (toolsdisable != null)
+        {
+            toolsdisable.SetActive(false);
+            
+        }
+    }
+    
+private void DisableKnife()
+    {
+        if (knifeitem != null)
+        {
+            knifeitem.SetActive(false);
+            
+        }
+    }
+
+
+
 
 }
 

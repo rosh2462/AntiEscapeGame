@@ -62,7 +62,10 @@ consoleOutputText.text = "" + actions.ToString();
     }
     
     
-    
+     [YarnCommand("disableAnimal")]
+    public void DisableConversation() {
+        interactable = false;
+    }
     
     void PlayClickSound()
     {
