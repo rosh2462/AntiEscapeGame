@@ -89,7 +89,7 @@ Nanditha: Let's search for a light switch or something, it's so dark in here, I 
 <<destroyemotion "emotionnanditha_idle" "n_idle">>
 
 Find the light switch. //continue with room0_exit when clicking on the door
-<<jump room0_exit>>
+//<<jump room0_exit>>
 ===
 
 title: room0_exit
@@ -128,7 +128,7 @@ Nanditha: Maybe it's a prank.
 <<emotionsprite "emotionmathilda_afraid" "mt_afraid">>
 Mathilda: Is that a human body?!?
 <<destroyemotion "emotionmathilda_afraid" "mt_afraid">>
-<<flicker>>
+<<flickerlights>>
 // <<start transition>> //lights flicker and go out
 
 <<activateemotion "emotionmathilda_afraid" "mt_afraid">>
@@ -144,9 +144,10 @@ Hugh: And again, we're in the dark. I saw a door over there, we should get out o
 <<emotionsprite "emotionmathilda_afraid" "mt_afraid">>
 Mathilda: What was that?
 <<destroyemotion "emotionmathilda_afraid" "mt_afraid">>
-<<endflicker>>
+<<endflickerlights>>
 // <<end transition>> //lights flicker and come back, characters are scattered
-
+<<disableScene2>>
+<<enableScene3>>
 <<activateemotion "emotionmathilda_afraid" "mt_afraid">>
 <<emotionsprite "emotionnanditha_idle" "n_idle">>
 Nanditha: Nice, the light is back on again.
@@ -203,8 +204,9 @@ group: room1
 position: 82,-477
 ---
 //object gets deactivated when the variable $nanditha turns false
+<<set $actions = $actions - 1>>
 <<if $item2carrot == false>>
-    <<objectsprite "animal_triggered" "animal_triggered">>
+    <<objectsprite "trap1animal_idle" "trap1animal_triggered">>
     <<emotionsprite "emotionnanditha_afraid" "n_afraid">>
     Nanditha: Ouch! This creature just bit me!
     <<emotionsprite "emotionhugh_annoyed" "h_annoyed">>
@@ -234,7 +236,7 @@ position: 82,-477
     <<destroyemotion "emotionnanditha_happy" "n_happy">>
     Nanditha keeps the glass eye.
 <<endif>>
-<<set $actions = $actions - 1>>
+
 <<jump room_investigate>>
 ===
 

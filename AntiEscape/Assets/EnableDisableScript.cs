@@ -12,6 +12,8 @@ public class EnableDisableScript : MonoBehaviour
 
     public GameObject targetGameObject2;
 
+     public GameObject targetGameObject3;
+
     private void Start()
     {
         // Ensure the dialogueRunner is assigned
@@ -23,9 +25,12 @@ public class EnableDisableScript : MonoBehaviour
         // Subscribe to the Yarn command event
         dialogueRunner.AddCommandHandler("enableScene1", EnableScene1);
         dialogueRunner.AddCommandHandler("enableScene2", EnableScene2);
+         dialogueRunner.AddCommandHandler("enableScene3", EnableScene3);
+
         
         dialogueRunner.AddCommandHandler("disableScene1", DisableScene1);
         dialogueRunner.AddCommandHandler("disableScene2", DisableScene2);
+        dialogueRunner.AddCommandHandler("disableScene3", DisableScene3);
 
     }
 
@@ -43,6 +48,14 @@ private void EnableScene2()
         if (targetGameObject2 != null)
         {
             targetGameObject2.SetActive(true);
+        }
+    }
+
+    private void EnableScene3()
+    {
+        if (targetGameObject3 != null)
+        {
+            targetGameObject3.SetActive(true);
         }
     }
 
@@ -65,5 +78,14 @@ private void EnableScene2()
             targetGameObject2.SetActive(false);
         }
     }
+
+    private void DisableScene3()
+    {
+        if (targetGameObject3 != null)
+        {
+            targetGameObject3.SetActive(false);
+        }
+    }
+
 }
 
