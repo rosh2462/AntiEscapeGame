@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using Yarn.Unity;
 using TMPro;
-public class door1crateinteractive : MonoBehaviour
-{
 
+public class toolinteractivee : MonoBehaviour
+{
+  
 [SerializeField] private string conversationStartNode;
     private DialogueRunner dialogueRunner;
     private bool interactable = true;
@@ -61,14 +62,8 @@ consoleOutputText.text = "" + actions.ToString();
          
         dialogueRunner.StartDialogue(conversationStartNode);
     }
-    
 
-    [YarnCommand("disableCrate")]
-    public void DisableConversation() {
-        interactable = false;
-    }
-
-    void PlayClickSound()
+         void PlayClickSound()
     {
         if (audioSource != null && clickSound != null)
         {
@@ -76,6 +71,11 @@ consoleOutputText.text = "" + actions.ToString();
             Debug.Log("Sound Plays");
         }
     }
+
+     [YarnCommand("disableTools")]
+    public void DisableConversation() {
+        interactable = false;
+    }
+
         
-     
 }

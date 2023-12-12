@@ -16,9 +16,15 @@ public class Character : MonoBehaviour
     public SpriteRenderer spriteRenderer10;
     public SpriteRenderer spriteRenderer11;
     public SpriteRenderer spriteRenderer12;
-    // public SpriteRenderer spriteRenderer13; 
-    // public SpriteRenderer spriteRenderer14;
-    // public SpriteRenderer spriteRenderer15;
+    public SpriteRenderer spriteRenderer13; 
+    public SpriteRenderer spriteRenderer14;
+    public SpriteRenderer spriteRenderer15;
+    public SpriteRenderer spriteRenderer16; 
+    public SpriteRenderer spriteRenderer17;
+    public SpriteRenderer spriteRenderer18;
+    public SpriteRenderer spriteRenderer19; 
+    public SpriteRenderer spriteRenderer20;
+    public SpriteRenderer spriteRenderer21;
 
     public Sprite emotionnanditha_idle;
     public Sprite emotionhugh_idle;
@@ -28,8 +34,14 @@ public class Character : MonoBehaviour
 
     public Sprite emotionmathilda_happy;
     public Sprite emotionnanditha_happy;
+    public Sprite emotionmarzanna_happy;
+    public Sprite emotionashok_happy;
+    public Sprite emotionhugh_happy;
 
     public Sprite emotionashok_annoyed;
+    public Sprite emotionhugh_annoyed;
+    public Sprite emotionnanditha_annoyed;
+    public Sprite emotionmathilda_annoyed;
 
     public Sprite emotionhugh_afraid;
     public Sprite emotionnanditha_afraid;
@@ -37,11 +49,14 @@ public class Character : MonoBehaviour
     public Sprite emotionmarzanna_afraid;
     public Sprite emotionashok_afraid;
 
-    public GameObject myObject;
+    public Sprite emotionmarzanna_sad;
+    public Sprite emotionnanditha_sad;
+    public Sprite emotionhugh_sad;
 
     void Start() {
-          DisableAllSprites();
+        DisableAllSprites();
     }
+    
     [YarnCommand("emotionsprite")]
     public void SetSprites(string expression)
     {
@@ -103,6 +118,42 @@ public class Character : MonoBehaviour
                 spriteRenderer12.sprite = emotionmarzanna_afraid;
                 spriteRenderer12.enabled = true;
                 break;
+            case "mz_happy":
+                spriteRenderer13.sprite = emotionmarzanna_happy;
+                spriteRenderer13.enabled = true;
+                break;
+            case "a_happy":
+                spriteRenderer14.sprite = emotionashok_happy;
+                spriteRenderer14.enabled = true;
+                break;
+            case "h_happy":
+                spriteRenderer15.sprite = emotionhugh_happy;
+                spriteRenderer15.enabled = true;
+                break;
+            case "h_annoyed":
+                spriteRenderer16.sprite = emotionhugh_annoyed;
+                spriteRenderer16.enabled = true;
+                break;
+            case "n_annoyed":
+                spriteRenderer17.sprite = emotionnanditha_annoyed;
+                spriteRenderer17.enabled = true;
+                break;
+            case "mt_annoyed":
+                spriteRenderer18.sprite = emotionmathilda_annoyed;
+                spriteRenderer18.enabled = true;
+                break;
+            case "mz_sad":
+                spriteRenderer19.sprite = emotionmarzanna_sad;
+                spriteRenderer19.enabled = true;
+                break;
+            case "n_sad":
+                spriteRenderer20.sprite = emotionnanditha_sad;
+                spriteRenderer20.enabled = true;
+                break;
+            case "h_sad":
+                spriteRenderer21.sprite = emotionhugh_sad;
+                spriteRenderer21.enabled = true;
+                break;
             default:
                 Debug.LogWarning("Unknown expression: " + expression);
                 break;
@@ -125,6 +176,15 @@ public class Character : MonoBehaviour
         spriteRenderer10.enabled = false;
         spriteRenderer11.enabled = false;
         spriteRenderer12.enabled = false;
+        spriteRenderer13.enabled = false;
+        spriteRenderer14.enabled = false;
+        spriteRenderer15.enabled = false;
+        spriteRenderer16.enabled = false;
+        spriteRenderer17.enabled = false;
+        spriteRenderer18.enabled = false;
+        spriteRenderer19.enabled = false;
+        spriteRenderer20.enabled = false;
+        spriteRenderer21.enabled = false;
     }
     
     [YarnCommand("destroyemotion")]
@@ -146,6 +206,39 @@ public class Character : MonoBehaviour
                 break;
             case "h_afraid":
                 this.spriteRenderer8.enabled = false;
+                break;
+            case "n_annoyed":
+                this.spriteRenderer17.enabled = false;
+                break;
+            case "n_happy":
+                this.spriteRenderer6.enabled = false;
+                break;
+            case "mz_sad":
+                this.spriteRenderer19.enabled = false;
+                break;
+            case "mt_annoyed":
+                this.spriteRenderer18.enabled = false;
+                break;
+           case "n_afraid":
+                this.spriteRenderer10.enabled = false;
+                break;
+            case "n_sad":
+                this.spriteRenderer20.enabled = false;
+                break;
+            case "h_sad":
+                this.spriteRenderer21.enabled = false;
+                break;
+            case "a_annoyed":
+                this.spriteRenderer7.enabled = false;
+                break;
+            case "a_happy":
+                this.spriteRenderer14.enabled = false;
+                break;
+            case "mz_idle":
+                this.spriteRenderer3.enabled = false;
+                break;
+            case "h_happy":
+                this.spriteRenderer15.enabled = false;
                 break;
             default:
                 Debug.LogWarning("Unknown expression: " + expression);
@@ -172,6 +265,39 @@ public class Character : MonoBehaviour
                 break;
             case "h_afraid":
                 this.spriteRenderer8.enabled = true;
+                break;
+            case "n_annoyed":
+                this.spriteRenderer17.enabled = true;
+                break;
+            case "n_happy":
+                this.spriteRenderer6.enabled = true;
+                break;
+            case "mz_sad":
+                this.spriteRenderer19.enabled = true;
+                break;
+            case "mt_annoyed":
+                this.spriteRenderer18.enabled = true;
+                break;
+            case "n_afraid":
+                this.spriteRenderer10.enabled = true;
+                break;
+            case "n_sad":
+                this.spriteRenderer20.enabled = true;
+                break;
+            case "h_sad":
+                this.spriteRenderer21.enabled = true;
+                break;
+            case "a_annoyed":
+                this.spriteRenderer7.enabled = true;
+                break;
+            case "a_happy":
+                this.spriteRenderer14.enabled = true;
+                break;
+            case "mz_idle":
+                this.spriteRenderer3.enabled = true;
+                break;
+            case "h_happy":
+                this.spriteRenderer15.enabled = true;
                 break;
             default:
                 Debug.LogWarning("Unknown expression: " + expression);

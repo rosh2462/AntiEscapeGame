@@ -128,8 +128,7 @@ Nanditha: Maybe it's a prank.
 <<emotionsprite "emotionmathilda_afraid" "mt_afraid">>
 Mathilda: Is that a human body?!?
 <<destroyemotion "emotionmathilda_afraid" "mt_afraid">>
-<<flickerlights>>
-// <<start transition>> //lights flicker and go out
+<<flickerlights>>// <<start transition>> //lights flicker and go out
 
 <<activateemotion "emotionmathilda_afraid" "mt_afraid">>
 <<emotionsprite "emotionmarzanna_afraid" "mz_afraid">>
@@ -144,8 +143,7 @@ Hugh: And again, we're in the dark. I saw a door over there, we should get out o
 <<emotionsprite "emotionmathilda_afraid" "mt_afraid">>
 Mathilda: What was that?
 <<destroyemotion "emotionmathilda_afraid" "mt_afraid">>
-<<endflickerlights>>
-// <<end transition>> //lights flicker and come back, characters are scattered
+<<endflickerlights>>// <<end transition>> //lights flicker and come back, characters are scattered
 <<disableScene2>>
 <<enableScene3>>
 <<activateemotion "emotionmathilda_afraid" "mt_afraid">>
@@ -236,7 +234,7 @@ position: 82,-477
     <<destroyemotion "emotionnanditha_happy" "n_happy">>
     Nanditha keeps the glass eye.
 <<endif>>
-
+<<disableAnimal trap1animal_idle>>
 <<jump room_investigate>>
 ===
 
@@ -247,6 +245,7 @@ group: room1
 position: 82,-477
 ---
 //object gets deactivated when the variable $hugh turns false
+<<set $actions = $actions - 1>>
 <<emotionsprite "emotionhugh_idle" "h_idle">>
 Hugh: We were inside this crate... like cargo... There's even a shipping label but it's barely readable. Something with "new materials" and it's adressed to a "Dr. John Fist".
 <<if $ashok == true>>
@@ -275,7 +274,7 @@ Hugh: We were inside this crate... like cargo... There's even a shipping label b
     Marzanna: No, I don't want to die! We need to get out of here!
     <<destroyemotion "emotionmarzanna_sad" "mz_sad">>
 <<endif>>
-<<set $actions = $actions - 1>>
+<<disableCrate door1crate_open>>
 <<jump room_investigate>>
 ===
 
@@ -290,9 +289,19 @@ position: 82,-477
 Mathilda: I'll take one of these knives to defend us.
 <<destroyemotion "emotionmathilda_annoyed" "mt_annoyed">>
 <<set $mathilda = false>>
-<<popupsprite "emotionmathilda_death" "mt_death">>
+//<<popupsprite "emotionmathilda_death" "mt_death">>
+<<enabledeathMathilda>>
 Mathilda: AAAAAAAAAAAAH!
-<<activateemotion "emotionmathilda_annoyed" "mt_annoyed">>
+<<disableMathilda>>//disabling mathilda character
+<<disabletoolsitem>>//disabling the tools
+<<disableknife>>//disabling the knife
+<<disabledeathMathilda>> //disabling the mathilda shock sprite
+
+
+
+
+
+//<<activateemotion "emotionmathilda_annoyed" "mt_annoyed">>
 <<if $hugh == true>>
     <<emotionsprite "emotionhugh_afraid" "h_afraid">>
     Hugh: MATHILDA!
@@ -302,6 +311,8 @@ Mathilda: AAAAAAAAAAAAH!
     Nanditha: Mathilda?
 <<endif>>
 <<if $ashok == true>>
+   
+    <<enableMathildaCorpse>>
     <<emotionsprite "emotionashok_idle" "a_idle">>
     Ashok: I think she's dead.
 <<endif>>
@@ -323,6 +334,7 @@ Mathilda: AAAAAAAAAAAAH!
 <<destroyemotion "emotionashok_annoyed" "a_annoyed">>
 <<endif>>
 <<set $actions = $actions - 1>>
+<<disableTools trap1tools_active>>
 <<jump room_investigate>>
 ===
 

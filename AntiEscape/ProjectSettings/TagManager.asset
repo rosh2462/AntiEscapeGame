@@ -12,6 +12,8 @@ TagManager:
   - Test1
   - n_idle
   - a_idle
+  - emotionmathilda_death
+  - Tools_Activated
   layers:
   - Default
   - TransparentFX
