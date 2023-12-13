@@ -25,6 +25,8 @@ public class EnableDisableScript : MonoBehaviour
 
            public GameObject MathildaCorpse;
 
+           public GameObject targetGameObject4;
+
     private void Start()
     {
         // Ensure the dialogueRunner is assigned
@@ -37,8 +39,10 @@ public class EnableDisableScript : MonoBehaviour
         dialogueRunner.AddCommandHandler("enableScene1", EnableScene1);
         dialogueRunner.AddCommandHandler("enableScene2", EnableScene2);
          dialogueRunner.AddCommandHandler("enableScene3", EnableScene3);
+         dialogueRunner.AddCommandHandler("enableScene4", EnableScene4);
         dialogueRunner.AddCommandHandler("enabledeathMathilda", EnableDeathMat);
         dialogueRunner.AddCommandHandler("enableMathildaCorpse", EnableMathildaCorpse);
+
         
         dialogueRunner.AddCommandHandler("disableScene1", DisableScene1);
         dialogueRunner.AddCommandHandler("disableScene2", DisableScene2);
@@ -92,6 +96,15 @@ private void EnableScene2()
             MathildaCorpse.SetActive(true);
         }
     }
+
+private void EnableScene4()
+    {
+        if (targetGameObject4 != null)
+        {
+            targetGameObject4.SetActive(true);
+        }
+    }
+
 
 
 

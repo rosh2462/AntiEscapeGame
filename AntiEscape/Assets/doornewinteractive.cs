@@ -5,10 +5,9 @@ using UnityEngine.UI;
 using TMPro;
 using Yarn.Unity;
 
-public class door1interactive : MonoBehaviour
+public class doornewinteractive : MonoBehaviour
 {
-
-    
+     
 [SerializeField] private string conversationStartNode;
     private DialogueRunner dialogueRunner;
         private bool interactable = true;
@@ -75,16 +74,4 @@ private void StartConversation() {
     public void DisableConversation() {
         interactable = false;
     }
-
-
 }
-
-
-    
-
-
-
-
-
-
-
