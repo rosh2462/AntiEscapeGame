@@ -13,7 +13,8 @@ TagManager:
   - n_idle
   - a_idle
   - emotionmathilda_death
-  - Tools_Activated
+  - popupkey
+  - popup1letter
   layers:
   - Default
   - TransparentFX

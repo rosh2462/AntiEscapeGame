@@ -62,7 +62,7 @@ color: white
 group: room0
 position: 32,-501
 ---
-<<wait  3>>
+//<<wait  3>>
 <<enableScene1>>
 <<emotionsprite "emotionashok_idle" "a_idle">>
 Ashok: Hmmm... Where am I?
@@ -89,7 +89,7 @@ Nanditha: Let's search for a light switch or something, it's so dark in here, I 
 <<destroyemotion "emotionnanditha_idle" "n_idle">>
 
 -> Find a light switch. //continue with room0_exit when clicking on the door
-<<jump room0_exit>>
+//<<jump room0_exit>>
 ===
 
 title: room0_exit
@@ -109,6 +109,7 @@ Ashok: Shut up, Hugh. Marzanna, can you open it?
 
 -> Open the door.
     <<set $actions = $actions - 1>>
+     <<disableDoor door1exit_closed>>
     <<jump room1_start>>
 ===
 
@@ -138,7 +139,7 @@ Marzanna: Oh nooo.
 Hugh: And again, we're in the dark. I saw a door over there, we should get out of here. Try not to fall over the corpse.
 <<destroyemotion "emotionhugh_idle" "h_idle">>
 
-<<playsound stumble>>
+//<<playsound stumble>>
 
 <<activateemotion "emotionhugh_idle" "h_idle">>
 <<emotionsprite "emotionmathilda_afraid" "mt_afraid">>
@@ -167,6 +168,8 @@ color: red
 group: room1
 position: 82,-477
 ---
+ <<disableScene3>>
+ <<enableScene4>>
 <<flickerlights>> //lights flicker and go out 
 <<if visited_count("room2_enter") == 0>>
 <<activateemotion "emotionnanditha_afraid" "n_afraid">>
@@ -248,7 +251,7 @@ position: 82,-477
 <<destroyemotion "emotionnanditha_annoyed" "n_annoyed">>
 <<destroyemotion "emotionnanditha_idle" "n_idle">>
 <<destroyemotion "emotionnanditha_happy" "n_happy">>
-<<disableAnimal trap1animal_idle>>
+//<<disableAnimal trap1animal_idle>>
 <<jump room_investigate>>
 ===
 
@@ -286,14 +289,14 @@ Hugh: We were inside this crate... like cargo... There's even a shipping label b
 <<endif>>
 <<destroyemotion "emotionhugh_idle" "h_idle">>
 <<destroyemotion "emotionhugh_afraid" "h_afraid">>
-<<playsound roar>>
+//<<playsound roar>>
 <<if $marzanna == true>>
     <<activateemotion "emotionmarzanna_sad" "mz_sad">>
     <<emotionsprite "emotionmarzanna_sad" "mz_sad">>
     Marzanna: No, I don't want to die! We need to get out of here!
     <<destroyemotion "emotionmarzanna_sad" "mz_sad">>
 <<endif>>
-<<disableCrate door1crate_open>>
+//<<disableCrate door1crate_open>>
 <<jump room_investigate>>
 ===
 
@@ -323,6 +326,7 @@ Mathilda: AAAAAAAAAAAAH!
 <<disabledeathMathilda>> //disabling the mathilda shock sprite
 
 <<if $hugh == true>>
+ <<enableMathildaCorpse>>
     <<emotionsprite "emotionhugh_afraid" "h_afraid">>
     Hugh: MATHILDA!
 <<endif>>
@@ -333,7 +337,7 @@ Mathilda: AAAAAAAAAAAAH!
 <<endif>>
 <<if $ashok == true>>
     <<emotionsprite "emotionashok_idle" "a_idle">>
-    <<enableMathildaCorpse>>
+   
     Ashok: I think she's dead.
 <<endif>>
 <<if $nanditha == true>>
@@ -370,14 +374,15 @@ group: room1
 position: 82,-477
 ---
 //object gets deactivated when the variable $marzanna turns false
+ <<set $actions = $actions - 1>>
 <<activateemotion "emotionmarzanna_happy" "mz_happy">>
 <<activateemotion "emotionmarzanna_idle" "mz_idle">>
 <<if $key12 == false>>
-    <<set $actions = $actions - 1>>
+   
     <<set $key12 = true>>
-    <<popupsprite "popup1key" "popup1key">>
+    <<popupsprite "popupkey" "popup1key">>
     Marzanna found a key!
-    <<destroypopup "popup1key" "popup1key">>
+    <<destroypopup "popupkey" "popupkey">>
     <<emotionsprite "emotionmarzanna_happy" "mz_happy">>
     Marzanna: I found a key! We can get out of here now!
     <<emotionsprite "emotionashok_happy" "a_happy">>
@@ -404,9 +409,9 @@ position: 82,-477
 <<activateemotion "emotionnanditha_happy" "n_happy">>
 <<if $item1letter == false>>
     <<set $item1letter = true>>
-    <<popupsprite "popup1letter" "popup1letter">>
+    <<popupsprite "popupletter" "popup1letter">>
     Ashok found a letter!
-    <<destroypopup "popup1letter" "popup1letter">>
+    <<destroypopup "popupletter" "popup1letter">>
     <<emotionsprite "emotionashok_idle" "a_idle">>
     Ashok: He had this piece of paper with him, looks like a page from a letter... but it's drenched in blood, I can't really read it. But it starts with "Dear John".
     <<if visited("interaction1crate") && $hugh == true>>
@@ -437,6 +442,7 @@ color: white
 group: doors
 position: -396,-234
 ---
+ <<set $actions = $actions - 1>>
 <<activateemotion "emotionnanditha_idle" "n_idle">>
 <<activateemotion "emotionashok_happy" "a_happy">>
 <<if $door12 == false>>
@@ -450,15 +456,14 @@ position: -396,-234
         Ashok: Hey Marzanna, try to use the key you found on this door!
         <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
         Marzanna: Uhm, okay...
-        <<playsound door_opens>>
-        <<wait 2>>
+       // <<playsound door_opens>>
+       <<wait 2>>
         <<emotionsprite "emotionnanditha_happy" "n_happy">>
         Nanditha: Yes, it worked! Let's get out of here!
         <<set $door12 = true>>
         <<jump room2_enter>>
     <<endif>>
 <<else>>
-    <<set $actions = $actions - 1>>
     <<jump room2_enter>>
 <<endif>>
 <<destroyemotion "emotionnanditha_idle" "n_idle">>
