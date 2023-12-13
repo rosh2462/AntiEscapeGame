@@ -234,6 +234,9 @@ position: 82,-477
     <<destroyemotion "emotionnanditha_happy" "n_happy">>
     Nanditha keeps the glass eye.
 <<endif>>
+<<activateemotion "emotionnanditha_annoyed" "n_annoyed">>
+<<activateemotion "emotionnanditha_idle" "n_idle">>
+<<activateemotion "emotionnanditha_happy" "n_happy">>
 <<disableAnimal trap1animal_idle>>
 <<jump room_investigate>>
 ===
@@ -245,7 +248,7 @@ group: room1
 position: 82,-477
 ---
 //object gets deactivated when the variable $hugh turns false
-<<set $actions = $actions - 1>>
+
 <<emotionsprite "emotionhugh_idle" "h_idle">>
 Hugh: We were inside this crate... like cargo... There's even a shipping label but it's barely readable. Something with "new materials" and it's adressed to a "Dr. John Fist".
 <<if $ashok == true>>
@@ -274,6 +277,9 @@ Hugh: We were inside this crate... like cargo... There's even a shipping label b
     Marzanna: No, I don't want to die! We need to get out of here!
     <<destroyemotion "emotionmarzanna_sad" "mz_sad">>
 <<endif>>
+<<activateemotion "emotionhugh_afraid" "h_afraid">>
+<<activateemotion "emotionmarzanna_sad" "mz_sad">>
+<<set $actions = $actions - 1>>
 <<disableCrate door1crate_open>>
 <<jump room_investigate>>
 ===
@@ -292,6 +298,7 @@ Mathilda: I'll take one of these knives to defend us.
 //<<popupsprite "emotionmathilda_death" "mt_death">>
 <<enabledeathMathilda>>
 Mathilda: AAAAAAAAAAAAH!
+<<activateemotion "emotionmathilda_annoyed" "mt_annoyed">>
 <<disableMathilda>>//disabling mathilda character
 <<disabletoolsitem>>//disabling the tools
 <<disableknife>>//disabling the knife
@@ -301,38 +308,51 @@ Mathilda: AAAAAAAAAAAAH!
 
 
 
-//<<activateemotion "emotionmathilda_annoyed" "mt_annoyed">>
+
 <<if $hugh == true>>
     <<emotionsprite "emotionhugh_afraid" "h_afraid">>
     Hugh: MATHILDA!
+    <<destroyemotion "emotionhugh_afraid" "h_afraid">>
 <<endif>>
+ <<activateemotion "emotionhugh_afraid" "h_afraid">>
 <<if $nanditha == true>>
     <<emotionsprite "emotionnanditha_afraid" "n_afraid">>
     Nanditha: Mathilda?
+    <<destroyemotion "emotionnanditha_afraid" "n_afraid">>
 <<endif>>
+<<activateemotion "emotionnanditha_afraid" "n_afraid">>
 <<if $ashok == true>>
-   
-    <<enableMathildaCorpse>>
     <<emotionsprite "emotionashok_idle" "a_idle">>
+    <<enableMathildaCorpse>>
+   
     Ashok: I think she's dead.
+     <<destroyemotion "emotionashok_idle" "a_idle">>
 <<endif>>
+<<activateemotion "emotionashok_idle" "a_idle">>
 <<if $nanditha == true>>
     <<emotionsprite "emotionnanditha_sad" "n_sad">>
     Nanditha: No, that can't be!
+     <<destroyemotion "emotionnanditha_sad" "n_sad">>
 <<endif>>
+<<activateemotion "emotionnanditha_sad" "n_sad">>
 <<if $hugh == true>>
     <<emotionsprite "emotionhugh_sad" "h_sad">>
     Hugh: Not Mathilda!
+    <<destroyemotion "emotionhugh_sad" "h_sad">>
 <<endif>>
+<<activateemotion "emotionhugh_sad" "h_sad">>
 <<if $marzanna == true>>
     <<emotionsprite "emotionmarzanna_sad" "mz_sad">>
     Marzanna: We're all gonna die in here!
+      <<destroyemotion "emotionmarzanna_sad" "mz_sad">>
     <<endif>>
+     <<activateemotion "emotionmarzanna_sad" "mz_sad">>
 <<if $ashok == true>>
     <<emotionsprite "emotionashok_annoyed" "a_annoyed">>
     Ashok: Pull yourselves together and help me find a way out of here before there's more casualties!
 <<destroyemotion "emotionashok_annoyed" "a_annoyed">>
 <<endif>>
+<<activateemotion "emotionashok_annoyed" "a_annoyed">>
 <<set $actions = $actions - 1>>
 <<disableTools trap1tools_active>>
 <<jump room_investigate>>
@@ -360,6 +380,8 @@ position: 82,-477
     Marzanna: There's nothing else here...
     <<destroyemotion "emotionmarzanna_idle" "mz_idle">>
 <<endif>>
+<<activateemotion "emotionashok_happy" "a_happy">>
+<<activateemotion "emotionmarzanna_idle" "mz_idle">>
 <<set $actions = $actions - 1>>
 <<jump room_investigate>>
 ===
@@ -381,17 +403,21 @@ position: 82,-477
     <<if visited("interaction1crate") && $hugh == true>>
         <<emotionsprite "emotionhugh_happy" "h_happy">>
         Hugh: So this really is Dr. Fist.
+        <<destroyemotion "emotionhugh_happy" "h_happy">>
     <<endif>>
+    <<activateemotion "emotionhugh_happy" "h_happy">>
     <<if $nanditha == true>>
     <<emotionsprite "emotionnanditha_happy" "n_happy">>
     Nanditha: I'm shure this info can help us get out of here!
     <<destroyemotion "emotionnanditha_happy" "n_happy">>
     <<endif>>
+    <<activateemotion "emotionnanditha_happy" "n_happy">>
 <<else>>
     <<emotionsprite "emotionashok_idle" "a_idle">>
     Ashok: There's nothing else here...
     <<destroyemotion "emotionmarzanna_idle" "a_idle">>
 <<endif>>
+<<activateemotion "emotionmarzanna_idle" "a_idle">>
 <<set $actions = $actions - 1>>
 <<jump room_investigate>>
 ===
@@ -422,6 +448,8 @@ position: -396,-234
         <<set $actions = $actions - 1>>
         <<jump room2_enter>>
     <<endif>>
+<<activateemotion "emotionnanditha_idle" "a_idle">>
+<<activateemotion "emotionnanditha_happy" "n_happy">>
 <<else>>
     <<set $actions = $actions - 1>>
     <<jump room2_enter>>
