@@ -6,23 +6,17 @@ using System.Collections.Generic;
 public class popups : MonoBehaviour
 {
     public SpriteRenderer spriteRendererPOP;
-     public SpriteRenderer spriteRendererPOPLetter;
-    public Sprite popupkey;
+    public Sprite popup1note;
 
-    public Sprite popupletter;
-
-    [YarnCommand("popupsprite")]
+    [YarnCommand("Enablepopup")]
     public void Setpop(string expression)
     {
 
         switch (expression)
         {
-            
-            case "popup1letter":
-                spriteRendererPOPLetter.sprite = popupletter;
-                break;
-            case "popup1key":
-                spriteRendererPOP.sprite = popupkey;
+
+            case "popup1note":
+                spriteRendererPOP.sprite = popup1note;
                 break;
             default:
                 Debug.LogWarning("Unknown expression: " + expression);
@@ -30,7 +24,7 @@ public class popups : MonoBehaviour
         }
     }
 
-    [YarnCommand("destroypopup")]
+    [YarnCommand("disablePopup")]
     public void DestroySprite(string tagToFind)
     {
         GameObject myObject = GameObject.FindGameObjectWithTag(tagToFind);
