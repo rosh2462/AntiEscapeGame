@@ -3608,7 +3608,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &952120193
 Transform:
   m_ObjectHideFlags: 0
@@ -12183,7 +12183,7 @@ MonoBehaviour:
   dialogueViews:
   - {fileID: 6962293218602769967}
   - {fileID: 6027794228400368987}
-  startNode: room_investigate
+  startNode: room0
   startAutomatically: 1
   runSelectedOptionAsLine: 0
   lineProvider: {fileID: 0}
