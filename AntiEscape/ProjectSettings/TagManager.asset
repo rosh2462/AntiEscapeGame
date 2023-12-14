@@ -10,11 +10,6 @@ TagManager:
   - nanditha_happy
   - popup1note
   - Test1
-  - n_idle
-  - a_idle
-  - emotionmathilda_death
-  - popupkey
-  - popup1letter
   layers:
   - Default
   - TransparentFX
@@ -22,7 +17,7 @@ TagManager:
   - 
   - Water
   - UI
-  - Filter
+  - 
   - 
   - 
   - 
