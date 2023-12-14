@@ -8,27 +8,27 @@ using Yarn.Unity;
 public class DialogueManager : MonoBehaviour
 {
 
-    public SpriteRenderer spriteRenderer;
+    //public SpriteRenderer spriteRenderer;
     public SpriteRenderer spriteRendererAnimal;
 
-    public Sprite door1crate;
+    //public Sprite door1crate;
      
     public Sprite trap1animal;
 
      
 
-    [YarnCommand("setsprite")]
+    [YarnCommand("objectsprite")]
     public void SetSprite(string expression)
     {
 
         switch (expression)
         {
 
-            case "door1crate_open":
-                spriteRenderer.sprite = door1crate;
-                break;
+            // case "door1crate_open":
+            //     spriteRenderer.sprite = door1crate;
+            //     break;
 
-            case "animal_active":
+            case "trap1animal_triggered":
                 spriteRendererAnimal.sprite = trap1animal;
                 break;
 
