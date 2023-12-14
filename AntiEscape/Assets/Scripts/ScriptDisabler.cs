@@ -8,8 +8,9 @@ public class ScriptDisabler : MonoBehaviour
 
     void Awake()
     {
-        runner.AddCommandHandler<string>("DisableScript", DisableScript);
-        runner.AddCommandHandler<string>("EnableScript", EnableScript);
+        runner.AddCommandHandler<string>("DisableCameraScript", DisableScript);
+        runner.AddCommandHandler<string>("EnableCameraScript", EnableScript);
+        runner.AddCommandHandler<string>("DisableToolInteractive", DisableToolInteractive);
     }
 
     public void DisableScript(string scriptName)
@@ -27,4 +28,14 @@ public class ScriptDisabler : MonoBehaviour
     varGameObject.GetComponent<camerafollowscript>().enabled = true;
        
     }
+
+public void DisableToolInteractive(string scriptName)
+    {
+        // Find the GameObject with the specified script and disable it
+    GameObject varGameObject = GameObject.FindWithTag("Tools_Activated"); 
+    varGameObject.GetComponent<toolinteractivee>().enabled = false;
+       
+    }
+
+
 }
