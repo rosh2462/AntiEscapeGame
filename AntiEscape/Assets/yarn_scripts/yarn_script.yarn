@@ -233,13 +233,13 @@ position: 538,-598
 // ===
 
 // title: room1_enter
-tags:
-color: red
-group: room1
-position: 18,-598
----
-<<flickerlights>>
-===
+// tags:
+// color: red
+// group: room1
+// position: 18,-598
+// ---
+// <<flickerlights>>
+// ===
 
 
 title: room_investigate
