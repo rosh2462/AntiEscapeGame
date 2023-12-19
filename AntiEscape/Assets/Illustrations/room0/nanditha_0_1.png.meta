@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:AntiEscape/Assets/Illustrations/characters/emotions/ashok/emotionashok_angry.png.meta
-guid: d004ebb0ada71874990019f0f0cc14f8
-========
-guid: cd976877f40d5bd4c819cbcbd3fd73a3
->>>>>>>> origin/main_noeme:AntiEscape/Assets/Illustrations/room0/background0.png.meta
+guid: 7f189c31b4bee419aa5c9c23d9cf4bcc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -73,6 +69,19 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
