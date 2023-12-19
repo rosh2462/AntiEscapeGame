@@ -204,7 +204,7 @@ SpriteRenderer:
   m_Size: {x: 0.4, y: 1.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &82135380
@@ -407,7 +407,7 @@ SpriteRenderer:
   m_Size: {x: 6.78, y: 10.13}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &138365874
@@ -544,6 +544,13 @@ MonoBehaviour:
   spriteRenderer19: {fileID: 235041365}
   spriteRenderer20: {fileID: 667666937}
   spriteRenderer21: {fileID: 1567158382}
+  spriteRenderer22: {fileID: 1916292093}
+  spriteRenderer23: {fileID: 1178972876}
+  spriteRenderer24: {fileID: 2133321504}
+  spriteRenderer25: {fileID: 418037946}
+  spriteRenderer26: {fileID: 1301227716}
+  spriteRenderer27: {fileID: 492785324}
+  spriteRenderer28: {fileID: 309913864}
   emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
   emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
   emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
@@ -558,6 +565,7 @@ MonoBehaviour:
   emotionhugh_annoyed: {fileID: 21300000, guid: eafbcdd4491be5649bd2f5477daaab75, type: 3}
   emotionnanditha_annoyed: {fileID: 21300000, guid: 41413c979745f7e468ca3354afdebcf4, type: 3}
   emotionmathilda_annoyed: {fileID: 21300000, guid: 040e1ab7910b70e4a8f7be06439e22b9, type: 3}
+  emotionmarzanna_annoyed: {fileID: 21300000, guid: 551b4ec242662f04dab97c0bc52769b3, type: 3}
   emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
   emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
   emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
@@ -566,6 +574,12 @@ MonoBehaviour:
   emotionmarzanna_sad: {fileID: 21300000, guid: fb66777dceb11514cbe3ecabe693c2fa, type: 3}
   emotionnanditha_sad: {fileID: 21300000, guid: 2628431f5faaf6145a508bbd533a8e8d, type: 3}
   emotionhugh_sad: {fileID: 21300000, guid: fb14020214e3add4189c5de1bc2eb425, type: 3}
+  emotionashok_sad: {fileID: 21300000, guid: b5c0ba22cb602f542b780e541f2ef89e, type: 3}
+  emotionmathilda_sad: {fileID: 21300000, guid: 6219775d5a2454d4d914d38a3fdd3072, type: 3}
+  emotionmarzanna_embarassed: {fileID: 21300000, guid: 3c04ab8dbf80b6842a3ee08e401482db, type: 3}
+  emotionashok_embarassed: {fileID: 21300000, guid: 924a5db04b1a58844a251f1c8b6eb107, type: 3}
+  emotionhugh_angry: {fileID: 21300000, guid: 405d33e32a367d942b4f2eb34cee2042, type: 3}
+  emotionmathilda_scream: {fileID: 21300000, guid: 35af8574f999dfc40b61ecbc5660fc5b, type: 3}
 --- !u!1 &205772867
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,6 +699,13 @@ MonoBehaviour:
   spriteRenderer19: {fileID: 235041365}
   spriteRenderer20: {fileID: 667666937}
   spriteRenderer21: {fileID: 1567158382}
+  spriteRenderer22: {fileID: 1916292093}
+  spriteRenderer23: {fileID: 1178972876}
+  spriteRenderer24: {fileID: 2133321504}
+  spriteRenderer25: {fileID: 418037946}
+  spriteRenderer26: {fileID: 1301227716}
+  spriteRenderer27: {fileID: 492785324}
+  spriteRenderer28: {fileID: 309913864}
   emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
   emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
   emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
@@ -699,6 +720,7 @@ MonoBehaviour:
   emotionhugh_annoyed: {fileID: 21300000, guid: eafbcdd4491be5649bd2f5477daaab75, type: 3}
   emotionnanditha_annoyed: {fileID: 21300000, guid: 41413c979745f7e468ca3354afdebcf4, type: 3}
   emotionmathilda_annoyed: {fileID: 21300000, guid: 040e1ab7910b70e4a8f7be06439e22b9, type: 3}
+  emotionmarzanna_annoyed: {fileID: 21300000, guid: 551b4ec242662f04dab97c0bc52769b3, type: 3}
   emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
   emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
   emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
@@ -707,6 +729,12 @@ MonoBehaviour:
   emotionmarzanna_sad: {fileID: 21300000, guid: fb66777dceb11514cbe3ecabe693c2fa, type: 3}
   emotionnanditha_sad: {fileID: 21300000, guid: 2628431f5faaf6145a508bbd533a8e8d, type: 3}
   emotionhugh_sad: {fileID: 21300000, guid: fb14020214e3add4189c5de1bc2eb425, type: 3}
+  emotionashok_sad: {fileID: 21300000, guid: b5c0ba22cb602f542b780e541f2ef89e, type: 3}
+  emotionmathilda_sad: {fileID: 21300000, guid: 6219775d5a2454d4d914d38a3fdd3072, type: 3}
+  emotionmarzanna_embarassed: {fileID: 21300000, guid: 3c04ab8dbf80b6842a3ee08e401482db, type: 3}
+  emotionashok_embarassed: {fileID: 21300000, guid: 924a5db04b1a58844a251f1c8b6eb107, type: 3}
+  emotionhugh_angry: {fileID: 21300000, guid: 405d33e32a367d942b4f2eb34cee2042, type: 3}
+  emotionmathilda_scream: {fileID: 21300000, guid: 35af8574f999dfc40b61ecbc5660fc5b, type: 3}
 --- !u!1 &210233261
 GameObject:
   m_ObjectHideFlags: 0
@@ -895,7 +923,7 @@ SpriteRenderer:
   m_Size: {x: 0.73, y: 0.68}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &212977663
@@ -1044,7 +1072,7 @@ SpriteRenderer:
   m_Size: {x: 0.73, y: 0.68}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &226569434
@@ -1223,6 +1251,13 @@ MonoBehaviour:
   spriteRenderer19: {fileID: 235041365}
   spriteRenderer20: {fileID: 667666937}
   spriteRenderer21: {fileID: 1567158382}
+  spriteRenderer22: {fileID: 1916292093}
+  spriteRenderer23: {fileID: 1178972876}
+  spriteRenderer24: {fileID: 2133321504}
+  spriteRenderer25: {fileID: 418037946}
+  spriteRenderer26: {fileID: 1301227716}
+  spriteRenderer27: {fileID: 492785324}
+  spriteRenderer28: {fileID: 309913864}
   emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
   emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
   emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
@@ -1237,6 +1272,7 @@ MonoBehaviour:
   emotionhugh_annoyed: {fileID: 21300000, guid: eafbcdd4491be5649bd2f5477daaab75, type: 3}
   emotionnanditha_annoyed: {fileID: 21300000, guid: 41413c979745f7e468ca3354afdebcf4, type: 3}
   emotionmathilda_annoyed: {fileID: 21300000, guid: 040e1ab7910b70e4a8f7be06439e22b9, type: 3}
+  emotionmarzanna_annoyed: {fileID: 21300000, guid: 551b4ec242662f04dab97c0bc52769b3, type: 3}
   emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
   emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
   emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
@@ -1245,6 +1281,12 @@ MonoBehaviour:
   emotionmarzanna_sad: {fileID: 21300000, guid: fb66777dceb11514cbe3ecabe693c2fa, type: 3}
   emotionnanditha_sad: {fileID: 21300000, guid: 2628431f5faaf6145a508bbd533a8e8d, type: 3}
   emotionhugh_sad: {fileID: 21300000, guid: fb14020214e3add4189c5de1bc2eb425, type: 3}
+  emotionashok_sad: {fileID: 21300000, guid: b5c0ba22cb602f542b780e541f2ef89e, type: 3}
+  emotionmathilda_sad: {fileID: 21300000, guid: 6219775d5a2454d4d914d38a3fdd3072, type: 3}
+  emotionmarzanna_embarassed: {fileID: 21300000, guid: 3c04ab8dbf80b6842a3ee08e401482db, type: 3}
+  emotionashok_embarassed: {fileID: 21300000, guid: 924a5db04b1a58844a251f1c8b6eb107, type: 3}
+  emotionhugh_angry: {fileID: 21300000, guid: 405d33e32a367d942b4f2eb34cee2042, type: 3}
+  emotionmathilda_scream: {fileID: 21300000, guid: 35af8574f999dfc40b61ecbc5660fc5b, type: 3}
 --- !u!212 &235041365
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1399,6 +1441,13 @@ MonoBehaviour:
   spriteRenderer19: {fileID: 235041365}
   spriteRenderer20: {fileID: 667666937}
   spriteRenderer21: {fileID: 1567158382}
+  spriteRenderer22: {fileID: 1916292093}
+  spriteRenderer23: {fileID: 1178972876}
+  spriteRenderer24: {fileID: 2133321504}
+  spriteRenderer25: {fileID: 418037946}
+  spriteRenderer26: {fileID: 1301227716}
+  spriteRenderer27: {fileID: 492785324}
+  spriteRenderer28: {fileID: 309913864}
   emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
   emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
   emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
@@ -1413,6 +1462,7 @@ MonoBehaviour:
   emotionhugh_annoyed: {fileID: 21300000, guid: eafbcdd4491be5649bd2f5477daaab75, type: 3}
   emotionnanditha_annoyed: {fileID: 21300000, guid: 41413c979745f7e468ca3354afdebcf4, type: 3}
   emotionmathilda_annoyed: {fileID: 21300000, guid: 040e1ab7910b70e4a8f7be06439e22b9, type: 3}
+  emotionmarzanna_annoyed: {fileID: 21300000, guid: 551b4ec242662f04dab97c0bc52769b3, type: 3}
   emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
   emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
   emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
@@ -1421,6 +1471,12 @@ MonoBehaviour:
   emotionmarzanna_sad: {fileID: 21300000, guid: fb66777dceb11514cbe3ecabe693c2fa, type: 3}
   emotionnanditha_sad: {fileID: 21300000, guid: 2628431f5faaf6145a508bbd533a8e8d, type: 3}
   emotionhugh_sad: {fileID: 21300000, guid: fb14020214e3add4189c5de1bc2eb425, type: 3}
+  emotionashok_sad: {fileID: 21300000, guid: b5c0ba22cb602f542b780e541f2ef89e, type: 3}
+  emotionmathilda_sad: {fileID: 21300000, guid: 6219775d5a2454d4d914d38a3fdd3072, type: 3}
+  emotionmarzanna_embarassed: {fileID: 21300000, guid: 3c04ab8dbf80b6842a3ee08e401482db, type: 3}
+  emotionashok_embarassed: {fileID: 21300000, guid: 924a5db04b1a58844a251f1c8b6eb107, type: 3}
+  emotionhugh_angry: {fileID: 21300000, guid: 405d33e32a367d942b4f2eb34cee2042, type: 3}
+  emotionmathilda_scream: {fileID: 21300000, guid: 35af8574f999dfc40b61ecbc5660fc5b, type: 3}
 --- !u!212 &304563660
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1463,6 +1519,161 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 43dde12cd2def5e47bf643992155896c, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 3.14, y: 3.08}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &309913861
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 309913862}
+  - component: {fileID: 309913864}
+  - component: {fileID: 309913863}
+  m_Layer: 0
+  m_Name: emotionashok_embarassed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &309913862
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309913861}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.75, y: -4.44, z: 0.68}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1105179149}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &309913863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309913861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a93edf0c59653d642bd4c7e3b5abc3e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 462238686}
+  spriteRenderer1: {fileID: 1153228955}
+  spriteRenderer2: {fileID: 148327949}
+  spriteRenderer3: {fileID: 373349793}
+  spriteRenderer4: {fileID: 596415720}
+  spriteRenderer5: {fileID: 1915392045}
+  spriteRenderer6: {fileID: 986564227}
+  spriteRenderer7: {fileID: 1448681493}
+  spriteRenderer8: {fileID: 205772869}
+  spriteRenderer9: {fileID: 466033074}
+  spriteRenderer10: {fileID: 1388756735}
+  spriteRenderer11: {fileID: 1434588879}
+  spriteRenderer12: {fileID: 304563660}
+  spriteRenderer13: {fileID: 1398933657}
+  spriteRenderer14: {fileID: 1909909520}
+  spriteRenderer15: {fileID: 1134567638}
+  spriteRenderer16: {fileID: 1580026280}
+  spriteRenderer17: {fileID: 667986141}
+  spriteRenderer18: {fileID: 1025637567}
+  spriteRenderer19: {fileID: 235041365}
+  spriteRenderer20: {fileID: 667666937}
+  spriteRenderer21: {fileID: 1567158382}
+  spriteRenderer22: {fileID: 1916292093}
+  spriteRenderer23: {fileID: 1178972876}
+  spriteRenderer24: {fileID: 2133321504}
+  spriteRenderer25: {fileID: 418037946}
+  spriteRenderer26: {fileID: 1301227716}
+  spriteRenderer27: {fileID: 492785324}
+  spriteRenderer28: {fileID: 309913864}
+  emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
+  emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
+  emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
+  emotionmarzanna_idle: {fileID: 21300000, guid: 6aa9888e40f59a140aef28f94df53835, type: 3}
+  emotionashok_idle: {fileID: 21300000, guid: 32c23a4a88b75e9449cc2cfee3d08867, type: 3}
+  emotionmathilda_happy: {fileID: 21300000, guid: 7877e5410b0fe764bb0c3bac4ce4ef70, type: 3}
+  emotionnanditha_happy: {fileID: 21300000, guid: b58a5f42b2a19ac4e81f3607ad0ff3f9, type: 3}
+  emotionmarzanna_happy: {fileID: 21300000, guid: 5dc8adc49e0f7a041990dcf29c50ae94, type: 3}
+  emotionashok_happy: {fileID: 21300000, guid: adf19c91bb47e4942be7f26b8ddf6fa2, type: 3}
+  emotionhugh_happy: {fileID: 21300000, guid: 1331feab1c967b846aff8a6723df88e3, type: 3}
+  emotionashok_annoyed: {fileID: 21300000, guid: b9da7c01febe53340955260f3a0b372f, type: 3}
+  emotionhugh_annoyed: {fileID: 21300000, guid: eafbcdd4491be5649bd2f5477daaab75, type: 3}
+  emotionnanditha_annoyed: {fileID: 21300000, guid: 41413c979745f7e468ca3354afdebcf4, type: 3}
+  emotionmathilda_annoyed: {fileID: 21300000, guid: 040e1ab7910b70e4a8f7be06439e22b9, type: 3}
+  emotionmarzanna_annoyed: {fileID: 21300000, guid: 551b4ec242662f04dab97c0bc52769b3, type: 3}
+  emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
+  emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
+  emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
+  emotionmarzanna_afraid: {fileID: 21300000, guid: 7adf3685dce1d4d47ab661001f7e7633, type: 3}
+  emotionashok_afraid: {fileID: 21300000, guid: 43dde12cd2def5e47bf643992155896c, type: 3}
+  emotionmarzanna_sad: {fileID: 21300000, guid: fb66777dceb11514cbe3ecabe693c2fa, type: 3}
+  emotionnanditha_sad: {fileID: 21300000, guid: 2628431f5faaf6145a508bbd533a8e8d, type: 3}
+  emotionhugh_sad: {fileID: 21300000, guid: fb14020214e3add4189c5de1bc2eb425, type: 3}
+  emotionashok_sad: {fileID: 21300000, guid: b5c0ba22cb602f542b780e541f2ef89e, type: 3}
+  emotionmathilda_sad: {fileID: 21300000, guid: 6219775d5a2454d4d914d38a3fdd3072, type: 3}
+  emotionmarzanna_embarassed: {fileID: 21300000, guid: 3c04ab8dbf80b6842a3ee08e401482db, type: 3}
+  emotionashok_embarassed: {fileID: 21300000, guid: 924a5db04b1a58844a251f1c8b6eb107, type: 3}
+  emotionhugh_angry: {fileID: 21300000, guid: 405d33e32a367d942b4f2eb34cee2042, type: 3}
+  emotionmathilda_scream: {fileID: 21300000, guid: 35af8574f999dfc40b61ecbc5660fc5b, type: 3}
+--- !u!212 &309913864
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309913861}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1097399477
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 924a5db04b1a58844a251f1c8b6eb107, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1592,6 +1803,13 @@ MonoBehaviour:
   spriteRenderer19: {fileID: 235041365}
   spriteRenderer20: {fileID: 667666937}
   spriteRenderer21: {fileID: 1567158382}
+  spriteRenderer22: {fileID: 1916292093}
+  spriteRenderer23: {fileID: 1178972876}
+  spriteRenderer24: {fileID: 2133321504}
+  spriteRenderer25: {fileID: 418037946}
+  spriteRenderer26: {fileID: 1301227716}
+  spriteRenderer27: {fileID: 492785324}
+  spriteRenderer28: {fileID: 309913864}
   emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
   emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
   emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
@@ -1606,6 +1824,7 @@ MonoBehaviour:
   emotionhugh_annoyed: {fileID: 21300000, guid: eafbcdd4491be5649bd2f5477daaab75, type: 3}
   emotionnanditha_annoyed: {fileID: 21300000, guid: 41413c979745f7e468ca3354afdebcf4, type: 3}
   emotionmathilda_annoyed: {fileID: 21300000, guid: 040e1ab7910b70e4a8f7be06439e22b9, type: 3}
+  emotionmarzanna_annoyed: {fileID: 21300000, guid: 551b4ec242662f04dab97c0bc52769b3, type: 3}
   emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
   emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
   emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
@@ -1614,6 +1833,167 @@ MonoBehaviour:
   emotionmarzanna_sad: {fileID: 21300000, guid: fb66777dceb11514cbe3ecabe693c2fa, type: 3}
   emotionnanditha_sad: {fileID: 21300000, guid: 2628431f5faaf6145a508bbd533a8e8d, type: 3}
   emotionhugh_sad: {fileID: 21300000, guid: fb14020214e3add4189c5de1bc2eb425, type: 3}
+  emotionashok_sad: {fileID: 21300000, guid: b5c0ba22cb602f542b780e541f2ef89e, type: 3}
+  emotionmathilda_sad: {fileID: 21300000, guid: 6219775d5a2454d4d914d38a3fdd3072, type: 3}
+  emotionmarzanna_embarassed: {fileID: 21300000, guid: 3c04ab8dbf80b6842a3ee08e401482db, type: 3}
+  emotionashok_embarassed: {fileID: 21300000, guid: 924a5db04b1a58844a251f1c8b6eb107, type: 3}
+  emotionhugh_angry: {fileID: 21300000, guid: 405d33e32a367d942b4f2eb34cee2042, type: 3}
+  emotionmathilda_scream: {fileID: 21300000, guid: 35af8574f999dfc40b61ecbc5660fc5b, type: 3}
+--- !u!1 &418037943
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 418037944}
+  - component: {fileID: 418037946}
+  - component: {fileID: 418037945}
+  m_Layer: 0
+  m_Name: emotionmathilda_scream
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &418037944
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418037943}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.75, y: -4.44, z: 0.68}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1105179149}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &418037945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418037943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a93edf0c59653d642bd4c7e3b5abc3e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 462238686}
+  spriteRenderer1: {fileID: 1153228955}
+  spriteRenderer2: {fileID: 148327949}
+  spriteRenderer3: {fileID: 373349793}
+  spriteRenderer4: {fileID: 596415720}
+  spriteRenderer5: {fileID: 1915392045}
+  spriteRenderer6: {fileID: 986564227}
+  spriteRenderer7: {fileID: 1448681493}
+  spriteRenderer8: {fileID: 205772869}
+  spriteRenderer9: {fileID: 466033074}
+  spriteRenderer10: {fileID: 1388756735}
+  spriteRenderer11: {fileID: 1434588879}
+  spriteRenderer12: {fileID: 304563660}
+  spriteRenderer13: {fileID: 1398933657}
+  spriteRenderer14: {fileID: 1909909520}
+  spriteRenderer15: {fileID: 1134567638}
+  spriteRenderer16: {fileID: 1580026280}
+  spriteRenderer17: {fileID: 667986141}
+  spriteRenderer18: {fileID: 1025637567}
+  spriteRenderer19: {fileID: 235041365}
+  spriteRenderer20: {fileID: 667666937}
+  spriteRenderer21: {fileID: 1567158382}
+  spriteRenderer22: {fileID: 1916292093}
+  spriteRenderer23: {fileID: 1178972876}
+  spriteRenderer24: {fileID: 2133321504}
+  spriteRenderer25: {fileID: 418037946}
+  spriteRenderer26: {fileID: 1301227716}
+  spriteRenderer27: {fileID: 492785324}
+  spriteRenderer28: {fileID: 309913864}
+  emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
+  emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
+  emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
+  emotionmarzanna_idle: {fileID: 21300000, guid: 6aa9888e40f59a140aef28f94df53835, type: 3}
+  emotionashok_idle: {fileID: 21300000, guid: 32c23a4a88b75e9449cc2cfee3d08867, type: 3}
+  emotionmathilda_happy: {fileID: 21300000, guid: 7877e5410b0fe764bb0c3bac4ce4ef70, type: 3}
+  emotionnanditha_happy: {fileID: 21300000, guid: b58a5f42b2a19ac4e81f3607ad0ff3f9, type: 3}
+  emotionmarzanna_happy: {fileID: 21300000, guid: 5dc8adc49e0f7a041990dcf29c50ae94, type: 3}
+  emotionashok_happy: {fileID: 21300000, guid: adf19c91bb47e4942be7f26b8ddf6fa2, type: 3}
+  emotionhugh_happy: {fileID: 21300000, guid: 1331feab1c967b846aff8a6723df88e3, type: 3}
+  emotionashok_annoyed: {fileID: 21300000, guid: b9da7c01febe53340955260f3a0b372f, type: 3}
+  emotionhugh_annoyed: {fileID: 21300000, guid: eafbcdd4491be5649bd2f5477daaab75, type: 3}
+  emotionnanditha_annoyed: {fileID: 21300000, guid: 41413c979745f7e468ca3354afdebcf4, type: 3}
+  emotionmathilda_annoyed: {fileID: 21300000, guid: 040e1ab7910b70e4a8f7be06439e22b9, type: 3}
+  emotionmarzanna_annoyed: {fileID: 21300000, guid: 551b4ec242662f04dab97c0bc52769b3, type: 3}
+  emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
+  emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
+  emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
+  emotionmarzanna_afraid: {fileID: 21300000, guid: 7adf3685dce1d4d47ab661001f7e7633, type: 3}
+  emotionashok_afraid: {fileID: 21300000, guid: 43dde12cd2def5e47bf643992155896c, type: 3}
+  emotionmarzanna_sad: {fileID: 21300000, guid: fb66777dceb11514cbe3ecabe693c2fa, type: 3}
+  emotionnanditha_sad: {fileID: 21300000, guid: 2628431f5faaf6145a508bbd533a8e8d, type: 3}
+  emotionhugh_sad: {fileID: 21300000, guid: fb14020214e3add4189c5de1bc2eb425, type: 3}
+  emotionashok_sad: {fileID: 21300000, guid: b5c0ba22cb602f542b780e541f2ef89e, type: 3}
+  emotionmathilda_sad: {fileID: 21300000, guid: 6219775d5a2454d4d914d38a3fdd3072, type: 3}
+  emotionmarzanna_embarassed: {fileID: 21300000, guid: 3c04ab8dbf80b6842a3ee08e401482db, type: 3}
+  emotionashok_embarassed: {fileID: 21300000, guid: 924a5db04b1a58844a251f1c8b6eb107, type: 3}
+  emotionhugh_angry: {fileID: 21300000, guid: 405d33e32a367d942b4f2eb34cee2042, type: 3}
+  emotionmathilda_scream: {fileID: 21300000, guid: 35af8574f999dfc40b61ecbc5660fc5b, type: 3}
+--- !u!212 &418037946
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418037943}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1097399477
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 35af8574f999dfc40b61ecbc5660fc5b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 3.14, y: 3.19}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &431787513
 GameObject:
   m_ObjectHideFlags: 0
@@ -1680,7 +2060,7 @@ SpriteRenderer:
   m_Size: {x: 6.8, y: 7.62}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &431787515
@@ -1802,7 +2182,7 @@ SpriteRenderer:
   m_Size: {x: 2.4, y: 3.83}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &435211571
@@ -2013,6 +2393,13 @@ MonoBehaviour:
   spriteRenderer19: {fileID: 235041365}
   spriteRenderer20: {fileID: 667666937}
   spriteRenderer21: {fileID: 1567158382}
+  spriteRenderer22: {fileID: 1916292093}
+  spriteRenderer23: {fileID: 1178972876}
+  spriteRenderer24: {fileID: 2133321504}
+  spriteRenderer25: {fileID: 418037946}
+  spriteRenderer26: {fileID: 1301227716}
+  spriteRenderer27: {fileID: 492785324}
+  spriteRenderer28: {fileID: 309913864}
   emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
   emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
   emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
@@ -2027,6 +2414,7 @@ MonoBehaviour:
   emotionhugh_annoyed: {fileID: 21300000, guid: eafbcdd4491be5649bd2f5477daaab75, type: 3}
   emotionnanditha_annoyed: {fileID: 21300000, guid: 41413c979745f7e468ca3354afdebcf4, type: 3}
   emotionmathilda_annoyed: {fileID: 21300000, guid: 040e1ab7910b70e4a8f7be06439e22b9, type: 3}
+  emotionmarzanna_annoyed: {fileID: 21300000, guid: 551b4ec242662f04dab97c0bc52769b3, type: 3}
   emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
   emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
   emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
@@ -2035,6 +2423,12 @@ MonoBehaviour:
   emotionmarzanna_sad: {fileID: 21300000, guid: fb66777dceb11514cbe3ecabe693c2fa, type: 3}
   emotionnanditha_sad: {fileID: 21300000, guid: 2628431f5faaf6145a508bbd533a8e8d, type: 3}
   emotionhugh_sad: {fileID: 21300000, guid: fb14020214e3add4189c5de1bc2eb425, type: 3}
+  emotionashok_sad: {fileID: 21300000, guid: b5c0ba22cb602f542b780e541f2ef89e, type: 3}
+  emotionmathilda_sad: {fileID: 21300000, guid: 6219775d5a2454d4d914d38a3fdd3072, type: 3}
+  emotionmarzanna_embarassed: {fileID: 21300000, guid: 3c04ab8dbf80b6842a3ee08e401482db, type: 3}
+  emotionashok_embarassed: {fileID: 21300000, guid: 924a5db04b1a58844a251f1c8b6eb107, type: 3}
+  emotionhugh_angry: {fileID: 21300000, guid: 405d33e32a367d942b4f2eb34cee2042, type: 3}
+  emotionmathilda_scream: {fileID: 21300000, guid: 35af8574f999dfc40b61ecbc5660fc5b, type: 3}
 --- !u!1 &466033072
 GameObject:
   m_ObjectHideFlags: 0
@@ -2154,6 +2548,13 @@ MonoBehaviour:
   spriteRenderer19: {fileID: 235041365}
   spriteRenderer20: {fileID: 667666937}
   spriteRenderer21: {fileID: 1567158382}
+  spriteRenderer22: {fileID: 1916292093}
+  spriteRenderer23: {fileID: 1178972876}
+  spriteRenderer24: {fileID: 2133321504}
+  spriteRenderer25: {fileID: 418037946}
+  spriteRenderer26: {fileID: 1301227716}
+  spriteRenderer27: {fileID: 492785324}
+  spriteRenderer28: {fileID: 309913864}
   emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
   emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
   emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
@@ -2168,6 +2569,7 @@ MonoBehaviour:
   emotionhugh_annoyed: {fileID: 21300000, guid: eafbcdd4491be5649bd2f5477daaab75, type: 3}
   emotionnanditha_annoyed: {fileID: 21300000, guid: 41413c979745f7e468ca3354afdebcf4, type: 3}
   emotionmathilda_annoyed: {fileID: 21300000, guid: 040e1ab7910b70e4a8f7be06439e22b9, type: 3}
+  emotionmarzanna_annoyed: {fileID: 21300000, guid: 551b4ec242662f04dab97c0bc52769b3, type: 3}
   emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
   emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
   emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
@@ -2176,6 +2578,167 @@ MonoBehaviour:
   emotionmarzanna_sad: {fileID: 21300000, guid: fb66777dceb11514cbe3ecabe693c2fa, type: 3}
   emotionnanditha_sad: {fileID: 21300000, guid: 2628431f5faaf6145a508bbd533a8e8d, type: 3}
   emotionhugh_sad: {fileID: 21300000, guid: fb14020214e3add4189c5de1bc2eb425, type: 3}
+  emotionashok_sad: {fileID: 21300000, guid: b5c0ba22cb602f542b780e541f2ef89e, type: 3}
+  emotionmathilda_sad: {fileID: 21300000, guid: 6219775d5a2454d4d914d38a3fdd3072, type: 3}
+  emotionmarzanna_embarassed: {fileID: 21300000, guid: 3c04ab8dbf80b6842a3ee08e401482db, type: 3}
+  emotionashok_embarassed: {fileID: 21300000, guid: 924a5db04b1a58844a251f1c8b6eb107, type: 3}
+  emotionhugh_angry: {fileID: 21300000, guid: 405d33e32a367d942b4f2eb34cee2042, type: 3}
+  emotionmathilda_scream: {fileID: 21300000, guid: 35af8574f999dfc40b61ecbc5660fc5b, type: 3}
+--- !u!1 &492785322
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 492785323}
+  - component: {fileID: 492785325}
+  - component: {fileID: 492785324}
+  m_Layer: 0
+  m_Name: emotionmarzanna_embarassed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &492785323
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492785322}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.75, y: -4.44, z: 0.68}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1105179149}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &492785324
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492785322}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1097399477
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 3c04ab8dbf80b6842a3ee08e401482db, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 3.14, y: 3.08}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &492785325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492785322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a93edf0c59653d642bd4c7e3b5abc3e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 462238686}
+  spriteRenderer1: {fileID: 1153228955}
+  spriteRenderer2: {fileID: 148327949}
+  spriteRenderer3: {fileID: 373349793}
+  spriteRenderer4: {fileID: 596415720}
+  spriteRenderer5: {fileID: 1915392045}
+  spriteRenderer6: {fileID: 986564227}
+  spriteRenderer7: {fileID: 1448681493}
+  spriteRenderer8: {fileID: 205772869}
+  spriteRenderer9: {fileID: 466033074}
+  spriteRenderer10: {fileID: 1388756735}
+  spriteRenderer11: {fileID: 1434588879}
+  spriteRenderer12: {fileID: 304563660}
+  spriteRenderer13: {fileID: 1398933657}
+  spriteRenderer14: {fileID: 1909909520}
+  spriteRenderer15: {fileID: 1134567638}
+  spriteRenderer16: {fileID: 1580026280}
+  spriteRenderer17: {fileID: 667986141}
+  spriteRenderer18: {fileID: 1025637567}
+  spriteRenderer19: {fileID: 235041365}
+  spriteRenderer20: {fileID: 667666937}
+  spriteRenderer21: {fileID: 1567158382}
+  spriteRenderer22: {fileID: 1916292093}
+  spriteRenderer23: {fileID: 1178972876}
+  spriteRenderer24: {fileID: 2133321504}
+  spriteRenderer25: {fileID: 418037946}
+  spriteRenderer26: {fileID: 1301227716}
+  spriteRenderer27: {fileID: 492785324}
+  spriteRenderer28: {fileID: 309913864}
+  emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
+  emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
+  emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
+  emotionmarzanna_idle: {fileID: 21300000, guid: 6aa9888e40f59a140aef28f94df53835, type: 3}
+  emotionashok_idle: {fileID: 21300000, guid: 32c23a4a88b75e9449cc2cfee3d08867, type: 3}
+  emotionmathilda_happy: {fileID: 21300000, guid: 7877e5410b0fe764bb0c3bac4ce4ef70, type: 3}
+  emotionnanditha_happy: {fileID: 21300000, guid: b58a5f42b2a19ac4e81f3607ad0ff3f9, type: 3}
+  emotionmarzanna_happy: {fileID: 21300000, guid: 5dc8adc49e0f7a041990dcf29c50ae94, type: 3}
+  emotionashok_happy: {fileID: 21300000, guid: adf19c91bb47e4942be7f26b8ddf6fa2, type: 3}
+  emotionhugh_happy: {fileID: 21300000, guid: 1331feab1c967b846aff8a6723df88e3, type: 3}
+  emotionashok_annoyed: {fileID: 21300000, guid: b9da7c01febe53340955260f3a0b372f, type: 3}
+  emotionhugh_annoyed: {fileID: 21300000, guid: eafbcdd4491be5649bd2f5477daaab75, type: 3}
+  emotionnanditha_annoyed: {fileID: 21300000, guid: 41413c979745f7e468ca3354afdebcf4, type: 3}
+  emotionmathilda_annoyed: {fileID: 21300000, guid: 040e1ab7910b70e4a8f7be06439e22b9, type: 3}
+  emotionmarzanna_annoyed: {fileID: 21300000, guid: 551b4ec242662f04dab97c0bc52769b3, type: 3}
+  emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
+  emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
+  emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
+  emotionmarzanna_afraid: {fileID: 21300000, guid: 7adf3685dce1d4d47ab661001f7e7633, type: 3}
+  emotionashok_afraid: {fileID: 21300000, guid: 43dde12cd2def5e47bf643992155896c, type: 3}
+  emotionmarzanna_sad: {fileID: 21300000, guid: fb66777dceb11514cbe3ecabe693c2fa, type: 3}
+  emotionnanditha_sad: {fileID: 21300000, guid: 2628431f5faaf6145a508bbd533a8e8d, type: 3}
+  emotionhugh_sad: {fileID: 21300000, guid: fb14020214e3add4189c5de1bc2eb425, type: 3}
+  emotionashok_sad: {fileID: 21300000, guid: b5c0ba22cb602f542b780e541f2ef89e, type: 3}
+  emotionmathilda_sad: {fileID: 21300000, guid: 6219775d5a2454d4d914d38a3fdd3072, type: 3}
+  emotionmarzanna_embarassed: {fileID: 21300000, guid: 3c04ab8dbf80b6842a3ee08e401482db, type: 3}
+  emotionashok_embarassed: {fileID: 21300000, guid: 924a5db04b1a58844a251f1c8b6eb107, type: 3}
+  emotionhugh_angry: {fileID: 21300000, guid: 405d33e32a367d942b4f2eb34cee2042, type: 3}
+  emotionmathilda_scream: {fileID: 21300000, guid: 35af8574f999dfc40b61ecbc5660fc5b, type: 3}
 --- !u!1 &493756754
 GameObject:
   m_ObjectHideFlags: 0
@@ -2326,7 +2889,7 @@ SpriteRenderer:
   m_Size: {x: 7.46, y: 4.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &511229613
@@ -2638,7 +3201,7 @@ SpriteRenderer:
   m_Size: {x: 6.24, y: 6.1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &560634437
@@ -2775,6 +3338,13 @@ MonoBehaviour:
   spriteRenderer19: {fileID: 235041365}
   spriteRenderer20: {fileID: 667666937}
   spriteRenderer21: {fileID: 1567158382}
+  spriteRenderer22: {fileID: 1916292093}
+  spriteRenderer23: {fileID: 1178972876}
+  spriteRenderer24: {fileID: 2133321504}
+  spriteRenderer25: {fileID: 418037946}
+  spriteRenderer26: {fileID: 1301227716}
+  spriteRenderer27: {fileID: 492785324}
+  spriteRenderer28: {fileID: 309913864}
   emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
   emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
   emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
@@ -2789,6 +3359,7 @@ MonoBehaviour:
   emotionhugh_annoyed: {fileID: 21300000, guid: eafbcdd4491be5649bd2f5477daaab75, type: 3}
   emotionnanditha_annoyed: {fileID: 21300000, guid: 41413c979745f7e468ca3354afdebcf4, type: 3}
   emotionmathilda_annoyed: {fileID: 21300000, guid: 040e1ab7910b70e4a8f7be06439e22b9, type: 3}
+  emotionmarzanna_annoyed: {fileID: 21300000, guid: 551b4ec242662f04dab97c0bc52769b3, type: 3}
   emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
   emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
   emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
@@ -2797,6 +3368,12 @@ MonoBehaviour:
   emotionmarzanna_sad: {fileID: 21300000, guid: fb66777dceb11514cbe3ecabe693c2fa, type: 3}
   emotionnanditha_sad: {fileID: 21300000, guid: 2628431f5faaf6145a508bbd533a8e8d, type: 3}
   emotionhugh_sad: {fileID: 21300000, guid: fb14020214e3add4189c5de1bc2eb425, type: 3}
+  emotionashok_sad: {fileID: 21300000, guid: b5c0ba22cb602f542b780e541f2ef89e, type: 3}
+  emotionmathilda_sad: {fileID: 21300000, guid: 6219775d5a2454d4d914d38a3fdd3072, type: 3}
+  emotionmarzanna_embarassed: {fileID: 21300000, guid: 3c04ab8dbf80b6842a3ee08e401482db, type: 3}
+  emotionashok_embarassed: {fileID: 21300000, guid: 924a5db04b1a58844a251f1c8b6eb107, type: 3}
+  emotionhugh_angry: {fileID: 21300000, guid: 405d33e32a367d942b4f2eb34cee2042, type: 3}
+  emotionmathilda_scream: {fileID: 21300000, guid: 35af8574f999dfc40b61ecbc5660fc5b, type: 3}
 --- !u!1 &613112432
 GameObject:
   m_ObjectHideFlags: 0
@@ -2949,7 +3526,7 @@ SpriteRenderer:
   m_Size: {x: 0.44, y: 0.41}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &622744885
@@ -3137,6 +3714,13 @@ MonoBehaviour:
   spriteRenderer19: {fileID: 235041365}
   spriteRenderer20: {fileID: 667666937}
   spriteRenderer21: {fileID: 1567158382}
+  spriteRenderer22: {fileID: 1916292093}
+  spriteRenderer23: {fileID: 1178972876}
+  spriteRenderer24: {fileID: 2133321504}
+  spriteRenderer25: {fileID: 418037946}
+  spriteRenderer26: {fileID: 1301227716}
+  spriteRenderer27: {fileID: 492785324}
+  spriteRenderer28: {fileID: 309913864}
   emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
   emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
   emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
@@ -3151,6 +3735,7 @@ MonoBehaviour:
   emotionhugh_annoyed: {fileID: 21300000, guid: eafbcdd4491be5649bd2f5477daaab75, type: 3}
   emotionnanditha_annoyed: {fileID: 21300000, guid: 41413c979745f7e468ca3354afdebcf4, type: 3}
   emotionmathilda_annoyed: {fileID: 21300000, guid: 040e1ab7910b70e4a8f7be06439e22b9, type: 3}
+  emotionmarzanna_annoyed: {fileID: 21300000, guid: 551b4ec242662f04dab97c0bc52769b3, type: 3}
   emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
   emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
   emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
@@ -3159,6 +3744,12 @@ MonoBehaviour:
   emotionmarzanna_sad: {fileID: 21300000, guid: fb66777dceb11514cbe3ecabe693c2fa, type: 3}
   emotionnanditha_sad: {fileID: 21300000, guid: 2628431f5faaf6145a508bbd533a8e8d, type: 3}
   emotionhugh_sad: {fileID: 21300000, guid: fb14020214e3add4189c5de1bc2eb425, type: 3}
+  emotionashok_sad: {fileID: 21300000, guid: b5c0ba22cb602f542b780e541f2ef89e, type: 3}
+  emotionmathilda_sad: {fileID: 21300000, guid: 6219775d5a2454d4d914d38a3fdd3072, type: 3}
+  emotionmarzanna_embarassed: {fileID: 21300000, guid: 3c04ab8dbf80b6842a3ee08e401482db, type: 3}
+  emotionashok_embarassed: {fileID: 21300000, guid: 924a5db04b1a58844a251f1c8b6eb107, type: 3}
+  emotionhugh_angry: {fileID: 21300000, guid: 405d33e32a367d942b4f2eb34cee2042, type: 3}
+  emotionmathilda_scream: {fileID: 21300000, guid: 35af8574f999dfc40b61ecbc5660fc5b, type: 3}
 --- !u!1 &667986138
 GameObject:
   m_ObjectHideFlags: 0
@@ -3226,6 +3817,13 @@ MonoBehaviour:
   spriteRenderer19: {fileID: 235041365}
   spriteRenderer20: {fileID: 667666937}
   spriteRenderer21: {fileID: 1567158382}
+  spriteRenderer22: {fileID: 1916292093}
+  spriteRenderer23: {fileID: 1178972876}
+  spriteRenderer24: {fileID: 2133321504}
+  spriteRenderer25: {fileID: 418037946}
+  spriteRenderer26: {fileID: 1301227716}
+  spriteRenderer27: {fileID: 492785324}
+  spriteRenderer28: {fileID: 309913864}
   emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
   emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
   emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
@@ -3240,6 +3838,7 @@ MonoBehaviour:
   emotionhugh_annoyed: {fileID: 21300000, guid: eafbcdd4491be5649bd2f5477daaab75, type: 3}
   emotionnanditha_annoyed: {fileID: 21300000, guid: 41413c979745f7e468ca3354afdebcf4, type: 3}
   emotionmathilda_annoyed: {fileID: 21300000, guid: 040e1ab7910b70e4a8f7be06439e22b9, type: 3}
+  emotionmarzanna_annoyed: {fileID: 21300000, guid: 551b4ec242662f04dab97c0bc52769b3, type: 3}
   emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
   emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
   emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
@@ -3248,6 +3847,12 @@ MonoBehaviour:
   emotionmarzanna_sad: {fileID: 21300000, guid: fb66777dceb11514cbe3ecabe693c2fa, type: 3}
   emotionnanditha_sad: {fileID: 21300000, guid: 2628431f5faaf6145a508bbd533a8e8d, type: 3}
   emotionhugh_sad: {fileID: 21300000, guid: fb14020214e3add4189c5de1bc2eb425, type: 3}
+  emotionashok_sad: {fileID: 21300000, guid: b5c0ba22cb602f542b780e541f2ef89e, type: 3}
+  emotionmathilda_sad: {fileID: 21300000, guid: 6219775d5a2454d4d914d38a3fdd3072, type: 3}
+  emotionmarzanna_embarassed: {fileID: 21300000, guid: 3c04ab8dbf80b6842a3ee08e401482db, type: 3}
+  emotionashok_embarassed: {fileID: 21300000, guid: 924a5db04b1a58844a251f1c8b6eb107, type: 3}
+  emotionhugh_angry: {fileID: 21300000, guid: 405d33e32a367d942b4f2eb34cee2042, type: 3}
+  emotionmathilda_scream: {fileID: 21300000, guid: 35af8574f999dfc40b61ecbc5660fc5b, type: 3}
 --- !u!212 &667986141
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3590,7 +4195,7 @@ SpriteRenderer:
   m_Size: {x: 28.8, y: 10.799999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &952120192
@@ -3861,6 +4466,13 @@ MonoBehaviour:
   spriteRenderer19: {fileID: 235041365}
   spriteRenderer20: {fileID: 667666937}
   spriteRenderer21: {fileID: 1567158382}
+  spriteRenderer22: {fileID: 1916292093}
+  spriteRenderer23: {fileID: 1178972876}
+  spriteRenderer24: {fileID: 2133321504}
+  spriteRenderer25: {fileID: 418037946}
+  spriteRenderer26: {fileID: 1301227716}
+  spriteRenderer27: {fileID: 492785324}
+  spriteRenderer28: {fileID: 309913864}
   emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
   emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
   emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
@@ -3875,6 +4487,7 @@ MonoBehaviour:
   emotionhugh_annoyed: {fileID: 21300000, guid: eafbcdd4491be5649bd2f5477daaab75, type: 3}
   emotionnanditha_annoyed: {fileID: 21300000, guid: 41413c979745f7e468ca3354afdebcf4, type: 3}
   emotionmathilda_annoyed: {fileID: 21300000, guid: 040e1ab7910b70e4a8f7be06439e22b9, type: 3}
+  emotionmarzanna_annoyed: {fileID: 21300000, guid: 551b4ec242662f04dab97c0bc52769b3, type: 3}
   emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
   emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
   emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
@@ -3883,6 +4496,12 @@ MonoBehaviour:
   emotionmarzanna_sad: {fileID: 21300000, guid: fb66777dceb11514cbe3ecabe693c2fa, type: 3}
   emotionnanditha_sad: {fileID: 21300000, guid: 2628431f5faaf6145a508bbd533a8e8d, type: 3}
   emotionhugh_sad: {fileID: 21300000, guid: fb14020214e3add4189c5de1bc2eb425, type: 3}
+  emotionashok_sad: {fileID: 21300000, guid: b5c0ba22cb602f542b780e541f2ef89e, type: 3}
+  emotionmathilda_sad: {fileID: 21300000, guid: 6219775d5a2454d4d914d38a3fdd3072, type: 3}
+  emotionmarzanna_embarassed: {fileID: 21300000, guid: 3c04ab8dbf80b6842a3ee08e401482db, type: 3}
+  emotionashok_embarassed: {fileID: 21300000, guid: 924a5db04b1a58844a251f1c8b6eb107, type: 3}
+  emotionhugh_angry: {fileID: 21300000, guid: 405d33e32a367d942b4f2eb34cee2042, type: 3}
+  emotionmathilda_scream: {fileID: 21300000, guid: 35af8574f999dfc40b61ecbc5660fc5b, type: 3}
 --- !u!4 &986564229
 Transform:
   m_ObjectHideFlags: 0
@@ -4268,6 +4887,13 @@ MonoBehaviour:
   spriteRenderer19: {fileID: 235041365}
   spriteRenderer20: {fileID: 667666937}
   spriteRenderer21: {fileID: 1567158382}
+  spriteRenderer22: {fileID: 1916292093}
+  spriteRenderer23: {fileID: 1178972876}
+  spriteRenderer24: {fileID: 2133321504}
+  spriteRenderer25: {fileID: 418037946}
+  spriteRenderer26: {fileID: 1301227716}
+  spriteRenderer27: {fileID: 492785324}
+  spriteRenderer28: {fileID: 309913864}
   emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
   emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
   emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
@@ -4282,6 +4908,7 @@ MonoBehaviour:
   emotionhugh_annoyed: {fileID: 21300000, guid: eafbcdd4491be5649bd2f5477daaab75, type: 3}
   emotionnanditha_annoyed: {fileID: 21300000, guid: 41413c979745f7e468ca3354afdebcf4, type: 3}
   emotionmathilda_annoyed: {fileID: 21300000, guid: 040e1ab7910b70e4a8f7be06439e22b9, type: 3}
+  emotionmarzanna_annoyed: {fileID: 21300000, guid: 551b4ec242662f04dab97c0bc52769b3, type: 3}
   emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
   emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
   emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
@@ -4290,6 +4917,12 @@ MonoBehaviour:
   emotionmarzanna_sad: {fileID: 21300000, guid: fb66777dceb11514cbe3ecabe693c2fa, type: 3}
   emotionnanditha_sad: {fileID: 21300000, guid: 2628431f5faaf6145a508bbd533a8e8d, type: 3}
   emotionhugh_sad: {fileID: 21300000, guid: fb14020214e3add4189c5de1bc2eb425, type: 3}
+  emotionashok_sad: {fileID: 21300000, guid: b5c0ba22cb602f542b780e541f2ef89e, type: 3}
+  emotionmathilda_sad: {fileID: 21300000, guid: 6219775d5a2454d4d914d38a3fdd3072, type: 3}
+  emotionmarzanna_embarassed: {fileID: 21300000, guid: 3c04ab8dbf80b6842a3ee08e401482db, type: 3}
+  emotionashok_embarassed: {fileID: 21300000, guid: 924a5db04b1a58844a251f1c8b6eb107, type: 3}
+  emotionhugh_angry: {fileID: 21300000, guid: 405d33e32a367d942b4f2eb34cee2042, type: 3}
+  emotionmathilda_scream: {fileID: 21300000, guid: 35af8574f999dfc40b61ecbc5660fc5b, type: 3}
 --- !u!1 &1105179148
 GameObject:
   m_ObjectHideFlags: 0
@@ -4341,6 +4974,13 @@ Transform:
   - {fileID: 235041363}
   - {fileID: 667666936}
   - {fileID: 1567158380}
+  - {fileID: 1916292092}
+  - {fileID: 1178972874}
+  - {fileID: 2133321503}
+  - {fileID: 418037944}
+  - {fileID: 1301227715}
+  - {fileID: 492785323}
+  - {fileID: 309913862}
   m_Father: {fileID: 519420032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1134567635
@@ -4410,6 +5050,13 @@ MonoBehaviour:
   spriteRenderer19: {fileID: 235041365}
   spriteRenderer20: {fileID: 667666937}
   spriteRenderer21: {fileID: 1567158382}
+  spriteRenderer22: {fileID: 1916292093}
+  spriteRenderer23: {fileID: 1178972876}
+  spriteRenderer24: {fileID: 2133321504}
+  spriteRenderer25: {fileID: 418037946}
+  spriteRenderer26: {fileID: 1301227716}
+  spriteRenderer27: {fileID: 492785324}
+  spriteRenderer28: {fileID: 309913864}
   emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
   emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
   emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
@@ -4424,6 +5071,7 @@ MonoBehaviour:
   emotionhugh_annoyed: {fileID: 21300000, guid: eafbcdd4491be5649bd2f5477daaab75, type: 3}
   emotionnanditha_annoyed: {fileID: 21300000, guid: 41413c979745f7e468ca3354afdebcf4, type: 3}
   emotionmathilda_annoyed: {fileID: 21300000, guid: 040e1ab7910b70e4a8f7be06439e22b9, type: 3}
+  emotionmarzanna_annoyed: {fileID: 21300000, guid: 551b4ec242662f04dab97c0bc52769b3, type: 3}
   emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
   emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
   emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
@@ -4432,6 +5080,12 @@ MonoBehaviour:
   emotionmarzanna_sad: {fileID: 21300000, guid: fb66777dceb11514cbe3ecabe693c2fa, type: 3}
   emotionnanditha_sad: {fileID: 21300000, guid: 2628431f5faaf6145a508bbd533a8e8d, type: 3}
   emotionhugh_sad: {fileID: 21300000, guid: fb14020214e3add4189c5de1bc2eb425, type: 3}
+  emotionashok_sad: {fileID: 21300000, guid: b5c0ba22cb602f542b780e541f2ef89e, type: 3}
+  emotionmathilda_sad: {fileID: 21300000, guid: 6219775d5a2454d4d914d38a3fdd3072, type: 3}
+  emotionmarzanna_embarassed: {fileID: 21300000, guid: 3c04ab8dbf80b6842a3ee08e401482db, type: 3}
+  emotionashok_embarassed: {fileID: 21300000, guid: 924a5db04b1a58844a251f1c8b6eb107, type: 3}
+  emotionhugh_angry: {fileID: 21300000, guid: 405d33e32a367d942b4f2eb34cee2042, type: 3}
+  emotionmathilda_scream: {fileID: 21300000, guid: 35af8574f999dfc40b61ecbc5660fc5b, type: 3}
 --- !u!212 &1134567638
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4687,6 +5341,13 @@ MonoBehaviour:
   spriteRenderer19: {fileID: 235041365}
   spriteRenderer20: {fileID: 667666937}
   spriteRenderer21: {fileID: 1567158382}
+  spriteRenderer22: {fileID: 1916292093}
+  spriteRenderer23: {fileID: 1178972876}
+  spriteRenderer24: {fileID: 2133321504}
+  spriteRenderer25: {fileID: 418037946}
+  spriteRenderer26: {fileID: 1301227716}
+  spriteRenderer27: {fileID: 492785324}
+  spriteRenderer28: {fileID: 309913864}
   emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
   emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
   emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
@@ -4701,6 +5362,7 @@ MonoBehaviour:
   emotionhugh_annoyed: {fileID: 21300000, guid: eafbcdd4491be5649bd2f5477daaab75, type: 3}
   emotionnanditha_annoyed: {fileID: 21300000, guid: 41413c979745f7e468ca3354afdebcf4, type: 3}
   emotionmathilda_annoyed: {fileID: 21300000, guid: 040e1ab7910b70e4a8f7be06439e22b9, type: 3}
+  emotionmarzanna_annoyed: {fileID: 21300000, guid: 551b4ec242662f04dab97c0bc52769b3, type: 3}
   emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
   emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
   emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
@@ -4709,6 +5371,12 @@ MonoBehaviour:
   emotionmarzanna_sad: {fileID: 21300000, guid: fb66777dceb11514cbe3ecabe693c2fa, type: 3}
   emotionnanditha_sad: {fileID: 21300000, guid: 2628431f5faaf6145a508bbd533a8e8d, type: 3}
   emotionhugh_sad: {fileID: 21300000, guid: fb14020214e3add4189c5de1bc2eb425, type: 3}
+  emotionashok_sad: {fileID: 21300000, guid: b5c0ba22cb602f542b780e541f2ef89e, type: 3}
+  emotionmathilda_sad: {fileID: 21300000, guid: 6219775d5a2454d4d914d38a3fdd3072, type: 3}
+  emotionmarzanna_embarassed: {fileID: 21300000, guid: 3c04ab8dbf80b6842a3ee08e401482db, type: 3}
+  emotionashok_embarassed: {fileID: 21300000, guid: 924a5db04b1a58844a251f1c8b6eb107, type: 3}
+  emotionhugh_angry: {fileID: 21300000, guid: 405d33e32a367d942b4f2eb34cee2042, type: 3}
+  emotionmathilda_scream: {fileID: 21300000, guid: 35af8574f999dfc40b61ecbc5660fc5b, type: 3}
 --- !u!1 &1170298964
 GameObject:
   m_ObjectHideFlags: 0
@@ -4795,7 +5463,7 @@ SpriteRenderer:
   m_Size: {x: 6.8, y: 7.62}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1170298967
@@ -5048,6 +5716,161 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72ec6ce6d9a8d8141b04132530c9f681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1178972873
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1178972874}
+  - component: {fileID: 1178972876}
+  - component: {fileID: 1178972875}
+  m_Layer: 0
+  m_Name: emotionmarzanna_annoyed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1178972874
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178972873}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.75, y: -4.44, z: 0.68}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1105179149}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1178972875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178972873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a93edf0c59653d642bd4c7e3b5abc3e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 462238686}
+  spriteRenderer1: {fileID: 1153228955}
+  spriteRenderer2: {fileID: 148327949}
+  spriteRenderer3: {fileID: 373349793}
+  spriteRenderer4: {fileID: 596415720}
+  spriteRenderer5: {fileID: 1915392045}
+  spriteRenderer6: {fileID: 986564227}
+  spriteRenderer7: {fileID: 1448681493}
+  spriteRenderer8: {fileID: 205772869}
+  spriteRenderer9: {fileID: 466033074}
+  spriteRenderer10: {fileID: 1388756735}
+  spriteRenderer11: {fileID: 1434588879}
+  spriteRenderer12: {fileID: 304563660}
+  spriteRenderer13: {fileID: 1398933657}
+  spriteRenderer14: {fileID: 1909909520}
+  spriteRenderer15: {fileID: 1134567638}
+  spriteRenderer16: {fileID: 1580026280}
+  spriteRenderer17: {fileID: 667986141}
+  spriteRenderer18: {fileID: 1025637567}
+  spriteRenderer19: {fileID: 235041365}
+  spriteRenderer20: {fileID: 667666937}
+  spriteRenderer21: {fileID: 1567158382}
+  spriteRenderer22: {fileID: 1916292093}
+  spriteRenderer23: {fileID: 1178972876}
+  spriteRenderer24: {fileID: 2133321504}
+  spriteRenderer25: {fileID: 418037946}
+  spriteRenderer26: {fileID: 1301227716}
+  spriteRenderer27: {fileID: 492785324}
+  spriteRenderer28: {fileID: 309913864}
+  emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
+  emotionhugh_idle: {fileID: 21300000, guid: fb14020214e3add4189c5de1bc2eb425, type: 3}
+  emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
+  emotionmarzanna_idle: {fileID: 21300000, guid: 6aa9888e40f59a140aef28f94df53835, type: 3}
+  emotionashok_idle: {fileID: 21300000, guid: 32c23a4a88b75e9449cc2cfee3d08867, type: 3}
+  emotionmathilda_happy: {fileID: 21300000, guid: 7877e5410b0fe764bb0c3bac4ce4ef70, type: 3}
+  emotionnanditha_happy: {fileID: 21300000, guid: b58a5f42b2a19ac4e81f3607ad0ff3f9, type: 3}
+  emotionmarzanna_happy: {fileID: 21300000, guid: 5dc8adc49e0f7a041990dcf29c50ae94, type: 3}
+  emotionashok_happy: {fileID: 21300000, guid: adf19c91bb47e4942be7f26b8ddf6fa2, type: 3}
+  emotionhugh_happy: {fileID: 21300000, guid: 1331feab1c967b846aff8a6723df88e3, type: 3}
+  emotionashok_annoyed: {fileID: 21300000, guid: b9da7c01febe53340955260f3a0b372f, type: 3}
+  emotionhugh_annoyed: {fileID: 21300000, guid: eafbcdd4491be5649bd2f5477daaab75, type: 3}
+  emotionnanditha_annoyed: {fileID: 21300000, guid: 41413c979745f7e468ca3354afdebcf4, type: 3}
+  emotionmathilda_annoyed: {fileID: 21300000, guid: 040e1ab7910b70e4a8f7be06439e22b9, type: 3}
+  emotionmarzanna_annoyed: {fileID: 21300000, guid: 551b4ec242662f04dab97c0bc52769b3, type: 3}
+  emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
+  emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
+  emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
+  emotionmarzanna_afraid: {fileID: 21300000, guid: 7adf3685dce1d4d47ab661001f7e7633, type: 3}
+  emotionashok_afraid: {fileID: 21300000, guid: 43dde12cd2def5e47bf643992155896c, type: 3}
+  emotionmarzanna_sad: {fileID: 21300000, guid: fb66777dceb11514cbe3ecabe693c2fa, type: 3}
+  emotionnanditha_sad: {fileID: 21300000, guid: 2628431f5faaf6145a508bbd533a8e8d, type: 3}
+  emotionhugh_sad: {fileID: 21300000, guid: fb14020214e3add4189c5de1bc2eb425, type: 3}
+  emotionashok_sad: {fileID: 21300000, guid: b5c0ba22cb602f542b780e541f2ef89e, type: 3}
+  emotionmathilda_sad: {fileID: 21300000, guid: 6219775d5a2454d4d914d38a3fdd3072, type: 3}
+  emotionmarzanna_embarassed: {fileID: 21300000, guid: 3c04ab8dbf80b6842a3ee08e401482db, type: 3}
+  emotionashok_embarassed: {fileID: 21300000, guid: 924a5db04b1a58844a251f1c8b6eb107, type: 3}
+  emotionhugh_angry: {fileID: 21300000, guid: 405d33e32a367d942b4f2eb34cee2042, type: 3}
+  emotionmathilda_scream: {fileID: 21300000, guid: 35af8574f999dfc40b61ecbc5660fc5b, type: 3}
+--- !u!212 &1178972876
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178972873}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1097399477
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 551b4ec242662f04dab97c0bc52769b3, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 3.14, y: 3.08}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1234754918
 GameObject:
   m_ObjectHideFlags: 0
@@ -5114,7 +5937,7 @@ SpriteRenderer:
   m_Size: {x: 0.54, y: 1.09}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1234754920
@@ -5132,6 +5955,161 @@ Transform:
   m_Children: []
   m_Father: {fileID: 895022173}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1301227714
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1301227715}
+  - component: {fileID: 1301227717}
+  - component: {fileID: 1301227716}
+  m_Layer: 0
+  m_Name: emotionhugh_angry
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1301227715
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301227714}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.75, y: -4.44, z: 0.68}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1105179149}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1301227716
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301227714}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1097399477
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 405d33e32a367d942b4f2eb34cee2042, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 3.14, y: 3.08}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &1301227717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301227714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a93edf0c59653d642bd4c7e3b5abc3e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 462238686}
+  spriteRenderer1: {fileID: 1153228955}
+  spriteRenderer2: {fileID: 148327949}
+  spriteRenderer3: {fileID: 373349793}
+  spriteRenderer4: {fileID: 596415720}
+  spriteRenderer5: {fileID: 1915392045}
+  spriteRenderer6: {fileID: 986564227}
+  spriteRenderer7: {fileID: 1448681493}
+  spriteRenderer8: {fileID: 205772869}
+  spriteRenderer9: {fileID: 466033074}
+  spriteRenderer10: {fileID: 1388756735}
+  spriteRenderer11: {fileID: 1434588879}
+  spriteRenderer12: {fileID: 304563660}
+  spriteRenderer13: {fileID: 1398933657}
+  spriteRenderer14: {fileID: 1909909520}
+  spriteRenderer15: {fileID: 1134567638}
+  spriteRenderer16: {fileID: 1580026280}
+  spriteRenderer17: {fileID: 667986141}
+  spriteRenderer18: {fileID: 1025637567}
+  spriteRenderer19: {fileID: 235041365}
+  spriteRenderer20: {fileID: 667666937}
+  spriteRenderer21: {fileID: 1567158382}
+  spriteRenderer22: {fileID: 1916292093}
+  spriteRenderer23: {fileID: 1178972876}
+  spriteRenderer24: {fileID: 2133321504}
+  spriteRenderer25: {fileID: 418037946}
+  spriteRenderer26: {fileID: 1301227716}
+  spriteRenderer27: {fileID: 492785324}
+  spriteRenderer28: {fileID: 309913864}
+  emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
+  emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
+  emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
+  emotionmarzanna_idle: {fileID: 21300000, guid: 6aa9888e40f59a140aef28f94df53835, type: 3}
+  emotionashok_idle: {fileID: 21300000, guid: 32c23a4a88b75e9449cc2cfee3d08867, type: 3}
+  emotionmathilda_happy: {fileID: 21300000, guid: 7877e5410b0fe764bb0c3bac4ce4ef70, type: 3}
+  emotionnanditha_happy: {fileID: 21300000, guid: b58a5f42b2a19ac4e81f3607ad0ff3f9, type: 3}
+  emotionmarzanna_happy: {fileID: 21300000, guid: 5dc8adc49e0f7a041990dcf29c50ae94, type: 3}
+  emotionashok_happy: {fileID: 21300000, guid: adf19c91bb47e4942be7f26b8ddf6fa2, type: 3}
+  emotionhugh_happy: {fileID: 21300000, guid: 1331feab1c967b846aff8a6723df88e3, type: 3}
+  emotionashok_annoyed: {fileID: 21300000, guid: b9da7c01febe53340955260f3a0b372f, type: 3}
+  emotionhugh_annoyed: {fileID: 21300000, guid: eafbcdd4491be5649bd2f5477daaab75, type: 3}
+  emotionnanditha_annoyed: {fileID: 21300000, guid: 41413c979745f7e468ca3354afdebcf4, type: 3}
+  emotionmathilda_annoyed: {fileID: 21300000, guid: 040e1ab7910b70e4a8f7be06439e22b9, type: 3}
+  emotionmarzanna_annoyed: {fileID: 21300000, guid: 551b4ec242662f04dab97c0bc52769b3, type: 3}
+  emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
+  emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
+  emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
+  emotionmarzanna_afraid: {fileID: 21300000, guid: 7adf3685dce1d4d47ab661001f7e7633, type: 3}
+  emotionashok_afraid: {fileID: 21300000, guid: 43dde12cd2def5e47bf643992155896c, type: 3}
+  emotionmarzanna_sad: {fileID: 21300000, guid: fb66777dceb11514cbe3ecabe693c2fa, type: 3}
+  emotionnanditha_sad: {fileID: 21300000, guid: 2628431f5faaf6145a508bbd533a8e8d, type: 3}
+  emotionhugh_sad: {fileID: 21300000, guid: fb14020214e3add4189c5de1bc2eb425, type: 3}
+  emotionashok_sad: {fileID: 21300000, guid: b5c0ba22cb602f542b780e541f2ef89e, type: 3}
+  emotionmathilda_sad: {fileID: 21300000, guid: 6219775d5a2454d4d914d38a3fdd3072, type: 3}
+  emotionmarzanna_embarassed: {fileID: 21300000, guid: 3c04ab8dbf80b6842a3ee08e401482db, type: 3}
+  emotionashok_embarassed: {fileID: 21300000, guid: 924a5db04b1a58844a251f1c8b6eb107, type: 3}
+  emotionhugh_angry: {fileID: 21300000, guid: 405d33e32a367d942b4f2eb34cee2042, type: 3}
+  emotionmathilda_scream: {fileID: 21300000, guid: 35af8574f999dfc40b61ecbc5660fc5b, type: 3}
 --- !u!1 &1369051276
 GameObject:
   m_ObjectHideFlags: 0
@@ -5300,6 +6278,13 @@ MonoBehaviour:
   spriteRenderer19: {fileID: 235041365}
   spriteRenderer20: {fileID: 667666937}
   spriteRenderer21: {fileID: 1567158382}
+  spriteRenderer22: {fileID: 1916292093}
+  spriteRenderer23: {fileID: 1178972876}
+  spriteRenderer24: {fileID: 2133321504}
+  spriteRenderer25: {fileID: 418037946}
+  spriteRenderer26: {fileID: 1301227716}
+  spriteRenderer27: {fileID: 492785324}
+  spriteRenderer28: {fileID: 309913864}
   emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
   emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
   emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
@@ -5314,6 +6299,7 @@ MonoBehaviour:
   emotionhugh_annoyed: {fileID: 21300000, guid: eafbcdd4491be5649bd2f5477daaab75, type: 3}
   emotionnanditha_annoyed: {fileID: 21300000, guid: 41413c979745f7e468ca3354afdebcf4, type: 3}
   emotionmathilda_annoyed: {fileID: 21300000, guid: 040e1ab7910b70e4a8f7be06439e22b9, type: 3}
+  emotionmarzanna_annoyed: {fileID: 21300000, guid: 551b4ec242662f04dab97c0bc52769b3, type: 3}
   emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
   emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
   emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
@@ -5322,6 +6308,12 @@ MonoBehaviour:
   emotionmarzanna_sad: {fileID: 21300000, guid: fb66777dceb11514cbe3ecabe693c2fa, type: 3}
   emotionnanditha_sad: {fileID: 21300000, guid: 2628431f5faaf6145a508bbd533a8e8d, type: 3}
   emotionhugh_sad: {fileID: 21300000, guid: fb14020214e3add4189c5de1bc2eb425, type: 3}
+  emotionashok_sad: {fileID: 21300000, guid: b5c0ba22cb602f542b780e541f2ef89e, type: 3}
+  emotionmathilda_sad: {fileID: 21300000, guid: 6219775d5a2454d4d914d38a3fdd3072, type: 3}
+  emotionmarzanna_embarassed: {fileID: 21300000, guid: 3c04ab8dbf80b6842a3ee08e401482db, type: 3}
+  emotionashok_embarassed: {fileID: 21300000, guid: 924a5db04b1a58844a251f1c8b6eb107, type: 3}
+  emotionhugh_angry: {fileID: 21300000, guid: 405d33e32a367d942b4f2eb34cee2042, type: 3}
+  emotionmathilda_scream: {fileID: 21300000, guid: 35af8574f999dfc40b61ecbc5660fc5b, type: 3}
 --- !u!212 &1388756735
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5441,6 +6433,13 @@ MonoBehaviour:
   spriteRenderer19: {fileID: 235041365}
   spriteRenderer20: {fileID: 667666937}
   spriteRenderer21: {fileID: 1567158382}
+  spriteRenderer22: {fileID: 1916292093}
+  spriteRenderer23: {fileID: 1178972876}
+  spriteRenderer24: {fileID: 2133321504}
+  spriteRenderer25: {fileID: 418037946}
+  spriteRenderer26: {fileID: 1301227716}
+  spriteRenderer27: {fileID: 492785324}
+  spriteRenderer28: {fileID: 309913864}
   emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
   emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
   emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
@@ -5455,6 +6454,7 @@ MonoBehaviour:
   emotionhugh_annoyed: {fileID: 21300000, guid: eafbcdd4491be5649bd2f5477daaab75, type: 3}
   emotionnanditha_annoyed: {fileID: 21300000, guid: 41413c979745f7e468ca3354afdebcf4, type: 3}
   emotionmathilda_annoyed: {fileID: 21300000, guid: 040e1ab7910b70e4a8f7be06439e22b9, type: 3}
+  emotionmarzanna_annoyed: {fileID: 21300000, guid: 551b4ec242662f04dab97c0bc52769b3, type: 3}
   emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
   emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
   emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
@@ -5463,6 +6463,12 @@ MonoBehaviour:
   emotionmarzanna_sad: {fileID: 21300000, guid: fb66777dceb11514cbe3ecabe693c2fa, type: 3}
   emotionnanditha_sad: {fileID: 21300000, guid: 2628431f5faaf6145a508bbd533a8e8d, type: 3}
   emotionhugh_sad: {fileID: 21300000, guid: fb14020214e3add4189c5de1bc2eb425, type: 3}
+  emotionashok_sad: {fileID: 21300000, guid: b5c0ba22cb602f542b780e541f2ef89e, type: 3}
+  emotionmathilda_sad: {fileID: 21300000, guid: 6219775d5a2454d4d914d38a3fdd3072, type: 3}
+  emotionmarzanna_embarassed: {fileID: 21300000, guid: 3c04ab8dbf80b6842a3ee08e401482db, type: 3}
+  emotionashok_embarassed: {fileID: 21300000, guid: 924a5db04b1a58844a251f1c8b6eb107, type: 3}
+  emotionhugh_angry: {fileID: 21300000, guid: 405d33e32a367d942b4f2eb34cee2042, type: 3}
+  emotionmathilda_scream: {fileID: 21300000, guid: 35af8574f999dfc40b61ecbc5660fc5b, type: 3}
 --- !u!212 &1398933657
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5660,7 +6666,7 @@ SpriteRenderer:
   m_Size: {x: 6.55, y: 9.4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1423262974
@@ -5797,6 +6803,13 @@ MonoBehaviour:
   spriteRenderer19: {fileID: 235041365}
   spriteRenderer20: {fileID: 667666937}
   spriteRenderer21: {fileID: 1567158382}
+  spriteRenderer22: {fileID: 1916292093}
+  spriteRenderer23: {fileID: 1178972876}
+  spriteRenderer24: {fileID: 2133321504}
+  spriteRenderer25: {fileID: 418037946}
+  spriteRenderer26: {fileID: 1301227716}
+  spriteRenderer27: {fileID: 492785324}
+  spriteRenderer28: {fileID: 309913864}
   emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
   emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
   emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
@@ -5811,6 +6824,7 @@ MonoBehaviour:
   emotionhugh_annoyed: {fileID: 21300000, guid: eafbcdd4491be5649bd2f5477daaab75, type: 3}
   emotionnanditha_annoyed: {fileID: 21300000, guid: 41413c979745f7e468ca3354afdebcf4, type: 3}
   emotionmathilda_annoyed: {fileID: 21300000, guid: 040e1ab7910b70e4a8f7be06439e22b9, type: 3}
+  emotionmarzanna_annoyed: {fileID: 21300000, guid: 551b4ec242662f04dab97c0bc52769b3, type: 3}
   emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
   emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
   emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
@@ -5819,6 +6833,12 @@ MonoBehaviour:
   emotionmarzanna_sad: {fileID: 21300000, guid: fb66777dceb11514cbe3ecabe693c2fa, type: 3}
   emotionnanditha_sad: {fileID: 21300000, guid: 2628431f5faaf6145a508bbd533a8e8d, type: 3}
   emotionhugh_sad: {fileID: 21300000, guid: fb14020214e3add4189c5de1bc2eb425, type: 3}
+  emotionashok_sad: {fileID: 21300000, guid: b5c0ba22cb602f542b780e541f2ef89e, type: 3}
+  emotionmathilda_sad: {fileID: 21300000, guid: 6219775d5a2454d4d914d38a3fdd3072, type: 3}
+  emotionmarzanna_embarassed: {fileID: 21300000, guid: 3c04ab8dbf80b6842a3ee08e401482db, type: 3}
+  emotionashok_embarassed: {fileID: 21300000, guid: 924a5db04b1a58844a251f1c8b6eb107, type: 3}
+  emotionhugh_angry: {fileID: 21300000, guid: 405d33e32a367d942b4f2eb34cee2042, type: 3}
+  emotionmathilda_scream: {fileID: 21300000, guid: 35af8574f999dfc40b61ecbc5660fc5b, type: 3}
 --- !u!1 &1448681490
 GameObject:
   m_ObjectHideFlags: 0
@@ -5886,6 +6906,13 @@ MonoBehaviour:
   spriteRenderer19: {fileID: 235041365}
   spriteRenderer20: {fileID: 667666937}
   spriteRenderer21: {fileID: 1567158382}
+  spriteRenderer22: {fileID: 1916292093}
+  spriteRenderer23: {fileID: 1178972876}
+  spriteRenderer24: {fileID: 2133321504}
+  spriteRenderer25: {fileID: 418037946}
+  spriteRenderer26: {fileID: 1301227716}
+  spriteRenderer27: {fileID: 492785324}
+  spriteRenderer28: {fileID: 309913864}
   emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
   emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
   emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
@@ -5900,6 +6927,7 @@ MonoBehaviour:
   emotionhugh_annoyed: {fileID: 21300000, guid: eafbcdd4491be5649bd2f5477daaab75, type: 3}
   emotionnanditha_annoyed: {fileID: 21300000, guid: 41413c979745f7e468ca3354afdebcf4, type: 3}
   emotionmathilda_annoyed: {fileID: 21300000, guid: 040e1ab7910b70e4a8f7be06439e22b9, type: 3}
+  emotionmarzanna_annoyed: {fileID: 21300000, guid: 551b4ec242662f04dab97c0bc52769b3, type: 3}
   emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
   emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
   emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
@@ -5908,6 +6936,12 @@ MonoBehaviour:
   emotionmarzanna_sad: {fileID: 21300000, guid: fb66777dceb11514cbe3ecabe693c2fa, type: 3}
   emotionnanditha_sad: {fileID: 21300000, guid: 2628431f5faaf6145a508bbd533a8e8d, type: 3}
   emotionhugh_sad: {fileID: 21300000, guid: fb14020214e3add4189c5de1bc2eb425, type: 3}
+  emotionashok_sad: {fileID: 21300000, guid: b5c0ba22cb602f542b780e541f2ef89e, type: 3}
+  emotionmathilda_sad: {fileID: 21300000, guid: 6219775d5a2454d4d914d38a3fdd3072, type: 3}
+  emotionmarzanna_embarassed: {fileID: 21300000, guid: 3c04ab8dbf80b6842a3ee08e401482db, type: 3}
+  emotionashok_embarassed: {fileID: 21300000, guid: 924a5db04b1a58844a251f1c8b6eb107, type: 3}
+  emotionhugh_angry: {fileID: 21300000, guid: 405d33e32a367d942b4f2eb34cee2042, type: 3}
+  emotionmathilda_scream: {fileID: 21300000, guid: 35af8574f999dfc40b61ecbc5660fc5b, type: 3}
 --- !u!212 &1448681493
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6147,6 +7181,13 @@ MonoBehaviour:
   spriteRenderer19: {fileID: 235041365}
   spriteRenderer20: {fileID: 667666937}
   spriteRenderer21: {fileID: 1567158382}
+  spriteRenderer22: {fileID: 1916292093}
+  spriteRenderer23: {fileID: 1178972876}
+  spriteRenderer24: {fileID: 2133321504}
+  spriteRenderer25: {fileID: 418037946}
+  spriteRenderer26: {fileID: 1301227716}
+  spriteRenderer27: {fileID: 492785324}
+  spriteRenderer28: {fileID: 309913864}
   emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
   emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
   emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
@@ -6161,6 +7202,7 @@ MonoBehaviour:
   emotionhugh_annoyed: {fileID: 21300000, guid: eafbcdd4491be5649bd2f5477daaab75, type: 3}
   emotionnanditha_annoyed: {fileID: 21300000, guid: 41413c979745f7e468ca3354afdebcf4, type: 3}
   emotionmathilda_annoyed: {fileID: 21300000, guid: 040e1ab7910b70e4a8f7be06439e22b9, type: 3}
+  emotionmarzanna_annoyed: {fileID: 21300000, guid: 551b4ec242662f04dab97c0bc52769b3, type: 3}
   emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
   emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
   emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
@@ -6169,6 +7211,12 @@ MonoBehaviour:
   emotionmarzanna_sad: {fileID: 21300000, guid: fb66777dceb11514cbe3ecabe693c2fa, type: 3}
   emotionnanditha_sad: {fileID: 21300000, guid: 2628431f5faaf6145a508bbd533a8e8d, type: 3}
   emotionhugh_sad: {fileID: 21300000, guid: fb14020214e3add4189c5de1bc2eb425, type: 3}
+  emotionashok_sad: {fileID: 21300000, guid: b5c0ba22cb602f542b780e541f2ef89e, type: 3}
+  emotionmathilda_sad: {fileID: 21300000, guid: 6219775d5a2454d4d914d38a3fdd3072, type: 3}
+  emotionmarzanna_embarassed: {fileID: 21300000, guid: 3c04ab8dbf80b6842a3ee08e401482db, type: 3}
+  emotionashok_embarassed: {fileID: 21300000, guid: 924a5db04b1a58844a251f1c8b6eb107, type: 3}
+  emotionhugh_angry: {fileID: 21300000, guid: 405d33e32a367d942b4f2eb34cee2042, type: 3}
+  emotionmathilda_scream: {fileID: 21300000, guid: 35af8574f999dfc40b61ecbc5660fc5b, type: 3}
 --- !u!212 &1567158382
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6441,6 +7489,13 @@ MonoBehaviour:
   spriteRenderer19: {fileID: 235041365}
   spriteRenderer20: {fileID: 667666937}
   spriteRenderer21: {fileID: 1567158382}
+  spriteRenderer22: {fileID: 1916292093}
+  spriteRenderer23: {fileID: 1178972876}
+  spriteRenderer24: {fileID: 2133321504}
+  spriteRenderer25: {fileID: 418037946}
+  spriteRenderer26: {fileID: 1301227716}
+  spriteRenderer27: {fileID: 492785324}
+  spriteRenderer28: {fileID: 309913864}
   emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
   emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
   emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
@@ -6455,6 +7510,7 @@ MonoBehaviour:
   emotionhugh_annoyed: {fileID: 21300000, guid: eafbcdd4491be5649bd2f5477daaab75, type: 3}
   emotionnanditha_annoyed: {fileID: 21300000, guid: 41413c979745f7e468ca3354afdebcf4, type: 3}
   emotionmathilda_annoyed: {fileID: 21300000, guid: 040e1ab7910b70e4a8f7be06439e22b9, type: 3}
+  emotionmarzanna_annoyed: {fileID: 21300000, guid: 551b4ec242662f04dab97c0bc52769b3, type: 3}
   emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
   emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
   emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
@@ -6463,6 +7519,12 @@ MonoBehaviour:
   emotionmarzanna_sad: {fileID: 21300000, guid: fb66777dceb11514cbe3ecabe693c2fa, type: 3}
   emotionnanditha_sad: {fileID: 21300000, guid: 2628431f5faaf6145a508bbd533a8e8d, type: 3}
   emotionhugh_sad: {fileID: 21300000, guid: fb14020214e3add4189c5de1bc2eb425, type: 3}
+  emotionashok_sad: {fileID: 21300000, guid: b5c0ba22cb602f542b780e541f2ef89e, type: 3}
+  emotionmathilda_sad: {fileID: 21300000, guid: 6219775d5a2454d4d914d38a3fdd3072, type: 3}
+  emotionmarzanna_embarassed: {fileID: 21300000, guid: 3c04ab8dbf80b6842a3ee08e401482db, type: 3}
+  emotionashok_embarassed: {fileID: 21300000, guid: 924a5db04b1a58844a251f1c8b6eb107, type: 3}
+  emotionhugh_angry: {fileID: 21300000, guid: 405d33e32a367d942b4f2eb34cee2042, type: 3}
+  emotionmathilda_scream: {fileID: 21300000, guid: 35af8574f999dfc40b61ecbc5660fc5b, type: 3}
 --- !u!1 &1616757647
 GameObject:
   m_ObjectHideFlags: 0
@@ -6628,7 +7690,7 @@ SpriteRenderer:
   m_Size: {x: 28.8, y: 10.799999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1733959785
@@ -6700,7 +7762,7 @@ SpriteRenderer:
   m_Size: {x: 17.6, y: 7.76}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1733959787
@@ -7217,7 +8279,7 @@ SpriteRenderer:
   m_Size: {x: 0.4, y: 1.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1854984531
@@ -7361,7 +8423,7 @@ SpriteRenderer:
   m_Size: {x: 0.73, y: 0.68}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1895709167
@@ -7446,7 +8508,7 @@ SpriteRenderer:
   m_Size: {x: 28.8, y: 10.799999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1895709170
@@ -7589,6 +8651,13 @@ MonoBehaviour:
   spriteRenderer19: {fileID: 235041365}
   spriteRenderer20: {fileID: 667666937}
   spriteRenderer21: {fileID: 1567158382}
+  spriteRenderer22: {fileID: 1916292093}
+  spriteRenderer23: {fileID: 1178972876}
+  spriteRenderer24: {fileID: 2133321504}
+  spriteRenderer25: {fileID: 418037946}
+  spriteRenderer26: {fileID: 1301227716}
+  spriteRenderer27: {fileID: 492785324}
+  spriteRenderer28: {fileID: 309913864}
   emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
   emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
   emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
@@ -7603,6 +8672,7 @@ MonoBehaviour:
   emotionhugh_annoyed: {fileID: 21300000, guid: eafbcdd4491be5649bd2f5477daaab75, type: 3}
   emotionnanditha_annoyed: {fileID: 21300000, guid: 41413c979745f7e468ca3354afdebcf4, type: 3}
   emotionmathilda_annoyed: {fileID: 21300000, guid: 040e1ab7910b70e4a8f7be06439e22b9, type: 3}
+  emotionmarzanna_annoyed: {fileID: 21300000, guid: 551b4ec242662f04dab97c0bc52769b3, type: 3}
   emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
   emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
   emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
@@ -7611,6 +8681,12 @@ MonoBehaviour:
   emotionmarzanna_sad: {fileID: 21300000, guid: fb66777dceb11514cbe3ecabe693c2fa, type: 3}
   emotionnanditha_sad: {fileID: 21300000, guid: 2628431f5faaf6145a508bbd533a8e8d, type: 3}
   emotionhugh_sad: {fileID: 21300000, guid: fb14020214e3add4189c5de1bc2eb425, type: 3}
+  emotionashok_sad: {fileID: 21300000, guid: b5c0ba22cb602f542b780e541f2ef89e, type: 3}
+  emotionmathilda_sad: {fileID: 21300000, guid: 6219775d5a2454d4d914d38a3fdd3072, type: 3}
+  emotionmarzanna_embarassed: {fileID: 21300000, guid: 3c04ab8dbf80b6842a3ee08e401482db, type: 3}
+  emotionashok_embarassed: {fileID: 21300000, guid: 924a5db04b1a58844a251f1c8b6eb107, type: 3}
+  emotionhugh_angry: {fileID: 21300000, guid: 405d33e32a367d942b4f2eb34cee2042, type: 3}
+  emotionmathilda_scream: {fileID: 21300000, guid: 35af8574f999dfc40b61ecbc5660fc5b, type: 3}
 --- !u!1 &1914796867
 GameObject:
   m_ObjectHideFlags: 0
@@ -7751,6 +8827,13 @@ MonoBehaviour:
   spriteRenderer19: {fileID: 235041365}
   spriteRenderer20: {fileID: 667666937}
   spriteRenderer21: {fileID: 1567158382}
+  spriteRenderer22: {fileID: 1916292093}
+  spriteRenderer23: {fileID: 1178972876}
+  spriteRenderer24: {fileID: 2133321504}
+  spriteRenderer25: {fileID: 418037946}
+  spriteRenderer26: {fileID: 1301227716}
+  spriteRenderer27: {fileID: 492785324}
+  spriteRenderer28: {fileID: 492785324}
   emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
   emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
   emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
@@ -7765,6 +8848,7 @@ MonoBehaviour:
   emotionhugh_annoyed: {fileID: 21300000, guid: eafbcdd4491be5649bd2f5477daaab75, type: 3}
   emotionnanditha_annoyed: {fileID: 21300000, guid: 41413c979745f7e468ca3354afdebcf4, type: 3}
   emotionmathilda_annoyed: {fileID: 21300000, guid: 040e1ab7910b70e4a8f7be06439e22b9, type: 3}
+  emotionmarzanna_annoyed: {fileID: 21300000, guid: 551b4ec242662f04dab97c0bc52769b3, type: 3}
   emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
   emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
   emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
@@ -7773,6 +8857,12 @@ MonoBehaviour:
   emotionmarzanna_sad: {fileID: 21300000, guid: fb66777dceb11514cbe3ecabe693c2fa, type: 3}
   emotionnanditha_sad: {fileID: 21300000, guid: 2628431f5faaf6145a508bbd533a8e8d, type: 3}
   emotionhugh_sad: {fileID: 21300000, guid: fb14020214e3add4189c5de1bc2eb425, type: 3}
+  emotionashok_sad: {fileID: 21300000, guid: b5c0ba22cb602f542b780e541f2ef89e, type: 3}
+  emotionmathilda_sad: {fileID: 21300000, guid: 6219775d5a2454d4d914d38a3fdd3072, type: 3}
+  emotionmarzanna_embarassed: {fileID: 21300000, guid: 3c04ab8dbf80b6842a3ee08e401482db, type: 3}
+  emotionashok_embarassed: {fileID: 21300000, guid: 924a5db04b1a58844a251f1c8b6eb107, type: 3}
+  emotionhugh_angry: {fileID: 21300000, guid: 405d33e32a367d942b4f2eb34cee2042, type: 3}
+  emotionmathilda_scream: {fileID: 21300000, guid: 35af8574f999dfc40b61ecbc5660fc5b, type: 3}
 --- !u!4 &1915392047
 Transform:
   m_ObjectHideFlags: 0
@@ -7788,6 +8878,161 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1105179149}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1916292091
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1916292092}
+  - component: {fileID: 1916292094}
+  - component: {fileID: 1916292093}
+  m_Layer: 0
+  m_Name: emotionmathilda_sad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1916292092
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916292091}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.75, y: -4.44, z: 0.68}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1105179149}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1916292093
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916292091}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1097399477
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 6219775d5a2454d4d914d38a3fdd3072, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 3.14, y: 3.19}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &1916292094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916292091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a93edf0c59653d642bd4c7e3b5abc3e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 462238686}
+  spriteRenderer1: {fileID: 1153228955}
+  spriteRenderer2: {fileID: 148327949}
+  spriteRenderer3: {fileID: 373349793}
+  spriteRenderer4: {fileID: 596415720}
+  spriteRenderer5: {fileID: 1915392045}
+  spriteRenderer6: {fileID: 986564227}
+  spriteRenderer7: {fileID: 1448681493}
+  spriteRenderer8: {fileID: 205772869}
+  spriteRenderer9: {fileID: 466033074}
+  spriteRenderer10: {fileID: 1388756735}
+  spriteRenderer11: {fileID: 1434588879}
+  spriteRenderer12: {fileID: 304563660}
+  spriteRenderer13: {fileID: 1398933657}
+  spriteRenderer14: {fileID: 1909909520}
+  spriteRenderer15: {fileID: 1134567638}
+  spriteRenderer16: {fileID: 1580026280}
+  spriteRenderer17: {fileID: 667986141}
+  spriteRenderer18: {fileID: 1025637567}
+  spriteRenderer19: {fileID: 235041365}
+  spriteRenderer20: {fileID: 667666937}
+  spriteRenderer21: {fileID: 1567158382}
+  spriteRenderer22: {fileID: 1916292093}
+  spriteRenderer23: {fileID: 1178972876}
+  spriteRenderer24: {fileID: 2133321504}
+  spriteRenderer25: {fileID: 418037946}
+  spriteRenderer26: {fileID: 1301227716}
+  spriteRenderer27: {fileID: 492785324}
+  spriteRenderer28: {fileID: 309913864}
+  emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
+  emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
+  emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
+  emotionmarzanna_idle: {fileID: 21300000, guid: 6aa9888e40f59a140aef28f94df53835, type: 3}
+  emotionashok_idle: {fileID: 21300000, guid: 32c23a4a88b75e9449cc2cfee3d08867, type: 3}
+  emotionmathilda_happy: {fileID: 21300000, guid: 7877e5410b0fe764bb0c3bac4ce4ef70, type: 3}
+  emotionnanditha_happy: {fileID: 21300000, guid: b58a5f42b2a19ac4e81f3607ad0ff3f9, type: 3}
+  emotionmarzanna_happy: {fileID: 21300000, guid: 5dc8adc49e0f7a041990dcf29c50ae94, type: 3}
+  emotionashok_happy: {fileID: 21300000, guid: adf19c91bb47e4942be7f26b8ddf6fa2, type: 3}
+  emotionhugh_happy: {fileID: 21300000, guid: 1331feab1c967b846aff8a6723df88e3, type: 3}
+  emotionashok_annoyed: {fileID: 21300000, guid: b9da7c01febe53340955260f3a0b372f, type: 3}
+  emotionhugh_annoyed: {fileID: 21300000, guid: eafbcdd4491be5649bd2f5477daaab75, type: 3}
+  emotionnanditha_annoyed: {fileID: 21300000, guid: 41413c979745f7e468ca3354afdebcf4, type: 3}
+  emotionmathilda_annoyed: {fileID: 21300000, guid: 040e1ab7910b70e4a8f7be06439e22b9, type: 3}
+  emotionmarzanna_annoyed: {fileID: 21300000, guid: 551b4ec242662f04dab97c0bc52769b3, type: 3}
+  emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
+  emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
+  emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
+  emotionmarzanna_afraid: {fileID: 21300000, guid: 7adf3685dce1d4d47ab661001f7e7633, type: 3}
+  emotionashok_afraid: {fileID: 21300000, guid: 43dde12cd2def5e47bf643992155896c, type: 3}
+  emotionmarzanna_sad: {fileID: 21300000, guid: fb66777dceb11514cbe3ecabe693c2fa, type: 3}
+  emotionnanditha_sad: {fileID: 21300000, guid: 2628431f5faaf6145a508bbd533a8e8d, type: 3}
+  emotionhugh_sad: {fileID: 21300000, guid: fb14020214e3add4189c5de1bc2eb425, type: 3}
+  emotionashok_sad: {fileID: 21300000, guid: b5c0ba22cb602f542b780e541f2ef89e, type: 3}
+  emotionmathilda_sad: {fileID: 21300000, guid: 6219775d5a2454d4d914d38a3fdd3072, type: 3}
+  emotionmarzanna_embarassed: {fileID: 21300000, guid: 3c04ab8dbf80b6842a3ee08e401482db, type: 3}
+  emotionashok_embarassed: {fileID: 21300000, guid: 924a5db04b1a58844a251f1c8b6eb107, type: 3}
+  emotionhugh_angry: {fileID: 21300000, guid: 405d33e32a367d942b4f2eb34cee2042, type: 3}
+  emotionmathilda_scream: {fileID: 21300000, guid: 35af8574f999dfc40b61ecbc5660fc5b, type: 3}
 --- !u!1 &1991658535
 GameObject:
   m_ObjectHideFlags: 0
@@ -7917,7 +9162,7 @@ SpriteRenderer:
   m_Size: {x: 6.55, y: 9.4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1991658539
@@ -8067,6 +9312,161 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2133321502
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2133321503}
+  - component: {fileID: 2133321505}
+  - component: {fileID: 2133321504}
+  m_Layer: 0
+  m_Name: emotionashok_sad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2133321503
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133321502}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.75, y: -4.44, z: 0.68}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1105179149}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &2133321504
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133321502}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1097399477
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b5c0ba22cb602f542b780e541f2ef89e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 3.14, y: 3.08}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &2133321505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133321502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a93edf0c59653d642bd4c7e3b5abc3e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 462238686}
+  spriteRenderer1: {fileID: 1153228955}
+  spriteRenderer2: {fileID: 148327949}
+  spriteRenderer3: {fileID: 373349793}
+  spriteRenderer4: {fileID: 596415720}
+  spriteRenderer5: {fileID: 1915392045}
+  spriteRenderer6: {fileID: 986564227}
+  spriteRenderer7: {fileID: 1448681493}
+  spriteRenderer8: {fileID: 205772869}
+  spriteRenderer9: {fileID: 466033074}
+  spriteRenderer10: {fileID: 1388756735}
+  spriteRenderer11: {fileID: 1434588879}
+  spriteRenderer12: {fileID: 304563660}
+  spriteRenderer13: {fileID: 1398933657}
+  spriteRenderer14: {fileID: 1909909520}
+  spriteRenderer15: {fileID: 1134567638}
+  spriteRenderer16: {fileID: 1580026280}
+  spriteRenderer17: {fileID: 667986141}
+  spriteRenderer18: {fileID: 1025637567}
+  spriteRenderer19: {fileID: 235041365}
+  spriteRenderer20: {fileID: 667666937}
+  spriteRenderer21: {fileID: 1567158382}
+  spriteRenderer22: {fileID: 1916292093}
+  spriteRenderer23: {fileID: 1178972876}
+  spriteRenderer24: {fileID: 2133321504}
+  spriteRenderer25: {fileID: 418037946}
+  spriteRenderer26: {fileID: 1301227716}
+  spriteRenderer27: {fileID: 492785324}
+  spriteRenderer28: {fileID: 309913864}
+  emotionnanditha_idle: {fileID: 21300000, guid: 51a2c38f7320cdd498e8606e877f92bc, type: 3}
+  emotionhugh_idle: {fileID: 21300000, guid: f86cd9c964c37c54a82f812f6203d04d, type: 3}
+  emotionmathilda_idle: {fileID: 21300000, guid: 2559bdbb988590245968ab36258960cf, type: 3}
+  emotionmarzanna_idle: {fileID: 21300000, guid: 6aa9888e40f59a140aef28f94df53835, type: 3}
+  emotionashok_idle: {fileID: 21300000, guid: 32c23a4a88b75e9449cc2cfee3d08867, type: 3}
+  emotionmathilda_happy: {fileID: 21300000, guid: 7877e5410b0fe764bb0c3bac4ce4ef70, type: 3}
+  emotionnanditha_happy: {fileID: 21300000, guid: b58a5f42b2a19ac4e81f3607ad0ff3f9, type: 3}
+  emotionmarzanna_happy: {fileID: 21300000, guid: 5dc8adc49e0f7a041990dcf29c50ae94, type: 3}
+  emotionashok_happy: {fileID: 21300000, guid: adf19c91bb47e4942be7f26b8ddf6fa2, type: 3}
+  emotionhugh_happy: {fileID: 21300000, guid: 1331feab1c967b846aff8a6723df88e3, type: 3}
+  emotionashok_annoyed: {fileID: 21300000, guid: b9da7c01febe53340955260f3a0b372f, type: 3}
+  emotionhugh_annoyed: {fileID: 21300000, guid: eafbcdd4491be5649bd2f5477daaab75, type: 3}
+  emotionnanditha_annoyed: {fileID: 21300000, guid: 41413c979745f7e468ca3354afdebcf4, type: 3}
+  emotionmathilda_annoyed: {fileID: 21300000, guid: 040e1ab7910b70e4a8f7be06439e22b9, type: 3}
+  emotionmarzanna_annoyed: {fileID: 21300000, guid: 551b4ec242662f04dab97c0bc52769b3, type: 3}
+  emotionhugh_afraid: {fileID: 21300000, guid: 3cb67227490915044862687b13493898, type: 3}
+  emotionnanditha_afraid: {fileID: 21300000, guid: 2a390f8728f9ddc44bb2fecd1250507f, type: 3}
+  emotionmathilda_afraid: {fileID: 21300000, guid: 1ceaae27758dc654eb617ad1392ecb03, type: 3}
+  emotionmarzanna_afraid: {fileID: 21300000, guid: 7adf3685dce1d4d47ab661001f7e7633, type: 3}
+  emotionashok_afraid: {fileID: 21300000, guid: 43dde12cd2def5e47bf643992155896c, type: 3}
+  emotionmarzanna_sad: {fileID: 21300000, guid: fb66777dceb11514cbe3ecabe693c2fa, type: 3}
+  emotionnanditha_sad: {fileID: 21300000, guid: 2628431f5faaf6145a508bbd533a8e8d, type: 3}
+  emotionhugh_sad: {fileID: 21300000, guid: fb14020214e3add4189c5de1bc2eb425, type: 3}
+  emotionashok_sad: {fileID: 21300000, guid: b5c0ba22cb602f542b780e541f2ef89e, type: 3}
+  emotionmathilda_sad: {fileID: 21300000, guid: 6219775d5a2454d4d914d38a3fdd3072, type: 3}
+  emotionmarzanna_embarassed: {fileID: 21300000, guid: 3c04ab8dbf80b6842a3ee08e401482db, type: 3}
+  emotionashok_embarassed: {fileID: 21300000, guid: 924a5db04b1a58844a251f1c8b6eb107, type: 3}
+  emotionhugh_angry: {fileID: 21300000, guid: 405d33e32a367d942b4f2eb34cee2042, type: 3}
+  emotionmathilda_scream: {fileID: 21300000, guid: 35af8574f999dfc40b61ecbc5660fc5b, type: 3}
 --- !u!1 &41558600270522606
 GameObject:
   m_ObjectHideFlags: 0
@@ -8276,7 +9676,7 @@ SpriteRenderer:
   m_Size: {x: 6.55, y: 9.4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &488294539715043015
@@ -8432,7 +9832,7 @@ SpriteRenderer:
   m_Size: {x: 7.76, y: 5.36}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &813300852047956913
@@ -9002,7 +10402,7 @@ SpriteRenderer:
   m_Size: {x: 7.46, y: 4.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!58 &2163987296989075777
@@ -9275,7 +10675,7 @@ SpriteRenderer:
   m_Size: {x: 6.24, y: 6.1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &2598049081140451235
@@ -9344,7 +10744,7 @@ SpriteRenderer:
   m_Size: {x: 6.24, y: 6.1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!225 &2693097525541815032
@@ -9428,7 +10828,7 @@ SpriteRenderer:
   m_Size: {x: 6.55, y: 9.4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &2788652081880195803
@@ -9498,7 +10898,7 @@ SpriteRenderer:
   m_Size: {x: 0.54, y: 1.09}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &2879494140559058912
@@ -9692,7 +11092,7 @@ SpriteRenderer:
   m_Size: {x: 0.54, y: 1.09}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &3238174121951883686
@@ -10118,7 +11518,7 @@ SpriteRenderer:
   m_Size: {x: 2.4, y: 3.83}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &4115588385684591051
@@ -10293,7 +11693,7 @@ SpriteRenderer:
   m_Size: {x: 0.44, y: 0.41}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &4297307209325255099
@@ -10448,7 +11848,7 @@ SpriteRenderer:
   m_Size: {x: 17.6, y: 7.76}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &4586617502188742908
@@ -10534,7 +11934,7 @@ SpriteRenderer:
   m_Size: {x: 0.4, y: 1.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &4675621450563564469
@@ -10806,7 +12206,7 @@ SpriteRenderer:
   m_Size: {x: 17.6, y: 7.76}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &5222490320361196204
@@ -10907,7 +12307,7 @@ SpriteRenderer:
   m_Size: {x: 2.4, y: 3.83}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &5448705938691699453
@@ -10988,7 +12388,7 @@ SpriteRenderer:
   m_Size: {x: 0.44, y: 0.41}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!212 &5617376207165868728
@@ -11040,7 +12440,7 @@ SpriteRenderer:
   m_Size: {x: 6.8, y: 7.62}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &5618119079908274894
@@ -11113,7 +12513,7 @@ SpriteRenderer:
   m_Size: {x: 8.71, y: 9.1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &5774197218132523564
@@ -11444,7 +12844,7 @@ SpriteRenderer:
   m_Size: {x: 6.8, y: 7.62}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &6242823526167613208
@@ -12269,7 +13669,7 @@ SpriteRenderer:
   m_Size: {x: 6.78, y: 10.13}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &7891065063601323370
@@ -13214,7 +14614,7 @@ SpriteRenderer:
   m_Size: {x: 8.71, y: 9.1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &8202897943407883951
@@ -13448,7 +14848,7 @@ SpriteRenderer:
   m_Size: {x: 6.78, y: 10.13}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!212 &8467647342049453604
@@ -13500,7 +14900,7 @@ SpriteRenderer:
   m_Size: {x: 28.8, y: 10.799999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &8481333701461460163
@@ -13601,7 +15001,7 @@ SpriteRenderer:
   m_Size: {x: 7.76, y: 5.36}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &8694623099102329073
@@ -13828,7 +15228,7 @@ SpriteRenderer:
   m_Size: {x: 7.46, y: 4.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1660057539 &9223372036854775807
