@@ -62,7 +62,6 @@ color: white
 group: room0
 position: 14,-1321
 ---
-<<wait  3>>
 <<enableScene1>>
 <<emotionsprite "emotionashok_idle" "a_idle">>
 Ashok: Hmmm... Where am I?
