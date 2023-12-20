@@ -1,18 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Yarn.Unity;
 
-public class flickeranimate : MonoBehaviour
+public class flickerr : MonoBehaviour
 {
-public Yarn.Unity.DialogueRunner runner;
+  public Yarn.Unity.DialogueRunner runner;
  
  public GameObject blackout;
   private Animator animator;
     void Start()
     {
-        runner.AddCommandHandler("flickerlights", Flickerlight);
-        runner.AddCommandHandler("endflickerlights",FlickerEndlight);
+        runner.AddCommandHandler("flickerlights1", Flickerlight);
+        runner.AddCommandHandler("endflickerlights1",FlickerEndlight);
          
         animator = GetComponent<Animator>();
     }
@@ -43,12 +42,9 @@ blackout.GetComponent<SpriteRenderer>().enabled = false;
     }
 
 
-
-
-    
-    
 }
 
+ 
 
 
 

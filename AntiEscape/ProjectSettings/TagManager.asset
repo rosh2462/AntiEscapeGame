@@ -16,6 +16,9 @@ TagManager:
   - popupkey
   - popup1letter
   - popup1key
+  - SoundFx
+  - emotionashok_death
+  - popup2carrot
   layers:
   - Default
   - TransparentFX

@@ -14,8 +14,19 @@ public class EnableDisableScript : MonoBehaviour
 
      public GameObject targetGameObject3;
 
+    public GameObject targetGameObject4;
+
+    public GameObject targetGameObject5;
+          
+
 
      public GameObject death;
+
+     public GameObject death_ashok;
+
+      public GameObject AshokdeathSprite;
+ public GameObject AshokCorpse;
+
 
           public GameObject MathildadeathSprite;
 
@@ -25,7 +36,9 @@ public class EnableDisableScript : MonoBehaviour
 
            public GameObject MathildaCorpse;
 
-           public GameObject targetGameObject4;
+           public GameObject Lights;
+
+          
 
     private void Start()
     {
@@ -40,22 +53,45 @@ public class EnableDisableScript : MonoBehaviour
         dialogueRunner.AddCommandHandler("enableScene2", EnableScene2);
          dialogueRunner.AddCommandHandler("enableScene3", EnableScene3);
          dialogueRunner.AddCommandHandler("enableScene4", EnableScene4);
+               dialogueRunner.AddCommandHandler("enableScene5", EnableScene5);
         dialogueRunner.AddCommandHandler("enabledeathMathilda", EnableDeathMat);
+        dialogueRunner.AddCommandHandler("enabledeathAshok", EnableDeathAshok);
         dialogueRunner.AddCommandHandler("enableMathildaCorpse", EnableMathildaCorpse);
+dialogueRunner.AddCommandHandler("enableAshokCorpse", EnableAshokCorpse);
+        dialogueRunner.AddCommandHandler("enableLight", EnableLight);
 
         
         dialogueRunner.AddCommandHandler("disableScene1", DisableScene1);
         dialogueRunner.AddCommandHandler("disableScene2", DisableScene2);
         dialogueRunner.AddCommandHandler("disableScene3", DisableScene3);
+        dialogueRunner.AddCommandHandler("disableScene4", DisableScene4);
+         dialogueRunner.AddCommandHandler("disableScene5", DisableScene5);
         dialogueRunner.AddCommandHandler("disabledeathMathilda", DisableDeathMat);
+        dialogueRunner.AddCommandHandler("disabledeathAshok", DisableDeathAshok);
         dialogueRunner.AddCommandHandler("disableMathilda", DisableMathildaSprite);
+         dialogueRunner.AddCommandHandler("disableAshok", DisableAshokSprite);
         dialogueRunner.AddCommandHandler("disabletoolsitem", DisableTools1);
+        
          dialogueRunner.AddCommandHandler("disableknife", DisableKnife);
+         dialogueRunner.AddCommandHandler("disableLight", DisableLight);
 
 
     }
 
     // Yarn command to enable the target game object
+
+
+private void EnableLight()
+    {
+        if (Lights != null)
+        {
+            Lights.SetActive(true);
+        }
+    }
+
+
+
+
     private void EnableScene1()
     {
         if (targetGameObject1 != null)
@@ -89,6 +125,15 @@ private void EnableScene2()
         }
     }
 
+ private void EnableDeathAshok()
+    {
+        if (death_ashok != null)
+        {
+            death_ashok.SetActive(true);
+        }
+    }
+    
+
     private void EnableMathildaCorpse()
     {
         if (MathildaCorpse != null)
@@ -102,6 +147,22 @@ private void EnableScene4()
         if (targetGameObject4 != null)
         {
             targetGameObject4.SetActive(true);
+        }
+    }
+
+      private void EnableScene5()
+    {
+        if (targetGameObject5 != null)
+        {
+            targetGameObject5.SetActive(true);
+        }
+    }
+
+    private void EnableAshokCorpse()
+    {
+        if (AshokCorpse != null)
+        {
+            AshokCorpse.SetActive(true);
         }
     }
 
@@ -133,6 +194,16 @@ private void EnableScene4()
         }
     }
 
+
+private void DisableScene4()
+    {
+        if (targetGameObject4 != null)
+        {
+            targetGameObject4.SetActive(false);
+        }
+    }
+    
+
  private void DisableDeathMat()
     {
         if (death != null)
@@ -141,11 +212,30 @@ private void EnableScene4()
             
         }
     }
+
+private void  DisableDeathAshok()
+    {
+        if (death_ashok != null)
+        {
+            death_ashok.SetActive(false);
+            
+        }
+    }
+   
 private void DisableMathildaSprite()
     {
         if (MathildadeathSprite != null)
         {
             MathildadeathSprite.SetActive(false);
+            
+        }
+    }
+
+    private void DisableAshokSprite()
+    {
+        if (AshokdeathSprite != null)
+        {
+            AshokdeathSprite.SetActive(false);
             
         }
     }
@@ -169,8 +259,25 @@ private void DisableKnife()
         }
     }
 
+private void DisableLight()
+    {
+        if (Lights != null)
+        {
+            Lights.SetActive(false);
+            
+        }
+    }
+private void DisableScene5()
+    {
+        if (targetGameObject5 != null)
+        {
+            targetGameObject5.SetActive(false);
+            
+        }
+    }
+    
 
-
+             
 
 }
 

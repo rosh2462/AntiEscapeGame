@@ -7,9 +7,13 @@ public class popups : MonoBehaviour
 {
     public SpriteRenderer spriteRendererPOP;
      public SpriteRenderer spriteRendererPOPLetter;
+
+    public SpriteRenderer spriteRendererPOPCarrot;
     public Sprite popupkey;
 
     public Sprite popupletter;
+
+    public Sprite popupcarrot;
 
     [YarnCommand("popupsprite")]
     public void Setpop(string expression)
@@ -23,6 +27,9 @@ public class popups : MonoBehaviour
                 break;
             case "popup1key":
                 spriteRendererPOP.sprite = popupkey;
+                break;
+            case "popup2carrot":
+                spriteRendererPOPCarrot.sprite = popupcarrot;
                 break;
             default:
                 Debug.LogWarning("Unknown expression: " + expression);
