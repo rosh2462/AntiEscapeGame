@@ -89,7 +89,7 @@ Nanditha: Let's search for a light switch or something, it's so dark in here, I 
 <<destroyemotion "emotionnanditha_idle" "n_idle">>
 
 -> Find a light switch. //continue with room0_exit when clicking on the door
-<<jump room0_exit>>
+//<<jump room0_exit>>
 ===
 
 title: room0_exit
@@ -138,7 +138,7 @@ Marzanna: Oh nooo.
 Hugh: And again, we're in the dark. I saw a door over there, we should get out of here. Try not to fall over the corpse.
 <<destroyemotion "emotionhugh_idle" "h_idle">>
 
-<<playsound stumble>>
+//<<playsound stumble>>
 
 <<activateemotion "emotionhugh_idle" "h_idle">>
 <<emotionsprite "emotionmathilda_afraid" "mt_afraid">>
@@ -168,6 +168,8 @@ color: green
 group: room2
 position: 285,-598
 ---
+<<disableScene3>>
+ <<enableScene4>>
 <<flickerlights>> //lights flicker and go out 
 <<if visited_count("room2_enter") == 0>>
 <<activateemotion "emotionnanditha_afraid" "n_afraid">>
@@ -339,7 +341,7 @@ Hugh: We were inside this crate... like cargo... There's even a shipping label b
 <<endif>>
 <<destroyemotion "emotionhugh_idle" "h_idle">>
 <<destroyemotion "emotionhugh_afraid" "h_afraid">>
-<<playsound roar>>
+//<<playsound roar>>
 <<if $marzanna == true>>
     <<activateemotion "emotionmarzanna_sad" "mz_sad">>
     <<emotionsprite "emotionmarzanna_sad" "mz_sad">>
@@ -376,6 +378,7 @@ Mathilda: AAAAAAAAAAAAH!
 <<disabledeathMathilda>> //disabling the mathilda shock sprite
 
 <<if $hugh == true>>
+ <<enableMathildaCorpse>>
     <<emotionsprite "emotionhugh_afraid" "h_afraid">>
     Hugh: MATHILDA!
 <<endif>>
@@ -386,7 +389,7 @@ Mathilda: AAAAAAAAAAAAH!
 <<endif>>
 <<if $ashok == true>>
     <<emotionsprite "emotionashok_idle" "a_idle">>
-    <<enableMathildaCorpse>>
+   // <<enableMathildaCorpse>>
     Ashok: I think she's dead.
 <<endif>>
 <<if $nanditha == true>>
@@ -700,8 +703,8 @@ position: 158,286
         Ashok: Hey Marzanna, try to use the key you found on this door!
         <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
         Marzanna: Uhm, okay...
-        <<playsound door_opens>>
-        <<wait 2>>
+       // <<playsound door_opens>>
+        <<wait 1>>
         <<emotionsprite "emotionnanditha_happy" "n_happy">>
         Nanditha: Yes, it worked! Let's get out of here!
         <<set $door12 = true>>
