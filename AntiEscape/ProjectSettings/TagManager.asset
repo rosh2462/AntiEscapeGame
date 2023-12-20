@@ -15,6 +15,7 @@ TagManager:
   - emotionmathilda_death
   - popupkey
   - popup1letter
+  - popup1key
   layers:
   - Default
   - TransparentFX
