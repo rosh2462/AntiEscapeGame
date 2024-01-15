@@ -1322,7 +1322,7 @@ color: purple
 group: room4
 position: 799,-190
 ---
-//object gets deactivated when the variable $ashok turns false
+//object gets deactivated when the variable $marzanna turns false
 <<set $actions = $actions - 1>>
 <<activateemotion "emotionmarzanna_happy" "mz_happy">>
 <<activateemotion "emotionashok_idle" "a_idle">>
@@ -1364,8 +1364,55 @@ color: purple
 group: room4
 position: 799,-56
 ---
+//object gets deactivated when the variable $hugh turns false
 <<set $actions = $actions - 1>>
-
+<<activateemotion "emotionhugh_idle" "h_idle">>
+<<activateemotion "emotionmarzanna_idle" "mz_idle">>
+<<activateemotion "emotionhugh_happy" "h_happy">>
+<<emotionsprite "emotionhugh_idle" "h_idle">>
+Hugh: These look like real voodoo dolls... What a collection.
+<<if $marzanna == true>>
+    <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
+    Marzanna: Be careful, these effigies are dangerous! They can bear deadly curses.
+    <<emotionsprite "emotionhugh_happy" "h_happy">>
+    Hugh: I guess I should consider myself lucky that I'm not superstitious. People need to believe in that kind of stuff to make it work.
+<<endif>>
+<<destroyemotion "emotionhugh_idle" "h_idle">>
+<<destroyemotion "emotionhugh_happy" "h_happy">>
+<<set $hugh = false>>
+//<<popupsprite "emotionhugh_death" "h_death">>
+Hugh: AAARGH!
+<<activateemotion "emotionmarzanna_afraid" "mz_afraid">>
+<<activateemotion "emotionmarzanna_sad" "mz_sad">>
+<<activateemotion "emotionmathilda_scream" "mt_scream">>
+<<activateemotion "emotionnanditha_afraid" "n_afraid">>
+<<activateemotion "emotionashok_annoyed" "a_annoyed">>
+<<if $marzanna == true>>
+    <<emotionsprite "emotionmarzanna_afraid" "mz_afraid">>
+    Marzanna: HUGH!
+    <<emotionsprite "emotionmarzanna_sad" "mz_sad">>
+    Marzanna: No no no no no no no not him! It can't be!
+<<endif>>
+<<if $mathilda == true>>
+    <<emotionsprite "emotionmathilda_scream" "mt_scream">>
+    Mathilda: Hugh, are you alright?!
+<<endif>>
+<<if $nanditha == true>>
+    <<emotionsprite "emotionnanditha_afraid" "n_afraid">>
+    Nanditha: What happened?
+    <<if $marzanna == true>>
+        <<emotionsprite "emotionmarzanna_sad" "mz_sad">>
+        Marzanna: He got cursed.
+    <<endif>>
+<<endif>>
+<<if $ashok == true>>
+    <<emotionsprite "emotionashok_annoyed" "a_annoyed">>
+    Ashok: This arrogant prick had it coming.
+<<endif>>
+<<destroyemotion "emotionmarzanna_sad" "mz_sad">>
+<<destroyemotion "emotionmathilda_scream" "mt_scream">>
+<<destroyemotion "emotionnanditha_afraid" "n_afraid">>
+<<destroyemotion "emotionashok_annoyed" "a_annoyed">>
 <<jump room_investigate>>
 ===
 
@@ -1375,8 +1422,12 @@ color: purple
 group: room4
 position: 799,82
 ---
+//object gets deactivated when the variable $ashok turns false
 <<set $actions = $actions - 1>>
-
+<<activateemotion "emotionashok_idle" "a_idle">>
+<<emotionsprite "emotionashok_idle" "a_idle">>
+Ashok: I wonder how much this collection of gemstones is worth.
+<<destroyemotion "emotionashok_idle" "a_idle">>
 <<jump room_investigate>>
 ===
 
@@ -1449,6 +1500,7 @@ position: 160,253
     <<if $key12 == false>> //if the player did not offer the key yet
         <<emotionsprite "emotionnanditha_idle" "n_idle">>
         Nanditha: The door is locked, we need to find a key first!
+        <<destroyemotion "emotionnanditha_idle" "n_idle">>
         <<jump room_investigate>>
     <<else>>
         <<set $actions = $actions - 1>>
@@ -1460,6 +1512,7 @@ position: 160,253
         <<wait 2>>
         <<emotionsprite "emotionnanditha_happy" "n_happy">>
         Nanditha: Yes, it worked! Let's get out of here!
+        <<destroyemotion "emotionnanditha_happy" "n_happy">>
         <<set $door12 = true>>
         <<jump room2_enter>>
     <<endif>>
@@ -1467,8 +1520,6 @@ position: 160,253
     <<set $actions = $actions - 1>>
     <<jump room2_enter>>
 <<endif>>
-<<destroyemotion "emotionnanditha_idle" "n_idle">>
-<<destroyemotion "emotionnanditha_happy" "n_happy">>
 ===
 
 title: door23
@@ -1483,6 +1534,7 @@ position: 420,255
     <<if $key23 == false>> //if the player did not offer the key yet
         <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
         Marzanna: I can't open it, maybe there's an other key somewhere?
+        <<destroyemotion "emotionmarzanna_idle" "mz_idle">>
         <<jump room_investigate>>
     <<else>> 
         <<set $actions = $actions - 1>>
@@ -1492,6 +1544,7 @@ position: 420,255
         <<wait 2>>
         <<emotionsprite "emotionmarzanna_happy" "mz_happy">>
         Marzanna: Thank you, Hugh!
+        <<destroyemotion "emotionmarzanna_happy" "mz_happy">>
         <<set $door23 = true>>
         <<jump room3_enter>>
     <<endif>>
@@ -1499,8 +1552,6 @@ position: 420,255
     <<set $actions = $actions - 1>>
     <<jump room3_enter>>
 <<endif>>
-<<destroyemotion "emotionmarzanna_idle" "mz_idle">>
-<<destroyemotion "emotionmarzanna_happy" "mz_happy">>
 ===
 
 title: door34
@@ -1519,10 +1570,10 @@ position: 665,255
 <<if $door34 == false>>
     <<if $key34 == false>> //if the player did not offer the key yet
         <<if $mathilda == true>>
-            <<activateemotion "emotionmathilda_idle" "mt_idle">>
+            <<emotionsprite "emotionmathilda_idle" "mt_idle">>
             Mathilda: Here we go again, it's locked.
         <<else>>
-            <<activateemotion "emotionhugh_annoyed" "h_annoyed">>
+            <<emotionsprite "emotionhugh_annoyed" "h_annoyed">>
             Hugh: Of course, it's locked.
         <<endif>>
         <<if $item3key == true>>
@@ -1530,58 +1581,61 @@ position: 665,255
                 <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
                 Marzanna: Hugh...
             <<endif>>
-            <<activateemotion "emotionhugh_happy" "h_happy">>
+            <<emotionsprite "emotionhugh_happy" "h_happy">>
             Hugh: Lucky for us, I just found what's needed to open it.
             <<wait 2>>
-            <<activateemotion "emotionhugh_angry" "h_angry">>
+            <<emotionsprite "emotionhugh_angry" "h_angry">>
             Hugh: Damn!
             <<if $ashok == true>>
-                <<activateemotion "emotionashok_happy" "a_happy">>
+                <<emotionsprite "emotionashok_happy" "a_happy">>
                 Ashok: Seems like it doesn't fit.
             <<endif>>
         <<endif>>
         <<emotionsprite "emotionnanditha_idle" "n_idle">>
         Nanditha: There shurely is a fitting key somewhere!
-         <<jump room_investigate>>
+        <<destroyemotion "emotionmathilda_idle" "mt_idle">>
+        <<destroyemotion "emotionhugh_annoyed" "h_annoyed">>
+        <<destroyemotion "emotionmarzanna_idle" "mz_idle">>
+        <<destroyemotion "emotionhugh_angry" "h_angry">>
+        <<destroyemotion "emotionashok_happy" "a_happy">>
+        <<destroyemotion "emotionnanditha_idle" "n_idle">>
+        <<jump room_investigate>>
     <<else>>
         <<set $actions = $actions - 1>>
         <<if $mathilda == true>>
-            <<activateemotion "emotionmathilda_happy" "mt_happy">>
+            <<emotionsprite "emotionmathilda_happy" "mt_happy">>
             Mathilda: My key fits!
         <<elseif $marzanna == true && visited("interaction3globe") == false>>
-            <<activateemotion "emotionmarzanna_idle" "mz_idle">>
+            <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
             Marzanna: Maybe the key from the plants fits here?
         <<else>>
-            <<activateemotion "emotionnanditha_idle" "n_idle">>
+            <<emotionsprite "emotionnanditha_idle" "n_idle">>
             Nanditha: Let's try this key.
             <<if $ashok == true>>
-                <<activateemotion "emotionashok_idle" "a_idle">>
+                <<emotionsprite "emotionashok_idle" "a_idle">>
                 Ashok: Where did you find this one?
-                <<activateemotion "emotionnanditha_sad" "n_sad">>
+                <<emotionsprite "emotionnanditha_sad" "n_sad">>
                 Nanditha: It was dropped... by... you know...
-                <<activateemotion "emotionashok_happy" "a_happy">>
+                <<emotionsprite "emotionashok_happy" "a_happy">>
                 Ashok: Good call picking it up, sister!
             <<endif>>
         <<endif>>
         <<playsound door_opens>>
         <<wait 2>>
-        <<activateemotion "emotionnanditha_happy" "n_happy">>
+        <<emotionsprite "emotionnanditha_happy" "n_happy">>
         Nanditha: I'm shure we'll be out of here soon!
         <<set $door34 = true>>
+        <<destroyemotion "emotionmathilda_happy" "mt_happy">>
+        <<destroyemotion "emotionmarzanna_idle" "mz_idle">>
+        <<destroyemotion "emotionnanditha_idle" "n_idle">>
+        <<destroyemotion "emotionashok_happy" "a_happy">>
+        <<destroyemotion "emotionnanditha_happy" "n_happy">>
         <<jump room4_enter>>
     <<endif>>
 <<else>>
     <<set $actions = $actions - 1>>
     <<jump room4_enter>>
 <<endif>>
-<<destroyemotion "emotionmathilda_idle" "mt_idle">>
-<<destroyemotion "emotionhugh_annoyed" "h_annoyed">>
-<<destroyemotion "emotionhugh_angry" "h_angry">>
-<<destroyemotion "emotionashok_happy" "a_happy">>
-<<destroyemotion "emotionnanditha_idle" "n_idle">>
-<<destroyemotion "emotionmathilda_happy" "mt_happy">>
-<<destroyemotion "emotionmarzanna_idle" "mz_idle">>
-<<destroyemotion "emotionnanditha_happy" "n_happy">>
 ===
 
 title: door45
@@ -1590,13 +1644,40 @@ color: white
 group: doors
 position: 924,253
 ---
+<<activateemotion "emotionhugh_idle" "h_idle">>
+<<activateemotion "emotionashok_idle" "a_idle">>
+<<activateemotion "emotionnanditha_idle" "n_idle">>
+<<activateemotion "emotionnanditha_happy" "n_happy">>
+<<activateemotion "emotionmathilda_happy" "mt_happy">>
 <<if $door45 == false>>
     <<if $key45 == false>> //if the player did not offer the key yet
-        Characters comment on closed door //placeholder
+        <<if $hugh == true>> //placeholder
+            <<emotionsprite "emotionhugh_idle" "h_idle">>
+            Hugh: Why am I still expecting that there could be an unlocked door for once?
+        <<elseif $ashok == true>>
+            <<emotionsprite "emotionashok_idle" "a_idle">>
+            Ashok: We didn't find the key yet.
+        <<else>>
+            <<emotionsprite "emotionnanditha_idle" "n_idle">>
+            Nanditha: I hoped at least once there would be an unlocked door but I was wrong.
+        <<endif>>
+        <<destroyemotion "emotionhugh_idle" "h_idle">>
+        <<destroyemotion "emotionashok_idle" "a_idle">>
+        <<destroyemotion "emotionnanditha_idle" "n_idle">>
         <<jump room_investigate>>
     <<else>>
         <<set $actions = $actions - 1>>
-        Dialogue about the key
+        <<emotionsprite "emotionnanditha_happy" "n_happy">>
+        Nanditha: It must be the key from the vase.
+        <<playsound door_opens>>
+        <<wait 2>>
+        <<if $mathilda == true>>
+            <<emotionsprite "emotionmathilda_happy" "mt_happy">>
+            Mathilda: I'm proud of you, Nanditha.
+        <<endif>>
+        <<set $door23 = true>>
+        <<destroyemotion "emotionnanditha_happy" "n_happy">>
+        <<destroyemotion "emotionmathilda_happy" "mt_happy">>
         <<jump room5_enter>>
     <<endif>>
 <<else>>
