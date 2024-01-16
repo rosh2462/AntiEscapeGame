@@ -22,6 +22,10 @@ public class EnableDisableScript : MonoBehaviour
 
     public GameObject targetGameObject7;
 
+    public GameObject targetGameObject8;
+
+    public GameObject targetGameObject9;
+
      public GameObject death;
 
      public GameObject death_ashok;
@@ -65,6 +69,8 @@ public class EnableDisableScript : MonoBehaviour
          dialogueRunner.AddCommandHandler("enableScene4", EnableScene4);
                dialogueRunner.AddCommandHandler("enableScene5", EnableScene5);
                dialogueRunner.AddCommandHandler("enableScene6", EnableScene6);
+               dialogueRunner.AddCommandHandler("enableScene7", EnableScene7);
+               
                
         dialogueRunner.AddCommandHandler("enabledeathMathilda", EnableDeathMat);
         dialogueRunner.AddCommandHandler("enabledeathAshok", EnableDeathAshok);
@@ -75,12 +81,16 @@ dialogueRunner.AddCommandHandler("enableMarzannaCorpse", EnableMarzannaCorpse);
         dialogueRunner.AddCommandHandler("enableLight", EnableLight);
         dialogueRunner.AddCommandHandler("enabledeathMarzanna", EnableDeathMarzanna);
   dialogueRunner.AddCommandHandler("enablevault", enableVault);
+
+
         
         dialogueRunner.AddCommandHandler("disableScene1", DisableScene1);
         dialogueRunner.AddCommandHandler("disableScene2", DisableScene2);
         dialogueRunner.AddCommandHandler("disableScene3", DisableScene3);
         dialogueRunner.AddCommandHandler("disableScene4", DisableScene4);
          dialogueRunner.AddCommandHandler("disableScene5", DisableScene5);
+         dialogueRunner.AddCommandHandler("disableScene6", disableScene6);
+           
         dialogueRunner.AddCommandHandler("disabledeathMathilda", DisableDeathMat);
         dialogueRunner.AddCommandHandler("disabledeathAshok", DisableDeathAshok);
         dialogueRunner.AddCommandHandler("disabledeathMarzanna", DisableDeathMarzanna);
@@ -209,6 +219,14 @@ private void EnableScene6()
         }
     }
 
+
+private void EnableScene7()
+    {
+        if (targetGameObject9 != null)
+        {
+            targetGameObject9.SetActive(true);
+        }
+    }
 
 
     private void EnableAshokCorpse()
@@ -363,6 +381,16 @@ private void DisableScene5()
             
         }
     }
+
+private void disableScene6()
+    {
+        if (targetGameObject8 != null)
+        {
+            targetGameObject8.SetActive(false);
+            
+        }
+    }
+    
 
              
 

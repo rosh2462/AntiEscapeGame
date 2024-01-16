@@ -234,7 +234,9 @@ color: purple
 group: room4
 position: 799,-598
 ---
-<<flickerlights>>
+<<disableScene6>>
+  <<enableScene7>>
+<<flickerlights1>>
 <<if visited_count("room4_enter") == 0>>
     <<activateemotion "emotionashok_happy" "a_happy">>
     <<activateemotion "emotionmathilda_annoyed" "mt_annoyed">>
@@ -253,12 +255,10 @@ position: 799,-598
     <<endif>>
     <<destroyemotion "emotionmathilda_annoyed" "mt_annoyed">>
     <<destroyemotion "emotionmarzanna_idle" "mz_idle">>
-    //<<disableScene5>> //or whichever scene it is - switch from room 3 to room 4
-    //<<enableScene6>>
-    <<endflickerlights>> //lights flicker and come back on, characters are scattered
+     //or whichever scene it is - switch from room 3 to room 4
+  
+    <<endflickerlights1>> //lights flicker and come back on, characters are scattered
 <<else>>
-//<<disableScene5>>
-//<<enableScene6>>
 <<endflickerlights>>
 <<endif>>
 <<jump room_investigate>>
@@ -1627,6 +1627,8 @@ position: 665,255
         <<if $mathilda == true>>
            <<emotionsprite "emotionmathilda_happy" "mt_happy">>
             Mathilda: My key fits!
+            <<flickerlights1>>
+            <<endflickerlights1>>
         <<elseif $marzanna == true && visited("interaction3globe") == false>>
             <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
             Marzanna: Maybe the key from the plants fits here?
@@ -1642,10 +1644,10 @@ position: 665,255
                 Ashok: Good call picking it up, sister!
             <<endif>>
         <<endif>>
-        <<playsound door_opens>>
+     //   <<playsound door_opens>>
         <<wait 2>>
         <<emotionsprite "emotionnanditha_happy" "n_happy">>
-        Nanditha: I'm shure we'll be out of here soon!
+        Nanditha: I'm sure we'll be out of here soon!
         <<set $door34 = true>>
         <<destroyemotion "emotionmathilda_happy" "mt_happy">>
         <<destroyemotion "emotionmarzanna_idle" "mz_idle">>
