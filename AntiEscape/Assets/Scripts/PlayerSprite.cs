@@ -9,7 +9,8 @@ public class PlayerSprite : MonoBehaviour
 
 public Yarn.Unity.DialogueRunner dialogueRunner;
      public GameObject targetGameObject1;
-
+public GameObject cabinet;
+  public Animator animator;
       private void Start()
     {
         // Ensure the dialogueRunner is assigned
@@ -20,6 +21,7 @@ public Yarn.Unity.DialogueRunner dialogueRunner;
 
         // Subscribe to the Yarn command event
         dialogueRunner.AddCommandHandler("enableMathildaCharacter", EnableMathildaCharacter);
+         dialogueRunner.AddCommandHandler("enableCabinet", EnableCabinet);
     }
 
     private void EnableMathildaCharacter()
@@ -28,6 +30,18 @@ public Yarn.Unity.DialogueRunner dialogueRunner;
         {
             targetGameObject1.SetActive(true);
         }
+    }
+
+
+
+    public void EnableCabinet()
+    {
+
+cabinet.GetComponent<cabinetInteractive>().enabled = true;
+  animator.enabled=true;
+    cabinet.GetComponent<CustomCursor>().enabled = true;
+
+
     }
     
 //     public SpriteRenderer spriteRenderer;

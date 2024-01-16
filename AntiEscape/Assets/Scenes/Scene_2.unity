@@ -7653,6 +7653,7 @@ GameObject:
   - component: {fileID: 588947268}
   - component: {fileID: 588947273}
   - component: {fileID: 588947272}
+  - component: {fileID: 588947274}
   m_Layer: 0
   m_Name: window_idle
   m_TagString: Untagged
@@ -8010,6 +8011,20 @@ MonoBehaviour:
   conversationStartNode: interaction2window
   clickSound: {fileID: 8300000, guid: 16c74b8c591e6c943a3893b6212afbc4, type: 3}
   consoleOutputText: {fileID: 82135381}
+--- !u!114 &588947274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588947266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b67c59b4afd6c9c4f93dfb8ac8f639fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickSound: {fileID: 8300000, guid: 3784557426d3e9544a4bd0144d2dbfa2, type: 3}
+  runner: {fileID: 7612646322262730892}
 --- !u!1 &592263007
 GameObject:
   m_ObjectHideFlags: 0
@@ -9167,7 +9182,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &717751149
 Transform:
   m_ObjectHideFlags: 0
@@ -10119,7 +10134,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &952120193
 Transform:
   m_ObjectHideFlags: 0
@@ -13490,7 +13505,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1348210563
 Transform:
   m_ObjectHideFlags: 0
@@ -16379,6 +16394,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueRunner: {fileID: 7612646322262730892}
   targetGameObject1: {fileID: 717751148}
+  cabinet: {fileID: 2020779044}
+  animator: {fileID: 2020779047}
 --- !u!1 &1797927045
 GameObject:
   m_ObjectHideFlags: 0
@@ -17734,7 +17751,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2020779044}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 23e4d793def736547bd5b8b8943e71e4, type: 2}
   m_CullingMode: 0
@@ -17766,7 +17783,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2020779044}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 94b6c7e4fcedfab4a9c7a4286b786bca, type: 3}
   m_Name: 
@@ -17781,7 +17798,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2020779044}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfd1482d1cb566c4b852567dcc6eb6ed, type: 3}
   m_Name: 
