@@ -35,6 +35,8 @@ public class EnableDisableScript : MonoBehaviour
       public GameObject AshokdeathSprite;
  public GameObject AshokCorpse;
 
+ public GameObject vault;
+
 
           public GameObject MathildadeathSprite;
 
@@ -72,7 +74,7 @@ dialogueRunner.AddCommandHandler("enableMarzannaCorpse", EnableMarzannaCorpse);
 
         dialogueRunner.AddCommandHandler("enableLight", EnableLight);
         dialogueRunner.AddCommandHandler("enabledeathMarzanna", EnableDeathMarzanna);
-
+  dialogueRunner.AddCommandHandler("enablevault", enableVault);
         
         dialogueRunner.AddCommandHandler("disableScene1", DisableScene1);
         dialogueRunner.AddCommandHandler("disableScene2", DisableScene2);
@@ -98,6 +100,20 @@ dialogueRunner.AddCommandHandler("enableMarzannaCorpse", EnableMarzannaCorpse);
     // Yarn command to enable the target game object
 
 
+
+
+
+
+
+private void enableVault()
+    {
+        if (vault != null)
+        {
+            vault.SetActive(true);
+        }
+    }
+
+
 private void EnableLight()
     {
         if (Lights != null)
@@ -105,6 +121,7 @@ private void EnableLight()
             Lights.SetActive(true);
         }
     }
+
 
 
 
