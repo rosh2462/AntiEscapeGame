@@ -188,12 +188,12 @@ position: 285,-598
 <<activateemotion "emotionmathilda_idle" "n_idle">>
     <<emotionsprite "emotionnanditha_afraid" "n_afraid">>
     Nanditha: Dash it, the lights went out again!
+    <<destroyemotion "emotionnanditha_afraid" "n_afraid">>
     <<if $mathilda == true>>
         <<enableMathildaCharacter>>
         <<enableCabinet>>
         <<emotionsprite "emotionmathilda_idle" "mt_idle">>
         Mathilda: It smells like wet soil...
-<<destroyemotion "emotionnanditha_afraid" "n_afraid">>
 <<destroyemotion "emotionmathilda_idle" "mt_idle">>
     <<endif>>
     <<wait  0.5>>
