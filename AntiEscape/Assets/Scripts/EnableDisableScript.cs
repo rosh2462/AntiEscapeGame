@@ -18,11 +18,19 @@ public class EnableDisableScript : MonoBehaviour
 
     public GameObject targetGameObject5;
           
+    public GameObject targetGameObject6;
 
+    public GameObject targetGameObject7;
 
      public GameObject death;
 
      public GameObject death_ashok;
+
+     public GameObject death_marzanna;
+
+     public GameObject Marzannadeathsprite;
+
+     public GameObject MarzannaCorpse;
 
       public GameObject AshokdeathSprite;
  public GameObject AshokCorpse;
@@ -54,11 +62,16 @@ public class EnableDisableScript : MonoBehaviour
          dialogueRunner.AddCommandHandler("enableScene3", EnableScene3);
          dialogueRunner.AddCommandHandler("enableScene4", EnableScene4);
                dialogueRunner.AddCommandHandler("enableScene5", EnableScene5);
+               dialogueRunner.AddCommandHandler("enableScene6", EnableScene6);
+               
         dialogueRunner.AddCommandHandler("enabledeathMathilda", EnableDeathMat);
         dialogueRunner.AddCommandHandler("enabledeathAshok", EnableDeathAshok);
         dialogueRunner.AddCommandHandler("enableMathildaCorpse", EnableMathildaCorpse);
 dialogueRunner.AddCommandHandler("enableAshokCorpse", EnableAshokCorpse);
+dialogueRunner.AddCommandHandler("enableMarzannaCorpse", EnableMarzannaCorpse);
+
         dialogueRunner.AddCommandHandler("enableLight", EnableLight);
+        dialogueRunner.AddCommandHandler("enabledeathMarzanna", EnableDeathMarzanna);
 
         
         dialogueRunner.AddCommandHandler("disableScene1", DisableScene1);
@@ -68,10 +81,14 @@ dialogueRunner.AddCommandHandler("enableAshokCorpse", EnableAshokCorpse);
          dialogueRunner.AddCommandHandler("disableScene5", DisableScene5);
         dialogueRunner.AddCommandHandler("disabledeathMathilda", DisableDeathMat);
         dialogueRunner.AddCommandHandler("disabledeathAshok", DisableDeathAshok);
+        dialogueRunner.AddCommandHandler("disabledeathMarzanna", DisableDeathMarzanna);
         dialogueRunner.AddCommandHandler("disableMathilda", DisableMathildaSprite);
          dialogueRunner.AddCommandHandler("disableAshok", DisableAshokSprite);
+         dialogueRunner.AddCommandHandler("disableMarzanna", DisableMarzannaSprite);
+          
         dialogueRunner.AddCommandHandler("disabletoolsitem", DisableTools1);
-        
+        dialogueRunner.AddCommandHandler("disablebookshelf", DisablebookShelf);
+     
          dialogueRunner.AddCommandHandler("disableknife", DisableKnife);
          dialogueRunner.AddCommandHandler("disableLight", DisableLight);
 
@@ -132,6 +149,15 @@ private void EnableScene2()
             death_ashok.SetActive(true);
         }
     }
+
+
+    private void EnableDeathMarzanna()
+    {
+        if (death_marzanna != null)
+        {
+            death_marzanna.SetActive(true);
+        }
+    }
     
 
     private void EnableMathildaCorpse()
@@ -158,6 +184,16 @@ private void EnableScene4()
         }
     }
 
+private void EnableScene6()
+    {
+        if (targetGameObject6 != null)
+        {
+            targetGameObject6.SetActive(true);
+        }
+    }
+
+
+
     private void EnableAshokCorpse()
     {
         if (AshokCorpse != null)
@@ -166,6 +202,14 @@ private void EnableScene4()
         }
     }
 
+
+ private void EnableMarzannaCorpse()
+    {
+        if (MarzannaCorpse != null)
+        {
+            MarzannaCorpse.SetActive(true);
+        }
+    }
 
 
 
@@ -221,6 +265,17 @@ private void  DisableDeathAshok()
             
         }
     }
+
+
+private void  DisableDeathMarzanna()
+    {
+        if (death_marzanna != null)
+        {
+            death_marzanna.SetActive(false);
+            
+        }
+    }
+    
    
 private void DisableMathildaSprite()
     {
@@ -236,6 +291,14 @@ private void DisableMathildaSprite()
         if (AshokdeathSprite != null)
         {
             AshokdeathSprite.SetActive(false);
+            
+        }
+    }
+    private void DisableMarzannaSprite()
+    {
+        if (Marzannadeathsprite != null)
+        {
+            Marzannadeathsprite.SetActive(false);
             
         }
     }
@@ -275,7 +338,14 @@ private void DisableScene5()
             
         }
     }
-    
+    private void DisablebookShelf()
+    {
+        if (targetGameObject7 != null)
+        {
+            targetGameObject7.SetActive(false);
+            
+        }
+    }
 
              
 
