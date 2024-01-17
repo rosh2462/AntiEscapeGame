@@ -4,17 +4,13 @@ using UnityEngine;
 using Yarn.Unity;
 using UnityEngine.UI;
 using TMPro;
-public class vaultinteractable : MonoBehaviour
+public class vaseInteractive : MonoBehaviour
 {
-     [SerializeField] private string conversationStartNode;
+         [SerializeField] private string conversationStartNode;
     private DialogueRunner dialogueRunner;
     private bool interactable = true;
      private AudioSource audioSource;
      public AudioClip clickSound;
-
-     public GameObject scene6;
-
-     public GameObject scenevault;
 
      public TextMeshProUGUI consoleOutputText;
       float actions;
@@ -47,9 +43,6 @@ variableStorage = GameObject.FindObjectOfType<InMemoryVariableStorage>();
 public void OnMouseDown() {
         if (interactable && !dialogueRunner.IsDialogueRunning) {
             StartConversation();
-              scene6.SetActive(false);
-              scenevault.SetActive(true);
-
             variableStorage.TryGetValue("$actions", out actions);
 variableStorage.SetValue("$actions", actions);
 //Debug.Log("Value:"+actions);
@@ -75,3 +68,6 @@ consoleOutputText.text = "" + actions.ToString();
         }
     }
 }
+
+
+

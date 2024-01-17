@@ -234,22 +234,34 @@ color: purple
 group: room4
 position: 799,-598
 ---
-<<disableScene6>>
-  <<enableScene7>>
-<<flickerlights1>>
+<<wait 2>>
+         <<flickerlights1>>
 <<if visited_count("room4_enter") == 0>>
+ 
     <<activateemotion "emotionashok_happy" "a_happy">>
     <<activateemotion "emotionmathilda_annoyed" "mt_annoyed">>
     <<activateemotion "emotionnanditha_annoyed" "n_annoyed">>
+     
+ 
+    <<disableScene6>>
+  <<enableScene7>>
+  
     <<if $candle == false && $item4candle == true && $ashok == true && $mathilda == true>>
         <<emotionsprite "emotionashok_happy" "a_happy">>
         Ashok: Good you brought that candle, Mathilda. It's so helpful now.
         <<emotionsprite "emotionmathilda_annoyed" "mt_annoyed">>
         Mathilda: Shut up, Ashok.
     <<endif>>
-    <<if $marzanna == true>>
-        <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
-        Marzanna: Darkness awaits wherever we go...
+     <<if $nanditha == true>>
+     <<emotionsprite "emotionnanditha_idle" "n_idle">>
+     Nanditha: Darkness awaits wherever we go...
+     <<destroyemotion "emotionnanditha_idle" "n_idle">>
+     <<jump room_investigate>>
+    // <<if $marzanna == true>>
+
+    //     <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
+     
+    //     Marzanna: Darkness awaits wherever we go...
     <<else>>
     ...
     <<endif>>
@@ -259,9 +271,12 @@ position: 799,-598
   
     <<endflickerlights1>> //lights flicker and come back on, characters are scattered
 <<else>>
+<<disableScene6>>
+  <<enableScene7>>
 <<endflickerlights>>
-<<endif>>
 <<jump room_investigate>>
+<<endif>>
+
 ===
 
 title: room5_enter
@@ -1164,6 +1179,7 @@ position: 539,-742
 <<if $hugh == true>>
     <<emotionsprite "emotionhugh_idle" "h_idle">>
     Hugh: It's highly unlikely that this is the way out. The has to be an other exit...
+    <<enableScene6>>
 <<endif>>
 <<if $marzanna == true>>
     <<emotionsprite "emotionmarzanna_embarassed" "mz_embarassed">>
@@ -1627,8 +1643,7 @@ position: 665,255
         <<if $mathilda == true>>
            <<emotionsprite "emotionmathilda_happy" "mt_happy">>
             Mathilda: My key fits!
-            <<flickerlights1>>
-            <<endflickerlights1>>
+            
         <<elseif $marzanna == true && visited("interaction3globe") == false>>
             <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
             Marzanna: Maybe the key from the plants fits here?
@@ -1645,10 +1660,11 @@ position: 665,255
             <<endif>>
         <<endif>>
      //   <<playsound door_opens>>
-        <<wait 2>>
+        
         <<emotionsprite "emotionnanditha_happy" "n_happy">>
         Nanditha: I'm sure we'll be out of here soon!
         <<set $door34 = true>>
+      <<flickerlights1>>
         <<destroyemotion "emotionmathilda_happy" "mt_happy">>
         <<destroyemotion "emotionmarzanna_idle" "mz_idle">>
         <<destroyemotion "emotionnanditha_idle" "n_idle">>
