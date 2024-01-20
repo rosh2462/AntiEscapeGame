@@ -399,6 +399,11 @@ position: 539,-976
 <<if $actions == 40>>
     <<playsound monster40>>
     <<addtrack mood40>>
+    <<activateemotion "emotionmathilda_idle" "mt_idle">>
+    <<activateemotion "emotionnanditha_idle" "n_idle">>
+    <<activateemotion "emotionmarzanna_idle" "mz_idle">>
+    <<activateemotion "emotionhugh_idle" "h_idle">>
+    <<activateemotion "emotionashok_idle" "a_idle">>
     <<if $mathilda == true>>
         <<emotionsprite "emotionmathilda_idle" "mt_idle">>
         Mathilda: Did you hear that?
@@ -419,7 +424,17 @@ position: 539,-976
         <<emotionsprite "emotionashok_idle" "a_idle">>
         Ashok: Let's not get scared by some random noise.
     <<endif>>
+    <<destroyemotion "emotionmathilda_idle" "mt_idle">>
+    <<destroyemotion "emotionnanditha_idle" "n_idle">>
+    <<destroyemotion "emotionmarzanna_idle" "mz_idle">>
+    <<destroyemotion "emotionhugh_idle" "h_idle">>
+    <<destroyemotion "emotionashok_idle" "a_idle">>
 <<elseif $actions == 30>>
+    <<activateemotion "emotionmathilda_annoyed" "mt_annoyed">>
+    <<activateemotion "emotionhugh_annoyed" "h_annoyed">>
+    <<activateemotion "emotionnanditha_idle" "n_idle">>
+    <<activateemotion "emotionmarzanna_afraid" "mz_afraid">>
+    <<activateemotion "emotionashok_idle" "a_idle">>
     <<playsound monster30>>
     <<addtrack mood30>>
     <<if $mathilda == true>>
@@ -442,7 +457,17 @@ position: 539,-976
         <<emotionsprite "emotionashok_idle" "a_idle">>
         Ashok: Maybe we should hurry up a little.
     <<endif>>
+    <<destroyemotion "emotionmathilda_annoyed" "mt_annoyed">>
+    <<destroyemotion "emotionhugh_annoyed" "h_annoyed">>
+    <<destroyemotion "emotionnanditha_idle" "n_idle">>
+    <<destroyemotion "emotionmarzanna_afraid" "mz_afraid">>
+    <<destroyemotion "emotionashok_idle" "a_idle">>
 <<elseif $actions == 20>>
+    <<activateemotion "emotionhugh_annoyed" "h_annoyed">>
+    <<activateemotion "emotionmathilda_afraid" "mt_afraid">>
+    <<activateemotion "emotionashok_annoyed" "a_annoyed">>
+    <<activateemotion "emotionnanditha_afraid" "n_afraid">>
+    <<activateemotion "emotionmarzanna_sad" "mz_sad">>
     <<playsound monster20>>
     <<addtrack mood20>>
     <<if $hugh == true>>
@@ -465,9 +490,19 @@ position: 539,-976
         <<emotionsprite "emotionmarzanna_sad" "mz_sad">>
         Marzanna: We're not gonna make it out of here before that thing gets us.
     <<endif>>
+    <<destroyemotion "emotionhugh_annoyed" "h_annoyed">>
+    <<destroyemotion "emotionmathilda_afraid" "mt_afraid">>
+    <<destroyemotion "emotionashok_annoyed" "a_annoyed">>
+    <<destroyemotion "emotionnanditha_afraid" "n_afraid">>
+    <<destroyemotion "emotionmarzanna_sad" "mz_sad">>
 <<elseif $actions == 10>>
     <<playsound monster10>>
     <<addtrack mood10>>
+    <<activateemotion "emotionmarzanna_sad" "mz_sad">>
+    <<activateemotion "emotionashok_afraid" "a_afraid">>
+    <<activateemotion "emotionhugh_afraid" "h_afraid">>
+    <<activateemotion "emotionnanditha_sad" "n_sad">>
+    <<activateemotion "emotionmathilda_scream" "mt_scream">>
     <<if $marzanna == true>>
         <<if visited("interaction1crate") == true>>
              <<emotionsprite "emotionmarzanna_sad" "mz_sad">>
@@ -497,8 +532,18 @@ position: 539,-976
         <<emotionsprite "emotionmathilda_scream" "mt_scream">>
         Mathilda: Whatever you are, I'm not afraid of you!
     <<endif>>
+    <<destroyemotion "emotionmarzanna_sad" "mz_sad">>
+    <<destroyemotion "emotionashok_afraid" "a_afraid">>
+    <<destroyemotion "emotionhugh_afraid" "h_afraid">>
+    <<destroyemotion "emotionnanditha_sad" "n_sad">>
+    <<destroyemotion "emotionmathilda_scream" "mt_scream">>
 <<elseif $actions == 1>>
     <<playsound monster1>>
+    <<activateemotion "emotionhugh_sad" "h_sad">>
+    <<activateemotion "emotionnanditha_sad" "n_sad">>
+    <<activateemotion "emotionmathilda_sad" "mt_sad">>
+    <<activateemotion "emotionashok_sad" "a_sad">>
+    <<activateemotion "emotionmarzanna_happy" "mz_happy">>
     <<if $hugh == true>>
         <<emotionsprite "emotionhugh_sad" "h_sad">>
         Hugh: It's here!
@@ -519,6 +564,11 @@ position: 539,-976
         <<emotionsprite "emotionmarzanna_happy" "mz_happy">>
         Marzanna: Finally, it's over.
     <<endif>>
+    <<destroyemotion "emotionhugh_sad" "h_sad">>
+    <<destroyemotion "emotionnanditha_sad" "n_sad">>
+    <<destroyemotion "emotionmathilda_sad" "mt_sad">>
+    <<destroyemotion "emotionashok_sad" "a_sad">>
+    <<destroyemotion "emotionmarzanna_happy" "mz_happy">>
     -> RUN!
 <<endif>>
 <<if $actions == 0>>
@@ -1674,7 +1724,9 @@ Nanditha: What a huge machine. I wonder what it's for?
 <<destroyemotion "emotionhugh_annoyed" "h_annoyed">>
 //<<popupsprite "emotionnanditha_death" "n_death">>
 Nanditha: OH! //nanditha get's electrocuted, the generator shuts down
-<<set $light = false>> //the lights turn off, the scene is black
+<<if visited("room1_enter") == true>>
+    <<set $light = false>> //the lights turn off, the scene is black
+<<endif>>
 <<activateemotion "emotionmathilda_afraid" "mt_afraid">>
 <<activateemotion "emotionmathilda_sad" "mt_sad">>
 <<activateemotion "emotionashok_afraid" "a_afraid">>
@@ -1683,24 +1735,37 @@ Nanditha: OH! //nanditha get's electrocuted, the generator shuts down
 <<if $mathilda == true>>
     <<emotionsprite "emotionmathilda_afraid" "mt_afraid">>
     Mathilda: NANDITHA! Are you alright?
-    <<if $candle == true>>
-        <<emotionsprite "emotionmathilda_sad" "mt_sad">>
-        Mathilda: She's not breathing...
-    <<elseif $item4candle == true>>
-        <<emotionsprite "emotionmathilda_sad" "mt_sad">>
-        Mathilda: I need to light the so we can see what happened!
+    <<if $light == false>>
+        <<if $candle == true>>
+            <<emotionsprite "emotionmathilda_sad" "mt_sad">>
+            Mathilda: She's not breathing...
+        <<elseif $item4candle == true>>
+            <<emotionsprite "emotionmathilda_sad" "mt_sad">>
+            Mathilda: I need to light the so we can see what happened!
+        <<else>>
+            <<emotionsprite "emotionmathilda_sad" "mt_sad">>
+            Mathilda: She's not answering...
+        <<endif>>
     <<else>>
         <<emotionsprite "emotionmathilda_sad" "mt_sad">>
-        Mathilda: She's not answering...
+        Mathilda: Why did she have to touch that stupid machine? 
     <<endif>>
 <<endif>>
 <<if $ashok == true>>
-    <<emotionsprite "emotionashok_afraid" "a_afraid">>
-    Ashok: Sister! Why aren't the lights turning back on?
+    <<if $light == true>>
+        <<emotionsprite "emotionashok_afraid" "a_afraid">>
+        Ashok: Sister! No, it can't be! Not you!
+    <<else>>
+        <<emotionsprite "emotionashok_afraid" "a_afraid">>
+        Ashok: Sister! Why aren't the lights turning back on?
+    <<endif>>
 <<endif>>
 <<if $hugh == true>>
     <<emotionsprite "emotionhugh_annoyed" "h_annoyed">>
-    Hugh: I told her not to get too close. No the lights are out for good.
+    Hugh: I told her not to get too close.
+    <<if $light == false>>
+        Hugh: Now the lights are out for good.
+    <<endif>>
 <<endif>>
 <<if $marzanna == true>>
     <<emotionsprite "emotionmarzanna_afraid" "mz_afraid">>
@@ -1719,8 +1784,68 @@ color: blue
 group: room5
 position: 1060,-56
 ---
+//object gets deactivated when the variable $hugh turns false
 <<set $actions = $actions - 1>>
-//refer to the weird sounds
+<<activateemotion "emotionhugh_idle" "h_idle">>
+<<activateemotion "emotionmathilda_idle" "mt_idle">>
+<<activateemotion "emotionmathilda_annoyed" "mt_annoyed">>
+<<activateemotion "emotionashok_idle" "a_idle">>
+<<activateemotion "emotionmarzanna_idle" "mz_idle">>
+<<activateemotion "emotionhugh_happy" "h_happy">>
+<<activateemotion "emotionhugh_afraid" "h_afraid">>
+<<emotionsprite "emotionhugh_idle" "h_idle">>
+Hugh: This is an animal cage and judging from the smell, it had been inhabited recently.
+<<if $item5finger == false>>
+    <<if $mathilda == true>>
+        <<emotionsprite "emotionmathilda_idle" "mt_idle">>
+        Marthilda: What's that inside?
+        <<emotionsprite "emotionhugh_idle" "h_idle">>
+        Hugh: Looks like... a finger?
+        <<emotionsprite "emotionmathilda_annoyed" "mt_annoyed">>
+        Mathilda: Gross!
+    <<endif>>
+    <<if $ashok == true>>
+        <<emotionsprite "emotionashok_idle" "a_idle">>
+        Ashok: I guess we weren't supposed to be organ donors but rather food for this creature.
+    <<endif>>
+    <<if $marzanna == true && $item3key == true>>
+        <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
+        Marzanna: Maybe your special key fits here...
+    <<endif>>
+    <<if $item3key == true>>
+        <<emotionsprite "emotionhugh_idle" "h_idle">>
+        Hugh: Ok, I'll try the orrery key and take a closer look at what's inside.
+        <<playsound cage_opens>>
+        <<wait 2>>
+        <<emotionsprite "emotionhugh_happy" "h_happy">>
+        Hugh: Finally! I knew this key had to be useful at some point!
+        <<if $mathilda == true>>
+            <<emotionsprite "emotionmathilda_idle" "mt_idle">>
+            Mathilda: Is there really a finger?
+            <<emotionsprite "emotionhugh_afraid" "h_afraid">>
+            Hugh: Definitely... and the blood on it hasn't dried yet!
+            <<destroyemotion "emotionhugh_afraid" "h_afraid">>
+            <<set $item5finger = true>>
+            <<popupsprite "popup5finger" "popup5finger">>
+            Hugh found a seperated finger!
+            <<destroypopup "popup5finger" "popup5finger">>
+        <<else>>
+            <<emotionsprite "emotionhugh_afraid" "h_afraid">>
+            Hugh: There's a finger inside... and the blood on it hasn't dried yet!
+            <<destroyemotion "emotionhugh_afraid" "h_afraid">>
+            <<set $item5finger = true>>
+            <<popupsprite "popup5finger" "popup5finger">>
+            Hugh found a seperated finger!
+            <<destroypopup "popup5finger" "popup5finger">>
+        <<endif>>
+    <<endif>>
+<<endif>>
+<<if $actions <= 25>>
+    <<activateemotion "emotionhugh_sad" "h_sad">>
+    <<emotionsprite "emotionhugh_sad" "h_sad">>
+    Hugh: The creature that was kept in this cage might be the thing that we've been hearing...
+    <<destroyemotion "emotionhugh_sad" "h_sad">>
+<<endif>>
 <<jump room_investigate>>
 ===
 
@@ -1730,8 +1855,26 @@ color: blue
 group: room5
 position: 1060,82
 ---
+//object gets deactivated when the variable $mathilda turns false
 <<set $actions = $actions - 1>>
-
+<<activateemotion "emotionmathilda_happy" "mt_happy">>
+<<activateemotion "emotionmathilda_idle" "mt_idle">>
+<<if $item4candle == true && $candle == false>>
+    <<emotionsprite "emotionmathilda_happy" "mt_happy">>
+    Mathilda: Nice! I can light my candle with this burner!
+    <<destroyemotion "emotionmathilda_happy" "mt_happy">>
+    <<set $candle = true>>
+    Mathilda lights the candle.
+<<elseif $item4candle == false>>
+    <<activateemotion "emotionmathilda_idle" "mt_idle">>
+    <<emotionsprite "emotionmathilda_idle" "mt_idle">>
+    Mathilda: I wish this burner was portable. We wouldn't have to worry abou the flickering lights anymore.
+<<else>>
+    <<emotionsprite "emotionmathilda_happy" "mt_happy">>
+    Mathilda: These bunsen burners have always been my favourite part about chemistry class.
+<<endif>>
+<<destroyemotion "emotionmathilda_idle" "mt_idle">>
+<<destroyemotion "emotionmathilda_happy" "mt_happy">>
 <<jump room_investigate>>
 ===
 
@@ -1902,9 +2045,9 @@ position: 924,253
 <<if $door45 == false>>
     <<if $key45 == false>> //if the player did not offer the key yet
         <<if $hugh == true>>
-            <<if $item3key == true>>
+            <<if $item3key == true && $item5finger == false>>
                 <<emotionsprite "emotionhugh_happy" "h_happy">>
-                Hugh: Maybe this is the right door for my orrery key.
+                Hugh: Maybe this is the right door for my key.
                 <<wait  2>>
                 <<emotionsprite "emotionhugh_angry" "h_angry">>
                 Hugh: Useless thing!
@@ -1934,7 +2077,7 @@ position: 924,253
             <<emotionsprite "emotionmathilda_happy" "mt_happy">>
             Mathilda: I'm proud of you, Nanditha.
         <<endif>>
-        <<set $door23 = true>>
+        <<set $door45 = true>>
         <<destroyemotion "emotionnanditha_happy" "n_happy">>
         <<destroyemotion "emotionmathilda_happy" "mt_happy">>
         <<jump room5_enter>>
@@ -1952,13 +2095,105 @@ group: doors
 position: 1187,253
 ---
 <<if $door51 == false>>
-    <<if $key51 == false>> //if the player did not offer the key yet
-        Characters comment on closed door //placeholder
+    <<activateemotion "emotionmarzanna_idle" "mz_idle">>
+    <<activateemotion "emotionnanditha_happy" "n_happy">>
+    <<activateemotion "emotionmathilda_annoyed" "mt_annoyed">>
+    <<activateemotion "emotionhugh_idle" "h_idle">>
+    <<activateemotion "emotionhugh_angry" "h_angry">>
+    <<activateemotion "emotionashok_happy" "a_happy">>
+    <<activateemotion "emotionmathilda_idle" "mt_idle">>
+    <<activateemotion "emotionnanditha_sad" "n_sad">>
+    <<activateemotion "emotionmarzanna_afraid" "mz_afraid">>
+    <<if $key51 == false>> //if the key has not been found yet
+        <<if $marzanna == true>>
+            <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
+            Marzanna: I don't need to try the door to know it's locked... All of them have been so far. 
+        <<elseif $nanditha == true>>
+            <<emotionsprite "emotionnanditha_happy" "n_happy">>
+            Nanditha: Uh, I can feel it, this is the last door we need to open. This is the final exit.
+        <<elseif $mathilda == true>>
+            <<emotionsprite "emotionmathilda_annoyed" "mt_annoyed">>
+            Mathilda: Can't there be an unlocked door for once? How paranoid is the owner of this house?
+        <<endif>>
+        <<if $hugh == true>>
+            <<if $item3key == true && $item5finger == false>>
+                <<emotionsprite "emotionhugh_idle" "h_idle">>
+                Hugh: Ok, I'll try my key again.
+                <<wait  2>>
+                <<emotionsprite "emotionhugh_angry" "h_angry">>
+                Hugh: Why did I even take this stupid thing with me?
+            <<else>>
+                <<emotionsprite "emotionhugh_idle" "h_idle">>
+                Hugh: And again, we need to look out for a key to open this one.
+            <<endif>>
+        <<endif>>
+        <<if $ashok == true>>
+            <<emotionsprite "emotionashok_happy" "a_happy">>
+            Ashok: We were able to open all these doors so far, the right key shouldn't be so hard to find.
+        <<endif>>
+        <<destroyemotion "emotionmarzanna_idle" "mz_idle">>
+        <<destroyemotion "emotionnanditha_happy" "n_happy">>
+        <<destroyemotion "emotionmathilda_annoyed" "mt_annoyed">>
+        <<destroyemotion "emotionhugh_angry" "h_angry">>
+        <<destroyemotion "emotionhugh_idle" "h_idle">>
+        <<destroyemotion "emotionashok_happy" "a_happy">>
         <<jump room_investigate>>
     <<else>>
         <<set $actions = $actions - 1>>
-        Dialogue about the key // reminder: don't forget Nanditha's backup key from the telescope!
-        <<jump room1_enter>>
+        <<if $ashok == true>>
+            <<emotionsprite "emotionashok_happy" "a_happy">>
+            Ashok: I got this!
+            <<playsound door_opens>>
+            <<wait 2>>
+            <<if $nanditha == true>>
+                <<emotionsprite "emotionnanditha_happy" "n_happy">>
+                Nanditha: Yes! I'm so excited!
+            <<endif>>
+            <<set $door51 = true>>
+            <<destroyemotion "emotionashok_happy" "a_happy">>
+            <<destroyemotion "emotionnanditha_happy" "n_happy">>
+            <<jump room1_enter>>
+        <<elseif $nanditha == true && visited("interaction5apparatus") == false>>
+            <<emotionsprite "emotionnanditha_happy" "n_happy">>
+            Nanditha: I'll try the key that I found attached to the telescope.
+            <<playsound door_opens>>
+            <<wait 2>>
+            <<emotionsprite "emotionnanditha_happy" "n_happy">>
+            Nanditha: Yes! I'm so excited!
+            <<set $door51 = true>>
+            <<destroyemotion "emotionnanditha_happy" "n_happy">>
+            <<jump room1_enter>>
+        <<elseif visited("interaction5apparatus") == true>>
+            <<if $mathilda == true>>
+                <<emotionsprite "emotionmathilda_idle" "mt_idle">>
+                Mathilda: When Ashok died, he dropped this key... let's try it.
+            <<elseif $hugh == true>>
+                <<emotionsprite "emotionhugh_idle" "h_idle">>
+                Hugh: When Ashok died, he dropped this key... I'll try it.
+            <<elseif $nanditha == true>>
+                <<emotionsprite "emotionnanditha_sad" "n_sad">>
+                Nanditha: When my brother died, he dropped this key... it must be the right one.
+            <<endif>>
+            <<playsound door_opens>>
+            <<wait 2>>
+            <<if $nanditha == true>>
+                <<emotionsprite "emotionnanditha_happy" "n_happy">>
+                Nanditha: Yes! I'm so excited!
+            <<endif>>
+            <<set $door51 = true>>
+            <<destroyemotion "emotionmathilda_idle" "mt_idle">>
+            <<destroyemotion "emotionhugh_idle" "h_idle">>
+            <<destroyemotion "emotionnanditha_sad" "n_sad">>
+            <<destroyemotion "emotionnanditha_happy" "n_happy">>
+            <<jump room1_enter>>
+        <<else>>
+            <<if $marzanna == true>>
+                <<emotionsprite "emotionmarzanna_afraid" "mz_afraid">>
+                Marzanna: We are stuck, I know it!
+                <<destroyemotion "emotionmarzanna_afraid" "mz_afraid">>
+            <<endif>>
+            <<jump room_investigate>>
+        <<endif>>
     <<endif>>
 <<else>>
     <<set $actions = $actions - 1>>
@@ -1972,7 +2207,7 @@ color: white
 group: ending
 position: 539,-1511
 ---
-Whoops! You killed them all. Try again!
+Whoops! You got them all killed. Try again!
 //<<jump start_menu>>
 ===
 
