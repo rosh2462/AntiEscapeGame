@@ -19,6 +19,12 @@ TagManager:
   - SoundFx
   - emotionashok_death
   - popup2carrot
+  - popup2key
+  - popup2remote
+  - mathilda_2_2
+  - popup3code
+  - popup3cagekey
+  - popup3key
   layers:
   - Default
   - TransparentFX
