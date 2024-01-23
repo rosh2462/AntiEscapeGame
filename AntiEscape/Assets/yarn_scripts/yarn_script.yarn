@@ -144,7 +144,7 @@ Marzanna: Oh nooo.
 Hugh: And again, we're in the dark. I saw a door over there, we should get out of here. Try not to fall over the corpse.
 <<destroyemotion "emotionhugh_idle" "h_idle">>
 
-<<playsound stumble>> //Ashok stumbles over the corpse and falls
+<<playsound sound "stumble">> //Ashok stumbles over the corpse and falls
 
 <<activateemotion "emotionhugh_idle" "h_idle">>
 <<emotionsprite "emotionmathilda_afraid" "mt_afraid">>
@@ -292,7 +292,7 @@ position: 18,-598
     <<activateemotion "emotionmathilda_annoyed" "mt_annoyed">>
     <<activateemotion "emotionnanditha_happy" "n_happy">>
     <<activateemotion "emotionmarzanna_afraid" "mz_afraid">>
-    <<playsound scroll>>
+    <<playsound sound "scroll">>
     <<if $ashok == true>>
         <<emotionsprite "emotionashok_idle" "a_idle">>
         Ashok: Did you hear that?
@@ -397,8 +397,8 @@ group: common
 position: 539,-976
 ---
 <<if $actions == 40>>
-    <<playsound monster40>>
-    <<addtrack mood40>>
+    <<playsound sound "monster40">>
+    <<addtrack track "40">>
     <<activateemotion "emotionmathilda_idle" "mt_idle">>
     <<activateemotion "emotionnanditha_idle" "n_idle">>
     <<activateemotion "emotionmarzanna_idle" "mz_idle">>
@@ -435,8 +435,8 @@ position: 539,-976
     <<activateemotion "emotionnanditha_idle" "n_idle">>
     <<activateemotion "emotionmarzanna_afraid" "mz_afraid">>
     <<activateemotion "emotionashok_idle" "a_idle">>
-    <<playsound monster30>>
-    <<addtrack mood30>>
+    <<playsound sound "monster30">>
+    <<addtrack track "30">>
     <<if $mathilda == true>>
         <<emotionsprite "emotionmathilda_annoyed" "mt_annoyed">>
         Mathilda: There was this weird noise again!
@@ -468,8 +468,8 @@ position: 539,-976
     <<activateemotion "emotionashok_annoyed" "a_annoyed">>
     <<activateemotion "emotionnanditha_afraid" "n_afraid">>
     <<activateemotion "emotionmarzanna_sad" "mz_sad">>
-    <<playsound monster20>>
-    <<addtrack mood20>>
+    <<playsound sound "monster20">>
+    <<addtrack track "20">>
     <<if $hugh == true>>
         <<emotionsprite "emotionhugh_annoyed" "h_annoyed">>
         Hugh: It's coming closer!
@@ -496,8 +496,8 @@ position: 539,-976
     <<destroyemotion "emotionnanditha_afraid" "n_afraid">>
     <<destroyemotion "emotionmarzanna_sad" "mz_sad">>
 <<elseif $actions == 10>>
-    <<playsound monster10>>
-    <<addtrack mood10>>
+    <<playsound sound "monster10">>
+    <<addtrack track "10">>
     <<activateemotion "emotionmarzanna_sad" "mz_sad">>
     <<activateemotion "emotionashok_afraid" "a_afraid">>
     <<activateemotion "emotionhugh_afraid" "h_afraid">>
@@ -538,7 +538,7 @@ position: 539,-976
     <<destroyemotion "emotionnanditha_sad" "n_sad">>
     <<destroyemotion "emotionmathilda_scream" "mt_scream">>
 <<elseif $actions == 1>>
-    <<playsound monster1>>
+    <<playsound sound "monster1">>
     <<activateemotion "emotionhugh_sad" "h_sad">>
     <<activateemotion "emotionnanditha_sad" "n_sad">>
     <<activateemotion "emotionmathilda_sad" "mt_sad">>
@@ -661,7 +661,7 @@ Hugh: We were inside this crate... like cargo... There's even a shipping label b
 <<endif>>
 <<destroyemotion "emotionhugh_idle" "h_idle">>
 <<destroyemotion "emotionhugh_afraid" "h_afraid">>
-<<playsound roar>>
+<<playsound sound "roar">>
 <<if $marzanna == true>>
     <<activateemotion "emotionmarzanna_sad" "mz_sad">>
     <<emotionsprite "emotionmarzanna_sad" "mz_sad">>
@@ -824,7 +824,7 @@ Ashok: This window has a crack. Maybe I can break it.
 <<endif>>
 <<emotionsprite "emotionashok_idle" "a_idle">>
 Ashok: I'll just try to kick it in.
-<<playsound glass_shatter>>
+<<playsound sound "glass_shatter">>
 <<emotionsprite "emotionashok_happy" "a_happy">>
 Ashok: It worked! I can climb through.
 <<if $nanditha == true>>
@@ -1336,7 +1336,7 @@ position: 539,-742
         Hugh: That sounds just plain stupid.
     <<endif>>
     <<set $lock1 = true>>
-    //<<playsound unlock>>
+    <<playsound sound "unlock">>
     <<wait  1>>
     <<emotionsprite "emotionnanditha_happy" "n_happy">>
     Nanditha: Sounds like it worked! Yay!!
@@ -1349,7 +1349,7 @@ position: 539,-742
         Ashok: Remote controls are rarely used for vaults, as far as I know.
     <<endif>>
     <<set $lock2 = true>>
-    //<<playsound unlock>>
+    <<playsound sound "unlock">>
     <<wait  1>>
     <<emotionsprite "emotionmathilda_happy" "mt_happy">>
     Mathilda: Neat! I didn't think it would actually work but I guess it just did!
@@ -1362,7 +1362,7 @@ position: 539,-742
         Nanditha: It was a date, right? 23rd of April 1999.
     <<endif>>
     <<set $lock3 = true>>
-    //<<playsound unlock>>
+    <<playsound sound "unlock">>
     <<wait  1>>
     <<emotionsprite "emotionashok_happy" "a_happy">>
     Ashok: As I expected.
@@ -1382,7 +1382,7 @@ position: 539,-742
         Hugh: Sorry, I'll do it now.
     <<endif>>
     <<set $lock4 = true>>
-    //<<playsound unlock>>
+    <<playsound sound "unlock">>
     <<wait  1>>
     <<emotionsprite "emotionhugh_happy" "h_happy">>
     Hugh: This is just ridiculous.
@@ -1476,7 +1476,7 @@ position: 799,-325
         <<emotionsprite "emotionashok_idle" "a_idle">>
         Ashok: It looks quite exotic... and fragile! Better be careful with it.
     <<endif>>
-    <<playsound vase_shatter>> //also replace the the vase_idle sprite with the vase_broken sprite
+    <<playsound sound "vase_shatter">> //also replace the the vase_idle sprite with the vase_broken sprite
     <<wait 4>>
     <<emotionsprite "emotionnanditha_sad" "n_sad">>
     Nanditha: I'm so clumsy! I shouldn't have touched it.
@@ -1815,7 +1815,7 @@ Hugh: This is an animal cage and judging from the smell, it had been inhabited r
     <<if $item3key == true>>
         <<emotionsprite "emotionhugh_idle" "h_idle">>
         Hugh: Ok, I'll try the orrery key and take a closer look at what's inside.
-        <<playsound cage_opens>>
+        <<playsound sound "cage_opens">>
         <<wait 2>>
         <<emotionsprite "emotionhugh_happy" "h_happy">>
         Hugh: Finally! I knew this key had to be useful at some point!
@@ -1899,7 +1899,7 @@ position: 160,253
         Ashok: Hey Marzanna, try to use the key you found on this door!
         <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
         Marzanna: Uhm, okay...
-        <<playsound door_opens>>
+        <<playsound sound "door_opens">>
         <<wait 2>>
         <<emotionsprite "emotionnanditha_happy" "n_happy">>
         Nanditha: Yes, it worked! Let's get out of here!
@@ -1931,7 +1931,7 @@ position: 420,255
         <<set $actions = $actions - 1>>
         <<emotionsprite "emotionhugh_happy" "h_happy">>
         Hugh: This should be the right key!
-        <<playsound door_opens>>
+        <<playsound sound "door_opens">>
         <<wait 2>>
         <<emotionsprite "emotionmarzanna_happy" "mz_happy">>
         Marzanna: Thank you, Hugh!
@@ -2011,7 +2011,7 @@ position: 665,255
                 Ashok: Good call picking it up, sister!
             <<endif>>
         <<endif>>
-        <<playsound door_opens>>
+        <<playsound sound "door_opens">>
         <<wait 2>>
         <<emotionsprite "emotionnanditha_happy" "n_happy">>
         Nanditha: I'm shure we'll be out of here soon!
@@ -2071,7 +2071,7 @@ position: 924,253
         <<set $actions = $actions - 1>>
         <<emotionsprite "emotionnanditha_happy" "n_happy">>
         Nanditha: It must be the key from the vase.
-        <<playsound door_opens>>
+        <<playsound sound "door_opens">>
         <<wait 2>>
         <<if $mathilda == true>>
             <<emotionsprite "emotionmathilda_happy" "mt_happy">>
@@ -2143,7 +2143,7 @@ position: 1187,253
         <<if $ashok == true>>
             <<emotionsprite "emotionashok_happy" "a_happy">>
             Ashok: I got this!
-            <<playsound door_opens>>
+            <<playsound sound "door_opens">>
             <<wait 2>>
             <<if $nanditha == true>>
                 <<emotionsprite "emotionnanditha_happy" "n_happy">>
@@ -2156,7 +2156,7 @@ position: 1187,253
         <<elseif $nanditha == true && visited("interaction5apparatus") == false>>
             <<emotionsprite "emotionnanditha_happy" "n_happy">>
             Nanditha: I'll try the key that I found attached to the telescope.
-            <<playsound door_opens>>
+            <<playsound sound "door_opens">>
             <<wait 2>>
             <<emotionsprite "emotionnanditha_happy" "n_happy">>
             Nanditha: Yes! I'm so excited!
@@ -2174,7 +2174,7 @@ position: 1187,253
                 <<emotionsprite "emotionnanditha_sad" "n_sad">>
                 Nanditha: When my brother died, he dropped this key... it must be the right one.
             <<endif>>
-            <<playsound door_opens>>
+            <<playsound sound "door_opens">>
             <<wait 2>>
             <<if $nanditha == true>>
                 <<emotionsprite "emotionnanditha_happy" "n_happy">>
