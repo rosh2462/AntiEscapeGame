@@ -218,6 +218,10 @@ position: 538,-598
 <<if visited_count("room3_enter") == 0>>
     <<activateemotion "emotionhugh_idle" "h_idle">>
     <<emotionsprite "emotionhugh_idle" "h_idle">>
+    <<if $mathilda == true>>
+        <<enableMathildaCharacter>>
+        <<enableglobe>>
+    <<endif>>
     Hugh: Maybe the doors are connected to the lights somehow.
     <<destroyemotion "emotionhugh_idle" "h_idle">>
     <<disableScene5>>
@@ -245,7 +249,10 @@ position: 792,-599
     <<activateemotion "emotionashok_happy" "a_happy">>
     <<activateemotion "emotionmathilda_annoyed" "mt_annoyed">>
     <<activateemotion "emotionnanditha_annoyed" "n_annoyed">>
-     
+     <<if $mathilda == true>>
+        <<enableMathildaCharacter>>
+        <<enablealtar>>
+    <<endif>>
  
     <<disableScene6>>
   <<enableScene7>>
@@ -338,6 +345,8 @@ position: 18,-598
     <<if $mathilda == true>>
         <<emotionsprite "emotionmathilda_annoyed" "mt_annoyed">>
         Mathilda: How can there be so many rooms?
+    <<else>>
+
     <<endif>>
     <<if $nanditha == true>>
         <<emotionsprite "emotionnanditha_happy" "n_happy">>
@@ -1040,7 +1049,7 @@ title: interaction3letters
 tags:
 color: yellow
 group: room3
-position: 539,-462
+position: 547,-462
 ---
 //object gets deactivated when the variable $ashok turns false
 <<set $actions = $actions - 1>>
@@ -1164,7 +1173,7 @@ title: interaction3orrery
 tags:
 color: yellow
 group: room3
-position: 539,-190
+position: 539,-188
 ---
 //object gets deactivated when the variable $hugh turns false
 <<set $actions = $actions - 1>>
@@ -1472,8 +1481,8 @@ Mathilda: This one here looks almost like an altar with all the candles and thes
         Hugh: Don't be ridiculous. An occultist or an alchemist at most, or just a mad man.
     <<endif>>
 <<endif>>
-<<if $candle == false>>
-    <<set $candle = true>>
+<<if $item4candle == false>>
+    <<set $item4candle = true>>
     <<emotionsprite "emotionmathilda_idle" "mt_idle">>
     Mathilda: I'll take a candle with me. We can use it if the lights go out again.
     <<destroyemotion "emotionmathilda_idle" "mt_idle">>
@@ -1727,7 +1736,7 @@ title: interaction5storage
 tags:
 color: blue
 group: room5
-position: 1060,-325
+position: 1058,-327
 ---
 //object gets deactivated when the variable $marzanna turns false
 <<set $actions = $actions - 1>>
@@ -1760,7 +1769,7 @@ title: interaction5generator
 tags:
 color: blue
 group: room5
-position: 1060,-190
+position: 1067,-187
 ---
 //object gets deactivated when the variable $nanditha turns false
 <<set $actions = $actions - 1>>
@@ -1781,7 +1790,8 @@ Nanditha: OH!
 <<disabledeathNanditha>>
  //nanditha get's electrocuted, the generator shuts down
 <<if visited("room1_enter") == true>>
-    <<set $light = false>> //the lights turn off, the scene is black
+    <<set $light = false>>
+    <<darkmodeon>> //the lights turn off, the scene is black
 <<endif>>
 <<activateemotion "emotionmathilda_afraid" "mt_afraid">>
 <<activateemotion "emotionmathilda_sad" "mt_sad">>
@@ -1918,6 +1928,7 @@ position: 1060,82
 <<if $item4candle == true && $candle == false>>
     <<emotionsprite "emotionmathilda_happy" "mt_happy">>
     Mathilda: Nice! I can light my candle with this burner!
+    <<setburnersprite "burner_triggered" "burner_triggered">> >>
     <<destroyemotion "emotionmathilda_happy" "mt_happy">>
     <<set $candle = true>>
     Mathilda lights the candle.

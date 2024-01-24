@@ -10,7 +10,14 @@ public class PlayerSprite : MonoBehaviour
 public Yarn.Unity.DialogueRunner dialogueRunner;
      public GameObject targetGameObject1;
 public GameObject cabinet;
+public GameObject globe;
+
+public GameObject altar;
+
   public Animator animator;
+
+
+  
       private void Start()
     {
         // Ensure the dialogueRunner is assigned
@@ -22,6 +29,16 @@ public GameObject cabinet;
         // Subscribe to the Yarn command event
         dialogueRunner.AddCommandHandler("enableMathildaCharacter", EnableMathildaCharacter);
          dialogueRunner.AddCommandHandler("enableCabinet", EnableCabinet);
+ dialogueRunner.AddCommandHandler("enableglobe", EnableGlobe);
+ dialogueRunner.AddCommandHandler("enablealtar", enableAltar);
+         
+
+
+
+
+
+
+
     }
 
     private void EnableMathildaCharacter()
@@ -43,6 +60,31 @@ cabinet.GetComponent<cabinetInteractive>().enabled = true;
 
 
     }
+public void EnableGlobe()
+    {
+
+globe.GetComponent<cabinetInteractive>().enabled = true;
+   
+    globe.GetComponent<CustomCursor>().enabled = true;
+
+
+    }
+
+
+    public void enableAltar()
+    {
+
+altar.GetComponent<cabinetInteractive>().enabled = true;
+   
+    altar.GetComponent<CustomCursor>().enabled = true;
+
+
+    }
+
+
+
+
+    
     
 //     public SpriteRenderer spriteRenderer;
 
