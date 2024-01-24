@@ -25,10 +25,18 @@ public class EnableDisableScript : MonoBehaviour
     public GameObject targetGameObject8;
 
     public GameObject targetGameObject9;
+public GameObject targetGameObject10;
+
+public GameObject targetGameObject11;
+
 
      public GameObject death;
 
      public GameObject death_ashok;
+
+     public GameObject death_hugh;
+
+     public GameObject death_nanditha;
 
      public GameObject death_marzanna;
 
@@ -37,7 +45,11 @@ public class EnableDisableScript : MonoBehaviour
      public GameObject MarzannaCorpse;
 
       public GameObject AshokdeathSprite;
+
+       public GameObject HughdeathSprite;
  public GameObject AshokCorpse;
+
+ public GameObject HughCorpse;
 
  public GameObject vault;
 
@@ -70,16 +82,24 @@ public class EnableDisableScript : MonoBehaviour
                dialogueRunner.AddCommandHandler("enableScene5", EnableScene5);
                dialogueRunner.AddCommandHandler("enableScene6", EnableScene6);
                dialogueRunner.AddCommandHandler("enableScene7", EnableScene7);
+                dialogueRunner.AddCommandHandler("enableScene8", EnableScene8);
+
                
                
         dialogueRunner.AddCommandHandler("enabledeathMathilda", EnableDeathMat);
         dialogueRunner.AddCommandHandler("enabledeathAshok", EnableDeathAshok);
+        dialogueRunner.AddCommandHandler("enabledeathHugh", EnableDeathHugh);
         dialogueRunner.AddCommandHandler("enableMathildaCorpse", EnableMathildaCorpse);
 dialogueRunner.AddCommandHandler("enableAshokCorpse", EnableAshokCorpse);
 dialogueRunner.AddCommandHandler("enableMarzannaCorpse", EnableMarzannaCorpse);
+dialogueRunner.AddCommandHandler("enableHughCorpse", EnableHughCorpse);
 
         dialogueRunner.AddCommandHandler("enableLight", EnableLight);
         dialogueRunner.AddCommandHandler("enabledeathMarzanna", EnableDeathMarzanna);
+        dialogueRunner.AddCommandHandler("enabledeathNanditha", EnableDeathNanditha);
+
+        
+        
   dialogueRunner.AddCommandHandler("enablevault", enableVault);
 
 
@@ -90,13 +110,17 @@ dialogueRunner.AddCommandHandler("enableMarzannaCorpse", EnableMarzannaCorpse);
         dialogueRunner.AddCommandHandler("disableScene4", DisableScene4);
          dialogueRunner.AddCommandHandler("disableScene5", DisableScene5);
          dialogueRunner.AddCommandHandler("disableScene6", disableScene6);
-           
+            dialogueRunner.AddCommandHandler("disableScene7", disableScene7);
         dialogueRunner.AddCommandHandler("disabledeathMathilda", DisableDeathMat);
         dialogueRunner.AddCommandHandler("disabledeathAshok", DisableDeathAshok);
+        dialogueRunner.AddCommandHandler("disabledeathHugh", DisableDeathHugh);
         dialogueRunner.AddCommandHandler("disabledeathMarzanna", DisableDeathMarzanna);
         dialogueRunner.AddCommandHandler("disableMathilda", DisableMathildaSprite);
          dialogueRunner.AddCommandHandler("disableAshok", DisableAshokSprite);
+          dialogueRunner.AddCommandHandler("disableHugh", DisableHughSprite);
          dialogueRunner.AddCommandHandler("disableMarzanna", DisableMarzannaSprite);
+  dialogueRunner.AddCommandHandler("disabledeathNanditha", disabledeathNanditha);
+         
           
         dialogueRunner.AddCommandHandler("disabletoolsitem", DisableTools1);
         dialogueRunner.AddCommandHandler("disablebookshelf", DisablebookShelf);
@@ -177,6 +201,29 @@ private void EnableScene2()
         }
     }
 
+ private void EnableDeathHugh(){
+
+     if (death_hugh != null)
+        {
+            death_hugh.SetActive(true);
+        }
+
+}
+
+
+private void EnableDeathNanditha(){
+
+     if ( death_nanditha != null)
+        {
+             death_nanditha.SetActive(true);
+        }
+
+}
+
+    
+
+
+
 
     private void EnableDeathMarzanna()
     {
@@ -229,6 +276,16 @@ private void EnableScene7()
     }
 
 
+private void EnableScene8()
+    {
+        if (targetGameObject11 != null)
+        {
+            targetGameObject11.SetActive(true);
+        }
+    }
+    
+
+
     private void EnableAshokCorpse()
     {
         if (AshokCorpse != null)
@@ -236,6 +293,15 @@ private void EnableScene7()
             AshokCorpse.SetActive(true);
         }
     }
+
+private void EnableHughCorpse()
+    {
+        if (HughCorpse != null)
+        {
+            HughCorpse.SetActive(true);
+        }
+    }
+    
 
 
  private void EnableMarzannaCorpse()
@@ -301,6 +367,26 @@ private void  DisableDeathAshok()
         }
     }
 
+private void  DisableDeathHugh()
+    {
+        if (death_hugh != null)
+        {
+            death_hugh.SetActive(false);
+            
+        }
+    }
+
+
+    private void  disabledeathNanditha()
+    {
+        if (death_nanditha != null)
+        {
+            death_nanditha.SetActive(false);
+            
+        }
+    }
+    
+
 
 private void  DisableDeathMarzanna()
     {
@@ -329,6 +415,17 @@ private void DisableMathildaSprite()
             
         }
     }
+
+ private void DisableHughSprite()
+    {
+        if (HughdeathSprite != null)
+        {
+            HughdeathSprite.SetActive(false);
+            
+        }
+    }
+
+    
     private void DisableMarzannaSprite()
     {
         if (Marzannadeathsprite != null)
@@ -390,6 +487,17 @@ private void disableScene6()
             
         }
     }
+
+
+private void disableScene7()
+    {
+        if (targetGameObject10 != null)
+        {
+            targetGameObject10.SetActive(false);
+            
+        }
+    }
+    
     
 
              

@@ -9,7 +9,8 @@ public class popups : MonoBehaviour
      public SpriteRenderer spriteRendererPOPLetter;
 
     public SpriteRenderer spriteRendererPOPCarrot;
-
+    public SpriteRenderer POPgrimoire;
+    public SpriteRenderer POPCandle;
     public SpriteRenderer POP2Key;
 
     public SpriteRenderer POP2Remote;
@@ -18,13 +19,21 @@ public class popups : MonoBehaviour
 
     public SpriteRenderer POP3key;
 
+    public SpriteRenderer POP5Card;
 
+    public SpriteRenderer POP5Key;
+
+public SpriteRenderer POP5Finger;
+
+ public SpriteRenderer POP4key;
     public SpriteRenderer POP3Cage;
     public Sprite popupkey;
 
     public Sprite popupletter;
 
     public Sprite popupcarrot;
+
+    public Sprite popupcandle;
 
     public Sprite popup2key;
 
@@ -35,8 +44,14 @@ public class popups : MonoBehaviour
 
      public Sprite popup3key;
      
+     public Sprite popup4key;
 
+     public Sprite popupgrimoire;
 
+     public Sprite popup5card;
+
+     public Sprite popup5key;
+    public Sprite   popup5finger;
     [YarnCommand("popupsprite")]
     public void Setpop(string expression)
     {
@@ -68,6 +83,26 @@ public class popups : MonoBehaviour
             case "popup3key":
                 POP3key.sprite=popup3key;  
                 break;
+            case "popup4candle":
+                POPCandle.sprite = popupcandle;
+                break;
+            case "popup4key":
+                POP4key.sprite = popup4key;
+                break;
+            case "popup4grimoire":
+                POPgrimoire.sprite = popupgrimoire;
+                break;
+            case "popup5card":
+                POP5Card.sprite = popup5card;
+                break;
+            case "popup5key":
+                POP5Key.sprite = popup5key;
+                break;
+            case "popup5finger":
+                POP5Finger.sprite = popup5finger;
+                break;
+            
+            
             default:
                 Debug.LogWarning("Unknown expression: " + expression);
                 break;

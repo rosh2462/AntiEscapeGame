@@ -25,6 +25,12 @@ TagManager:
   - popup3code
   - popup3cagekey
   - popup3key
+  - popup4candle
+  - popup4grimoire
+  - popup4key
+  - popup5card
+  - popup5key
+  - popup5finger
   layers:
   - Default
   - TransparentFX
