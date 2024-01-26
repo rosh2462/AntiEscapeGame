@@ -222,6 +222,10 @@ position: 538,-598
         <<enableMathildaCharacter>>
         <<enableglobe>>
     <<endif>>
+     <<if $ashok == true>>
+        <<enableAshokCharacter>>
+        <<enableletters>>
+    <<endif>>
     Hugh: Maybe the doors are connected to the lights somehow.
     <<destroyemotion "emotionhugh_idle" "h_idle">>
     <<disableScene5>>
@@ -240,11 +244,12 @@ title: room4_enter
 tags:
 color: purple
 group: room4
-position: 792,-599
+position: 794,-611
 ---
 <<wait 2>>
          <<flickerlights1>>
 <<if visited_count("room4_enter") == 0>>
+
  
     <<activateemotion "emotionashok_happy" "a_happy">>
     <<activateemotion "emotionmathilda_annoyed" "mt_annoyed">>
@@ -252,6 +257,15 @@ position: 792,-599
      <<if $mathilda == true>>
         <<enableMathildaCharacter>>
         <<enablealtar>>
+    <<endif>>
+<<if $ashok == true>>
+        <<enableAshokCharacter>>
+        <<enablegemstone>>
+    <<endif>>
+
+    <<if $marzanna == true>>
+        <<enableMarzannaCharacter>>
+        <<enabledivination>>
     <<endif>>
  
     <<disableScene6>>
@@ -293,13 +307,22 @@ title: room5_enter
 tags:
 color: blue
 group: room5
-position: 1060,-598
+position: 1058,-615
 ---
 <<wait 2>>
          <<flickerlights1>>
  
 <<if visited_count("room5_enter") == 0>>
 
+
+ <<if $marzanna == true>>
+        <<enableMarzannaCharacter>>
+        <<enableshelf>>
+    <<endif>>
+<<if $mathilda == true>>
+        <<enableMathildaCharacter>>
+        <<enableburner>>
+    <<endif>>
     <<activateemotion "emotionnanditha_annoyed" "n_annoyed">>
     <<emotionsprite "emotionnanditha_annoyed" "n_annoyed">>
     Nanditha: Dash it, the lights went out again!
@@ -434,7 +457,7 @@ position: 359,-948
 ---
 <<if $actions == 40>>
     <<playsound monster40>>
-    <<addtrack mood40>>
+    //<<addtrack mood40>>
     <<activateemotion "emotionmathilda_idle" "mt_idle">>
     <<activateemotion "emotionnanditha_idle" "n_idle">>
     <<activateemotion "emotionmarzanna_idle" "mz_idle">>
@@ -1788,6 +1811,7 @@ Nanditha: What a huge machine. I wonder what it's for?
 Nanditha: OH!
 
 <<disabledeathNanditha>>
+
  //nanditha get's electrocuted, the generator shuts down
 <<if visited("room1_enter") == true>>
     <<set $light = false>>

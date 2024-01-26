@@ -237,8 +237,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c7e08c68bb3d014e9bd9f9418f2dccf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueRunner: {fileID: 0}
-  darkmodegameobj: {fileID: 0}
+  dialogueRunner: {fileID: 7612646322262730892}
+  darkmodegameobj: {fileID: 63262174}
 --- !u!212 &63262176
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -485,12 +485,12 @@ GameObject:
   - component: {fileID: 121252843}
   - component: {fileID: 121252844}
   m_Layer: 0
-  m_Name: ashok_idle
+  m_Name: ashok_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &121252843
 Transform:
   m_ObjectHideFlags: 0
@@ -1198,12 +1198,12 @@ GameObject:
   - component: {fileID: 149813815}
   - component: {fileID: 149813814}
   m_Layer: 0
-  m_Name: mathilda_profile
+  m_Name: mathilda_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &149813814
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3665,12 +3665,12 @@ GameObject:
   - component: {fileID: 290675861}
   - component: {fileID: 290675860}
   m_Layer: 0
-  m_Name: marzanna_4_2
+  m_Name: marzanna_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &290675860
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4134,12 +4134,12 @@ GameObject:
   - component: {fileID: 310638916}
   - component: {fileID: 310638915}
   m_Layer: 0
-  m_Name: marzanna_5_1
+  m_Name: marzanna_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &310638915
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4218,7 +4218,7 @@ GameObject:
   - component: {fileID: 320706309}
   - component: {fileID: 320706310}
   m_Layer: 0
-  m_Name: mathilda_profile
+  m_Name: mathilda_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4919,7 +4919,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 335467858}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 255fa01c7f0dfde4cb3a75e9187d37e5, type: 3}
   m_Name: 
@@ -5435,7 +5435,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 335467858}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfd1482d1cb566c4b852567dcc6eb6ed, type: 3}
   m_Name: 
@@ -8335,7 +8335,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 510409372}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfd1482d1cb566c4b852567dcc6eb6ed, type: 3}
   m_Name: 
@@ -8351,7 +8351,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 510409372}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -8545,7 +8545,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 510409372}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0bef8f21b9f7497448c387f6015d5479, type: 3}
   m_Name: 
@@ -8560,7 +8560,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 510409372}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93a2a3bff5ffc2748a83b96257af41d3, type: 3}
   m_Name: 
@@ -8573,7 +8573,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 510409372}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: d14e158261170f64b8aea4590a7b4855, type: 2}
   m_CullingMode: 0
@@ -11025,7 +11025,7 @@ GameObject:
   - component: {fileID: 675499042}
   - component: {fileID: 675499043}
   m_Layer: 0
-  m_Name: ashok_idle
+  m_Name: ashok_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12217,12 +12217,12 @@ GameObject:
   - component: {fileID: 884965010}
   - component: {fileID: 884965009}
   m_Layer: 0
-  m_Name: hugh_5_1
+  m_Name: hugh_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &884965009
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12542,7 +12542,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &952120193
 Transform:
   m_ObjectHideFlags: 0
@@ -12973,7 +12973,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 984973465}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfd1482d1cb566c4b852567dcc6eb6ed, type: 3}
   m_Name: 
@@ -13826,7 +13826,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 984973465}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cd7b3487c2ec1c746a75b6f56ce0fa80, type: 3}
   m_Name: 
@@ -16351,7 +16351,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 051f85dde820e8c498ab40a15cf0df20, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -16832,7 +16832,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1185684128
 Transform:
   m_ObjectHideFlags: 0
@@ -17036,7 +17036,7 @@ GameObject:
   - component: {fileID: 1240509549}
   - component: {fileID: 1240509548}
   m_Layer: 0
-  m_Name: mathilda_4_2
+  m_Name: mathilda_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17134,12 +17134,12 @@ Transform:
   m_GameObject: {fileID: 1250638307}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.1748767, y: 0.2947558, z: 0.22777742}
+  m_LocalPosition: {x: 0.6885235, y: 0.38784152, z: 0.032663852}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 903139890}
-  m_Father: {fileID: 1348210563}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1253523575
 GameObject:
@@ -17476,7 +17476,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1315278740}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfd1482d1cb566c4b852567dcc6eb6ed, type: 3}
   m_Name: 
@@ -17492,7 +17492,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1315278740}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6116f817ffc660e43ba86511c381bd87, type: 3}
   m_Name: 
@@ -18479,7 +18479,6 @@ Transform:
   - {fileID: 1733757347}
   - {fileID: 179759936}
   - {fileID: 1363851628}
-  - {fileID: 1250638308}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1351499201
@@ -18503,7 +18502,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1351499202
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18578,7 +18577,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1351499201}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfd1482d1cb566c4b852567dcc6eb6ed, type: 3}
   m_Name: 
@@ -18594,7 +18593,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1351499201}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15935adaae632814299678a7328a1385, type: 3}
   m_Name: 
@@ -19237,7 +19236,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1374194751}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfd1482d1cb566c4b852567dcc6eb6ed, type: 3}
   m_Name: 
@@ -19253,7 +19252,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1374194751}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6195ca13d8f8334e917b3057aef0e0a, type: 3}
   m_Name: 
@@ -22000,12 +21999,12 @@ GameObject:
   - component: {fileID: 1748649181}
   - component: {fileID: 1748649180}
   m_Layer: 0
-  m_Name: ashok_4_2
+  m_Name: 'ashok_4 '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1748649180
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22369,11 +22368,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueRunner: {fileID: 7612646322262730892}
-  targetGameObject1: {fileID: 717751148}
+  Mathilda_2: {fileID: 717751148}
+  Mathilda_3: {fileID: 320706308}
+  Mathilda_4: {fileID: 1240509547}
+  Mathilda_5: {fileID: 149813813}
+  MarzannaCharacter: {fileID: 290675859}
   cabinet: {fileID: 2020779044}
   globe: {fileID: 516230160}
+  burner: {fileID: 510409372}
   altar: {fileID: 1176158891}
+  divination: {fileID: 1351499201}
+  gemstone: {fileID: 1315278740}
+  shelf: {fileID: 1374194751}
+  letters: {fileID: 335467858}
+  Apparatus: {fileID: 1837688085}
   animator: {fileID: 2020779047}
+  Ashok2: {fileID: 675499041}
+  Ashok3: {fileID: 121252842}
+  Ashok4: {fileID: 1748649179}
+  Ashok5: {fileID: 1962145979}
+  Marzanna4: {fileID: 290675859}
+  Marzanna5: {fileID: 310638914}
+  Hugh5: {fileID: 884965008}
 --- !u!1 &1832291829
 GameObject:
   m_ObjectHideFlags: 0
@@ -22576,7 +22592,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1837688085}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfd1482d1cb566c4b852567dcc6eb6ed, type: 3}
   m_Name: 
@@ -23193,7 +23209,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1837688085}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4a1b3ec9a8e86df409014c817eaf6894, type: 3}
   m_Name: 
@@ -24172,12 +24188,12 @@ GameObject:
   - component: {fileID: 1962145981}
   - component: {fileID: 1962145980}
   m_Layer: 0
-  m_Name: ashok_4_1
+  m_Name: ashok_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1962145980
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27770,7 +27786,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3593588886860400441}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -28723,8 +28739,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1310173443
-  m_SortingLayer: -1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: fbe118b2b61c6a7488c6481502a3581d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -29650,7 +29666,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3593588886860400441}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfd1482d1cb566c4b852567dcc6eb6ed, type: 3}
   m_Name: 
@@ -29850,7 +29866,7 @@ Transform:
   m_GameObject: {fileID: 2598049081140451235}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.427693, y: 0.49411517, z: 0.036001652}
+  m_LocalPosition: {x: 14.27, y: 0.49411517, z: 0.036001652}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -31015,7 +31031,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3593588886860400441}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bb6b55d5936661645915f66c662f5c99, type: 3}
   m_Name: 
@@ -31534,6 +31550,7 @@ SceneRoots:
   - {fileID: 1793315172}
   - {fileID: 1016690289}
   - {fileID: 865000543}
+  - {fileID: 1250638308}
   - {fileID: 1348210563}
   - {fileID: 1185684128}
   - {fileID: 307202787}
