@@ -42,6 +42,8 @@ public GameObject Marzanna5;
  
 public GameObject Hugh5;
 
+public GameObject cage;
+
   
       private void Start()
     {

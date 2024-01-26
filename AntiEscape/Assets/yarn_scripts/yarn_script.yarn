@@ -313,7 +313,10 @@ position: 1058,-615
          <<flickerlights1>>
  
 <<if visited_count("room5_enter") == 0>>
-
+<<if $ashok == true>>
+        <<enableAshokCharacter>>
+        <<enableapparatus>>
+    <<endif>>
 
  <<if $marzanna == true>>
         <<enableMarzannaCharacter>>
@@ -323,6 +326,12 @@ position: 1058,-615
         <<enableMathildaCharacter>>
         <<enableburner>>
     <<endif>>
+    <<if $hugh == true>>
+        <<enableHughCharacter>>
+        <<enablecage>>
+    <<endif>>
+
+
     <<activateemotion "emotionnanditha_annoyed" "n_annoyed">>
     <<emotionsprite "emotionnanditha_annoyed" "n_annoyed">>
     Nanditha: Dash it, the lights went out again!
