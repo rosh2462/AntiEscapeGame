@@ -22,6 +22,8 @@ private void Start()
 
         // Subscribe to the Yarn command event
         dialogueRunner.AddCommandHandler("darkmodeon", DarkModeOn);
+        dialogueRunner.AddCommandHandler("darkmodeoff", DarkModeOff);
+        
 
          //dialogueRunner.AddCommandHandler("darkmodeoff", DarkModeOff);
 
@@ -32,9 +34,18 @@ private void Start()
     {
         if (darkmodegameobj != null)
         {
-            darkmodegameobj.SetActive(true);
+            darkmodegameobj.GetComponent<SpriteRenderer>().enabled = true;
         }
     }
+
+    private void DarkModeOff()
+    {
+        if (darkmodegameobj != null)
+        {
+             darkmodegameobj.GetComponent<SpriteRenderer>().enabled = false;
+        }
+    }
+    
 
 
 

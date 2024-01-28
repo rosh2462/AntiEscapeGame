@@ -29,6 +29,8 @@ public GameObject targetGameObject10;
 
 public GameObject targetGameObject11;
 
+public GameObject Disablescene8;
+
 
      public GameObject death;
 
@@ -53,6 +55,8 @@ public GameObject targetGameObject11;
 
  public GameObject vault;
 
+ public GameObject scenevault;
+
 
           public GameObject MathildadeathSprite;
 
@@ -65,7 +69,8 @@ public GameObject targetGameObject11;
            public GameObject Lights;
 
           
-
+public GameObject oldbookshelf;
+public GameObject newbookshelf;
     private void Start()
     {
         // Ensure the dialogueRunner is assigned
@@ -83,6 +88,8 @@ public GameObject targetGameObject11;
                dialogueRunner.AddCommandHandler("enableScene6", EnableScene6);
                dialogueRunner.AddCommandHandler("enableScene7", EnableScene7);
                 dialogueRunner.AddCommandHandler("enableScene8", EnableScene8);
+                 dialogueRunner.AddCommandHandler("enablebookshelfnew", Enablebookshelfnew);
+                
 
                
                
@@ -101,7 +108,7 @@ dialogueRunner.AddCommandHandler("enableHughCorpse", EnableHughCorpse);
         
         
   dialogueRunner.AddCommandHandler("enablevault", enableVault);
-
+  dialogueRunner.AddCommandHandler("disablescenevault", disablesceneVault);
 
         
         dialogueRunner.AddCommandHandler("disableScene1", DisableScene1);
@@ -111,6 +118,8 @@ dialogueRunner.AddCommandHandler("enableHughCorpse", EnableHughCorpse);
          dialogueRunner.AddCommandHandler("disableScene5", DisableScene5);
          dialogueRunner.AddCommandHandler("disableScene6", disableScene6);
             dialogueRunner.AddCommandHandler("disableScene7", disableScene7);
+             dialogueRunner.AddCommandHandler("disableScene8", DisableScene8);
+            
         dialogueRunner.AddCommandHandler("disabledeathMathilda", DisableDeathMat);
         dialogueRunner.AddCommandHandler("disabledeathAshok", DisableDeathAshok);
         dialogueRunner.AddCommandHandler("disabledeathHugh", DisableDeathHugh);
@@ -127,6 +136,8 @@ dialogueRunner.AddCommandHandler("enableHughCorpse", EnableHughCorpse);
      
          dialogueRunner.AddCommandHandler("disableknife", DisableKnife);
          dialogueRunner.AddCommandHandler("disableLight", DisableLight);
+          dialogueRunner.AddCommandHandler("disablebookshelfold", Disablebookshelfold);
+         
 
 
     }
@@ -156,7 +167,13 @@ private void EnableLight()
         }
     }
 
-
+private void Enablebookshelfnew()
+    {
+        if (newbookshelf != null)
+        {
+            newbookshelf.SetActive(true);
+        }
+    }
 
 
 
@@ -489,6 +506,17 @@ private void disableScene6()
     }
 
 
+private void DisableScene8()
+    {
+        if (Disablescene8 != null)
+        {
+            Disablescene8.SetActive(false);
+            
+        }
+    }
+
+
+
 private void disableScene7()
     {
         if (targetGameObject10 != null)
@@ -498,9 +526,24 @@ private void disableScene7()
         }
     }
     
+    private void Disablebookshelfold()
+    {
+        if (oldbookshelf != null)
+        {
+            oldbookshelf.SetActive(false);
+            
+        }
+    }
     
 
-             
+     private void disablesceneVault()
+    {
+        if (scenevault != null)
+        {
+            scenevault.SetActive(false);
+        }
+    }
+        
 
 }
 

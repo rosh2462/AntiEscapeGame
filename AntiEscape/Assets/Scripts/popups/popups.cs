@@ -9,6 +9,10 @@ public class popups : MonoBehaviour
      public SpriteRenderer spriteRendererPOPLetter;
 
     public SpriteRenderer spriteRendererPOPCarrot;
+
+    public Sprite POPEye;
+
+     public SpriteRenderer POP1Eye;
     public SpriteRenderer POPgrimoire;
     public SpriteRenderer POPCandle;
     public SpriteRenderer POP2Key;
@@ -100,6 +104,9 @@ public SpriteRenderer POP5Finger;
                 break;
             case "popup5finger":
                 POP5Finger.sprite = popup5finger;
+                break;
+            case "popup1eye":
+                POP1Eye.sprite = POPEye;
                 break;
             
             
