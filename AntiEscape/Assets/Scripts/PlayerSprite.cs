@@ -46,8 +46,17 @@ public GameObject Marzanna3;
 public GameObject Marzanna4;
 public GameObject Marzanna5;
  public GameObject Nanditha1;
+ public GameObject Nanditha2;
+ public GameObject Nanditha3;
+ public GameObject Nanditha4;
+ public GameObject Nanditha5;
 
  public GameObject Hugh1;
+  public GameObject Hugh2;
+
+   public GameObject Hugh3;
+    public GameObject Hugh4;
+
 public GameObject Hugh5;
 
 public GameObject cage;
@@ -65,18 +74,24 @@ public GameObject Chemicals;
         {
             Debug.LogError("DialogueRunner not assigned in YarnCommandExample script!");
         }
+        dialogueRunner.AddCommandHandler("enableMarzannaCharacter", EnableMarzannaCharacter);
+dialogueRunner.AddCommandHandler("enableAshokCharacter", EnableAshokCharacter);
+dialogueRunner.AddCommandHandler("disableAshokCharacter", DisableAshokCharacter);
+dialogueRunner.AddCommandHandler("disableMarzannaCharacter", DisableMarzannaCharacter);
 
         // Subscribe to the Yarn command event
         dialogueRunner.AddCommandHandler("enableMathildaCharacter", EnableMathildaCharacter);
+        dialogueRunner.AddCommandHandler("disableMathildaCharacter", DisableMathildaCharacter);
          dialogueRunner.AddCommandHandler("enableCabinet", EnableCabinet);
  dialogueRunner.AddCommandHandler("enableglobe", EnableGlobe);
  dialogueRunner.AddCommandHandler("enablealtar", enableAltar);
 dialogueRunner.AddCommandHandler("enableburner", enableBurner);
 dialogueRunner.AddCommandHandler("enabledivination", enableDivination);
 dialogueRunner.AddCommandHandler("enableshelf", enableShelf);
-dialogueRunner.AddCommandHandler("enableMarzannaCharacter", EnableMarzannaCharacter);
-dialogueRunner.AddCommandHandler("enableAshokCharacter", EnableAshokCharacter);
+
+
 dialogueRunner.AddCommandHandler("enableHughCharacter", EnableHughCharacter);
+dialogueRunner.AddCommandHandler("disableHughCharacter", DisableHughCharacter);
 dialogueRunner.AddCommandHandler("enablecage", Enablecage);
 
 dialogueRunner.AddCommandHandler("enableletters", Enableletters);
@@ -90,7 +105,7 @@ dialogueRunner.AddCommandHandler("enablecrate",enableCrate);
 dialogueRunner.AddCommandHandler("enabletools",enableTools);
 dialogueRunner.AddCommandHandler("enablechemicals",enableChemicals);
 dialogueRunner.AddCommandHandler("enableNandithaCharacter", EnableNandithaCharacter);
-
+dialogueRunner.AddCommandHandler("disableNandithaCharacter", DisableNandithaCharacter);
     }
 
 
@@ -100,10 +115,28 @@ dialogueRunner.AddCommandHandler("enableNandithaCharacter", EnableNandithaCharac
         if (Hugh5 != null)
         {
             Hugh1.SetActive(true);
+             Hugh2.SetActive(true);
+             Hugh3.SetActive(true);
+             Hugh4.SetActive(true);
               Hugh5.SetActive(true);
              
         }
     }
+
+private void DisableHughCharacter()
+    {
+        if (Hugh5 != null)
+        {
+            Hugh1.SetActive(false);
+            Hugh2.SetActive(false);
+            Hugh3.SetActive(false);
+            Hugh4.SetActive(false);
+              Hugh5.SetActive(false);
+             
+        }
+    }
+
+
 
 
 private void EnableNandithaCharacter()
@@ -111,11 +144,24 @@ private void EnableNandithaCharacter()
         if (Nanditha1 != null)
         {
             Nanditha1.SetActive(true);
-             
-             
+            Nanditha2.SetActive(true);
+            Nanditha3.SetActive(true); 
+            Nanditha4.SetActive(true);
+            Nanditha5.SetActive(true); 
         }
     }
     
+
+ private void DisableNandithaCharacter(){
+     if (Nanditha1 != null)
+        {
+            Nanditha1.SetActive(false);
+            Nanditha2.SetActive(false);
+            Nanditha3.SetActive(false); 
+            Nanditha4.SetActive(false);
+            Nanditha5.SetActive(false); 
+        }
+ }
 
 
 
@@ -172,6 +218,19 @@ Chemicals.GetComponent<CustomCursor>().enabled = true;
             Ashok5.SetActive(true);
         }
     }
+
+
+    private void DisableAshokCharacter()
+    {
+        if (Ashok2 != null)
+        {
+            Ashok1.SetActive(false);
+            Ashok2.SetActive(false);
+            Ashok3.SetActive(false);
+            Ashok4.SetActive(false);
+            Ashok5.SetActive(false);
+        }
+    }
   private void EnableMarzannaCharacter()
     {
          
@@ -182,6 +241,17 @@ Chemicals.GetComponent<CustomCursor>().enabled = true;
             Marzanna5.SetActive(true);
       
     }
+
+
+    private void DisableMarzannaCharacter(){
+        Marzanna1.SetActive(false);
+             Marzanna2.SetActive(false);
+             Marzanna3.SetActive(false);
+            Marzanna4.SetActive(false);
+            Marzanna5.SetActive(false);
+    }
+
+    
 
   private void enableShelf()
     {
@@ -207,6 +277,18 @@ Chemicals.GetComponent<CustomCursor>().enabled = true;
              Mathilda_3.SetActive(true);
               Mathilda_4.SetActive(true);
                Mathilda_5.SetActive(true);
+        }
+    }
+
+  private void DisableMathildaCharacter()
+    {
+        if (Mathilda_2 != null)
+        {
+            Mathilda_1.SetActive(false);
+            Mathilda_2.SetActive(false);
+             Mathilda_3.SetActive(false);
+              Mathilda_4.SetActive(false);
+               Mathilda_5.SetActive(false);
         }
     }
 

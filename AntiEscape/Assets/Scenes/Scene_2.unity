@@ -2095,7 +2095,7 @@ GameObject:
   - component: {fileID: 216632498}
   - component: {fileID: 216632497}
   m_Layer: 0
-  m_Name: nanditha_5_2
+  m_Name: nanditha_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10946,7 +10946,7 @@ GameObject:
   - component: {fileID: 712132475}
   - component: {fileID: 712132474}
   m_Layer: 0
-  m_Name: nanditha_2_1
+  m_Name: nanditha_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12437,7 +12437,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &952120193
 Transform:
   m_ObjectHideFlags: 0
@@ -20382,7 +20382,7 @@ GameObject:
   - component: {fileID: 1474217659}
   - component: {fileID: 1474217658}
   m_Layer: 0
-  m_Name: hugh_4_1
+  m_Name: hugh_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22518,7 +22518,14 @@ MonoBehaviour:
   Marzanna4: {fileID: 290675859}
   Marzanna5: {fileID: 310638914}
   Nanditha1: {fileID: 1024171352}
+  Nanditha2: {fileID: 1503808497}
+  Nanditha3: {fileID: 1421195338}
+  Nanditha4: {fileID: 712132473}
+  Nanditha5: {fileID: 216632496}
   Hugh1: {fileID: 493756754}
+  Hugh2: {fileID: 1418784688}
+  Hugh3: {fileID: 1173416971}
+  Hugh4: {fileID: 1474217657}
   Hugh5: {fileID: 884965008}
   cage: {fileID: 984973465}
   corpse: {fileID: 7992640433038744047}

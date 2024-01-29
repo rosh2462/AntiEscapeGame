@@ -127,29 +127,6 @@ color: red
 group: room1
 position: 18,-742
 ---
-// <<if $ashok == true>>
-//         <<enableAshokCharacter>>
-       
-//          <<enablecorpse>>
-//     <<endif>>
-
-//  <<if $marzanna == true>>
-//         <<enableMarzannaCharacter>>
-//         <<enablechemicals>>
-//     <<endif>>
-// <<if $mathilda == true>>
-//         <<enableMathildaCharacter>>
-//        <<enabletools>>
-//     <<endif>>
-//     <<if $hugh == true>>
-//         <<enableHughCharacter>>
-//        <<enablecrate>>
-//     <<endif>>
-//      <<if $nanditha == true>>
-//         <<enableNandithaCharacter>>
-//         <<enableanimal>>
-         
-//     <<endif>>
 <<disableScene1>>
 <<enableScene2>>
 <<activateemotion "emotionashok_idle" "a_idle">>
@@ -392,6 +369,7 @@ position: 18,-598
         <<enableHughCharacter>>
        <<enablecrate>>
     <<endif>>
+    
      <<if $nanditha == true>>
         <<enableNandithaCharacter>>
         <<enableanimal>>
@@ -511,30 +489,51 @@ color: black
 group: common
 position: 359,-948
 ---
-// <<if $ashok == true>>
-//         <<enableAshokCharacter>>
+ <<if $ashok == true>>
+         <<enableAshokCharacter>>
        
-//          <<enablecorpse>>
-        
-//     <<endif>>
+          
+<<else>>
+<<disableAshokCharacter>>
 
-//  <<if $marzanna == true>>
-//         <<enableMarzannaCharacter>>
-//         <<enablechemicals>>
-//     <<endif>>
-// <<if $mathilda == true>>
-//         <<enableMathildaCharacter>>
-//        <<enabletools>>
-//     <<endif>>
-//     <<if $hugh == true>>
-//         <<enableHughCharacter>>
-//        <<enablecrate>>
-//     <<endif>>
-//      <<if $nanditha == true>>
-//         <<enableNandithaCharacter>>
-//         <<enableanimal>>
+     <<endif>>
+
+  <<if $marzanna == true>>
+        <<enableMarzannaCharacter>>
+
+<<else>>
+
+<<disableMarzannaCharacter>>
+
+
+
+        //<<enablechemicals>>
+    <<endif>>
+ <<if $mathilda == true>>
+        <<enableMathildaCharacter>>
+<<else>>
+        <<disableMathildaCharacter>>
+      // <<enabletools>>
+     <<endif>>
+
+
+
+     <<if $hugh == true>>
+        <<enableHughCharacter>>
+        <<else>>
+<<disableHughCharacter>>
+
+       // <<enablecrate>>
+     <<endif>>
+
+
+      <<if $nanditha == true>>
+        <<enableNandithaCharacter>>
+      <<else>>
+<<disableNandithaCharacter>>
+      //  <<enableanimal>>
          
-//     <<endif>>
+     <<endif>>
 <<if $actions == 40>>
   //  <<playsound monster40>>
     //<<addtrack mood40>>
