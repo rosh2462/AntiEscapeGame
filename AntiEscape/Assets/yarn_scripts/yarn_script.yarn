@@ -372,7 +372,7 @@ position: 18,-598
     
      <<if $nanditha == true>>
         <<enableNandithaCharacter>>
-        <<enableanimal>>
+        // <<enableanimal>>
     <<endif>>
 <<if visited_count("room1_enter") == 0>>
 
@@ -2040,7 +2040,7 @@ position: 1060,82
 <<if $item4candle == true && $candle == false>>
     <<emotionsprite "emotionmathilda_happy" "mt_happy">>
     Mathilda: Nice! I can light my candle with this burner!
-    <<setburnersprite "burner_triggered" "burner_triggered">> >>
+    <<setburnersprite "burner_triggered" "burner_triggered">> 
     <<destroyemotion "emotionmathilda_happy" "mt_happy">>
     <<set $candle = true>>
     Mathilda lights the candle.
