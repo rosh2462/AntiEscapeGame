@@ -49,6 +49,8 @@ public GameObject Disablescene8;
       public GameObject AshokdeathSprite;
 
        public GameObject HughdeathSprite;
+public GameObject Nandithadeath;
+
  public GameObject AshokCorpse;
 
  public GameObject HughCorpse;
@@ -127,6 +129,8 @@ dialogueRunner.AddCommandHandler("enableHughCorpse", EnableHughCorpse);
         dialogueRunner.AddCommandHandler("disableMathilda", DisableMathildaSprite);
          dialogueRunner.AddCommandHandler("disableAshok", DisableAshokSprite);
           dialogueRunner.AddCommandHandler("disableHugh", DisableHughSprite);
+           dialogueRunner.AddCommandHandler("disableNanditha", NandithadeathSprite);
+          
          dialogueRunner.AddCommandHandler("disableMarzanna", DisableMarzannaSprite);
   dialogueRunner.AddCommandHandler("disabledeathNanditha", disabledeathNanditha);
          
@@ -441,6 +445,18 @@ private void DisableMathildaSprite()
             
         }
     }
+
+private void NandithadeathSprite()
+    {
+        if (Nandithadeath != null)
+        {
+            Nandithadeath.SetActive(false);
+            
+        }
+    }
+
+
+
 
     
     private void DisableMarzannaSprite()

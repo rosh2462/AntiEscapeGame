@@ -376,13 +376,10 @@ position: 18,-598
 //<<flickerlights>>
 <<disableScene8>>
 <<enableScene3>>
-<<if visited_count("room1_enter") == 0>>
 <<if $ashok == true>>
         <<enableAshokCharacter>>
-       
          <<enablecorpse>>
     <<endif>>
-
  <<if $marzanna == true>>
         <<enableMarzannaCharacter>>
         <<enablechemicals>>
@@ -398,8 +395,9 @@ position: 18,-598
      <<if $nanditha == true>>
         <<enableNandithaCharacter>>
         <<enableanimal>>
-         
     <<endif>>
+<<if visited_count("room1_enter") == 0>>
+
  <<darkmodeon>>
     <<activateemotion "emotionashok_idle" "a_idle">>
     <<activateemotion "emotionhugh_idle" "h_idle">>
@@ -1902,7 +1900,8 @@ Nanditha: What a huge machine. I wonder what it's for?
 Nanditha: OH!
 
 <<disabledeathNanditha>>
-
+<<disableNanditha>>
+ <<setgeneratorsprite "generator_triggered" "generator_triggered">>
  //nanditha get's electrocuted, the generator shuts down
 <<if visited("room1_enter") == true>>
     <<set $light = false>>
