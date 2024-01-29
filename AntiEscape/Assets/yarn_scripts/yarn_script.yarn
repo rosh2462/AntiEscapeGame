@@ -235,7 +235,7 @@ color: yellow
 group: room3
 position: 538,-598
 ---
-//<<flickerlights1>>
+<<flickerlights>>
 <<if visited_count("room3_enter") == 0>>
     <<activateemotion "emotionhugh_idle" "h_idle">>
     <<emotionsprite "emotionhugh_idle" "h_idle">>
@@ -251,12 +251,12 @@ position: 538,-598
     <<destroyemotion "emotionhugh_idle" "h_idle">>
     <<disableScene5>>
     <<enableScene6>>
-   // <<endflickerlights1>> //lights flicker and come back on, characters are scattered
+   <<endflickerlights>> //lights flicker and come back on, characters are scattered
     <<jump room_investigate>>
 <<else>>
 <<disableScene5>>
 <<enableScene6>>
-//<<endflickerlights1>>
+<<endflickerlights>>
 <<jump room_investigate>>
 <<endif>>
 ===
@@ -268,7 +268,7 @@ group: room4
 position: 794,-611
 ---
 //<<wait 2>>
-      
+      <<flickerlights>>
 <<if visited_count("room4_enter") == 0>>
 
  
@@ -309,13 +309,15 @@ position: 794,-611
     <<endif>>
     <<destroyemotion "emotionmathilda_annoyed" "mt_annoyed">>
     <<destroyemotion "emotionmarzanna_idle" "mz_idle">>
+    <<disableScene6>>
+  <<enableScene7>>
      //or whichever scene it is - switch from room 3 to room 4
-  
+  <<endflickerlights>>
      //lights flicker and come back on, characters are scattered
 <<else>>
 <<disableScene6>>
   <<enableScene7>>
-
+ <<endflickerlights>>
 <<endif>>
 <<jump room_investigate>>
 ===
@@ -328,7 +330,7 @@ position: 1058,-615
 ---
 //<<wait 2>>
       
- 
+   <<flickerlights>>
 <<if visited_count("room5_enter") == 0>>
 <<if $ashok == true>>
         <<enableAshokCharacter>>
@@ -355,11 +357,12 @@ position: 1058,-615
     <<destroyemotion "emotionnanditha_annoyed" "n_annoyed">>
     <<disableScene7>>
   <<enableScene8>>
+    <<endflickerlights>>
    //lights flicker and come back on, characters are scattered
 <<else>>
  <<disableScene7>>
   <<enableScene8>>
-
+  <<endflickerlights>>
 <<endif>>
 <<jump room_investigate>>
 ===
@@ -2418,3 +2421,68 @@ Congratulations! Someone actually escaped!
 <<endif>>
 //<<jump start_menu>>
 ===
+
+
+title: door21
+tags:
+color: white
+group: doors
+position: 163,401
+---
+<<set $actions = $actions - 1>>
+<<disableScene5>>
+    <<enableScene3>>
+<<jump room_investigate>>
+===
+title: door32
+tags:
+color: white
+group: doors
+position: 428,401
+---
+<<set $actions = $actions - 1>>
+// loadscene commands
+<<disableScene6>>
+<<enableScene5>>
+<<jump room_investigate>>
+===
+
+
+title: door43
+tags:
+color: white
+group: doors
+position: 669,401
+---
+<<set $actions = $actions - 1>>
+// loadscene commands
+<<disableScene7>>
+<<enableScene6>>
+
+<<jump room_investigate>>
+===
+
+title: door54
+tags:
+color: white
+group: doors
+position: 925,401
+---
+<<set $actions = $actions - 1>>
+<<disableScene8>>
+<<enableScene7>>
+
+// loadscene commands
+<<jump room_investigate>>
+===
+
+// title: door15
+// tags:
+// color: white
+// group: doors
+// position: -107,258
+// ---
+// <<set $actions = $actions - 1>>
+// // loadscene commands
+// <<jump room_investigate>>
+// ===
