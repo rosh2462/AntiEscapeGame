@@ -496,6 +496,7 @@ position: 359,-948
 <<else>>
 <<disableAshokCharacter>>
 
+
      <<endif>>
 
   <<if $marzanna == true>>
@@ -1246,8 +1247,6 @@ Nanditha: It doesn't work.
 <<endif>>
 <<if $ashok == false && visited_count("room1_enter") == 0 && visited("room5_enter") == true && $key51 == false>>
     <<set $key51 = true>>
-    <<emotionsprite "emotionmathilda_happy" "mt_happy">>
-    Mathilda: It looks like this globe can be opened, that's pretty neat!
     <<emotionsprite "emotionnanditha_happy" "n_happy">>
     Nanditha: Oh, there actually is a key attached!
     <<destroyemotion "emotionnanditha_happy" "n_happy">>
