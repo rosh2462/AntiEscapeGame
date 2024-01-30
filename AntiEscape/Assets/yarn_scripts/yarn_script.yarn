@@ -475,8 +475,8 @@ position: 18,-598
     <<destroyemotion "emotionashok_annoyed" "a_annoyed">>
     <<destroyemotion "emotionmarzanna_sad" "mz_sad">>
 <<else>>
-//<<disableScene7>> //or whichever scene it is - switch from room 5 to room 1
-//<<enableScene8>>
+//<<disableScene8>> //or whichever scene it is - switch from room 5 to room 1
+//<<enableScene3>>
 //<<endflickerlights>>
 <<endif>>
 <<jump room_investigate>>
@@ -490,24 +490,14 @@ group: common
 position: 359,-948
 ---
  <<if $ashok == true>>
-         <<enableAshokCharacter>>
-       
-          
+         <<enableAshokCharacter>>   
 <<else>>
 <<disableAshokCharacter>>
-
-
      <<endif>>
-
   <<if $marzanna == true>>
         <<enableMarzannaCharacter>>
-
 <<else>>
-
 <<disableMarzannaCharacter>>
-
-
-
         //<<enablechemicals>>
     <<endif>>
  <<if $mathilda == true>>
@@ -516,24 +506,17 @@ position: 359,-948
         <<disableMathildaCharacter>>
       // <<enabletools>>
      <<endif>>
-
-
-
      <<if $hugh == true>>
         <<enableHughCharacter>>
         <<else>>
 <<disableHughCharacter>>
-
        // <<enablecrate>>
      <<endif>>
-
-
       <<if $nanditha == true>>
         <<enableNandithaCharacter>>
       <<else>>
 <<disableNandithaCharacter>>
       //  <<enableanimal>>
-         
      <<endif>>
 <<if $actions == 40>>
   //  <<playsound monster40>>
@@ -763,7 +746,7 @@ position: 35,-464
 <<destroyemotion "emotionnanditha_annoyed" "n_annoyed">>
 <<destroyemotion "emotionnanditha_idle" "n_idle">>
 <<destroyemotion "emotionnanditha_happy" "n_happy">>
-<<disableAnimal trap1animal_idle>>
+//<<disableAnimal trap1animal_idle>>
 <<jump room_investigate>>
 ===
 
@@ -1485,8 +1468,7 @@ position: 539,-742
     <<emotionsprite "emotionmarzanna_embarassed" "mz_embarassed">>
     Marzanna: Even if this is the way out, we're never gonna figure out how to open this massive door.
 <<endif>>
-  <<disablescenevault>>
-    <<enableScene6>>
+ 
 <<if $item1eye == true && $nanditha == true>>
     <<emotionsprite "emotionnanditha_idle" "n_idle">>
     Nanditha: This looks like a retina scanner, you know, from the movies! Maybe it works with the eye I took from the rabbit!
@@ -1495,6 +1477,7 @@ position: 539,-742
         Hugh: That sounds just plain stupid.
     <<endif>>
     <<set $lock1 = true>>
+    <<setretinaopensprite "retinascanner_open" "retinascanner_open">>
     //<<playsound unlock>>
    // <<wait  1>>
     <<emotionsprite "emotionnanditha_happy" "n_happy">>
@@ -1508,8 +1491,11 @@ position: 539,-742
         Ashok: Remote controls are rarely used for vaults, as far as I know.
     <<endif>>
     <<set $lock2 = true>>
+   // 
     //<<playsound unlock>>
+    
   //  <<wait  1>>
+  <<setremoteopensprite "remotescanner_open" "remotescanner_open" >>
     <<emotionsprite "emotionmathilda_happy" "mt_happy">>
     Mathilda: Neat! I didn't think it would actually work but I guess it just did!
 <<endif>>
@@ -1523,6 +1509,7 @@ position: 539,-742
     <<set $lock3 = true>>
     //<<playsound unlock>>
   //  <<wait  1>>
+  <<setdialopensprite "diallock_open" "diallock_open" >>
     <<emotionsprite "emotionashok_happy" "a_happy">>
     Ashok: As I expected.
 <<endif>>
@@ -1541,6 +1528,7 @@ position: 539,-742
         Hugh: Sorry, I'll do it now.
     <<endif>>
     <<set $lock4 = true>>
+    <<setfingeropensprite "fingerprint_open" "fingerprint_open" >>
     //<<playsound unlock>>
  //   <<wait  1>>
     <<emotionsprite "emotionhugh_happy" "h_happy">>
@@ -1558,6 +1546,8 @@ position: 539,-742
 <<destroyemotion "emotionashok_happy" "a_happy">>
 <<destroyemotion "emotionmathilda_happy" "mt_happy">>
 <<destroyemotion "emotionhugh_happy" "h_happy">>
+ <<disablescenevault>>
+    <<enableScene6>>
 <<jump room_investigate>>
 ===
 
@@ -2070,6 +2060,7 @@ position: 158,286
     <<if $key12 == false>> //if the player did not offer the key yet
         <<emotionsprite "emotionnanditha_idle" "n_idle">>
         Nanditha: The door is locked, we need to find a key first!
+        <<destroyemotion "emotionnanditha_idle" "n_idle">>
         <<jump room_investigate>>
     <<else>>
         <<set $actions = $actions - 1>>
@@ -2088,8 +2079,7 @@ position: 158,286
     <<set $actions = $actions - 1>>
     <<jump room2_enter>>
 <<endif>>
-<<destroyemotion "emotionnanditha_idle" "n_idle">>
-<<destroyemotion "emotionnanditha_happy" "n_happy">>
+
 ===
 
 title: door23
