@@ -28,7 +28,7 @@ public class orreryanimation : MonoBehaviour
 
     public void OnMouseDown() 
     {  
-            animator.enabled=false;
+           animator.SetBool("isorrery", true);
          //   Debug.Log("clicked");     
                
 

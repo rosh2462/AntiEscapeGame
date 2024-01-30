@@ -28,7 +28,7 @@ public class CageAnimation : MonoBehaviour
 
     public void OnMouseDown() 
     {  
-            animator.enabled=false;
+            animator.SetBool("iscage", true);
          //   Debug.Log("clicked");     
                
 

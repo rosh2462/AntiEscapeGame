@@ -28,7 +28,7 @@ public class patchanimate : MonoBehaviour
 
     public void OnMouseDown() 
     {  
-            animator.enabled=false;
+           animator.SetBool("ispatch", true);
          //   Debug.Log("clicked");     
                
 

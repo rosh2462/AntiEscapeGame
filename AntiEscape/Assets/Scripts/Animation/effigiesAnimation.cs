@@ -28,7 +28,7 @@ public class effigiesAnimation : MonoBehaviour
 
     public void OnMouseDown() 
     {  
-            animator.enabled=false;
+            animator.SetBool("iseffigies", true);
          //   Debug.Log("clicked");     
                
 

@@ -28,7 +28,7 @@ public class toolanimate : MonoBehaviour
 
     public void OnMouseDown() 
     {  
-            animator.enabled=false;
+             animator.SetBool("istool", true);
          //   Debug.Log("clicked");     
                
 

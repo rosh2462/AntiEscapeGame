@@ -31,7 +31,7 @@ public class ApparatusAnimation : MonoBehaviour
 
     public void OnMouseDown() 
     {  
-            animator.enabled=false;
+           animator.SetBool("isapparatus", true);
          //   Debug.Log("clicked");     
                
 

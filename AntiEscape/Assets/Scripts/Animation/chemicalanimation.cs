@@ -29,7 +29,7 @@ public class chemicalanimation : MonoBehaviour
 
     public void OnMouseDown() 
     {  
-            animator.enabled=false;
+          animator.SetBool("ischemical", true);
          //   Debug.Log("clicked");     
                
 

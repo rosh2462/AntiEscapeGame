@@ -30,7 +30,7 @@ public class crateanimate : MonoBehaviour
 
     public void OnMouseDown() 
     {  
-            animator.enabled=false;
+             animator.SetBool("iscrate", true);
          //   Debug.Log("clicked");     
                
 

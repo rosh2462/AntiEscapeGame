@@ -28,7 +28,7 @@ public class ShelfAnimation : MonoBehaviour
 
     public void OnMouseDown() 
     {  
-            animator.enabled=false;
+            animator.SetBool("isshelf", true);
          //   Debug.Log("clicked");     
                
 

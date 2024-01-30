@@ -28,7 +28,7 @@ public class cananimate : MonoBehaviour
 
     public void OnMouseDown() 
     {  
-            animator.enabled=false;
+                 animator.SetBool("iscan", true);
          //   Debug.Log("clicked");     
                
 

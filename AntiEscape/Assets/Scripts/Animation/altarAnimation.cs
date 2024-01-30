@@ -28,7 +28,7 @@ public class altarAnimation : MonoBehaviour
 
     public void OnMouseDown() 
     {  
-            animator.enabled=false;
+       animator.SetBool("isaltar", true);
          //   Debug.Log("clicked");     
                
 

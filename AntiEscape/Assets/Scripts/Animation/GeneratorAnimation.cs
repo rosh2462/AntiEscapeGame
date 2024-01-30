@@ -28,7 +28,7 @@ public class GeneratorAnimation : MonoBehaviour
 
     public void OnMouseDown() 
     {  
-            animator.enabled=false;
+          animator.SetBool("isgenerator", true);
          //   Debug.Log("clicked");     
                
 

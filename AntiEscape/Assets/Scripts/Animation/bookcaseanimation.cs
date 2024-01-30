@@ -28,7 +28,7 @@ public class bookcaseanimation : MonoBehaviour
 
     public void OnMouseDown() 
     {  
-            animator.enabled=false;
+         animator.SetBool("isbook", true);
          //   Debug.Log("clicked");     
                
 

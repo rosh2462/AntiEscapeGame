@@ -31,7 +31,8 @@ public class animalanimate : MonoBehaviour
 
     public void OnMouseDown() 
     {  
-            animator.enabled=false;
+        animator.SetBool("ishover", true);
+         //   animator.enabled=false;
          //   Debug.Log("clicked");     
                
 

@@ -29,7 +29,7 @@ public class telescopeanimation : MonoBehaviour
 
     public void OnMouseDown() 
     {  
-            animator.enabled=false;
+               animator.SetBool("istelescope", true);
          //   Debug.Log("clicked");     
                
 

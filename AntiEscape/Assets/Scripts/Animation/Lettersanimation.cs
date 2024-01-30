@@ -28,7 +28,7 @@ public class Lettersanimation : MonoBehaviour
 
     public void OnMouseDown() 
     {  
-            animator.enabled=false;
+          animator.SetBool("isletter", true);
          //   Debug.Log("clicked");     
                
 

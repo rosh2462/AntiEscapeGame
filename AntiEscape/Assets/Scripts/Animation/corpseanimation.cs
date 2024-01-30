@@ -29,7 +29,7 @@ public class corpseanimation : MonoBehaviour
 
     public void OnMouseDown() 
     {  
-            animator.enabled=false;
+            animator.SetBool("iscorpse", true);
          //   Debug.Log("clicked");     
                
 

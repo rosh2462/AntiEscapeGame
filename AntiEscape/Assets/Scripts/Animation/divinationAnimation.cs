@@ -28,7 +28,7 @@ public class divinationAnimation : MonoBehaviour
 
     public void OnMouseDown() 
     {  
-            animator.enabled=false;
+           animator.SetBool("isdivination", true);
          //   Debug.Log("clicked");     
                
 

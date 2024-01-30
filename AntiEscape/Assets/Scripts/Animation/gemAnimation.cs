@@ -28,7 +28,7 @@ public class gemAnimation : MonoBehaviour
 
     public void OnMouseDown() 
     {  
-            animator.enabled=false;
+               animator.SetBool("isgem", true);
          //   Debug.Log("clicked");     
                
 

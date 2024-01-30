@@ -28,7 +28,7 @@ public class cabinetAnimate : MonoBehaviour
 
     public void OnMouseDown() 
     {  
-            animator.enabled=false;
+             animator.SetBool("iscabinet", true);
          //   Debug.Log("clicked");     
                
 

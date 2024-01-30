@@ -28,7 +28,7 @@ public class plantanimate : MonoBehaviour
 
     public void OnMouseDown() 
     {  
-            animator.enabled=false;
+          animator.SetBool("isplant", true);
          //   Debug.Log("clicked");     
                
 
