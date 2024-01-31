@@ -28,7 +28,7 @@ variableStorage = GameObject.FindObjectOfType<InMemoryVariableStorage>();
         {
             audioSource = gameObject.AddComponent<AudioSource>();
         }
-         audioSource.clip = clickSound;
+     //    audioSource.clip = clickSound;
          
     }
 

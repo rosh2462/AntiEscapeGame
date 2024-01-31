@@ -70,7 +70,10 @@ public GameObject Nandithadeath;
 
            public GameObject Lights;
 
-          
+          public GameObject gameover;
+          public GameObject play;
+
+           public GameObject win;
 public GameObject oldbookshelf;
 public GameObject newbookshelf;
     private void Start()
@@ -92,8 +95,9 @@ public GameObject newbookshelf;
                 dialogueRunner.AddCommandHandler("enableScene8", EnableScene8);
                  dialogueRunner.AddCommandHandler("enablebookshelfnew", Enablebookshelfnew);
                 
-
-               
+dialogueRunner.AddCommandHandler("GameOverenable", GameOverEnable);
+dialogueRunner.AddCommandHandler("GameOverdisable", GameOverEnabledisable);
+             dialogueRunner.AddCommandHandler("Playagain", playAgain);  
                
         dialogueRunner.AddCommandHandler("enabledeathMathilda", EnableDeathMat);
         dialogueRunner.AddCommandHandler("enabledeathAshok", EnableDeathAshok);
@@ -141,7 +145,7 @@ dialogueRunner.AddCommandHandler("enableHughCorpse", EnableHughCorpse);
          dialogueRunner.AddCommandHandler("disableknife", DisableKnife);
          dialogueRunner.AddCommandHandler("disableLight", DisableLight);
           dialogueRunner.AddCommandHandler("disablebookshelfold", Disablebookshelfold);
-         
+          dialogueRunner.AddCommandHandler("Winscreen", WinScreen);
 
 
     }
@@ -149,10 +153,43 @@ dialogueRunner.AddCommandHandler("enableHughCorpse", EnableHughCorpse);
     // Yarn command to enable the target game object
 
 
+private void WinScreen()
+    {
+        if (win != null)
+        {
+            win.SetActive(true);
+        }
+    }
+
+
+private void playAgain()
+    {
+        if (play != null)
+        {
+            play.SetActive(true);
+        }
+    }
+
+
+
+private void GameOverEnable()
+    {
+        if (gameover != null)
+        {
+            gameover.SetActive(true);
+        }
+    }
 
 
 
 
+private void GameOverEnabledisable()
+    {
+        if (gameover != null)
+        {
+            gameover.SetActive(false);
+        }
+    }
 
 private void enableVault()
     {
@@ -451,7 +488,7 @@ private void NandithadeathSprite()
         if (Nandithadeath != null)
         {
             Nandithadeath.SetActive(false);
-            
+            Debug.Log("Nanditha  should be disabled");
         }
     }
 

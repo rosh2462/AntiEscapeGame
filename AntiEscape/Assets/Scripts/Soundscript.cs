@@ -20,11 +20,43 @@ public class Soundscript : MonoBehaviour
          
         switch (soundName)
         {
-            case "glass_shatter":
-                soundManager.Play("glass_shatter");
+
+
+            case "mood30":
+                soundManager.Play("mood30");
                 break;
-            // case "sound2":
-            //     soundManager.Play("sound2");
+                case "mood40":
+                soundManager.Play("mood40");
+                break;
+
+            case "mood20":
+                soundManager.Play("mood20");
+                break;
+
+                case "mood10":
+                soundManager.Play("mood10");
+                break;
+                
+            // case "glass_shatter":
+            //     soundManager.Play("glass_shatter");
+            //     break;
+            // case "stumble":
+            //     soundManager.Play("stumble");
+            //     break;
+            // case "scroll":
+            //     soundManager.Play("scroll");
+            //     break;
+            //     case "monster40":
+            //     soundManager.Play("monster40");
+            //     break;
+            //     case "mood40":
+            //     soundManager.Play("mood40");
+            //     break;
+            //     case "monster30":
+            //     soundManager.Play("monster30");
+            //     break;
+            //     case "mood30":
+            //     soundManager.Play("mood30");
             //     break;
             // Add more cases as needed
             default:

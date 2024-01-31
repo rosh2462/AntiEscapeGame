@@ -11,8 +11,8 @@ public class doornewinteractive : MonoBehaviour
 [SerializeField] private string conversationStartNode;
     private DialogueRunner dialogueRunner;
         private bool interactable = true;
-          private AudioSource audioSource;
-     public AudioClip clickSound;
+          //private AudioSource audioSource;
+    // public AudioClip clickSound;
 
         public TextMeshProUGUI consoleOutputText;
     // Start is called before the first frame update
@@ -22,12 +22,12 @@ public class doornewinteractive : MonoBehaviour
     {
         variableStorage = GameObject.FindObjectOfType<InMemoryVariableStorage>();
          dialogueRunner = FindObjectOfType<Yarn.Unity.DialogueRunner>();
-         audioSource = GetComponent<AudioSource>();
-          if (audioSource == null)
-        {
-            audioSource = gameObject.AddComponent<AudioSource>();
-        }
-         audioSource.clip = clickSound;
+        //  audioSource = GetComponent<AudioSource>();
+        //   if (audioSource == null)
+        // {
+        //     audioSource = gameObject.AddComponent<AudioSource>();
+        // }
+        //  audioSource.clip = clickSound;
         
     }
 
@@ -47,7 +47,7 @@ variableStorage.SetValue("$actions", actions);
 //Debug.Log("Value:"+actions);
 consoleOutputText.text = "" + actions.ToString();
            // trying(); 
-           PlayClickSound();
+         //  PlayClickSound();
            
       }
         Debug.Log("First Click");
@@ -61,14 +61,14 @@ private void StartConversation() {
         dialogueRunner.StartDialogue(conversationStartNode);
     }
 
-    void PlayClickSound()
-    {
-        if (audioSource != null && clickSound != null)
-        {
-            audioSource.PlayOneShot(clickSound);
-            Debug.Log("Sound Plays");
-        }
-    }
+    // void PlayClickSound()
+    // {
+    //     if (audioSource != null && clickSound != null)
+    //     {
+    //         audioSource.PlayOneShot(clickSound);
+    //         Debug.Log("Sound Plays");
+    //     }
+    // }
 
  [YarnCommand("disableDoor")]
     public void DisableConversation() {

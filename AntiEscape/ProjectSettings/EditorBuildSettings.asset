@@ -8,13 +8,16 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Draft_Scene.unity
     guid: 34071a1b6af9572428147504857c79aa
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Draft_Scene.unity
     guid: 34071a1b6af9572428147504857c79aa
   - enabled: 1
     path: Assets/Scenes/Scene_2.unity
     guid: f94f28d893eb0d7478fd6b8257b79bf2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Scene_3.unity
     guid: 855ccee155eb74e45bcdd8fdd5aa55b7
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 672d656813d6c71469af5823c1641d67
   m_configObjects: {}

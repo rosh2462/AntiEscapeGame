@@ -29,7 +29,7 @@ public class trap1AnimalInteractive : MonoBehaviour
         {
             audioSource = gameObject.AddComponent<AudioSource>();
         }
-         audioSource.clip = clickSound;
+        // audioSource.clip = clickSound;
          
     }
 

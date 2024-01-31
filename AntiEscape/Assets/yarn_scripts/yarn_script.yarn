@@ -30,6 +30,7 @@ position: 14,-1473
 <<declare $door45 = false>>
 <<declare $door51 = false>>
 
+
 <<declare $key12 = false>> //the numbers indicate which door this key is for, false means it hasn't been found yet
 <<declare $key23 = false>> 
 <<declare $key34 = false>>
@@ -147,7 +148,7 @@ Marzanna: Oh nooo.
 Hugh: And again, we're in the dark. I saw a door over there, we should get out of here. Try not to fall over the corpse.
 <<destroyemotion "emotionhugh_idle" "h_idle">>
 
-//<<playsound stumble>> //Ashok stumbles over the corpse and falls
+<<playrestsound background "stumble">> //Ashok stumbles over the corpse and falls
 
 <<activateemotion "emotionhugh_idle" "h_idle">>
 <<emotionsprite "emotionmathilda_afraid" "mt_afraid">>
@@ -388,7 +389,7 @@ position: 18,-598
     <<activateemotion "emotionmathilda_annoyed" "mt_annoyed">>
     <<activateemotion "emotionnanditha_happy" "n_happy">>
     <<activateemotion "emotionmarzanna_afraid" "mz_afraid">>
-   // <<playsound scroll>>
+    <<playrestsound extra1scroll_idle "scroll">>
     <<if $ashok == true>>
         <<emotionsprite "emotionashok_idle" "a_idle">>
         Ashok: Did you hear that?
@@ -493,7 +494,7 @@ title: room_investigate
 tags:
 color: black
 group: common
-position: 359,-948
+position: 358,-948
 ---
 <<destroyemotion "emotionashok_idle" "a_idle">>
 <<destroyemotion "emotionhugh_idle" "h_idle">>
@@ -550,8 +551,9 @@ position: 359,-948
       //  <<enableanimal>>
      <<endif>>
 <<if $actions == 40>>
-  //  <<playsound monster40>>
-    //<<addtrack mood40>>
+   <<playrestsound Monster40 "monster40">>
+   <<wait  4>>
+  <<playsound Mood40 "mood40">>
     <<activateemotion "emotionmathilda_idle" "mt_idle">>
     <<activateemotion "emotionnanditha_idle" "n_idle">>
     <<activateemotion "emotionmarzanna_idle" "mz_idle">>
@@ -588,8 +590,9 @@ position: 359,-948
     <<activateemotion "emotionnanditha_idle" "n_idle">>
     <<activateemotion "emotionmarzanna_afraid" "mz_afraid">>
     <<activateemotion "emotionashok_idle" "a_idle">>
-   // <<playsound monster30>>
-   // <<addtrack mood30>>
+   <<playrestsound Monster30 "monster30">>
+   <<wait  4>>
+  <<playsound Mood30 "mood30">>
     <<if $mathilda == true>>
         <<emotionsprite "emotionmathilda_annoyed" "mt_annoyed">>
         Mathilda: There was this weird noise again!
@@ -621,8 +624,9 @@ position: 359,-948
     <<activateemotion "emotionashok_annoyed" "a_annoyed">>
     <<activateemotion "emotionnanditha_afraid" "n_afraid">>
     <<activateemotion "emotionmarzanna_sad" "mz_sad">>
-    //<<playsound monster20>>
-   // <<addtrack mood20>>
+    <<playrestsound Monster20 "monster20">>
+   <<wait  3>>
+  <<playsound Mood20 "mood20">>
     <<if $hugh == true>>
         <<emotionsprite "emotionhugh_annoyed" "h_annoyed">>
         Hugh: It's coming closer!
@@ -649,8 +653,9 @@ position: 359,-948
     <<destroyemotion "emotionnanditha_afraid" "n_afraid">>
     <<destroyemotion "emotionmarzanna_sad" "mz_sad">>
 <<elseif $actions == 10>>
-    //<<playsound monster10>>
-   // <<addtrack mood10>>
+    <<playrestsound Monster10 "monster10">>
+   <<wait  4>>
+    <<playsound Mood10 "mood10">>
     <<activateemotion "emotionmarzanna_sad" "mz_sad">>
     <<activateemotion "emotionashok_afraid" "a_afraid">>
     <<activateemotion "emotionhugh_afraid" "h_afraid">>
@@ -691,7 +696,7 @@ position: 359,-948
     <<destroyemotion "emotionnanditha_sad" "n_sad">>
     <<destroyemotion "emotionmathilda_scream" "mt_scream">>
 <<elseif $actions == 1>>
-    <<playsound monster1>>
+    <<playrestsound Monster1 "monster1">>
     <<activateemotion "emotionhugh_sad" "h_sad">>
     <<activateemotion "emotionnanditha_sad" "n_sad">>
     <<activateemotion "emotionmathilda_sad" "mt_sad">>
@@ -980,7 +985,7 @@ Ashok: This window has a crack. Maybe I can break it.
 <<endif>>
 <<emotionsprite "emotionashok_idle" "a_idle">>
 Ashok: I'll just try to kick it in.
-<<playsound Trap "glass_shatter">>
+<<playrestsound Trap "glass_shatter">>
 <<emotionsprite "emotionashok_happy" "a_happy">>
 Ashok: It worked! I can climb through.
 <<if $nanditha == true>>
@@ -1942,14 +1947,15 @@ Nanditha: What a huge machine. I wonder what it's for?
 <<destroyemotion "emotionnanditha_idle" "n_idle">>
 <<destroyemotion "emotionhugh_annoyed" "h_annoyed">>
 <<enabledeathNanditha>>
+
 //<<popupsprite "emotionnanditha_death" "n_death">>
 Nanditha: OH!
-
+<<set $nanditha = false>>
 <<disabledeathNanditha>>
 <<disableNanditha>>
  <<setgeneratorsprite "generator_triggered" "generator_triggered">>
  //nanditha get's electrocuted, the generator shuts down
-<<if visited("room1_enter") == true>>
+<<if visited("room1_enter") == true && $nanditha==false>>
     <<set $light = false>>
     <<darkmodeon>> //the lights turn off, the scene is black
 <<endif>>
@@ -1996,11 +2002,13 @@ Nanditha: OH!
 <<if $marzanna == true>>
     <<emotionsprite "emotionmarzanna_afraid" "mz_afraid">>
     Marzanna: Death awaits wherever we go.
+   
 <<endif>>
 <<destroyemotion "emotionmathilda_sad" "mt_sad">>
 <<destroyemotion "emotionashok_afraid" "a_afraid">>
 <<destroyemotion "emotionhugh_annoyed" "h_annoyed">>
 <<destroyemotion "emotionmarzanna_afraid" "mz_afraid">>
+ 
 <<jump room_investigate>>
 ===
 
@@ -2490,16 +2498,21 @@ position: 925,401
 <<jump room_investigate>>
 ===
 
-// title: door15
-// tags:
-// color: white
-// group: doors
-// position: -107,258
-// ---
-// <<set $actions = $actions - 1>>
-// // loadscene commands
-// <<jump room_investigate>>
-// ===
+title: door15
+tags:
+color: white
+group: doors
+position: -107,258
+ ---
+<<set $actions = $actions - 1>>
+<<if visited_count("room5_enter") != 0 && visited_count("room4_enter") != 0 && visited_count("room3_enter") != 0 && visited_count("room2_enter") != 0 && visited_count("room1_enter") != 0 >>
+<<enableScene8>>
+<<disableScene3>>
+<<else>>
+Nothing there...
+<<endif>>
+<<jump room_investigate>>
+ ===
 title: killed_everyone
 tags:
 color: white
@@ -2507,6 +2520,10 @@ group: ending
 position: 539,-1511
 ---
 Whoops! You got them all killed. Try again!
+<<GameOverenable>>
+<<wait  2>>
+<<GameOverdisable>>
+<<Playagain>>
 //<<jump start_menu>>
 ===
 
@@ -2517,6 +2534,10 @@ group: ending
 position: 539,-1373
 ---
 The creature catched everyone, try again!
+<<GameOverenable>>
+<<wait  2>>
+<<GameOverdisable>>
+<<Playagain>>
 //<<jump start_menu>>
 ===
 
@@ -2528,8 +2549,10 @@ position: 539,-1234
 ---
 <<if $marzanna == true && $hugh == true && $mathilda == true && $nanditha == true && $ashok == true>>
 Incredible! Everyone escaped unharmed!
+<<Winscreen>>
 <<else>>
 Congratulations! Someone actually escaped!
+<<Winscreen>>
 <<endif>>
 //<<jump start_menu>>
 ===
