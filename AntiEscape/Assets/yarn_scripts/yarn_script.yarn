@@ -1271,9 +1271,9 @@ Nanditha: It doesn't work.
     <<emotionsprite "emotionnanditha_happy" "n_happy">>
     Nanditha: Oh, there actually is a key attached!
     <<destroyemotion "emotionnanditha_happy" "n_happy">>
-    <<popupsprite "popup3key" "popup3key">>
+    <<popupsprite "popup3keydup" "popup3keydup">>
     Nanditha found a key!
-    <<destroypopup "popup3key" "popup3key">>
+    <<destroypopup "popup3keydup" "popup3keydup">>
     <<if $hugh == true>>
         <<activateemotion "emotionhugh_annoyed" "h_annoyed">>
         <<emotionsprite "emotionhugh_annoyed" "h_annoyed">>

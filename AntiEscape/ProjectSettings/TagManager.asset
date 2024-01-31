@@ -32,6 +32,7 @@ TagManager:
   - popup5key
   - popup5finger
   - popup1eye
+  - popup3keydup
   layers:
   - Default
   - TransparentFX

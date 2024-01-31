@@ -12,6 +12,8 @@ public class popups : MonoBehaviour
 
     public Sprite POPEye;
 
+    public Sprite dupkey;
+
      public SpriteRenderer POP1Eye;
     public SpriteRenderer POPgrimoire;
     public SpriteRenderer POPCandle;
@@ -22,6 +24,8 @@ public class popups : MonoBehaviour
     public SpriteRenderer POP3Code;
 
     public SpriteRenderer POP3key;
+
+    public SpriteRenderer DupPOP3key;
 
     public SpriteRenderer POP5Card;
 
@@ -107,6 +111,9 @@ public SpriteRenderer POP5Finger;
                 break;
             case "popup1eye":
                 POP1Eye.sprite = POPEye;
+                break;
+                case "popup3keydup":
+                DupPOP3key.sprite = dupkey;
                 break;
             
             
