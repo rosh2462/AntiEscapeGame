@@ -7977,7 +7977,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 510409372}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -11987,6 +11987,7 @@ GameObject:
   - component: {fileID: 826544303}
   - component: {fileID: 826544305}
   - component: {fileID: 826544304}
+  - component: {fileID: 826544306}
   m_Layer: 0
   m_Name: door_back_2
   m_TagString: Untagged
@@ -12045,6 +12046,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.7808981, y: 6.7039566, z: 1}
   m_Center: {x: -0.01697588, y: -0.5432339, z: 0}
+--- !u!114 &826544306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826544302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd1482d1cb566c4b852567dcc6eb6ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursorTexture: {fileID: 2800000, guid: dae3a1f6fadeea542941e854f844963a, type: 3}
+  hoverCursorTexture: {fileID: 2800000, guid: 4db39d50b44ee9f46a91cd207c7fb992, type: 3}
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &865000540
 GameObject:
   m_ObjectHideFlags: 0
@@ -12705,7 +12722,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &956013984
 Transform:
   m_ObjectHideFlags: 0
@@ -20469,6 +20486,7 @@ GameObject:
   - component: {fileID: 1534299385}
   - component: {fileID: 1534299387}
   - component: {fileID: 1534299386}
+  - component: {fileID: 1534299388}
   m_Layer: 0
   m_Name: doorback_5
   m_TagString: Untagged
@@ -20527,6 +20545,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.8502598, y: 8.045006, z: 1}
   m_Center: {x: 0.10122204, y: 0.20244336, z: 0}
+--- !u!114 &1534299388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534299384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd1482d1cb566c4b852567dcc6eb6ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursorTexture: {fileID: 2800000, guid: dae3a1f6fadeea542941e854f844963a, type: 3}
+  hoverCursorTexture: {fileID: 2800000, guid: 4db39d50b44ee9f46a91cd207c7fb992, type: 3}
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &1567158379
 GameObject:
   m_ObjectHideFlags: 0
@@ -25846,6 +25880,7 @@ GameObject:
   - component: {fileID: 2026847288}
   - component: {fileID: 2026847290}
   - component: {fileID: 2026847289}
+  - component: {fileID: 2026847291}
   m_Layer: 0
   m_Name: doorback_room3
   m_TagString: Untagged
@@ -25880,7 +25915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c66b4b93aee8624c89680e0dfbd7d22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conversationStartNode: ' door32'
+  conversationStartNode: door32
   clickSound: {fileID: 0}
   consoleOutputText: {fileID: 82135381}
 --- !u!65 &2026847290
@@ -25904,6 +25939,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.4413776, y: 6.9755735, z: 1}
   m_Center: {x: -0.050928116, y: -0.44137764, z: 0}
+--- !u!114 &2026847291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026847287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd1482d1cb566c4b852567dcc6eb6ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursorTexture: {fileID: 2800000, guid: dae3a1f6fadeea542941e854f844963a, type: 3}
+  hoverCursorTexture: {fileID: 2800000, guid: 4db39d50b44ee9f46a91cd207c7fb992, type: 3}
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &2027959877
 GameObject:
   m_ObjectHideFlags: 0
