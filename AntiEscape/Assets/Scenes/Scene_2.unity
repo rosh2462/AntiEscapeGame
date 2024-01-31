@@ -15177,7 +15177,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &956013984
 Transform:
   m_ObjectHideFlags: 0
@@ -21119,7 +21119,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1348210563
 Transform:
   m_ObjectHideFlags: 0
@@ -22131,7 +22131,7 @@ MonoBehaviour:
   POP2Key: {fileID: 0}
   POP2Remote: {fileID: 0}
   POP3Code: {fileID: 0}
-  POP3key: {fileID: 0}
+  POP3key: {fileID: 1388354940}
   DupPOP3key: {fileID: 2038263558}
   POP5Card: {fileID: 0}
   POP5Key: {fileID: 0}
@@ -22146,7 +22146,7 @@ MonoBehaviour:
   popup2remote: {fileID: 0}
   popup3code: {fileID: 0}
   popup3cage: {fileID: 0}
-  popup3key: {fileID: 0}
+  popup3key: {fileID: 21300000, guid: b00ea6a798338df4aa8318a0ad16c1b8, type: 3}
   popup4key: {fileID: 0}
   popupgrimoire: {fileID: 0}
   popup5card: {fileID: 0}
@@ -30227,15 +30227,15 @@ MonoBehaviour:
   spriteRendererPOPLetter: {fileID: 0}
   spriteRendererPOPCarrot: {fileID: 0}
   POPEye: {fileID: 0}
-  dupkey: {fileID: 0}
+  dupkey: {fileID: 21300000, guid: 9bd1b38fee8da7c4baf40a884b5caf6a, type: 3}
   POP1Eye: {fileID: 0}
   POPgrimoire: {fileID: 0}
   POPCandle: {fileID: 0}
   POP2Key: {fileID: 0}
   POP2Remote: {fileID: 0}
   POP3Code: {fileID: 0}
-  POP3key: {fileID: 2038263558}
-  DupPOP3key: {fileID: 0}
+  POP3key: {fileID: 1388354940}
+  DupPOP3key: {fileID: 2038263558}
   POP5Card: {fileID: 0}
   POP5Key: {fileID: 0}
   POP5Finger: {fileID: 0}
