@@ -69,7 +69,7 @@ color: white
 group: room0
 position: 14,-1321
 ---
-<<setLightIntensity>>
+//<<setLightIntensity>>
 <<enableScene1>>
 
 <<emotionsprite "emotionashok_idle" "a_idle">>
@@ -97,7 +97,7 @@ Nanditha: Let's search for a light switch or something, it's so dark in here, I 
 <<destroyemotion "emotionnanditha_idle" "n_idle">>
 
 -> Find a light switch. //continue with room0_exit when clicking on the door
-<<activateLightIntensity>>
+//<<activateLightIntensity>>
 //<<jump room0_exit>>
 ===
 
@@ -118,7 +118,7 @@ Ashok: Shut up, Hugh. Marzanna, can you open it?
 
 -> Open the door.
     <<set $actions = $actions - 1>>
-    <<setLightIntensity>>
+   // <<setLightIntensity>>
     <<jump room1_start>>
 ===
 

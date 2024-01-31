@@ -28,7 +28,7 @@ public class door1interactive : MonoBehaviour
         {
             audioSource = gameObject.AddComponent<AudioSource>();
         }
-         audioSource.clip = clickSound;
+        // audioSource.clip = clickSound;
         
     }
 

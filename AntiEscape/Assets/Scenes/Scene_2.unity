@@ -9725,7 +9725,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &553475358
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9764,8 +9764,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1097399477
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
@@ -12865,7 +12865,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &777666674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14997,7 +14997,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &952120193
 Transform:
   m_ObjectHideFlags: 0
@@ -15166,7 +15166,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &956013984
 Transform:
   m_ObjectHideFlags: 0
@@ -22857,7 +22857,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversationStartNode: room0_exit
-  clickSound: {fileID: 0}
+  clickSound: {fileID: 8300000, guid: 59328f654c214f6479fb476cc7d29c12, type: 3}
   consoleOutputText: {fileID: 82135381}
 --- !u!212 &1423262973
 SpriteRenderer:
@@ -23901,7 +23901,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 33891095d399a264da4686467ca73a76, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -31731,8 +31731,8 @@ GameObject:
   - component: {fileID: 7557900215435157667}
   - component: {fileID: 4936640724257624396}
   - component: {fileID: 7557900215435157668}
-  - component: {fileID: 7557900215435157670}
   - component: {fileID: 7557900215435157669}
+  - component: {fileID: 7557900215435157670}
   m_Layer: 0
   m_Name: extra1scroll_idle
   m_TagString: Untagged
@@ -34454,10 +34454,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2598049081140451235}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b67c59b4afd6c9c4f93dfb8ac8f639fe, type: 3}
+  m_Script: {fileID: 11500000, guid: f6233f9dd41b6484889619e8d3f344f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundManager: {fileID: 865000545}
+  soundManager: {fileID: 2060588615}
 --- !u!114 &7612646322262730892
 MonoBehaviour:
   m_ObjectHideFlags: 0
