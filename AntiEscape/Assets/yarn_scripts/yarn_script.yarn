@@ -424,7 +424,7 @@ position: 18,-598
     //<<enableScene8>>
   
      <<rollup "extra1scroll_idle" "extra1scroll_triggered">>
-     <<darkmodeoff>>
+    
     //The skeleton scroll rolls up and reveals the door on the right edge of room 1(in the dark, so it's not visible) the extra1scroll_idle sprite is replaced by the extra1scroll_triggered sprite, that change is permanent
    // <<endflickerlights>> //lights flicker and come back on, characters are scattered
     <<activateemotion "emotionhugh_afraid" "h_afraid">>
@@ -1508,8 +1508,8 @@ position: 539,-742
         Marzanna: Even if this is the way out, we're never gonna figure out how to open this massive door.
     <<endif>>
 <<endif>>
-<<if $item1eye == true && $lock1 == false>>
-    <<if $nanditha == true>>
+<<if $item1eye == true && $lock1 == false && $nanditha == true>>
+     
         <<emotionsprite "emotionnanditha_idle" "n_idle">>
         Nanditha: This looks like a retina scanner, you know, from the movies! Maybe it works with the eye I took from the rabbit!
         <<if $hugh == true>>
@@ -1523,13 +1523,9 @@ position: 539,-742
         <<emotionsprite "emotionnanditha_happy" "n_happy">>
         Nanditha: Sounds like it worked! Yay!!
         <<destroyemotion "emotionnanditha_happy" "n_happy">>
-    <<else>>
-        <<set $lock1 = true>>
-        <<setretinaopensprite "retinascanner_open" "retinascanner_open">>
-    <<endif>>
+   
 <<endif>>
-<<if $item2remote == true && $lock2 == false>>
-    <<if $mathilda == true>>
+<<if $item2remote == true && $lock2 == false && $mathilda == true>>
         <<emotionsprite "emotionmathilda_idle" "mt_idle">>
         Mathilda: Maybe this old remote I found in the greenhouse isn't so useless after all. I'll give it a shot.
         <<if $ashok == true>>
@@ -1545,13 +1541,12 @@ position: 539,-742
         <<emotionsprite "emotionmathilda_happy" "mt_happy">>
         Mathilda: Neat! I didn't think it would actually work but I guess it just did!
         <<destroyemotion "emotionmathilda_happy" "mt_happy">>
-    <<else>>
-        <<set $lock2 = true>>
-        <<setremoteopensprite "remotescanner_open" "remotescanner_open" >>
+    // <<else>>
+    //     <<set $lock2 = true>>
+    //     <<setremoteopensprite "remotescanner_open" "remotescanner_open" >>
     <<endif>>
-<<endif>>
-<<if $item3code == true && $lock3 == false>>
-    <<if $ashok == true>>
+<<if $item3code == true && $lock3 == false && $ashok == true>>
+   
         <<emotionsprite "emotionashok_idle" "a_idle">>
         Ashok: There's a dial. I'll try the number combination from the note I found with the letters.
         <<if $nanditha == true && visited("interaction1crate")== true>>
@@ -1565,13 +1560,10 @@ position: 539,-742
         <<emotionsprite "emotionashok_happy" "a_happy">>
         Ashok: As I expected.
         <<destroyemotion "emotionashok_happy" "a_happy">>
-    <<else>>
-        <<set $lock3 = true>>
-        <<setdialopensprite "diallock_open" "diallock_open" >>
+    
     <<endif>>
-<<endif>>
-<<if $item5finger == true>>
-    <<if $hugh == true >>
+<<if $item5finger == true &&  $hugh == true>>
+     
         <<if visited("interaction1crate") == true>>
             <<emotionsprite "emotionhugh_idle" "h_idle">>
             Hugh: I got this seperated finger that probably belonged to Dr. Fist once. So if this is his vault door, there might be a fingerprint scanner that will recognize it.
@@ -1592,11 +1584,9 @@ position: 539,-742
         <<emotionsprite "emotionhugh_happy" "h_happy">>
         Hugh: This is just ridiculous.
         <<destroyemotion "emotionhugh_happy" "h_happy">>
-    <<else>>
-        <<set $lock4 = true>>
-        <<setfingeropensprite "fingerprint_open" "fingerprint_open" >>
+    
     <<endif>>
-<<endif>>
+
 <<if $lock1 == true && $lock2 == true && $lock3 == true && $lock4 == true>>
     Final dialogue because they can escape now //placeholder
     <<jump escape>>
@@ -1778,7 +1768,7 @@ title: interaction4effigies
 tags:
 color: purple
 group: room4
-position: 799,-56
+position: 799,-45
 ---
 //object gets deactivated when the variable $hugh turns false
 <<set $actions = $actions - 1>>
@@ -2099,6 +2089,7 @@ position: 1060,82
     <<setburnersprite "burner_triggered" "burner_triggered">> 
     <<destroyemotion "emotionmathilda_happy" "mt_happy">>
     <<set $candle = true>>
+     <<darkmodeoff>>
     Mathilda lights the candle.
 <<elseif $item4candle == false>>
     <<activateemotion "emotionmathilda_idle" "mt_idle">>
