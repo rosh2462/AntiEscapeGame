@@ -424,7 +424,7 @@ position: 18,-598
     //<<enableScene8>>
   
      <<rollup "extra1scroll_idle" "extra1scroll_triggered">>
-    
+    <<darkmodeoff>>
     //The skeleton scroll rolls up and reveals the door on the right edge of room 1(in the dark, so it's not visible) the extra1scroll_idle sprite is replaced by the extra1scroll_triggered sprite, that change is permanent
    // <<endflickerlights>> //lights flicker and come back on, characters are scattered
     <<activateemotion "emotionhugh_afraid" "h_afraid">>
@@ -1295,7 +1295,7 @@ title: interaction3orrery
 tags:
 color: yellow
 group: room3
-position: 539,-188
+position: 549,-194
 ---
 //object gets deactivated when the variable $hugh turns false
 <<set $actions = $actions - 1>>
@@ -2006,7 +2006,7 @@ title: interaction5cage
 tags:
 color: blue
 group: room5
-position: 1060,-56
+position: 1073,-50
 ---
 //object gets deactivated when the variable $hugh turns false
 <<set $actions = $actions - 1>>
@@ -2207,6 +2207,7 @@ position: 665,255
            // <<wait 2>>
            <<emotionsprite "emotionhugh_angry" "h_angry">>
             Hugh: Damn!
+             <<destroyemotion "emotionhugh_angry" "h_angry">>
             <<if $ashok == true>>
                <<emotionsprite "emotionashok_happy" "a_happy">>
                 Ashok: Seems like it doesn't fit.
@@ -2284,9 +2285,11 @@ position: 924,253
                // <<wait  2>>
                 <<emotionsprite "emotionhugh_angry" "h_angry">>
                 Hugh: Useless thing!
+                 <<destroyemotion "emotionhugh_angry" "h_angry">>
             <<else>>
             <<emotionsprite "emotionhugh_idle" "h_idle">>
             Hugh: Why am I still expecting that there could be an unlocked door for once?
+            
             <<endif>>
         <<elseif $ashok == true>>
             <<emotionsprite "emotionashok_idle" "a_idle">>
@@ -2311,12 +2314,14 @@ position: 924,253
             Mathilda: I'm proud of you, Nanditha.
         <<endif>>
         <<set $door45 = true>>
+          <<destroyemotion "emotionhugh_angry" "h_angry">>
         //<<flickerlights1>>
         <<destroyemotion "emotionnanditha_happy" "n_happy">>
         <<destroyemotion "emotionmathilda_happy" "mt_happy">>
         <<jump room5_enter>>
     <<endif>>
 <<else>>
+<<destroyemotion "emotionhugh_angry" "h_angry">>
     <<set $actions = $actions - 1>>
     <<jump room5_enter>>
 <<endif>>
@@ -2353,9 +2358,11 @@ position: 1187,253
             <<if $item3key == true && $item5finger == false>>
                 <<emotionsprite "emotionhugh_idle" "h_idle">>
                 Hugh: Ok, I'll try my key again.
+                
                // <<wait  2>>
                 <<emotionsprite "emotionhugh_angry" "h_angry">>
                 Hugh: Why did I even take this stupid thing with me?
+                <<destroyemotion "emotionhugh_angry" "h_angry">>
             <<else>>
                 <<emotionsprite "emotionhugh_idle" "h_idle">>
                 Hugh: And again, we need to look out for a key to open this one.
