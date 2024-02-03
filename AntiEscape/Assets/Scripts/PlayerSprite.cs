@@ -621,7 +621,7 @@ public void Disablevase()
     {
 
 Vase.GetComponent<vaseInteractive>().enabled = false;
-    Vase.GetComponent<BoxCollider2D>().enabled=false;
+    Vase.GetComponent<PolygonCollider2D>().enabled=false;
     Vase.GetComponent<CustomCursor>().enabled = false;
 
 
@@ -638,7 +638,7 @@ Vase.GetComponent<vaseInteractive>().enabled = false;
 public void disableCan(){
 
     Can.GetComponent<CanInteractive>().enabled = false;
-    Can.GetComponent<BoxCollider2D>().enabled=false;
+    Can.GetComponent<PolygonCollider2D>().enabled=false;
     Can.GetComponent<CustomCursor>().enabled = false;
 }
 
@@ -800,7 +800,7 @@ private void disableCorpse()
     {
       corpse.GetComponent<corpseInteractive>().enabled = false;
     corpse.GetComponent<CustomCursor>().enabled = false;
-    corpse.GetComponent<BoxCollider2D>().enabled=false;
+    corpse.GetComponent<PolygonCollider2D>().enabled=false;
     }
 
 
