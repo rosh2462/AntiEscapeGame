@@ -6,8 +6,8 @@ position: 14,-1473
 ---
 //this is a list of every variable in the game and in its original state - running this node resets the game
 
-<<declare $actions = 50>>
-<<set $actions = 50>>
+<<declare $actions = 42>>
+<<set $actions = 42>>
 
 
 
@@ -805,7 +805,6 @@ position: 35,-464
 <<activateemotion "emotionhugh_annoyed" "h_annoyed">>
 <<activateemotion "emotionmathilda_idle" "mt_idle">>
 <<activateemotion "emotionnanditha_happy" "n_happy">>
-
 <<if $item2carrot == false>>
     <<objectsprite "trap1animal_idle" "trap1animal_triggered">>
     <<emotionsprite "emotionnanditha_afraid" "n_afraid">>
@@ -827,10 +826,18 @@ position: 35,-464
     <<endif>>
 <<else>>
     <<set $item1eye = true>>
+    <<emotionsprite "emotionnanditha_happy" "n_happy">>
+    Nanditha: It looks so hungry... I'm gonna feed it with the carrot I found!
+    <<if $hugh == true>>
+        <<emotionsprite "emotionhugh_annoyed" "h_annoyed">>
+        Hugh: It's already dead... 
+    <<endif>>
+    <<destroyemotion "emotionnanditha_happy" "n_happy">>
+    <<destroyemotion "emotionhugh_annoyed" "h_annoyed">>
     <<popupsprite "popup1eye" "popup1eye">>
     Nanditha found a glass eye!
     <<destroypopup "popup1eye" "popup1eye">>
-   <<emotionsprite "emotionnanditha_happy" "n_happy">>
+    <<emotionsprite "emotionnanditha_happy" "n_happy">>
     Nanditha: Oh, one of its eyes fell off.
 <<endif>>
 <<destroyemotion "emotionnanditha_annoyed" "n_annoyed">>
@@ -1230,7 +1237,8 @@ Marzanna: I've never seen plants like these before.
     <<destroyemotion "emotionmarzanna_embarassed" "mz_embarassed">>
     <<destroyemotion "emotionashok_happy" "a_happy">>
     <<jump room_investigate>>
-    ===
+===
+
 
 title: interaction3letters
 tags:
@@ -1655,7 +1663,31 @@ position: 539,-742
     <<endif>>
 
 <<if $lock1 == true && $lock2 == true && $lock3 == true && $lock4 == true>>
-    Final dialogue because they can escape now //placeholder
+    <<if $hugh == true>>
+        <<emotionsprite "emotionhugh_happy" "h_happy">>
+        Hugh: Wow. To be honest I didn't expect us to survive this.
+    <<endif>>
+    <<if $mathilda == true>>
+        <<emotionsprite "emotionmathilda_happy" "mt_happy">>
+        Mathilda: This is the way out!
+    <<endif>>
+    <<if $marzanna == true>>
+        <<emotionsprite "emotionmarzanna_happy" "mz_happy">>
+        Marzanna: It can't be true! Did we really make it?
+    <<endif>>
+    <<if $nanditha == true>>
+        <<emotionsprite "emotionnanditha_happy" "n_happy">>
+        Nanditha: I told you we would find the exit!
+    <<endif>>
+    <<if $ashok == true>>
+        <<emotionsprite "emotionashok_happy" "a_happy">>
+        Ashok: Finally!
+    <<endif>>
+    <<destroyemotion "emotionashok_happy" "a_happy">>
+    <<destroyemotion "emotionhugh_happy" "h_happy">>
+    <<destroyemotion "emotionmathilda_happy" "mt_happy">>
+    <<destroyemotion "emotionnanditha_happy" "n_happy">>
+    <<destroyemotion "emotionmarzanna_happy" "mz_happy">>
     <<jump escape>>
 <<endif>>
 <<destroyemotion "emotionashok_idle" "a_idle">>
@@ -1666,7 +1698,7 @@ position: 539,-742
 <<destroyemotion "emotionashok_happy" "a_happy">>
 <<destroyemotion "emotionmathilda_happy" "mt_happy">>
 <<destroyemotion "emotionhugh_happy" "h_happy">>
- <<disablescenevault>>
+<<disablescenevault>>
     <<enableScene6>>
 <<jump room_investigate>>
 ===
@@ -2577,7 +2609,8 @@ position: -107,258
 Nothing there...
 <<endif>>
 <<jump room_investigate>>
- ===
+===
+
 title: killed_everyone
 tags:
 color: white
