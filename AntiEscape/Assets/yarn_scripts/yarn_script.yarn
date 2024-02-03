@@ -9,6 +9,8 @@ position: 14,-1473
 <<declare $actions = 50>>
 <<set $actions = 50>>
 
+
+
 <<declare $marzanna = true>> //true means the character is alive, false means they are dead
 <<declare $hugh = true>>
 <<declare $mathilda = true>>
@@ -379,7 +381,7 @@ position: 18,-598
     
      <<if $nanditha == true>>
         <<enableNandithaCharacter>>
-        // <<enableanimal>>
+         <<enableanimal>>
     <<endif>>
 <<if visited_count("room1_enter") == 0>>
 
@@ -523,32 +525,83 @@ position: 358,-948
 <<destroyemotion "emotionmarzanna_sad" "mz_sad">>
  <<if $ashok == true>>
          <<enableAshokCharacter>>   
-<<else>>
-<<disableAshokCharacter>>
-     <<endif>>
+         <<enablecorpse>>
+         <<enablewindow>>
+         <<enableletters>>
+         <<enablegemstone>>
+         <<enableapparatus>>
+    <<else>>
+        <<disableAshokCharacter>>
+        <<disablecorpse>>
+        <<disablewindow>>
+        <<disableletters>>
+        <<disablegemStone>>
+        <<disableapparatus>>
+<<endif>>
+
   <<if $marzanna == true>>
         <<enableMarzannaCharacter>>
+        <<enablechemicals>>
+        <<enableplants>>
+        <<enablebookshelf>>
+        <<enabledivination>>
+        <<enableshelf>>
 <<else>>
 <<disableMarzannaCharacter>>
-        //<<enablechemicals>>
+        <<disablechemicals>>
+        <<disableplants>>
+        <<disablebookshelf>>
+        <<disabledivination>>
+        <<disableshelf>>
     <<endif>>
  <<if $mathilda == true>>
         <<enableMathildaCharacter>>
+        <<enabletools>>
+        <<enableCabinet>>
+        <<enableglobe>>
+        <<enablealtar>>
+        <<enableburner>>
 <<else>>
         <<disableMathildaCharacter>>
-      // <<enabletools>>
-     <<endif>>
+      <<disabletools>>
+      <<disablecabinet>>
+      <<disableglobe>>
+      <<disablealtar>>
+      <<disableburner>>
+<<endif>>
      <<if $hugh == true>>
         <<enableHughCharacter>>
+        <<enablecrate>>
+        <<enablecan>>
+        <<enableorrey>>
+        <<enableeffigie>>
+        <<enablecage>>
         <<else>>
-<<disableHughCharacter>>
-       // <<enablecrate>>
+        <<disableHughCharacter>>
+        <<disablecrate>>
+        <<disablecan>>
+        <<disableorrey>>
+        <<disableeffigie>>
+        <<disablecage>>
      <<endif>>
       <<if $nanditha == true>>
         <<enableNandithaCharacter>>
+        <<enableanimal>>
+<<enablepatch>>
+<<enabletelescope>>
+<<enablevase>>
+<<enablegenerator>>
       <<else>>
+     
 <<disableNandithaCharacter>>
-      //  <<enableanimal>>
+       <<disableanimal>>
+<<disablepatch>>
+<<disabletelescope>>
+<<disablevase>>
+<<disablgenerator>>
+
+
+
      <<endif>>
 <<if $actions == 40>>
    <<playrestsound Monster40 "monster40">>
@@ -734,6 +787,7 @@ position: 358,-948
 <<elseif $marzanna == false && $hugh == false && $mathilda == false && $nanditha == false && $ashok == false>>
     <<jump killed_everyone>>
 <<else>>
+    //<<disableanimation>>
     -> Choose an object to investigate.
 <<endif>>
 ===
@@ -932,6 +986,10 @@ color: red
 group: room1
 position: 18,86
 ---
+// <<if $ashok== false>>
+// <<disablecorpse>>
+// <<jump room_investigate>>
+// <<endif>>
 //object gets deactivated when the variable $ashok turns false
 <<set $actions = $actions - 1>>
 <<activateemotion "emotionashok_idle" "a_idle">>
@@ -970,6 +1028,7 @@ color: green
 group: room2
 position: 284,-458
 ---
+
 //object gets deactivated when the variable $ashok turns false
 <<set $actions = $actions - 1>>
 <<activateemotion "emotionashok_happy" "a_happy">>
@@ -996,14 +1055,17 @@ Ashok: It worked! I can climb through.
 <<set $ashok = false>>
 <<enabledeathAshok>>
 Ashok: Ugh!
+
 <<if $nanditha == true>>
     <<emotionsprite "emotionnanditha_afraid" "n_afraid">>
     Nanditha: NOOO ASHOK!
 <<endif>>
 <<disabledeathAshok>> 
 <<disableAshok>>
+
 <<if $marzanna == true>>
     <<enableAshokCorpse>>
+    <<disablewindow>>
     <<emotionsprite "emotionmarzanna_afraid" "mz_afraid">>
     Marzanna: He's bleeding out!
 <<endif>>
@@ -1018,6 +1080,7 @@ Ashok: Ugh!
     <<emotionsprite "emotionhugh_idle" "h_idle">>
     Hugh: I had estimated him to be smarter than that.
 <<endif>>
+
 <<destroyemotion "emotionnanditha_afraid" "n_afraid">>
 <<destroyemotion "emotionnanditha_sad" "n_sad">>
 <<destroyemotion "emotionmarzanna_afraid" "mz_afraid">>
@@ -1173,8 +1236,9 @@ title: interaction3letters
 tags:
 color: yellow
 group: room3
-position: 547,-462
+position: 536,-469
 ---
+
 //object gets deactivated when the variable $ashok turns false
 <<set $actions = $actions - 1>>
 <<activateemotion "emotionashok_happy" "a_happy">>
@@ -1182,6 +1246,9 @@ position: 547,-462
 <<activateemotion "emotionnanditha_idle" "n_idle">>
 <<activateemotion "emotionhugh_annoyed" "h_annoyed">>
 <<emotionsprite "emotionashok_happy" "a_happy">>
+// <<if $ashok== false>>
+// <<disableletters>>
+// <<endif>>
 Ashok: Here's a stack of letters. 
 <<if visited("interaction1crate") == true>>
     Ashok: Maybe I can find some information about this Dr. Fist and what he was all about.
