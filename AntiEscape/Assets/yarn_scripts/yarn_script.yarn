@@ -899,53 +899,66 @@ position: 18,-322
 ---
 //object gets deactivated when the variable $mathilda turns false
 <<set $actions = $actions - 1>>
+<<activateemotion "emotionmathilda_happy" "mt_happy">>
+<<activateemotion "emotionhugh_idle" "h_idle">>
 <<activateemotion "emotionmathilda_annoyed" "mt_annoyed">>
 <<activateemotion "emotionhugh_afraid" "h_afraid">>
 <<activateemotion "emotionnanditha_afraid" "n_afraid">>
 <<activateemotion "emotionashok_idle" "a_idle">>
 <<activateemotion "emotionmarzanna_sad" "mz_sad">>
-<<emotionsprite "emotionmathilda_annoyed" "mt_annoyed">>
-Mathilda: I'll take one of these knives to defend us.
-<<destroyemotion "emotionmathilda_annoyed" "mt_annoyed">>
-<<set $mathilda = false>>
-//<<popupsprite "emotionmathilda_death" "mt_death">>
-<<enabledeathMathilda>>
-Mathilda: AAAAAAAAAAAAH!
-<<disableMathilda>>//disabling mathilda character
-<<disabletoolsitem>>//disabling the tools
-<<disableknife>>//disabling the knife
-<<disabledeathMathilda>> //disabling the mathilda shock sprite
+<<if visited_count("interaction1tools") <= 1>>
+    <<emotionsprite "emotionmathilda_happy" "mt_happy">>
+    Mathilda: Weapons! Nice!
+    <<if $hugh == true>>
+        <<emotionsprite "emotionhugh_idle" "h_idle">>
+        Hugh: Be careful, Mathilda. I don't think we would be much safer if you carried a knife.
+    <<endif>>
+<<else>>
+    <<emotionsprite "emotionmathilda_annoyed" "mt_annoyed">>
+    Mathilda: I'll take one of these knives to defend us.
+    <<destroyemotion "emotionmathilda_happy" "mt_happy">>
+        <<destroyemotion "emotionhugh_idle" "h_idle">>
+    <<destroyemotion "emotionmathilda_annoyed" "mt_annoyed">>
+    <<set $mathilda = false>>
+    //<<popupsprite "emotionmathilda_death" "mt_death">>
+    <<enabledeathMathilda>>
+    Mathilda: AAAAAAAAAAAAH!
+    <<disableMathilda>>//disabling mathilda character
+    <<disabletoolsitem>>//disabling the tools
+    <<disableknife>>//disabling the knife
+    <<disabledeathMathilda>> //disabling the mathilda shock sprite
 
-<<if $hugh == true>>
- <<enableMathildaCorpse>>
-    <<emotionsprite "emotionhugh_afraid" "h_afraid">>
-    Hugh: MATHILDA!
-<<endif>>
+    <<if $hugh == true>>
+    <<enableMathildaCorpse>>
+        <<emotionsprite "emotionhugh_afraid" "h_afraid">>
+        Hugh: MATHILDA!
+    <<endif>>
 
-<<if $nanditha == true>>
-    <<emotionsprite "emotionnanditha_afraid" "n_afraid">>
-    Nanditha: Mathilda?
-<<endif>>
-<<if $ashok == true>>
-    <<emotionsprite "emotionashok_idle" "a_idle">>
-   // <<enableMathildaCorpse>>
-    Ashok: I think she's dead.
-<<endif>>
-<<if $nanditha == true>>
-    <<emotionsprite "emotionnanditha_sad" "n_sad">>
-    Nanditha: No, that can't be!
-<<endif>>
-<<if $hugh == true>>
-    <<emotionsprite "emotionhugh_sad" "h_sad">>
-    Hugh: Not Mathilda!
-<<endif>>
-<<if $marzanna == true>>
-    <<emotionsprite "emotionmarzanna_sad" "mz_sad">>
-    Marzanna: We're all gonna die in here!
-<<endif>>
-<<if $ashok == true>>
-    <<emotionsprite "emotionashok_annoyed" "a_annoyed">>
-    Ashok: Pull yourselves together and help me find a way out of here before there's more casualties!
+    <<if $nanditha == true>>
+        <<emotionsprite "emotionnanditha_afraid" "n_afraid">>
+        Nanditha: Mathilda?
+    <<endif>>
+    <<if $ashok == true>>
+        <<emotionsprite "emotionashok_idle" "a_idle">>
+    // <<enableMathildaCorpse>>
+        Ashok: I think she's dead.
+    <<endif>>
+    <<if $nanditha == true>>
+        <<emotionsprite "emotionnanditha_sad" "n_sad">>
+        Nanditha: No, that can't be!
+    <<endif>>
+    <<if $hugh == true>>
+        <<emotionsprite "emotionhugh_sad" "h_sad">>
+        Hugh: Not Mathilda!
+    <<endif>>
+    <<if $marzanna == true>>
+        <<emotionsprite "emotionmarzanna_sad" "mz_sad">>
+        Marzanna: We're all gonna die in here!
+    <<endif>>
+    <<if $ashok == true>>
+        <<emotionsprite "emotionashok_annoyed" "a_annoyed">>
+        Ashok: Pull yourselves together and help me find a way out of here before there's more casualties!
+    <<endif>>
 <<endif>>
 <<destroyemotion "emotionhugh_afraid" "h_afraid">>
 <<destroyemotion "emotionnanditha_afraid" "n_afraid">>
@@ -1027,6 +1040,41 @@ position: 18,86
 <<jump room_investigate>>
 ===
 
+title: interaction1mathilda
+tags:
+color: red
+group: room1
+position: 20,236
+---
+//object gets activated when the variable $mathilda turns false (it's her dead body)
+<<set $actions = $actions - 1>>
+<<activateemotion "emotionhugh_sad" "h_sad">>
+<<activateemotion "emotionnanditha_sad" "n_sad">>
+<<activateemotion "emotionashok_idle" "a_idle">>
+<<activateemotion "emotionmarzanna_afraid" "mz_afraid">>
+<<if $hugh == true>>
+    <<emotionsprite "emotionhugh_sad" "h_sad">>
+    Hugh: Why her? She was the only one who wasn't annoying me to death!
+<<endif>>
+<<if $nanditha == true>>
+    <<emotionsprite "emotionnanditha_sad" "n_sad">>
+    Nanditha: Mathilda... I just can't believe it.
+<<endif>>
+<<if $ashok == true>>
+    <<emotionsprite "emotionashok_idle" "a_idle">>
+    Ashok: Don't you guys think it's strange that these knifes were so loose? As if it was set up to cause accidents.
+<<endif>>
+<<if $marzanna == true>>
+    <<emotionsprite "emotionmarzanna_afraid" "mz_idle">>
+    Marzanna: This was not an accident, it was a trap!
+<<endif>>
+<<destroyemotion "emotionhugh_sad" "h_sad">>
+<<destroyemotion "emotionnanditha_sad" "n_sad">>
+<<destroyemotion "emotionashok_idle" "a_idle">>
+<<destroyemotion "emotionmarzanna_afraid" "mz_afraid">>
+<<jump room_investigate>>
+===
+
 
 title: interaction2window
 tags:
@@ -1049,7 +1097,7 @@ Ashok: This window has a crack. Maybe I can break it.
     Nanditha: Be careful, Ashok! Maybe we can find a shovel or something else to break it with.
 <<endif>>
 <<emotionsprite "emotionashok_idle" "a_idle">>
-Ashok: I'll just try to kick it in.
+Ashok: I'll just try to smash it.
 <<playrestsound Trap "glass_shatter">>
 <<emotionsprite "emotionashok_happy" "a_happy">>
 Ashok: It worked! I can climb through.
@@ -1099,7 +1147,7 @@ title: interaction2patch
 tags:
 color: green
 group: room2
-position: 284,-458
+position: 283,-308
 ---
 //object gets deactivated when the variable $nanditha turns false
 <<set $actions = $actions - 1>>
@@ -1130,7 +1178,7 @@ title: interaction2can
 tags:
 color: green
 group: room2
-position: 284,-458
+position: 274,-167
 ---
 //object gets deactivated when the variable $hugh turns false
  <<set $actions = $actions - 1>>
@@ -1165,7 +1213,7 @@ title: interaction2cabinet
 tags:
 color: green
 group: room2
-position: 284,-458
+position: 271,-32
 ---
 //object gets deactivated when the variable $mathilda turns false
 <<set $actions = $actions - 1>>
@@ -1201,7 +1249,7 @@ title: interaction2plants
 tags:
 color: green
 group: room2
-position: 284,-458
+position: 280,105
 ---
 //object gets deactivated when the variable $marzanna turns false
 <<set $actions = $actions - 1>>
@@ -1235,6 +1283,41 @@ Marzanna: I've never seen plants like these before.
     <<endif>>
     <<destroyemotion "emotionmarzanna_embarassed" "mz_embarassed">>
     <<destroyemotion "emotionashok_happy" "a_happy">>
+<<jump room_investigate>>
+===
+
+title: interaction2ashok
+tags:
+color: green
+group: room2
+position: 285,248
+---
+//object gets activated when the variable $ashok turns false (it's his dead body)
+<<set $actions = $actions - 1>>
+<<activateemotion "emotionnanditha_sad" "n_sad">>
+<<activateemotion "emotionhugh_idle" "h_idle">>
+<<activateemotion "emotionmathilda_idle" "mt_idle">>
+<<activateemotion "emotionmarzanna_afraid" "mz_afraid">>
+<<if $nanditha == true>>
+    <<emotionsprite "emotionnanditha_sad" "n_sad">>
+    Nanditha: I never wanted to be an only child.
+<<endif>>
+<<if $hugh == true>>
+    <<emotionsprite "emotionhugh_idle" "h_idle">>
+    Hugh: If this window really was a way out, he's now blocking it and I'm not touching a body to change that.
+<<endif>>
+<<if $mathilda == true>>
+    <<emotionsprite "emotionmathilda_idle" "mt_idle">>
+    Mathilda: I think it's quite embarassing to die like that.
+<<endif>>
+<<if $marzanna == true>>
+    <<emotionsprite "emotionmarzanna_afraid" "mz_idle">>
+    Marzanna: So much blood...
+<<endif>>
+<<destroyemotion "emotionnanditha_sad" "n_sad">>
+<<destroyemotion "emotionhugh_idle" "h_idle">>
+<<destroyemotion "emotionmathilda_idle" "mt_idle">>
+<<destroyemotion "emotionmarzanna_afraid" "mz_afraid">>
     <<jump room_investigate>>
 ===
 
@@ -1338,7 +1421,7 @@ Nanditha: Oh nice, a telescope! I'll take a look at the stars!
 Nanditha: It doesn't work.
 <<if $hugh == true>>
     <<emotionsprite "emotionhugh_annoyed" "h_annoyed">>
-    Hugh: *sigh*
+    Hugh: - sigh -
 <<endif>>
 <<if $ashok == false && visited_count("room1_enter") == 0 && visited("room5_enter") == true && $key51 == false>>
     <<set $key51 = true>>
@@ -1539,6 +1622,41 @@ position: 539,82
 <<destroyemotion "emotionmarzanna_afraid" "mz_afraid">>
 <<destroyemotion "emotionashok_happy" "a_happy">>
 <<destroyemotion "emotionnanditha_happy" "n_happy">>
+<<jump room_investigate>>
+===
+
+title: interaction3marzanna
+tags:
+color: yellow
+group: room3
+position: 536,229
+---
+//object gets activated when the variable $marzanna turns false (it's her dead body/the bookshelf on the floo)
+<<set $actions = $actions - 1>>
+<<activateemotion "emotionashok_sad" "a_sad">>
+<<activateemotion "emotionnanditha_sad" "n_sad">>
+<<activateemotion "emotionmathilda_idle" "mt_idle">>
+<<activateemotion "emotionhugh_idle" "h_idle">>
+<<if $ashok == true>>
+    <<emotionsprite "emotionashok_sad" "a_sad">>
+    Ashok: I should have helped her...
+<<endif>>
+<<if $nanditha == true>>
+    <<emotionsprite "emotionnanditha_sad" "n_sad">>
+    Nanditha: She sacrificed herself to reveal this door for us.
+<<endif>>
+<<if $mathilda == true>>
+    <<emotionsprite "emotionmathilda_idle" "mt_idle">>
+    Mathilda: Did she expect to find anything in that gap?
+<<endif>>
+<<if $hugh == true>>
+    <<emotionsprite "emotionhugh_idle" "h_idle">>
+    Hugh: As jumpy as she was, she would have died of a heart attack before we got out anyways.
+<<endif>>
+<<destroyemotion "emotionashok_sad" "a_sad">>
+<<destroyemotion "emotionnanditha_sad" "n_sad">>
+<<destroyemotion "emotionmathilda_idle" "mt_idle">>
+<<destroyemotion "emotionhugh_idle" "h_idle">>
 <<jump room_investigate>>
 ===
 
@@ -1945,6 +2063,41 @@ Ashok: I wonder how much this collection of gemstones is worth.
 <<jump room_investigate>>
 ===
 
+title: interaction4hugh
+tags:
+color: purple
+group: room4
+position: 803,229
+---
+//object gets activated when the variable $hugh turns false (it's his dead body)
+<<set $actions = $actions - 1>>
+<<activateemotion "emotionmarzanna_sad" "mz_sad">>
+<<activateemotion "emotionmathilda_sad" "mt_sad">>
+<<activateemotion "emotionnanditha_afraid" "n_afraid">>
+<<activateemotion "emotionashok_idle" "a_idle">>
+<<if $marzanna == true>>
+    <<emotionsprite "emotionmarzanna_sad" "mz_sad">>
+    Marzanna: The effigy was cursed! I tried to warn him, why didn't he listen to me?
+<<endif>>
+<<if $mathilda == true>>
+    <<emotionsprite "emotionmathilda_sad" "mt_sad">>
+    Mathilda: How is that even possible?
+<<endif>>
+<<if $nanditha == true>>
+    <<emotionsprite "emotionnanditha_afraid" "n_afraid">>
+    Nanditha: He just touched it! What is wrong with this place?
+<<endif>>
+<<if $ashok == true>>
+    <<emotionsprite "emotionashok_idle" "a_idle">>
+    Ashok: What did he expect to find there anyways?
+<<endif>>
+<<destroyemotion "emotionmarzanna_sad" "mz_sad">>
+<<destroyemotion "emotionmathilda_sad" "mt_sad">>
+<<destroyemotion "emotionnanditha_afraid" "n_afraid">>
+<<destroyemotion "emotionashok_idle" "a_idle">>
+<<jump room_investigate>>
+===
+
 
 title: interaction5apparatus
 tags:
@@ -2202,12 +2355,47 @@ position: 1060,82
 <<jump room_investigate>>
 ===
 
+title: interaction5nanditha
+tags:
+color: blue
+group: room5
+position: 1066,220
+---
+//object gets activated when the variable $nanditha turns false (it's her dead body)
+<<set $actions = $actions - 1>>
+<<activateemotion "emotionashok_sad" "a_sad">>
+<<activateemotion "emotionmathilda_sad" "mt_sad">>
+<<activateemotion "emotionmarzanna_afraid" "mz_afraid">>
+<<activateemotion "emotionhugh_annoyed" "h_annoyed">>
+<<if $ashok == true>>
+    <<emotionsprite "emotionashok_sad" "a_sad">>
+    Ashok: My beloved sister...
+<<endif>>
+<<if $mathilda == true>>
+    <<emotionsprite "emotionmathilda_sad" "mt_sad">>
+    Mathilda: She did not deserve to die like this.
+<<endif>>
+<<if $marzanna == true>>
+    <<emotionsprite "emotionmarzanna_afraid" "mz_afraid">>
+    Marzanna: Just a pile of ashes is left of her...
+<<endif>>
+<<if $hugh == true>>
+    <<emotionsprite "emotionhugh_annoyed" "h_annoyed">>
+    Hugh: I warned her.
+<<endif>>
+<<destroyemotion "emotionashok_sad" "a_sad">>
+<<destroyemotion "emotionmathilda_sad" "mt_sad">>
+<<destroyemotion "emotionmarzanna_afraid" "mz_afraid">>
+<<destroyemotion "emotionhugh_annoyed" "h_annoyed">>
+<<jump room_investigate>>
+===
+
 
 title: door12
 tags:
 color: white
 group: doors
-position: 158,286
+position: 180,450
 ---
 <<activateemotion "emotionnanditha_idle" "n_idle">>
 <<activateemotion "emotionashok_happy" "a_happy">>
@@ -2242,7 +2430,7 @@ title: door23
 tags:
 color: white
 group: doors
-position: -396,-234
+position: -374,428
 ---
 <<activateemotion "emotionmarzanna_idle" "mz_idle">>
 <<activateemotion "emotionhugh_happy" "h_happy">>
@@ -2277,7 +2465,7 @@ title: door34
 tags:
 color: white
 group: doors
-position: 665,255
+position: 687,419
 ---
 <<activateemotion "emotionmathilda_idle" "mt_idle">>
 <<activateemotion "emotionhugh_annoyed" "h_annoyed">>
@@ -2365,7 +2553,7 @@ title: door45
 tags:
 color: white
 group: doors
-position: 924,253
+position: 946,417
 ---
 <<activateemotion "emotionhugh_happy" "h_happy">>
 <<activateemotion "emotionhugh_angry" "h_angry">>
@@ -2429,7 +2617,7 @@ title: door51
 tags:
 color: white
 group: doors
-position: 1187,253
+position: 1209,417
 ---
 <<if $door51 == false>>
     <<activateemotion "emotionmarzanna_idle" "mz_idle">>
@@ -2545,7 +2733,7 @@ title: door21
 tags:
 color: white
 group: doors
-position: 163,401
+position: 185,565
 ---
 <<set $actions = $actions - 1>>
 <<disableScene5>>
@@ -2556,7 +2744,7 @@ title: door32
 tags:
 color: white
 group: doors
-position: 428,401
+position: 450,565
 ---
 <<set $actions = $actions - 1>>
 // loadscene commands
@@ -2570,7 +2758,7 @@ title: door43
 tags:
 color: white
 group: doors
-position: 669,401
+position: 691,565
 ---
 <<set $actions = $actions - 1>>
 // loadscene commands
@@ -2584,7 +2772,7 @@ title: door54
 tags:
 color: white
 group: doors
-position: 925,401
+position: 947,565
 ---
 <<set $actions = $actions - 1>>
 <<disableScene8>>
@@ -2598,7 +2786,7 @@ title: door15
 tags:
 color: white
 group: doors
-position: -107,258
+position: -85,422
  ---
 <<set $actions = $actions - 1>>
 <<if visited_count("room5_enter") != 0 && visited_count("room4_enter") != 0 && visited_count("room3_enter") != 0 && visited_count("room2_enter") != 0 && visited_count("room1_enter") != 0 >>
