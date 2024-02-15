@@ -98,7 +98,7 @@ Mathilda: He might be right though.
 Nanditha: Let's search for a light switch or something, it's so dark in here, I can't even see you guys.
 <<destroyemotion "emotionnanditha_idle" "n_idle">>
 
--> Find a light switch. //continue with room0_exit when clicking on the door
+-> Find a way out. //continue with room0_exit when clicking on the door
 //<<activateLightIntensity>>
 //<<jump room0_exit>>
 ===
@@ -169,7 +169,7 @@ Ashok: Aaaaah! This body is real!
 <<emotionsprite "emotionhugh_afraid" "h_afraid">>
 Hugh: What the hell is going on here?
 <<destroyemotion "emotionhugh_afraid" "h_afraid">>
-
+-> Click on objects to investigate them.
 <<jump room_investigate>>
 ===
 
@@ -523,86 +523,81 @@ position: 358,-948
 <<destroyemotion "emotionmathilda_sad" "mt_sad">>
 <<destroyemotion "emotionnanditha_sad" "n_sad">>
 <<destroyemotion "emotionmarzanna_sad" "mz_sad">>
- <<if $ashok == true>>
-         <<enableAshokCharacter>>   
-         <<enablecorpse>>
-         <<enablewindow>>
-         <<enableletters>>
-         <<enablegemstone>>
-         <<enableapparatus>>
-    <<else>>
-        <<disableAshokCharacter>>
-        <<disablecorpse>>
-        <<disablewindow>>
-        <<disableletters>>
-        <<disablegemStone>>
-        <<disableapparatus>>
-<<endif>>
-
-  <<if $marzanna == true>>
-        <<enableMarzannaCharacter>>
-        <<enablechemicals>>
-        <<enableplants>>
-        <<enablebookshelf>>
-        <<enabledivination>>
-        <<enableshelf>>
+<<if $ashok == true>>
+    <<enableAshokCharacter>>   
+    <<enablecorpse>>
+    <<enablewindow>>
+    <<enableletters>>
+    <<enablegemstone>>
+    <<enableapparatus>>
 <<else>>
-<<disableMarzannaCharacter>>
-        <<disablechemicals>>
-        <<disableplants>>
-        <<disablebookshelf>>
-        <<disabledivination>>
-        <<disableshelf>>
+    <<disableAshokCharacter>>
+    <<disablecorpse>>
+    <<disablewindow>>
+    <<disableletters>>
+    <<disablegemStone>>
+    <<disableapparatus>>
+<<endif>>
+<<if $marzanna == true>>
+    <<enableMarzannaCharacter>>
+    <<enablechemicals>>
+    <<enableplants>>
+    <<enablebookshelf>>
+    <<enabledivination>>
+    <<enableshelf>>
+<<else>>
+    <<disableMarzannaCharacter>>
+    <<disablechemicals>>
+    <<disableplants>>
+    <<disablebookshelf>>
+    <<disabledivination>>
+    <<disableshelf>>
     <<endif>>
- <<if $mathilda == true>>
-        <<enableMathildaCharacter>>
-        <<enabletools>>
-        <<enableCabinet>>
-        <<enableglobe>>
-        <<enablealtar>>
-        <<enableburner>>
+<<if $mathilda == true>>
+    <<enableMathildaCharacter>>
+    <<enabletools>>
+    <<enableCabinet>>
+    <<enableglobe>>
+    <<enablealtar>>
+    <<enableburner>>
 <<else>>
-        <<disableMathildaCharacter>>
-      <<disabletools>>
-      <<disablecabinet>>
-      <<disableglobe>>
-      <<disablealtar>>
-      <<disableburner>>
+    <<disableMathildaCharacter>>
+    <<disabletools>>
+    <<disablecabinet>>
+    <<disableglobe>>
+    <<disablealtar>>
+    <<disableburner>>
 <<endif>>
-     <<if $hugh == true>>
-        <<enableHughCharacter>>
-        <<enablecrate>>
-        <<enablecan>>
-        <<enableorrey>>
-        <<enableeffigie>>
-        <<enablecage>>
-        <<else>>
-        <<disableHughCharacter>>
-        <<disablecrate>>
-        <<disablecan>>
-        <<disableorrey>>
-        <<disableeffigie>>
-        <<disablecage>>
-     <<endif>>
-      <<if $nanditha == true>>
-        <<enableNandithaCharacter>>
-        <<enableanimal>>
-<<enablepatch>>
-<<enabletelescope>>
-<<enablevase>>
-<<enablegenerator>>
-      <<else>>
-     
-<<disableNandithaCharacter>>
-       <<disableanimal>>
-<<disablepatch>>
-<<disabletelescope>>
-<<disablevase>>
-<<disablgenerator>>
-
-
-
-     <<endif>>
+<<if $hugh == true>>
+    <<enableHughCharacter>>
+    <<enablecrate>>
+    <<enablecan>>
+    <<enableorrey>>
+    <<enableeffigie>>
+    <<enablecage>>
+<<else>>
+    <<disableHughCharacter>>
+    <<disablecrate>>
+    <<disablecan>>
+    <<disableorrey>>
+    <<disableeffigie>>
+    <<disablecage>>
+<<endif>>
+<<if $nanditha == true>>
+    <<enableNandithaCharacter>>
+    <<enableanimal>>
+    <<enablepatch>>
+    <<enabletelescope>>
+    <<enablevase>>
+    <<enablegenerator>>
+<<else>>
+    <<disableNandithaCharacter>>
+    <<disableanimal>>
+    <<disablepatch>>
+    <<disabletelescope>>
+    <<disablevase>>
+    <<disablgenerator>>
+<<endif>>
 <<if $actions == 40>>
    <<playrestsound Monster40 "monster40">>
    <<wait  4>>
@@ -788,6 +783,13 @@ position: 358,-948
     <<jump killed_everyone>>
 <<else>>
     //<<disableanimation>>
+<<endif>>
+<<if $marzanna == true && $hugh == false && $mathilda == false && $nanditha == false && $ashok == false && visited("vault") == true>>
+    <<if $lock1 == false || $lock2 == false || $lock3 == false || $lock4 == false>>
+    <<activateemotion "emotionmarzanna_afraid" "mz_afraid">>
+    <<emotionsprite "emotionmarzanna_afraid" "mz_afraid">>
+    Marzanna: Everyone is dead... There's no way I can escape on my own, I'll better give up...
+    <<destroyemotion "emotionmarzanna_afraid" "mz_afraid">>
 <<endif>>
 ===
 
@@ -1090,51 +1092,57 @@ position: 284,-458
 <<activateemotion "emotionmarzanna_afraid" "mz_afraid">>
 <<activateemotion "emotionmathilda_idle" "mt_idle">>
 <<activateemotion "emotionhugh_idle" "h_idle">>
-<<emotionsprite "emotionashok_happy" "a_happy">>
-Ashok: This window has a crack. Maybe I can break it.
-<<if $nanditha == true>>
-    <<emotionsprite "emotionnanditha_idle" "n_idle">>
-    Nanditha: Be careful, Ashok! Maybe we can find a shovel or something else to break it with.
-<<endif>>
-<<emotionsprite "emotionashok_idle" "a_idle">>
-Ashok: I'll just try to smash it.
-<<playrestsound Trap "glass_shatter">>
-<<emotionsprite "emotionashok_happy" "a_happy">>
-Ashok: It worked! I can climb through.
-<<if $nanditha == true>>
-    <<emotionsprite "emotionnanditha_afraid" "n_afraid">>
-    Nanditha: Ashok, wait!
-<<endif>>
-<<destroyemotion "emotionashok_happy" "a_happy">>
-<<set $ashok = false>>
-<<enabledeathAshok>>
-Ashok: Ugh!
+<<if visited_count("interaction2window") <= 1>>
+    <<emotionsprite "emotionashok_happy" "a_happy">>
+    Ashok: This window has a crack. Maybe I can break it.
+    <<if $nanditha == true>>
+        <<emotionsprite "emotionnanditha_idle" "n_idle">>
+        Nanditha: Be careful, Ashok! Maybe we can find a shovel or something else to break it with.
+    <<endif>>
+    <<emotionsprite "emotionashok_idle" "a_idle">>
+    Ashok: I'll just try to smash it.
+    <<playrestsound Trap "glass_shatter">>
+    <<emotionsprite "emotionashok_happy" "a_happy">>
+    Ashok: It worked! We can get out through the hole I made!
+    <<destroyemotion "emotionashok_happy" "a_happy">>
+<<else>>
+    <<emotionsprite "emotionashok_happy" "a_happy">>
+    Ashok: Ok guys, I'll climb through that window now.
+    <<if $nanditha == true>>
+        <<emotionsprite "emotionnanditha_afraid" "n_afraid">>
+        Nanditha: Ashok, wait!
+    <<endif>>
+    <<destroyemotion "emotionashok_happy" "a_happy">>
+    <<destroyemotion "emotionnanditha_afraid" "n_afraid">>
+    <<set $ashok = false>>
+    <<enabledeathAshok>>
+    Ashok: Ugh!
 
-<<if $nanditha == true>>
-    <<emotionsprite "emotionnanditha_afraid" "n_afraid">>
-    Nanditha: NOOO ASHOK!
-<<endif>>
-<<disabledeathAshok>> 
-<<disableAshok>>
+    <<if $nanditha == true>>
+        <<emotionsprite "emotionnanditha_afraid" "n_afraid">>
+        Nanditha: NOOO ASHOK!
+    <<endif>>
+    <<disabledeathAshok>> 
+    <<disableAshok>>
 
-<<if $marzanna == true>>
-    <<enableAshokCorpse>>
-    <<disablewindow>>
-    <<emotionsprite "emotionmarzanna_afraid" "mz_afraid">>
-    Marzanna: He's bleeding out!
+    <<if $marzanna == true>>
+        <<enableAshokCorpse>>
+        <<disablewindow>>
+        <<emotionsprite "emotionmarzanna_afraid" "mz_afraid">>
+        Marzanna: He's bleeding out!
+    <<endif>>
+    <<if $nanditha == true && $mathilda == false>>
+        <<emotionsprite "emotionnanditha_sad" "n_sad">>
+        Nanditha: First Mathilda and now my brother. I am cursed!
+    <<elseif $nanditha == true && $mathilda == true>>
+        <<emotionsprite "emotionmathilda_idle" "mt_idle">>
+        Mathilda: Don't worry, you still got me, Nanditha.
+    <<endif>>
+    <<if $hugh == true>>
+        <<emotionsprite "emotionhugh_idle" "h_idle">>
+        Hugh: I had estimated him to be smarter than that.
+    <<endif>>
 <<endif>>
-<<if $nanditha == true && $mathilda == false>>
-    <<emotionsprite "emotionnanditha_sad" "n_sad">>
-    Nanditha: First Mathilda and now my brother. I am cursed!
-<<elseif $nanditha == true && $mathilda == true>>
-    <<emotionsprite "emotionmathilda_idle" "mt_idle">>
-    Mathilda: Don't worry, you still got me, Nanditha.
-<<endif>>
-<<if $hugh == true>>
-    <<emotionsprite "emotionhugh_idle" "h_idle">>
-    Hugh: I had estimated him to be smarter than that.
-<<endif>>
-
 <<destroyemotion "emotionnanditha_afraid" "n_afraid">>
 <<destroyemotion "emotionnanditha_sad" "n_sad">>
 <<destroyemotion "emotionmarzanna_afraid" "mz_afraid">>
@@ -1554,43 +1562,46 @@ position: 539,82
 <<activateemotion "emotionashok_happy" "a_happy">>
 <<activateemotion "emotionnanditha_happy" "n_happy">>
 <<if $item4grimoire == false>>
-    <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
-    Marzanna: There's a gap, as if one of the books was missing.
-    <<if $nanditha == true>>
-        <<emotionsprite "emotionnanditha_idle" "n_idle">>
-        Nanditha: Or something is hidden there!
-    <<endif>>
-    <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
-    Marzanna: It's hard to reach...
-    <<destroyemotion "emotionmarzanna_idle" "mz_idle">>
-    <<set $marzanna = false>>
-    <<enabledeathMarzanna>>
-    //<<popupsprite "emotionmarzanna_death" "mz_death">>
-    Marzanna: IIIIIIIEEK! //the bookcase falls on Marzanna
-    <<if $ashok == true>>
-        <<activateemotion "emotionashok_afraid" "a_afraid">>
-        <<emotionsprite "emotionashok_afraid" "a_afraid">>
-        Ashok: Marzanna?
-    <<endif>>
-    <<disabledeathMarzanna>>
-    <<disableMarzanna>>
-    <<if $nanditha == true>>
-    <<disablebookshelf>>
-    <<enablevault>>
-    <<enableMarzannaCorpse>>
-        <<activateemotion "emotionnanditha_afraid" "n_afraid">>
-        <<emotionsprite "emotionnanditha_afraid" "n_afraid">>
-        Nanditha: That can't be!
-        <<if $ashok == false || $mathilda == false>>
-            <<emotionsprite "emotionnanditha_sad" "n_sad">>
-            Nanditha: Why does everyone keep dying?!?
+    <<if visited_count("interaction3bookcase") <= 1>>
+        <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
+        Marzanna: There's a gap, as if one of the books was missing.
+        <<if $nanditha == true>>
+            <<emotionsprite "emotionnanditha_idle" "n_idle">>
+            Nanditha: Or something is hidden there!
         <<endif>>
-    <<endif>>
-    <<if $hugh == true>>
-        <<activateemotion "emotionhugh_idle" "h_idle">>
-        <<emotionsprite "emotionhugh_idle" "h_idle">>
+    <<else>>
+        <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
+        Marzanna: It's hard to reach...
+        <<destroyemotion "emotionmarzanna_idle" "mz_idle">>
+        <<set $marzanna = false>>
+        <<enabledeathMarzanna>>
+        //<<popupsprite "emotionmarzanna_death" "mz_death">>
+        Marzanna: IIIIIIIEEK! //the bookcase falls on Marzanna
+        <<if $ashok == true>>
+            <<activateemotion "emotionashok_afraid" "a_afraid">>
+            <<emotionsprite "emotionashok_afraid" "a_afraid">>
+            Ashok: Marzanna?
+        <<endif>>
+        <<disabledeathMarzanna>>
+        <<disableMarzanna>>
+        <<if $nanditha == true>>
+        <<disablebookshelf>>
         <<enablevault>>
-        Hugh: The bookcase was concealing a door!
+        <<enableMarzannaCorpse>>
+            <<activateemotion "emotionnanditha_afraid" "n_afraid">>
+            <<emotionsprite "emotionnanditha_afraid" "n_afraid">>
+            Nanditha: That can't be!
+            <<if $ashok == false || $mathilda == false>>
+                <<emotionsprite "emotionnanditha_sad" "n_sad">>
+                Nanditha: Why does everyone keep dying?!?
+            <<endif>>
+        <<endif>>
+        <<if $hugh == true>>
+            <<activateemotion "emotionhugh_idle" "h_idle">>
+            <<emotionsprite "emotionhugh_idle" "h_idle">>
+            <<enablevault>>
+            Hugh: The bookcase was concealing a door!
+        <<endif>>
     <<endif>>
 <<else>>
     <<set $lock4 = true>>
@@ -1816,7 +1827,7 @@ position: 539,-742
 <<destroyemotion "emotionmathilda_happy" "mt_happy">>
 <<destroyemotion "emotionhugh_happy" "h_happy">>
 <<disablescenevault>>
-    <<enableScene6>>
+<<enableScene6>>
 <<jump room_investigate>>
 ===
 
@@ -1991,55 +2002,60 @@ position: 799,-45
 <<activateemotion "emotionhugh_idle" "h_idle">>
 <<activateemotion "emotionmarzanna_idle" "mz_idle">>
 <<activateemotion "emotionhugh_happy" "h_happy">>
-<<emotionsprite "emotionhugh_idle" "h_idle">>
-Hugh: These look like real voodoo dolls... What a collection.
-<<if $marzanna == true>>
-    <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
-    Marzanna: Be careful, these effigies are dangerous! They can bear deadly curses.
-    <<emotionsprite "emotionhugh_happy" "h_happy">>
-    Hugh: I guess I should consider myself lucky that I'm not superstitious. People need to believe in that kind of stuff to make it work.
-<<endif>>
-<<destroyemotion "emotionhugh_idle" "h_idle">>
-<<destroyemotion "emotionhugh_happy" "h_happy">>
-<<set $hugh = false>>
-<<enabledeathHugh>>
-
-Hugh: AAARGH!
- <<disableHugh>>
-<<activateemotion "emotionmarzanna_afraid" "mz_afraid">>
-<<activateemotion "emotionmarzanna_sad" "mz_sad">>
-<<activateemotion "emotionmathilda_scream" "mt_scream">>
-<<activateemotion "emotionnanditha_afraid" "n_afraid">>
-<<activateemotion "emotionashok_annoyed" "a_annoyed">>
-  <<disabledeathHugh>>
-   <<enableHughCorpse>>
-<<if $marzanna == true>>
-    <<emotionsprite "emotionmarzanna_afraid" "mz_afraid">>
-    Marzanna: HUGH!
-    <<emotionsprite "emotionmarzanna_sad" "mz_sad">>
-    Marzanna: No no no no no no no not him! It can't be!
-   
-  
-<<endif>>
-<<if $mathilda == true>>
-    <<emotionsprite "emotionmathilda_scream" "mt_scream">>
-    Mathilda: Hugh, are you alright?!
-<<endif>>
-<<if $nanditha == true>>
- 
-       
-    <<emotionsprite "emotionnanditha_afraid" "n_afraid">>
-    Nanditha: What happened?
+<<if visited_count("interaction4effigies") <= 1>>
+    <<emotionsprite "emotionhugh_idle" "h_idle">>
+    Hugh: These look like real voodoo dolls... What a collection.
     <<if $marzanna == true>>
-        <<emotionsprite "emotionmarzanna_sad" "mz_sad">>
-        Marzanna: He got cursed.
-        
-       
+        <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
+        Marzanna: Be careful, these effigies are dangerous! They can bear deadly curses.
+        <<emotionsprite "emotionhugh_happy" "h_happy">>
+        Hugh: I guess I should consider myself lucky that I'm not superstitious. People need to believe in that kind of stuff to make it work.
     <<endif>>
-<<endif>>
-<<if $ashok == true>>
-    <<emotionsprite "emotionashok_annoyed" "a_annoyed">>
-    Ashok: This arrogant prick had it coming.
+    <<destroyemotion "emotionhugh_idle" "h_idle">>
+    <<destroyemotion "emotionhugh_happy" "h_happy">>
+<<else>>
+    <<emotionsprite "emotionhugh_idle" "h_idle">>
+    Hugh: This one looks espacially strange...
+    <<destroyemotion "emotionhugh_idle" "h_idle">>
+    <<set $hugh = false>>
+    <<enabledeathHugh>>
+    Hugh: AAARGH!
+    <<disableHugh>>
+    <<activateemotion "emotionmarzanna_afraid" "mz_afraid">>
+    <<activateemotion "emotionmarzanna_sad" "mz_sad">>
+    <<activateemotion "emotionmathilda_scream" "mt_scream">>
+    <<activateemotion "emotionnanditha_afraid" "n_afraid">>
+    <<activateemotion "emotionashok_annoyed" "a_annoyed">>
+    <<disabledeathHugh>>
+    <<enableHughCorpse>>
+    <<if $marzanna == true>>
+        <<emotionsprite "emotionmarzanna_afraid" "mz_afraid">>
+        Marzanna: HUGH!
+        <<emotionsprite "emotionmarzanna_sad" "mz_sad">>
+        Marzanna: No no no no no no no not him! It can't be!
+    
+    
+    <<endif>>
+    <<if $mathilda == true>>
+        <<emotionsprite "emotionmathilda_scream" "mt_scream">>
+        Mathilda: Hugh, are you alright?!
+    <<endif>>
+    <<if $nanditha == true>>
+    
+        
+        <<emotionsprite "emotionnanditha_afraid" "n_afraid">>
+        Nanditha: What happened?
+        <<if $marzanna == true>>
+            <<emotionsprite "emotionmarzanna_sad" "mz_sad">>
+            Marzanna: He got cursed.
+            
+        
+        <<endif>>
+    <<endif>>
+    <<if $ashok == true>>
+        <<emotionsprite "emotionashok_annoyed" "a_annoyed">>
+        Ashok: This arrogant prick had it coming.
+    <<endif>>
 <<endif>>
 <<destroyemotion "emotionmarzanna_sad" "mz_sad">>
 <<destroyemotion "emotionmathilda_scream" "mt_scream">>
@@ -2179,71 +2195,77 @@ position: 1067,-187
 <<set $actions = $actions - 1>>
 <<activateemotion "emotionnanditha_idle" "n_idle">>
 <<activateemotion "emotionhugh_annoyed" "h_annoyed">>
-<<emotionsprite "emotionnanditha_idle" "n_idle">>
-Nanditha: What a huge machine. I wonder what it's for?
-<<if $hugh == true>>
-    <<emotionsprite "emotionhugh_annoyed" "h_annoyed">>
-    Hugh: I would advise you not to get too close. It looks like an really old steam engine, maybe a generator.
-<<endif>>
-<<destroyemotion "emotionnanditha_idle" "n_idle">>
-<<destroyemotion "emotionhugh_annoyed" "h_annoyed">>
-<<enabledeathNanditha>>
+<<if visited_count("interaction5generator") <= 1>>
+    <<emotionsprite "emotionnanditha_idle" "n_idle">>
+    Nanditha: What a huge machine. I wonder what it's for?
+    <<if $hugh == true>>
+        <<emotionsprite "emotionhugh_annoyed" "h_annoyed">>
+        Hugh: I would advise you not to get too close. It looks like an really old steam engine, maybe a generator.
+    <<endif>>
+    <<destroyemotion "emotionnanditha_idle" "n_idle">>
+    <<destroyemotion "emotionhugh_annoyed" "h_annoyed">>
+<<else>>
+    <<emotionsprite "emotionnanditha_happy" "n_happy">>
+    Nanditha: Uh, a lever. Let's see what it does!
+    <<destroyemotion "emotionnanditha_idle" "n_idle">>
+    <<enabledeathNanditha>>
 
-//<<popupsprite "emotionnanditha_death" "n_death">>
-Nanditha: OH!
-<<set $nanditha = false>>
-<<disabledeathNanditha>>
-<<disableNanditha>>
- <<setgeneratorsprite "generator_triggered" "generator_triggered">>
- //nanditha get's electrocuted, the generator shuts down
-<<if visited("room1_enter") == true && $nanditha==false>>
-    <<set $light = false>>
-    <<darkmodeon>> //the lights turn off, the scene is black
-<<endif>>
-<<activateemotion "emotionmathilda_afraid" "mt_afraid">>
-<<activateemotion "emotionmathilda_sad" "mt_sad">>
-<<activateemotion "emotionashok_afraid" "a_afraid">>
-<<activateemotion "emotionhugh_annoyed" "h_annoyed">>
-<<activateemotion "emotionmarzanna_afraid" "mz_afraid">>
-<<if $mathilda == true>>
-    <<emotionsprite "emotionmathilda_afraid" "mt_afraid">>
-    Mathilda: NANDITHA! Are you alright?
-    <<if $light == false>>
-        <<if $candle == true>>
-            <<emotionsprite "emotionmathilda_sad" "mt_sad">>
-            Mathilda: She's not breathing...
-        <<elseif $item4candle == true>>
-            <<emotionsprite "emotionmathilda_sad" "mt_sad">>
-            Mathilda: I need to light the candle so we can see what happened!
+    //<<popupsprite "emotionnanditha_death" "n_death">>
+    Nanditha: OH!
+    <<set $nanditha = false>>
+    <<disabledeathNanditha>>
+    <<disableNanditha>>
+    <<setgeneratorsprite "generator_triggered" "generator_triggered">>
+    //nanditha get's electrocuted, the generator shuts down
+    <<if visited("room1_enter") == true && $nanditha==false>>
+        <<set $light = false>>
+        <<darkmodeon>> //the lights turn off, the scene is black
+    <<endif>>
+    <<activateemotion "emotionmathilda_afraid" "mt_afraid">>
+    <<activateemotion "emotionmathilda_sad" "mt_sad">>
+    <<activateemotion "emotionashok_afraid" "a_afraid">>
+    <<activateemotion "emotionhugh_annoyed" "h_annoyed">>
+    <<activateemotion "emotionmarzanna_afraid" "mz_afraid">>
+    <<if $mathilda == true>>
+        <<emotionsprite "emotionmathilda_afraid" "mt_afraid">>
+        Mathilda: NANDITHA! Are you alright?
+        <<if $light == false>>
+            <<if $candle == true>>
+                <<emotionsprite "emotionmathilda_sad" "mt_sad">>
+                Mathilda: She's not breathing...
+            <<elseif $item4candle == true>>
+                <<emotionsprite "emotionmathilda_sad" "mt_sad">>
+                Mathilda: I need to light the candle so we can see what happened!
+            <<else>>
+                <<emotionsprite "emotionmathilda_sad" "mt_sad">>
+                Mathilda: She's not answering...
+            <<endif>>
         <<else>>
             <<emotionsprite "emotionmathilda_sad" "mt_sad">>
-            Mathilda: She's not answering...
+            Mathilda: Why did she have to touch that stupid machine? 
         <<endif>>
-    <<else>>
-        <<emotionsprite "emotionmathilda_sad" "mt_sad">>
-        Mathilda: Why did she have to touch that stupid machine? 
     <<endif>>
-<<endif>>
-<<if $ashok == true>>
-    <<if $light == true>>
-        <<emotionsprite "emotionashok_afraid" "a_afraid">>
-        Ashok: Sister! No, it can't be! Not you!
-    <<else>>
-        <<emotionsprite "emotionashok_afraid" "a_afraid">>
-        Ashok: Sister! Why aren't the lights turning back on?
+    <<if $ashok == true>>
+        <<if $light == true>>
+            <<emotionsprite "emotionashok_afraid" "a_afraid">>
+            Ashok: Sister! No, it can't be! Not you!
+        <<else>>
+            <<emotionsprite "emotionashok_afraid" "a_afraid">>
+            Ashok: Sister! Why aren't the lights turning back on?
+        <<endif>>
     <<endif>>
-<<endif>>
-<<if $hugh == true>>
-    <<emotionsprite "emotionhugh_annoyed" "h_annoyed">>
-    Hugh: I told her not to get too close.
-    <<if $light == false>>
-        Hugh: Now the lights are out for good.
+    <<if $hugh == true>>
+        <<emotionsprite "emotionhugh_annoyed" "h_annoyed">>
+        Hugh: I told her not to get too close.
+        <<if $light == false>>
+            Hugh: Now the lights are out for good.
+        <<endif>>
     <<endif>>
-<<endif>>
-<<if $marzanna == true>>
-    <<emotionsprite "emotionmarzanna_afraid" "mz_afraid">>
-    Marzanna: Death awaits wherever we go.
-   
+    <<if $marzanna == true>>
+        <<emotionsprite "emotionmarzanna_afraid" "mz_afraid">>
+        Marzanna: Death awaits wherever we go.
+    
+    <<endif>>
 <<endif>>
 <<destroyemotion "emotionmathilda_sad" "mt_sad">>
 <<destroyemotion "emotionashok_afraid" "a_afraid">>
@@ -2728,7 +2750,6 @@ position: 1209,417
 <<endif>>
 ===
 
-
 title: door21
 tags:
 color: white
@@ -2740,6 +2761,7 @@ position: 185,565
     <<enableScene3>>
 <<jump room_investigate>>
 ===
+
 title: door32
 tags:
 color: white
