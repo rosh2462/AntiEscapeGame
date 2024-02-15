@@ -576,7 +576,11 @@ position: 539,-976
 <<elseif $marzanna == false && $hugh == false && $mathilda == false && $nanditha == false && $ashok == false>>
     <<jump killed_everyone>>
 <<else>>
+<<<<<<< Updated upstream
     -> Choose an object to investigate.
+=======
+    //<<disableanimation>>
+>>>>>>> Stashed changes
 <<endif>>
 ===
 
