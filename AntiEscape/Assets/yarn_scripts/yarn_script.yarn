@@ -788,7 +788,6 @@ position: 358,-948
     <<jump killed_everyone>>
 <<else>>
     //<<disableanimation>>
-    -> Choose an object to investigate.
 <<endif>>
 ===
 
