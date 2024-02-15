@@ -684,23 +684,36 @@ position: 18,-325
 ---
 //object gets deactivated when the variable $mathilda turns false
 <<set $actions = $actions - 1>>
+<<activateemotion "emotionmathilda_happy" "mt_happy">>
+<<activateemotion "emotionhugh_idle" "h_idle">>
 <<activateemotion "emotionmathilda_annoyed" "mt_annoyed">>
 <<activateemotion "emotionhugh_afraid" "h_afraid">>
 <<activateemotion "emotionnanditha_afraid" "n_afraid">>
 <<activateemotion "emotionashok_idle" "a_idle">>
 <<activateemotion "emotionmarzanna_sad" "mz_sad">>
-<<emotionsprite "emotionmathilda_annoyed" "mt_annoyed">>
-Mathilda: I'll take one of these knives to defend us.
-<<destroyemotion "emotionmathilda_annoyed" "mt_annoyed">>
-<<set $mathilda = false>>
-//<<popupsprite "emotionmathilda_death" "mt_death">>
-<<enabledeathMathilda>>
-Mathilda: AAAAAAAAAAAAH!
-<<disableMathilda>>//disabling mathilda character
-<<disabletoolsitem>>//disabling the tools
-<<disableknife>>//disabling the knife
-<<disabledeathMathilda>> //disabling the mathilda shock sprite
+<<if visited_count("interaction1tools") <= 1>>
+    <<emotionsprite "emotionmathilda_happy" "mt_happy">>
+    Mathilda: Weapons! Nice!
+    <<if $hugh == true>>
+        <<emotionsprite "emotionhugh_idle" "h_idle">>
+        Hugh: Be careful, Mathilda. I don't think we would be much safer if you carried a knife.
+    <<endif>>
+<<else>>
+    <<emotionsprite "emotionmathilda_annoyed" "mt_annoyed">>
+    Mathilda: I'll take one of these knives to defend us.
+    <<destroyemotion "emotionmathilda_happy" "mt_happy">>
+    <<destroyemotion "emotionhugh_idle" "h_idle">>
+    <<destroyemotion "emotionmathilda_annoyed" "mt_annoyed">>
+    <<set $mathilda = false>>
+    //<<popupsprite "emotionmathilda_death" "mt_death">>
+    <<enabledeathMathilda>>
+    Mathilda: AAAAAAAAAAAAH!
+    <<disableMathilda>>//disabling mathilda character
+    <<disabletoolsitem>>//disabling the tools
+    <<disableknife>>//disabling the knife
+    <<disabledeathMathilda>> //disabling the mathilda shock sprite
 
+<<<<<<< Updated upstream
 <<if $hugh == true>>
     <<emotionsprite "emotionhugh_afraid" "h_afraid">>
     Hugh: MATHILDA!
@@ -729,6 +742,39 @@ Mathilda: AAAAAAAAAAAAH!
 <<if $ashok == true>>
     <<emotionsprite "emotionashok_annoyed" "a_annoyed">>
     Ashok: Pull yourselves together and help me find a way out of here before there's more casualties!
+=======
+    <<if $hugh == true>>
+    <<enableMathildaCorpse>>
+        <<emotionsprite "emotionhugh_afraid" "h_afraid">>
+        Hugh: MATHILDA!
+    <<endif>>
+
+    <<if $nanditha == true>>
+        <<emotionsprite "emotionnanditha_afraid" "n_afraid">>
+        Nanditha: Mathilda?
+    <<endif>>
+    <<if $ashok == true>>
+        <<emotionsprite "emotionashok_idle" "a_idle">>
+    // <<enableMathildaCorpse>>
+        Ashok: I think she's dead.
+    <<endif>>
+    <<if $nanditha == true>>
+        <<emotionsprite "emotionnanditha_sad" "n_sad">>
+        Nanditha: No, that can't be!
+    <<endif>>
+    <<if $hugh == true>>
+        <<emotionsprite "emotionhugh_sad" "h_sad">>
+        Hugh: Not Mathilda!
+    <<endif>>
+    <<if $marzanna == true>>
+        <<emotionsprite "emotionmarzanna_sad" "mz_sad">>
+        Marzanna: We're all gonna die in here!
+    <<endif>>
+    <<if $ashok == true>>
+        <<emotionsprite "emotionashok_annoyed" "a_annoyed">>
+        Ashok: Pull yourselves together and help me find a way out of here before there's more casualties!
+    <<endif>>
+>>>>>>> Stashed changes
 <<endif>>
 <<destroyemotion "emotionhugh_afraid" "h_afraid">>
 <<destroyemotion "emotionnanditha_afraid" "n_afraid">>
@@ -806,6 +852,41 @@ position: 18,82
 <<jump room_investigate>>
 ===
 
+title: interaction1mathilda
+tags:
+color: red
+group: room1
+position: 18,86
+---
+//object gets activated when the variable $mathilda turns false (it's her dead body)
+<<set $actions = $actions - 1>>
+<<activateemotion "emotionhugh_sad" "h_sad">>
+<<activateemotion "emotionnanditha_sad" "n_sad">>
+<<activateemotion "emotionashok_idle" "a_idle">>
+<<activateemotion "emotionmarzanna_afraid" "mz_afraid">>
+<<if $hugh == true>>
+    <<emotionsprite "emotionhugh_sad" "h_sad">>
+    Hugh: Why her? She was the only one who wasn't annoying me to death!
+<<endif>>
+<<if $nanditha == true>>
+    <<emotionsprite "emotionnanditha_sad" "n_sad">>
+    Nanditha: Mathilda... I just can't believe it.
+<<endif>>
+<<if $ashok == true>>
+    <<emotionsprite "emotionashok_idle" "a_idle">>
+    Ashok: Don't you guys think it's strange that these knifes were so loose? As if it was set up to cause accidents.
+<<endif>>
+<<if $marzanna == true>>
+    <<emotionsprite "emotionmarzanna_afraid" "mz_idle">>
+    Marzanna: This was not an accident, it was a trap!
+<<endif>>
+<<destroyemotion "emotionhugh_sad" "h_sad">>
+<<destroyemotion "emotionnanditha_sad" "n_sad">>
+<<destroyemotion "emotionashok_idle" "a_idle">>
+<<destroyemotion "emotionmarzanna_afraid" "mz_afraid">>
+<<jump room_investigate>>
+===
+
 
 title: interaction2window
 tags:
@@ -827,8 +908,13 @@ Ashok: This window has a crack. Maybe I can break it.
     Nanditha: Be careful, Ashok! Maybe we can find a shovel or something else to break it with.
 <<endif>>
 <<emotionsprite "emotionashok_idle" "a_idle">>
+<<<<<<< Updated upstream
 Ashok: I'll just try to kick it in.
 <<playsound sound "glass_shatter">>
+=======
+Ashok: I'll just try to smash it.
+<<playrestsound Trap "glass_shatter">>
+>>>>>>> Stashed changes
 <<emotionsprite "emotionashok_happy" "a_happy">>
 Ashok: It worked! I can climb through.
 <<if $nanditha == true>>
@@ -870,7 +956,11 @@ title: interaction2patch
 tags:
 color: green
 group: room2
+<<<<<<< Updated upstream
 position: 279,-325
+=======
+position: 287,-295
+>>>>>>> Stashed changes
 ---
 //object gets deactivated when the variable $nanditha turns false
 <<set $actions = $actions - 1>>
@@ -901,7 +991,11 @@ title: interaction2can
 tags:
 color: green
 group: room2
+<<<<<<< Updated upstream
 position: 279,-190
+=======
+position: 278,-154
+>>>>>>> Stashed changes
 ---
 //object gets deactivated when the variable $hugh turns false
 <<set $actions = $actions - 1>>
@@ -934,7 +1028,11 @@ title: interaction2cabinet
 tags:
 color: green
 group: room2
+<<<<<<< Updated upstream
 position: 279,-56
+=======
+position: 275,-6
+>>>>>>> Stashed changes
 ---
 //object gets deactivated when the variable $mathilda turns false
 <<set $actions = $actions - 1>>
@@ -970,7 +1068,11 @@ title: interaction2plants
 tags:
 color: green
 group: room2
+<<<<<<< Updated upstream
 position: 279,82
+=======
+position: 284,131
+>>>>>>> Stashed changes
 ---
 //object gets deactivated when the variable $marzanna turns false
 <<set $actions = $actions - 1>>
@@ -1004,6 +1106,41 @@ Marzanna: I've never seen plants like these before.
 <<endif>>
 <<destroyemotion "emotionmarzanna_embarassed" "mz_embarassed">>
 <<destroyemotion "emotionashok_happy" "a_happy">>
+<<jump room_investigate>>
+===
+
+title: interaction2ashok
+tags:
+color: red
+group: room1
+position: 18,86
+---
+//object gets activated when the variable $ashok turns false (it's his dead body)
+<<set $actions = $actions - 1>>
+<<activateemotion "emotionnanditha_sad" "n_sad">>
+<<activateemotion "emotionhugh_idle" "h_idle">>
+<<activateemotion "emotionmathilda_idle" "mt_idle">>
+<<activateemotion "emotionmarzanna_afraid" "mz_afraid">>
+<<if $nanditha == true>>
+    <<emotionsprite "emotionnanditha_sad" "n_sad">>
+    Nanditha: I never wanted to be an only child.
+<<endif>>
+<<if $hugh == true>>
+    <<emotionsprite "emotionhugh_idle" "h_idle">>
+    Hugh: If this window really was a way out, he's now blocking it and I'm not touching a body to change that.
+<<endif>>
+<<if $mathilda == true>>
+    <<emotionsprite "emotionmathilda_idle" "mt_idle">>
+    Mathilda: I think it's quite embarassing to die like that.
+<<endif>>
+<<if $marzanna == true>>
+    <<emotionsprite "emotionmarzanna_afraid" "mz_idle">>
+    Marzanna: So much blood...
+<<endif>>
+<<destroyemotion "emotionnanditha_sad" "n_sad">>
+<<destroyemotion "emotionhugh_idle" "h_idle">>
+<<destroyemotion "emotionmathilda_idle" "mt_idle">>
+<<destroyemotion "emotionmarzanna_afraid" "mz_afraid">>
 <<jump room_investigate>>
 ===
 
@@ -1103,7 +1240,7 @@ Nanditha: Oh nice, a telescope! I'll take a look at the stars!
 Nanditha: It doesn't work.
 <<if $hugh == true>>
     <<emotionsprite "emotionhugh_annoyed" "h_annoyed">>
-    Hugh: *sigh*
+    Hugh: - sigh -
 <<endif>>
 <<if $ashok == false && visited_count("room1_enter") == 0 && visited("room5_enter") == true && $key51 == false>>
     <<set $key51 = true>>
@@ -1292,6 +1429,41 @@ position: 539,82
 <<destroyemotion "emotionmarzanna_afraid" "mz_afraid">>
 <<destroyemotion "emotionashok_happy" "a_happy">>
 <<destroyemotion "emotionnanditha_happy" "n_happy">>
+<<jump room_investigate>>
+===
+
+title: interaction3marzanna
+tags:
+color: red
+group: room1
+position: 18,86
+---
+//object gets activated when the variable $marzanna turns false (it's her dead body/the bookshelf on the floo)
+<<set $actions = $actions - 1>>
+<<activateemotion "emotionashok_sad" "a_sad">>
+<<activateemotion "emotionnanditha_sad" "n_sad">>
+<<activateemotion "emotionmathilda_idle" "mt_idle">>
+<<activateemotion "emotionhugh_idle" "h_idle">>
+<<if $ashok == true>>
+    <<emotionsprite "emotionashok_sad" "a_sad">>
+    Ashok: I should have helped her...
+<<endif>>
+<<if $nanditha == true>>
+    <<emotionsprite "emotionnanditha_sad" "n_sad">>
+    Nanditha: She sacrificed herself to reveal this door for us.
+<<endif>>
+<<if $mathilda == true>>
+    <<emotionsprite "emotionmathilda_idle" "mt_idle">>
+    Mathilda: Did she expect to find anything in that gap?
+<<endif>>
+<<if $hugh == true>>
+    <<emotionsprite "emotionhugh_idle" "h_idle">>
+    Hugh: As jumpy as she was, she would have died of a heart attack before we got out anyways.
+<<endif>>
+<<destroyemotion "emotionashok_sad" "a_sad">>
+<<destroyemotion "emotionnanditha_sad" "n_sad">>
+<<destroyemotion "emotionmathilda_idle" "mt_idle">>
+<<destroyemotion "emotionhugh_idle" "h_idle">>
 <<jump room_investigate>>
 ===
 
@@ -1637,6 +1809,41 @@ Ashok: I wonder how much this collection of gemstones is worth.
 <<jump room_investigate>>
 ===
 
+title: interaction4hugh
+tags:
+color: red
+group: room1
+position: 18,86
+---
+//object gets activated when the variable $hugh turns false (it's his dead body)
+<<set $actions = $actions - 1>>
+<<activateemotion "emotionmarzanna_sad" "mz_sad">>
+<<activateemotion "emotionmathilda_sad" "mt_sad">>
+<<activateemotion "emotionnanditha_afraid" "n_afraid">>
+<<activateemotion "emotionashok_idle" "a_idle">>
+<<if $marzanna == true>>
+    <<emotionsprite "emotionmarzanna_sad" "mz_sad">>
+    Marzanna: The effigy was cursed! I tried to warn him, why didn't he listen to me?
+<<endif>>
+<<if $mathilda == true>>
+    <<emotionsprite "emotionmathilda_sad" "mt_sad">>
+    Mathilda: How is that even possible?
+<<endif>>
+<<if $nanditha == true>>
+    <<emotionsprite "emotionnanditha_afraid" "n_afraid">>
+    Nanditha: He just touched it! What is wrong with this place?
+<<endif>>
+<<if $ashok == true>>
+    <<emotionsprite "emotionashok_idle" "a_idle">>
+    Ashok: What did he expect to find there anyways?
+<<endif>>
+<<destroyemotion "emotionmarzanna_sad" "mz_sad">>
+<<destroyemotion "emotionmathilda_sad" "mt_sad">>
+<<destroyemotion "emotionnanditha_afraid" "n_afraid">>
+<<destroyemotion "emotionashok_idle" "a_idle">>
+<<jump room_investigate>>
+===
+
 
 title: interaction5apparatus
 tags:
@@ -1882,6 +2089,41 @@ position: 1060,82
 <<jump room_investigate>>
 ===
 
+title: interaction5nanditha
+tags:
+color: red
+group: room1
+position: 18,86
+---
+//object gets activated when the variable $nanditha turns false (it's her dead body)
+<<set $actions = $actions - 1>>
+<<activateemotion "emotionashok_sad" "a_sad">>
+<<activateemotion "emotionmathilda_sad" "mt_sad">>
+<<activateemotion "emotionmarzanna_afraid" "mz_afraid">>
+<<activateemotion "emotionhugh_annoyed" "h_annoyed">>
+<<if $ashok == true>>
+    <<emotionsprite "emotionashok_sad" "a_sad">>
+    Ashok: My beloved sister...
+<<endif>>
+<<if $mathilda == true>>
+    <<emotionsprite "emotionmathilda_sad" "mt_sad">>
+    Mathilda: She did not deserve to die like this.
+<<endif>>
+<<if $marzanna == true>>
+    <<emotionsprite "emotionmarzanna_afraid" "mz_afraid">>
+    Marzanna: Just a pile of ashes is left of her...
+<<endif>>
+<<if $hugh == true>>
+    <<emotionsprite "emotionhugh_annoyed" "h_annoyed">>
+    Hugh: I warned her.
+<<endif>>
+<<destroyemotion "emotionashok_sad" "a_sad">>
+<<destroyemotion "emotionmathilda_sad" "mt_sad">>
+<<destroyemotion "emotionmarzanna_afraid" "mz_afraid">>
+<<destroyemotion "emotionhugh_annoyed" "h_annoyed">>
+<<jump room_investigate>>
+===
+
 
 title: door12
 tags:
@@ -1921,7 +2163,11 @@ title: door23
 tags:
 color: white
 group: doors
+<<<<<<< Updated upstream
 position: 420,255
+=======
+position: -396,264
+>>>>>>> Stashed changes
 ---
 <<activateemotion "emotionmarzanna_idle" "mz_idle">>
 <<activateemotion "emotionhugh_happy" "h_happy">>
