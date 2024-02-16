@@ -17,7 +17,13 @@ public AudioClip Monster20;
 public AudioClip Monster10;
 public AudioClip Monster1;
 
+public AudioClip ashok;
+public AudioClip nanditha;
 
+public AudioClip hugh;
+
+public AudioClip marzanna;
+public AudioClip mathilda;
 
 private AudioSource audioSource;
 
@@ -56,9 +62,21 @@ private AudioSource audioSource;
                 case "monster1":
                 audioSource.clip = Monster1;
                 break;
-                
-
-
+                case "ashok":
+                audioSource.clip = ashok;
+                break;
+                case "nanditha":
+                audioSource.clip = nanditha;
+                break;
+                case "hugh":
+                audioSource.clip = hugh;
+                break;
+                case "marzanna":
+                audioSource.clip = marzanna;
+                break;
+                case "mathilda":
+                audioSource.clip = mathilda;
+                break;
         }
         audioSource.Play();
 

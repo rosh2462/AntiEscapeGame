@@ -48,6 +48,7 @@ variableStorage = GameObject.FindObjectOfType<InMemoryVariableStorage>();
 public void OnMouseDown() {
         if (interactable && !dialogueRunner.IsDialogueRunning) {
             StartConversation();
+           
             variableStorage.TryGetValue("$actions", out actions);
 variableStorage.SetValue("$actions", actions);
 //Debug.Log("Value:"+actions);
@@ -55,6 +56,7 @@ consoleOutputText.text = "" + actions.ToString();
            // Debug.Log("Trap Set");
             PlayClickSound();
         }
+     //    Debug.Log("Clicked");
     }
     
      private void StartConversation() {

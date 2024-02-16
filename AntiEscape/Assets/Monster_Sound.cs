@@ -45,6 +45,22 @@ public MonsterSoundManager soundManager;
                 case "monster1":
                 soundManager.Play("monster1");
                 break;
+                case "ashok":
+                soundManager.Play("ashok");
+                break;
+                case "nanditha":
+                soundManager.Play("nanditha");
+                break;
+                case "hugh":
+                soundManager.Play("hugh");
+                break;
+                case "mathilda":
+                soundManager.Play("mathilda");
+                break;
+                case "marzanna":
+                soundManager.Play("marzanna");
+                break;
+
             default:
                 Debug.LogWarning("Sound " + soundName + " not found!");
                 break;

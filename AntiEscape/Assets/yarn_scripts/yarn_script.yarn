@@ -600,7 +600,7 @@ position: 358,-948
 <<endif>>
 <<if $actions == 40>>
    <<playrestsound Monster40 "monster40">>
-   <<wait  4>>
+   //<<wait  4>>
   <<playsound Mood40 "mood40">>
     <<activateemotion "emotionmathilda_idle" "mt_idle">>
     <<activateemotion "emotionnanditha_idle" "n_idle">>
@@ -791,6 +791,7 @@ position: 358,-948
     Marzanna: Everyone is dead... There's no way I can escape on my own, I'll better give up...
     <<destroyemotion "emotionmarzanna_afraid" "mz_afraid">>
 <<endif>>
+<<endif>>
 ===
 
 
@@ -929,9 +930,9 @@ position: 18,-322
     <<disabletoolsitem>>//disabling the tools
     <<disableknife>>//disabling the knife
     <<disabledeathMathilda>> //disabling the mathilda shock sprite
-
-    <<if $hugh == true>>
     <<enableMathildaCorpse>>
+    <<if $hugh == true>>
+    
         <<emotionsprite "emotionhugh_afraid" "h_afraid">>
         Hugh: MATHILDA!
     <<endif>>
@@ -961,6 +962,7 @@ position: 18,-322
         <<emotionsprite "emotionashok_annoyed" "a_annoyed">>
         Ashok: Pull yourselves together and help me find a way out of here before there's more casualties!
     <<endif>>
+   // <<disableTools trap1tools_active>>
 <<endif>>
 <<destroyemotion "emotionhugh_afraid" "h_afraid">>
 <<destroyemotion "emotionnanditha_afraid" "n_afraid">>
@@ -969,7 +971,7 @@ position: 18,-322
 <<destroyemotion "emotionhugh_sad" "h_sad">>
 <<destroyemotion "emotionmarzanna_sad" "mz_sad">>
 <<destroyemotion "emotionashok_annoyed" "a_annoyed">>
-<<disableTools trap1tools_active>>
+
 <<jump room_investigate>>
 ===
 
@@ -1022,6 +1024,7 @@ position: 18,86
     Ashok found a letter!
     <<destroypopup "popupletter" "popup1letter">>
     <<emotionsprite "emotionashok_idle" "a_idle">>
+    
     Ashok: He had this piece of paper with him, looks like a page from a letter... it's drenched in blood, I can't really read it. But it starts with "Dear John".
     <<if visited("interaction1crate") == true && $hugh == true>>
         <<emotionsprite "emotionhugh_happy" "h_happy">>
@@ -1033,6 +1036,7 @@ position: 18,86
     <<endif>>
 <<else>>
     <<emotionsprite "emotionashok_idle" "a_idle">>
+    
     Ashok: There's nothing else here...
 <<endif>>
 <<destroyemotion "emotionashok_idle" "a_idle">>
