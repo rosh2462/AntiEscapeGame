@@ -1127,10 +1127,10 @@ position: 284,-458
         Nanditha: NOOO ASHOK!
     <<endif>>
     <<disabledeathAshok>> 
-    <<disableAshok>>
-
+   
+ <<enableAshokCorpse>>
     <<if $marzanna == true>>
-        <<enableAshokCorpse>>
+        <<disableAshok>>
         <<disablewindow>>
         <<emotionsprite "emotionmarzanna_afraid" "mz_afraid">>
         Marzanna: He's bleeding out!
@@ -1519,7 +1519,7 @@ title: interaction3globe
 tags:
 color: yellow
 group: room3
-position: 539,-56
+position: 544,-56
 ---
 //object gets deactivated when the variable $mathilda turns false
 <<set $actions = $actions - 1>>
