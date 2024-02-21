@@ -872,6 +872,7 @@ position: 358,-948
         Marzanna: Everyone is dead... There's no way I can escape on my own, I'll better give up...
         <<destroyemotion "emotionmarzanna_afraid" "mz_afraid">>
     <<endif>>
+<<endif>>
 <<if $marzanna == false && $mathilda == false && $key34 == false && $door34 == false && visited("interaction1mathilda") == true && visited("interaction3marzanna") == true>>
     <<set $actions = $actions - 9>>
 <<endif>>
@@ -1954,7 +1955,7 @@ position: 536,229
         <<playrestsound hugh "hugh">>
         Hugh: I can't lift this shelf on my own to retrieve the items she had on her...
     <<endif>>
-<<elseif $ashok == false && visited("interaction2plants") == true && $door34 == false && $backupkey34 = true>>
+<<elseif $ashok == false && visited("interaction2plants") == true && $door34 == false && $backupkey34 == true>>
     <<if $ashok == true>>
         <<emotionsprite "emotionashok_sad" "a_sad">> 
         <<playrestsound ashok "ashok">>
@@ -1973,7 +1974,8 @@ position: 536,229
     <<popupsprite "popup3key" "popup3key">>
     Picked up the key from Marzanna's body.
     <<destroypopup "popup3key" "popup3key">>
-<<else>>
+<<endif>>
+<<if (visited_count("interaction3marzanna") > 0)>>
     <<if $ashok == true>>
         <<emotionsprite "emotionashok_sad" "a_sad">>
         <<playrestsound ashok "ashok">>
@@ -2630,6 +2632,7 @@ position: 803,229
         <<playrestsound ashok "ashok">>
         Ashok: What did he expect to find there anyways?
     <<endif>>
+<<endif>>
 <<destroyemotion "emotionmarzanna_sad" "mz_sad">>
 <<destroyemotion "emotionmathilda_sad" "mt_sad">>
 <<destroyemotion "emotionnanditha_afraid" "n_afraid">>
@@ -2996,7 +2999,7 @@ position: 1066,220
         Picked up the key from Nanditha's body.
         <<destroypopup "popup4key" "popup4key">>
     <<endif>>
-<<elseif $mathilda == false && visited("interaction3telescope") == true && $door51 == false && $backupkey51 = true>>
+<<elseif $mathilda == false && visited("interaction3telescope") == true && $door51 == false && $backupkey51 == true>>
     <<if $ashok == true>>
         <<emotionsprite "emotionashok_idle" "a_idle">>
         <<playrestsound ashok "ashok">>
@@ -3013,7 +3016,8 @@ position: 1066,220
     <<popupsprite "popup5key" "popup5key">>
     Picked up the key from Nanditha's body.
     <<destroypopup "popup5key" "popup5key">>
-<<else>>
+<<endif>>
+<<if (visited_count("interaction5nanditha") > 0)>>
     <<if $ashok == true>>
         <<emotionsprite "emotionashok_sad" "a_sad">> 
         <<playrestsound ashok "ashok">>
@@ -3033,6 +3037,7 @@ position: 1066,220
         <<emotionsprite "emotionhugh_annoyed" "h_annoyed">> 
         <<playrestsound hugh "hugh">>
         Hugh: I warned her.
+    <<endif>>
 <<endif>>
 <<destroyemotion "emotionashok_sad" "a_sad">>
 <<destroyemotion "emotionmathilda_sad" "mt_sad">>
