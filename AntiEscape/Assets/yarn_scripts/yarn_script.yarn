@@ -93,7 +93,7 @@ Ashok: Do you know where we are?
 <<playrestsound nanditha "nanditha">>
 Nanditha: I don't remember much but... probably someones living room?
 <<emotionsprite "emotionmathilda_idle" "mt_idle">> 
-<<playrestsound mathilda "mathilda ">>
+<<playrestsound mathilda "mathilda">>
 Mathilda: Urgh I hate sleeping on the floor.
 <<emotionsprite  "emotionnanditha_happy" "n_happy">> 
 <<playrestsound nanditha "nanditha">>
@@ -105,7 +105,7 @@ Hugh: Classic story: went to a party, drank to much, slept in at a random place,
 <<playrestsound ashok "ashok">>
 Ashok: Noone asked you, Hugh.
 <<emotionsprite "emotionmathilda_idle" "mt_idle">> 
-<<playrestsound mathilda "mathilda ">>
+<<playrestsound mathilda "mathilda">>
 Mathilda: He might be right though.
 <<emotionsprite  "emotionnanditha_idle" "n_idle">> 
 <<playrestsound nanditha "nanditha">>
@@ -125,7 +125,7 @@ position: 14,-1154
 ---
 <<activateemotion "emotionnanditha_idle" "n_idle">>
 <<emotionsprite "emotionmarzanna_idle" "mz_idle">> 
-<<playrestsound marzanna "marzanna ">>
+<<playrestsound marzanna "marzanna">>
 Marzanna: I found a door.
 <<emotionsprite "emotionhugh_afraid" "h_afraid">> 
  <<playrestsound hugh "hugh">>
@@ -157,7 +157,7 @@ Hugh: This is not someone's living room.
 <<playrestsound nanditha "nanditha">>
 Nanditha: Maybe it's a prank.
 <<emotionsprite "emotionmathilda_afraid" "mt_afraid">> 
-<<playrestsound mathilda "mathilda ">>
+<<playrestsound mathilda "mathilda">>
 Mathilda: Is that a human body?!?
 <<destroyemotion "emotionmathilda_afraid" "mt_afraid">>
 
@@ -165,7 +165,7 @@ Mathilda: Is that a human body?!?
 
 <<activateemotion "emotionmathilda_afraid" "mt_afraid">>
 <<emotionsprite "emotionmarzanna_afraid" "mz_afraid">> 
-<<playrestsound marzanna "marzanna ">>
+<<playrestsound marzanna "marzanna">>
 Marzanna: Oh nooo.
 <<emotionsprite "emotionhugh_idle" "h_idle">> 
 <<playrestsound hugh "hugh">>
@@ -176,7 +176,7 @@ Hugh: And again, we're in the dark. I saw a door over there, we should get out o
 
 <<activateemotion "emotionhugh_idle" "h_idle">>
 <<emotionsprite "emotionmathilda_afraid" "mt_afraid">> 
-<<playrestsound mathilda "mathilda ">>
+<<playrestsound mathilda "mathilda">>
 Mathilda: What was that?
 <<destroyemotion "emotionmathilda_afraid" "mt_afraid">>
 
@@ -212,13 +212,13 @@ position: 279,-598
 <<activateemotion "emotionmarzanna_afraid" "mz_afraid">>
 <<activateemotion "emotionmathilda_idle" "mt_idle">>
     <<emotionsprite "emotionmarzanna_afraid" "mz_afraid">> 
-<<playrestsound marzanna "marzanna ">>
+<<playrestsound marzanna "marzanna">>
     Marzanna: Why is it dark again?
     <<if $mathilda == true>>
         <<enableMathildaCharacter>>
         <<enableCabinet>>
         <<emotionsprite "emotionmathilda_idle" "mt_idle">> 
-<<playrestsound mathilda "mathilda ">>
+<<playrestsound mathilda "mathilda">>
         Mathilda: It smells like wet soil...
 <<destroyemotion "emotionmarzanna_afraid" "mz_afraid">>
 <<destroyemotion "emotionmathilda_idle" "mt_idle">>
@@ -306,7 +306,7 @@ position: 794,-611
 <<playrestsound ashok "ashok">>
         Ashok: Good you brought that candle, Mathilda. It's so helpful now.
         <<emotionsprite "emotionmathilda_annoyed" "mt_annoyed">> 
-<<playrestsound mathilda "mathilda ">>
+<<playrestsound mathilda "mathilda">>
         Mathilda: Shut up, Ashok.
        
     <<endif>>
@@ -314,7 +314,7 @@ position: 794,-611
     <<if $marzanna == true>>
 
         <<emotionsprite "emotionmarzanna_idle" "mz_idle">> 
-<<playrestsound marzanna "marzanna ">>
+<<playrestsound marzanna "marzanna">>
      
         Marzanna: Darkness awaits wherever we go...
        
@@ -443,7 +443,7 @@ position: 18,-598
     <<endif>>
     <<if $mathilda == true>>
         <<emotionsprite "emotionmathilda_annoyed" "mt_annoyed">> 
-        <<playrestsound mathilda "mathilda ">>
+        <<playrestsound mathilda "mathilda">>
         Mathilda: How can there be so many rooms?
     <<endif>>
     <<if $nanditha == true>>
@@ -453,7 +453,7 @@ position: 18,-598
     <<endif>>
     <<if $marzanna == true>>
         <<emotionsprite "emotionmarzanna_afraid" "mz_afraid">> 
-        <<playrestsound marzanna "marzanna ">>
+        <<playrestsound marzanna "marzanna">>
         Marzanna: Guys, I have a bad feeling about this room. It feels oddly familiar.
     <<endif>>
     <<destroyemotion "emotionashok_idle" "a_idle">>
@@ -486,7 +486,7 @@ position: 18,-598
     <<endif>>
     <<if $mathilda == true>>
         <<emotionsprite "emotionmathilda_afraid" "mt_afraid">> 
-        <<playrestsound mathilda "mathilda ">>
+        <<playrestsound mathilda "mathilda">>
         Mathilda: But this room only had one door!
         <<if $hugh == true>>
             <<emotionsprite "emotionhugh_idle" "h_idle">> 
@@ -504,7 +504,7 @@ position: 18,-598
             Hugh: The only door we did not open yet is the vault door in the library. It's our last hope now.
             <<if $mathilda == true>>
                 <<emotionsprite "emotionmathilda_happy" "mt_happy">> 
-                <<playrestsound mathilda "mathilda ">>
+                <<playrestsound mathilda "mathilda">>
                 Mathilda: Ok, let's find the keys for this vault!
             <<endif>>
         <<endif>>
@@ -517,11 +517,11 @@ position: 18,-598
     <<if $marzanna == true>>
     <<if $item5card == true>>
             <<emotionsprite "emotionmarzanna_afraid" "mz_afraid">> 
-            <<playrestsound marzanna "marzanna ">>
+            <<playrestsound marzanna "marzanna">>
             Marzanna: The Tarot card was right!
         <<endif>>
         <<emotionsprite  "emotionmarzanna_sad" "mz_sad">> 
-        <<playrestsound marzanna "marzanna ">>
+        <<playrestsound marzanna "marzanna">>
         Marzanna: We'll never get out of here.
     <<endif>>
     <<destroyemotion "emotionhugh_afraid" "h_afraid">>
@@ -662,7 +662,7 @@ position: 358,-948
     <<activateemotion "emotionashok_idle" "a_idle">>
     <<if $mathilda == true>>
         <<emotionsprite "emotionmathilda_idle" "mt_idle">> 
-        <<playrestsound mathilda "mathilda ">>
+        <<playrestsound mathilda "mathilda">>
         Mathilda: Did you hear that?
     <<endif>>
     <<if $nanditha == true>>
@@ -672,7 +672,7 @@ position: 358,-948
     <<endif>>
     <<if $marzanna == true>>
         <<emotionsprite "emotionmarzanna_idle" "mz_idle">> 
-        <<playrestsound marzanna "marzanna ">>
+        <<playrestsound marzanna "marzanna">>
         Marzanna: Something else is in here with us.
     <<endif>>
     <<if $hugh == true>>
@@ -701,7 +701,7 @@ position: 358,-948
     <<playsound Mood30 "mood30">>
     <<if $mathilda == true>>
         <<emotionsprite "emotionmathilda_annoyed" "mt_annoyed">> 
-        <<playrestsound mathilda "mathilda ">>
+        <<playrestsound mathilda "mathilda">>
         Mathilda: There was this weird noise again!
     <<endif>>
     <<if $hugh == true>>
@@ -716,7 +716,7 @@ position: 358,-948
     <<endif>>
     <<if $marzanna == true>>
         <<emotionsprite "emotionmarzanna_afraid" "mz_afraid">> 
-        <<playrestsound marzanna "marzanna ">>
+        <<playrestsound marzanna "marzanna">>
         Marzanna: I told you, we are not alone in here!
     <<endif>>
     <<if $ashok == true>>
@@ -745,7 +745,7 @@ position: 358,-948
     <<endif>>
     <<if $mathilda == true>>
         <<emotionsprite "emotionmathilda_afraid" "mt_afraid">> 
-        <<playrestsound mathilda "mathilda ">>
+        <<playrestsound mathilda "mathilda">>
         Mathilda: We should look out for things we can use as weapons!
     <<endif>>
     <<if $ashok == true>>
@@ -760,7 +760,7 @@ position: 358,-948
     <<endif>>
     <<if $marzanna == true>>
         <<emotionsprite  "emotionmarzanna_sad" "mz_sad">> 
-        <<playrestsound marzanna "marzanna ">>
+        <<playrestsound marzanna "marzanna">>
         Marzanna: We're not gonna make it out of here before that thing gets us.
     <<endif>>
     <<destroyemotion "emotionhugh_annoyed" "h_annoyed">>
@@ -780,11 +780,11 @@ position: 358,-948
     <<if $marzanna == true>>
         <<if visited("interaction1crate") == true>>
             <<emotionsprite  "emotionmarzanna_sad" "mz_sad">> 
-            <<playrestsound marzanna "marzanna ">>
+            <<playrestsound marzanna "marzanna">>
             Marzanna: We'll share Dr. Fist's fate soon.     
         <<else>>
             <<emotionsprite  "emotionmarzanna_sad" "mz_sad">> 
-            <<playrestsound marzanna "marzanna ">>
+            <<playrestsound marzanna "marzanna">>
             Marzanna: We'll die the same way as that guy on the floor.
         <<endif>>
     <<endif>>
@@ -810,7 +810,7 @@ position: 358,-948
     <<endif>>
     <<if $mathilda == true>>
         <<emotionsprite  "emotionmathilda_scream" "mt_scream">> 
-        <<playrestsound mathilda "mathilda ">>
+        <<playrestsound mathilda "mathilda">>
         Mathilda: Whatever you are, I'm not afraid of you!
     <<endif>>
     <<destroyemotion "emotionmarzanna_sad" "mz_sad">>
@@ -837,7 +837,7 @@ position: 358,-948
     <<endif>>
     <<if $mathilda == true>>
         <<emotionsprite "emotionmathilda_sad" "mt_sad">> 
-        <<playrestsound mathilda "mathilda ">>
+        <<playrestsound mathilda "mathilda">>
         Mathilda: Why us?
     <<endif>>
     <<if $ashok == true>>
@@ -847,7 +847,7 @@ position: 358,-948
     <<endif>>
     <<if $marzanna == true>>
         <<emotionsprite "emotionmarzanna_happy" "mz_happy">> 
-        <<playrestsound marzanna "marzanna ">>
+        <<playrestsound marzanna "marzanna">>
         Marzanna: Finally, it's over.
     <<endif>>
     <<destroyemotion "emotionhugh_sad" "h_sad">>
@@ -868,7 +868,7 @@ position: 358,-948
     <<if visited("interaction1animal") == false || visited("interaction1corpse") == false || visited("interaction2patch") == false || visited("interaction2cabinet") == false || visited("interaction3") == false || visited("interaction3orrery") == false || visited("interaction4divination") == false || visited("interaction5storage") == false || visited("interaction5cage") == false>>
         <<activateemotion "emotionmarzanna_afraid" "mz_afraid">>
         <<emotionsprite "emotionmarzanna_afraid" "mz_afraid">> 
-        <<playrestsound marzanna "marzanna ">>
+        <<playrestsound marzanna "marzanna">>
         Marzanna: Everyone is dead... There's no way I can escape on my own, I'll better give up...
         <<destroyemotion "emotionmarzanna_afraid" "mz_afraid">>
     <<endif>>
@@ -910,7 +910,7 @@ position: 35,-464
     Nanditha: These stuffed animals are so creepy.
     <<if $mathilda == true>>
         <<emotionsprite "emotionmathilda_idle" "mt_idle">> 
-        <<playrestsound mathilda "mathilda ">>
+        <<playrestsound mathilda "mathilda">>
         Mathilda: They are somehow cute though, don't you think?
         <<emotionsprite  "emotionnanditha_idle" "n_idle">>
         <<playrestsound nanditha "nanditha">>
@@ -966,7 +966,7 @@ Hugh: We were inside this crate... like cargo... There's even a shipping label b
     Hugh: Why not? There were some sketchy figures at that party last night. Maybe something was put in our drinks. Maybe we weren't supposed to be waking up at all...
      <<if $mathilda == true>>
         <<emotionsprite "emotionmathilda_afraid" "mt_afraid">> 
-        <<playrestsound mathilda "mathilda ">>
+        <<playrestsound mathilda "mathilda">>
         Mathilda: So we could have ended up like that guy on the floor.
         <<emotionsprite "emotionhugh_afraid" "h_afraid">> 
         <<playrestsound hugh "hugh">>
@@ -987,7 +987,7 @@ Hugh: We were inside this crate... like cargo... There's even a shipping label b
 <<if $marzanna == true>>
     <<activateemotion "emotionmarzanna_sad" "mz_sad">>
     <<emotionsprite  "emotionmarzanna_sad" "mz_sad">> 
-    <<playrestsound marzanna "marzanna ">>
+    <<playrestsound marzanna "marzanna">>
     Marzanna: No, I don't want to die! We need to get out of here!
     <<destroyemotion "emotionmarzanna_sad" "mz_sad">>
 <<endif>>
@@ -1012,7 +1012,7 @@ position: 18,-322
 <<activateemotion "emotionmarzanna_sad" "mz_sad">>
 <<if visited_count("interaction1tools") == 0>>
     <<emotionsprite "emotionmathilda_happy" "mt_happy">> 
-    <<playrestsound mathilda "mathilda ">>
+    <<playrestsound mathilda "mathilda">>
     Mathilda: Weapons! Nice!
     <<if $hugh == true>>
         <<emotionsprite "emotionhugh_idle" "h_idle">> 
@@ -1021,7 +1021,7 @@ position: 18,-322
     <<endif>>
 <<else>>
     <<emotionsprite "emotionmathilda_annoyed" "mt_annoyed">> 
-    <<playrestsound mathilda "mathilda ">>
+    <<playrestsound mathilda "mathilda">>
     Mathilda: I'll take one of these knives to defend us.
     <<destroyemotion "emotionmathilda_happy" "mt_happy">>
     <<destroyemotion "emotionhugh_idle" "h_idle">>
@@ -1067,7 +1067,7 @@ position: 18,-322
     <<endif>>
     <<if $marzanna == true>>
         <<emotionsprite  "emotionmarzanna_sad" "mz_sad">>
-        <<playrestsound marzanna "marzanna ">>
+        <<playrestsound marzanna "marzanna">>
         Marzanna: We're all gonna die in here!
     <<endif>>
     <<if $ashok == true>>
@@ -1104,14 +1104,14 @@ position: 18,-186
     Marzanna found a key!
     <<destroypopup "popup1key" "popup1key">>
     <<emotionsprite "emotionmarzanna_happy" "mz_happy">> 
-    <<playrestsound marzanna "marzanna ">>
+    <<playrestsound marzanna "marzanna">>
     Marzanna: I found a key! We can get out of here now!
     <<emotionsprite "emotionashok_happy" "a_happy">> 
     <<playrestsound ashok "ashok">>
     Ashok: Good job, Marzanna!
 <<else>>
     <<emotionsprite "emotionmarzanna_idle" "mz_idle">> 
-    <<playrestsound marzanna "marzanna ">>
+    <<playrestsound marzanna "marzanna">>
     Marzanna: There's nothing else here...
 <<endif>>
 <<destroyemotion "emotionashok_happy" "a_happy">>
@@ -1191,7 +1191,7 @@ position: 20,236
         Ashok: Ok, let's loot the body.
     <<elseif $marzanna == true>>
         <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
-        <<playrestsound marzanna "marzanna ">>
+        <<playrestsound marzanna "marzanna">>
         Marzanna: She might have found something I need now...
     <<endif>>
     <<if visited("interaction2cabinet") == true>>
@@ -1230,7 +1230,7 @@ position: 20,236
     <<endif>>
     <<if $marzanna == true>>
         <<emotionsprite "emotionmarzanna_afraid" "mz_idle">>
-        <<playrestsound marzanna "marzanna ">>
+        <<playrestsound marzanna "marzanna">>
         Marzanna: This was not an accident, it was a trap!
     <<endif>>
 <<endif>>
@@ -1301,7 +1301,7 @@ position: 284,-458
         <<disableAshok>>
         <<disablewindow>>
         <<emotionsprite "emotionmarzanna_afraid" "mz_afraid">> 
-        <<playrestsound marzanna "marzanna ">>
+        <<playrestsound marzanna "marzanna">>
         Marzanna: He's bleeding out!
     <<endif>>
     <<if $nanditha == true && $mathilda == false>>
@@ -1310,7 +1310,7 @@ position: 284,-458
         Nanditha: First Mathilda and now my brother. I am cursed!
     <<elseif $nanditha == true && $mathilda == true>>
         <<emotionsprite "emotionmathilda_idle" "mt_idle">>
-        <<playrestsound mathilda "mathilda ">>
+        <<playrestsound mathilda "mathilda">>
         Mathilda: Don't worry, you still got me, Nanditha.
     <<endif>>
     <<if $hugh == true>>
@@ -1347,7 +1347,7 @@ position: 283,-308
     Nanditha: Nice, provisions!
     <<if $mathilda == true>>
         <<emotionsprite "emotionmathilda_idle" "mt_idle">>
-        <<playrestsound mathilda "mathilda ">>
+        <<playrestsound mathilda "mathilda">>
         Mathilda: Let's hope it's not poisonous or anything.
     <<endif>>
 <<else>>
@@ -1387,7 +1387,7 @@ position: 274,-167
     <<playrestsound hugh "hugh">>
     Hugh: It's a key! Let's go to the next room!
     <<emotionsprite "emotionmarzanna_happy" "mz_happy">> 
-    <<playrestsound marzanna "marzanna ">>
+    <<playrestsound marzanna "marzanna">>
     Marzanna: You are our savior, Hugh!
 <<else>>
     <<emotionsprite "emotionhugh_idle" "h_idle">> 
@@ -1417,7 +1417,7 @@ position: 271,-32
     Mathilda found a remote!
     <<destroypopup "popup2remote" "popup2remote">>
     <<emotionsprite "emotionmathilda_idle" "mt_idle">> 
-    <<playrestsound mathilda "mathilda ">>
+    <<playrestsound mathilda "mathilda">>
     Mathilda: Weird, someone kept a remote control in this cabinet.
     <<if $nanditha == true>>
         <<emotionsprite  "emotionnanditha_happy" "n_happy">>
@@ -1431,7 +1431,7 @@ position: 271,-32
     <<endif>>
 <<else>>
     <<emotionsprite "emotionmathilda_idle" "mt_idle">>
-    <<playrestsound mathilda "mathilda ">>
+    <<playrestsound mathilda "mathilda">>
     Mathilda: Rat poison, fertilizers, nothing of use in here.
 <<endif>>
 <<destroyemotion "emotionmathilda_idle" "mt_idle">>
@@ -1451,7 +1451,7 @@ position: 280,105
 <<activateemotion "emotionmarzanna_idle" "mz_idle">>
 <<activateemotion "emotionnanditha_idle" "n_idle">>
 <<emotionsprite "emotionmarzanna_idle" "mz_idle">> 
-<<playrestsound marzanna "marzanna ">>
+<<playrestsound marzanna "marzanna">>
 Marzanna: I've never seen plants like these before.
 <<if $nanditha == true>>
     <<emotionsprite  "emotionnanditha_idle" "n_idle">>
@@ -1469,13 +1469,13 @@ Marzanna: I've never seen plants like these before.
     Marzanna found a key!
     <<destroypopup "popup3key" "popup3key">>
     <<emotionsprite "emotionmarzanna_happy" "mz_happy">> 
-    <<playrestsound marzanna "marzanna ">>
+    <<playrestsound marzanna "marzanna">>
     Marzanna: There's an other key in between these plants!
     <<emotionsprite "emotionhugh_annoyed" "h_annoyed">> 
     <<playrestsound hugh "hugh">>
     Hugh: Why didn't you tell us earlier?
     <<emotionsprite "emotionmarzanna_embarassed" "mz_embarassed">>
-    <<playrestsound marzanna "marzanna ">>
+    <<playrestsound marzanna "marzanna">>
     Marzanna: I didn't see it back then.
     <<if $ashok == true>>
         <<emotionsprite "emotionashok_happy" "a_happy">>
@@ -1507,7 +1507,7 @@ position: 285,248
         Nanditha: My brother would have wanted me to take what he left behind...
     <<elseif $marzanna == true>>
         <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
-        <<playrestsound marzanna "marzanna ">>
+        <<playrestsound marzanna "marzanna">>
         Marzanna: He might have found something we can use...
     <<elseif $hugh == true>>
         <<emotionsprite "emotionhugh_idle" "h_idle">> 
@@ -1549,12 +1549,12 @@ position: 285,248
     <<endif>>
     <<if $mathilda == true>>
         <<emotionsprite "emotionmathilda_idle" "mt_idle">>
-        <<playrestsound mathilda "mathilda ">>
+        <<playrestsound mathilda "mathilda">>
         Mathilda: I think it's quite embarassing to die like that.
     <<endif>>
     <<if $marzanna == true>>
         <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
-        <<playrestsound marzanna "marzanna ">>
+        <<playrestsound marzanna "marzanna">>
         Marzanna: So much blood...
     <<endif>>
 <<endif>>
@@ -1590,7 +1590,7 @@ Ashok: Here's a stack of letters.
 <<endif>>
 <<if $mathilda == true>>
     <<emotionsprite "emotionmathilda_idle" "mt_idle">>
-    <<playrestsound mathilda "mathilda ">>
+    <<playrestsound mathilda "mathilda">>
     Mathilda: I think it's more important to find more clues on how we get out of here instead of wondering about the motives of that crazy dude.
 <<endif>>
 <<if $item1letter == true>>
@@ -1630,7 +1630,7 @@ Ashok: Here's a stack of letters.
             Hugh: Year 1999, 4th month and 23rd day. Seems like John really didn't want to forget that day. Maybe it's the password for his computer.
             <<if $mathilda == true>>
             <<emotionsprite "emotionmathilda_idle" "mt_idle">>
-            <<playrestsound mathilda "mathilda ">>
+            <<playrestsound mathilda "mathilda">>
             Mathilda: I bet he does not own a computer at all. I mean, look around, this place is almost medieval.
             <<emotionsprite "emotionhugh_idle" "h_idle">>
             <<playrestsound hugh "hugh">>
@@ -1671,7 +1671,7 @@ Nanditha: Oh nice, a telescope! I'll take a look at the stars!
 <<endif>>
 <<if $mathilda == true>>
     <<emotionsprite "emotionmathilda_idle" "mt_idle">>
-    <<playrestsound mathilda "mathilda ">>
+    <<playrestsound mathilda "mathilda">>
     Mathilda: That's cute of you Nanditha, but finding a key or a way out would be more helpful, don't you think?
     <<emotionsprite  "emotionnanditha_idle" "n_idle">>
     <<playrestsound nanditha "nanditha">>
@@ -1732,7 +1732,7 @@ position: 549,-194
 Hugh: Wow, an old orrery. But it looks like our captor wasn't up to date with post-medieval astronomy.
 <<if $mathilda == true>>
     <<emotionsprite "emotionmathilda_idle" "mt_idle">> 
-    <<playrestsound mathilda "mathilda ">>
+    <<playrestsound mathilda "mathilda">>
     Mathilda: What do you mean?
     <<emotionsprite "emotionhugh_idle" "h_idle">> 
     <<playrestsound hugh "hugh">>
@@ -1763,11 +1763,11 @@ Hugh: Wow, an old orrery. But it looks like our captor wasn't up to date with po
     <<if $marzanna == true>>
         <<if $door34 == true>>
             <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
-            <<playrestsound marzanna "marzanna ">>
+            <<playrestsound marzanna "marzanna">>
             Marzanna: But the door has already been opened. This key has to be for something else.
         <<else>>
             <<emotionsprite "emotionmarzanna_happy" "mz_happy">>
-            <<playrestsound marzanna "marzanna ">>
+            <<playrestsound marzanna "marzanna">>
             Marzanna: Try it with the door!
         <<endif>>
     <<endif>>
@@ -1792,7 +1792,7 @@ position: 544,-56
 <<if $key34 == false>>
     <<set $key34 = true>>
     <<emotionsprite "emotionmathilda_happy" "mt_happy">> 
-    <<playrestsound mathilda "mathilda ">>
+    <<playrestsound mathilda "mathilda">>
     Mathilda: It looks like this globe can be opened, that's pretty neat!
     <<destroyemotion "emotionmathilda_happy" "mt_happy">>
     <<setglobesprite "globe_open" "globe_open">>
@@ -1807,11 +1807,11 @@ position: 544,-56
     <<endif>>
     <<activateemotion "emotionmathilda_happy" "mt_happy">>
     <<emotionsprite "emotionmathilda_happy" "mt_happy">>
-    <<playrestsound mathilda "mathilda ">>
+    <<playrestsound mathilda "mathilda">>
     Mathilda: One step closer to freedom!
 <<else>>
     <<emotionsprite "emotionmathilda_annoyed" "mt_annoyed">>
-    <<playrestsound mathilda "mathilda ">>
+    <<playrestsound mathilda "mathilda">>
     Mathilda: I had hoped for a secret stash but it's empty.
 <<endif>>
 <<destroyemotion "emotionhugh_idle" "h_idle">>
@@ -1835,7 +1835,7 @@ position: 539,82
 <<if $item4grimoire == false>>
     <<if visited_count("interaction3bookcase") == 0>>
         <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
-        <<playrestsound marzanna "marzanna ">>
+        <<playrestsound marzanna "marzanna">>
         Marzanna: There's a gap, as if one of the books was missing.
         <<if $nanditha == true>>
             <<emotionsprite  "emotionnanditha_idle" "n_idle">>
@@ -1844,7 +1844,7 @@ position: 539,82
         <<endif>>
     <<else>>
         <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
-        <<playrestsound marzanna "marzanna ">>
+        <<playrestsound marzanna "marzanna">>
         Marzanna: It's hard to reach...
         <<destroyemotion "emotionmarzanna_idle" "mz_idle">>
         <<set $marzanna = false>>
@@ -1892,7 +1892,7 @@ position: 539,82
      <<disablebookshelfold>>
     <<enablebookshelfnew>>
     <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
-    <<playrestsound marzanna "marzanna ">>
+    <<playrestsound marzanna "marzanna">>
     Marzanna: I'll put the Grimoire back in its place.
     <<slide bookcase_new "Slide_Animation">>
     <<disablebookshelf>>
@@ -1901,7 +1901,7 @@ position: 539,82
     //animation: the bookcase moves aside and reveals the vault door
     //the bookcase-object's interactibility gets replaced by the vault door
     <<emotionsprite "emotionmarzanna_afraid" "mz_afraid">>
-    <<playrestsound marzanna "marzanna ">>
+    <<playrestsound marzanna "marzanna">>
     Marzanna: What happened?
     <<if $ashok == true>>
         <<emotionsprite "emotionashok_happy" "a_happy">>
@@ -1988,7 +1988,7 @@ position: 536,229
     <<endif>>
     <<if $mathilda == true>>
         <<emotionsprite "emotionmathilda_idle" "mt_idle">>
-        <<playrestsound mathilda "mathilda ">>
+        <<playrestsound mathilda "mathilda">>
         Mathilda: Did she expect to find anything in that gap?
     <<endif>>
     <<if $hugh == true>>
@@ -2040,7 +2040,7 @@ position: 539,-742
     <<endif>>
     <<if $mathilda == true>>
         <<emotionsprite "emotionmathilda_annoyed" "mt_annoyed">>
-        <<playrestsound mathilda "mathilda ">>
+        <<playrestsound mathilda "mathilda">>
         Mathilda: There isn't even a keyhole! How are we supposed to know what we have to look for?
     <<endif>>
     <<if $hugh == true>>
@@ -2051,7 +2051,7 @@ position: 539,-742
     <<endif>>
     <<if $marzanna == true>>
         <<emotionsprite "emotionmarzanna_embarassed" "mz_embarassed">>
-        <<playrestsound marzanna "marzanna ">>
+        <<playrestsound marzanna "marzanna">>
         Marzanna: Even if this is the way out, we're never gonna figure out how to open this massive door.
     <<endif>>
 <<endif>>
@@ -2100,7 +2100,7 @@ position: 539,-742
 <<endif>>
 <<if $item2remote == true && $lock2 == false && $mathilda == true>>
     <<emotionsprite "emotionmathilda_idle" "mt_idle">>
-    <<playrestsound mathilda "mathilda ">>
+    <<playrestsound mathilda "mathilda">>
     Mathilda: Maybe this old remote I found in the greenhouse isn't so useless after all. I'll give it a shot.
     <<if $ashok == true>>
         <<emotionsprite "emotionashok_idle" "a_idle">>
@@ -2112,7 +2112,7 @@ position: 539,-742
     //  <<wait  1>>
     <<setremoteopensprite "remotescanner_open" "remotescanner_open" >>
     <<emotionsprite "emotionmathilda_happy" "mt_happy">>
-    <<playrestsound mathilda "mathilda ">>
+    <<playrestsound mathilda "mathilda">>
     Mathilda: Neat! I didn't think it would actually work but I guess it just did!
     <<destroyemotion "emotionmathilda_happy" "mt_happy">>
     // <<else>>
@@ -2173,7 +2173,7 @@ position: 539,-742
         Hugh: Ashok's code is the only key that would make sense here.
     <<elseif $mathilda == true>>
         <<emotionsprite "emotionmathilda_idle" "mt_idle">>
-        <<playrestsound mathilda "mathilda ">>
+        <<playrestsound mathilda "mathilda">>
         Mathilda: I guess I'll give this code that I found on Ashok a try...
     <<endif>>
     <<set $lock3 = true>>
@@ -2191,7 +2191,7 @@ position: 539,-742
     <<endif>>
     <<if $mathilda == true>>
         <<emotionsprite "emotionmathilda_annoyed" "mt_annoyed">>
-        <<playrestsound mathilda "mathilda ">>
+        <<playrestsound mathilda "mathilda">>
         Mathilda: Stop talking and just try it already!
         <<emotionsprite "emotionhugh_sad" "h_sad">>
         <<playrestsound hugh "hugh">>
@@ -2212,7 +2212,7 @@ position: 539,-742
         Marzanna: Hugh took this finger with him so it must be of use, maybe with this scanner?
     <<elseif $mathilda == true>>
         <<emotionsprite "emotionmathilda_sad" "mt_sad">>
-        <<playrestsound mathilda "mathilda ">>
+        <<playrestsound mathilda "mathilda">>
         Mathilda: Hugh would have known how to open these locks...
         <<emotionsprite "emotionmathilda_idle" "mt_idle">>
         Mathilda: This separated finger he had... maybe it works with this scanner?
@@ -2238,12 +2238,12 @@ position: 539,-742
     <<endif>>
     <<if $mathilda == true>>
         <<emotionsprite "emotionmathilda_happy" "mt_happy">>
-        <<playrestsound mathilda "mathilda ">>
+        <<playrestsound mathilda "mathilda">>
         Mathilda: This is the way out!
     <<endif>>
     <<if $marzanna == true>>
         <<emotionsprite "emotionmarzanna_happy" "mz_happy">>
-        <<playrestsound marzanna "marzanna ">>
+        <<playrestsound marzanna "marzanna">>
         Marzanna: It can't be true! Did we really make it?
     <<endif>>
     <<if $nanditha == true>>
@@ -2296,7 +2296,7 @@ position: 799,-462
 <<activateemotion "emotionashok_annoyed" "a_annoyed">>
 <<activateemotion "emotionmathilda_happy" "mt_happy">>
 <<emotionsprite "emotionmathilda_idle" "mt_idle">> 
-<<playrestsound mathilda "mathilda ">>
+<<playrestsound mathilda "mathilda">>
 Mathilda: This one here looks almost like an altar with all the candles and these mysterious symbols.
 <<if $nanditha == true>>
      <<if visited("interaction1crate") == true>>
@@ -2317,7 +2317,7 @@ Mathilda: This one here looks almost like an altar with all the candles and thes
 <<if $item4candle == false>>
     <<set $item4candle = true>>
     <<emotionsprite "emotionmathilda_idle" "mt_idle">>
-    <<playrestsound mathilda "mathilda ">>
+    <<playrestsound mathilda "mathilda">>
     Mathilda: I'll take a candle with me. We can use it if the lights go out again.
     <<destroyemotion "emotionmathilda_idle" "mt_idle">>
     <<popupsprite "popup4candle" "popup4candle">>
@@ -2328,7 +2328,7 @@ Mathilda: This one here looks almost like an altar with all the candles and thes
         <<playrestsound ashok "ashok">>
         Ashok: It's not even lit...
         <<emotionsprite "emotionmathilda_happy" "mt_happy">> 
-        <<playrestsound mathilda "mathilda ">>
+        <<playrestsound mathilda "mathilda">>
        Mathilda: All I need is a box of matches or a lighter. I'm pretty sure there's one around.
         <<if visited("interaction1crate") == true>>
             Mathilda: How else would Dr. Fist light all these candles?
@@ -2336,7 +2336,7 @@ Mathilda: This one here looks almost like an altar with all the candles and thes
     <<endif>>
 <<else>>
     <<emotionsprite "emotionmathilda_annoyed" "mt_annoyed">> 
-    <<playrestsound mathilda "mathilda ">>
+    <<playrestsound mathilda "mathilda">>
     Mathilda: I wonder what exactly this weirdo was doing here...
 <<endif>>
 <<destroyemotion "emotionmathilda_annoyed" "mt_annoyed">>
@@ -2373,7 +2373,7 @@ position: 804,-328
     Nanditha: I'm so clumsy! I shouldn't have touched it.
     <<if $mathilda == true>>
         <<emotionsprite "emotionmathilda_idle" "mt_idle">>
-        <<playrestsound mathilda "mathilda ">>
+        <<playrestsound mathilda "mathilda">>
         Mathilda: What's that?
     <<endif>>
     <<set $key45 = true>>
@@ -2418,7 +2418,7 @@ position: 799,-190
 <<activateemotion "emotionhugh_sad" "h_sad">>
 <<if $item5card == true>>
     <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
-    <<playrestsound marzanna "marzanna ">>
+    <<playrestsound marzanna "marzanna">>
     Marzanna: I'm pretty sure this is where the Tarot card belongs.
 <<if $item4grimoire == false>>
     <<set $item4grimoire = true>>
@@ -2426,27 +2426,27 @@ position: 799,-190
     Marzanna found a Grimoire!
     <<destroypopup "popup4grimoire" "popup4grimoire">>
     <<emotionsprite "emotionmarzanna_happy" "mz_happy">>
-    <<playrestsound marzanna "marzanna ">>
+    <<playrestsound marzanna "marzanna">>
     Marzanna: This is a spellbook! And a pretty old one, too! These are really hard to get.
     <<if $ashok == true>>
         <<emotionsprite "emotionashok_idle" "a_idle">>
         <<playrestsound ashok "ashok">>
         Ashok: Are you interested in that kind of stuff?
         <<emotionsprite "emotionmarzanna_embarassed" "mz_embarassed">>
-        <<playrestsound marzanna "marzanna ">>
+        <<playrestsound marzanna "marzanna">>
         Marzanna: Uhm... I guess it's quite a weird hobby...
         <<emotionsprite "emotionashok_embarassed" "a_embarassed">>
         <<playrestsound ashok "ashok">>
         Ashok: Sorry, I didn't want to imply that.
     <<endif>>
     <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
-    <<playrestsound marzanna "marzanna ">>
+    <<playrestsound marzanna "marzanna">>
     Marzanna: It has the same width as the gap in the library bookcase.
     <<endif>>
 <<else>>
     <<if visited("interaction1crate") == true>>
         <<emotionsprite "emotionmarzanna_happy" "mz_happy">>
-        <<playrestsound marzanna "marzanna ">>
+        <<playrestsound marzanna "marzanna">>
         Marzanna: Dr. Fist seemed to be into divination. I wonder if he had foreseen that he'd end up torn apart on the floor.
         <<if $hugh == true>>
             <<emotionsprite "emotionhugh_sad" "h_sad">>
@@ -2455,7 +2455,7 @@ position: 799,-190
         <<endif>>
     <<else>>
         <<emotionsprite "emotionmarzanna_happy" "mz_happy">> 
-        <<playrestsound marzanna "marzanna ">>
+        <<playrestsound marzanna "marzanna">>
         Marzanna: This is quite a respectable collection.
     <<endif>>
 <<endif>>
@@ -2482,7 +2482,7 @@ position: 799,-45
     Hugh: These look like real voodoo dolls... What a collection.
     <<if $marzanna == true>>
         <<emotionsprite "emotionmarzanna_idle" "mz_idle">> 
-        <<playrestsound marzanna "marzanna ">>
+        <<playrestsound marzanna "marzanna">>
         Marzanna: Be careful, these effigies are dangerous! They can bear deadly curses.
         <<emotionsprite "emotionhugh_happy" "h_happy">> 
         <<playrestsound hugh "hugh">>
@@ -2511,15 +2511,15 @@ position: 799,-45
     <<set $item5finger = false>>
     <<if $marzanna == true>>
         <<emotionsprite "emotionmarzanna_afraid" "mz_afraid">> 
-        <<playrestsound marzanna "marzanna ">>
+        <<playrestsound marzanna "marzanna">>
         Marzanna: HUGH!
         <<emotionsprite  "emotionmarzanna_sad" "mz_sad">> 
-        <<playrestsound marzanna "marzanna ">>
+        <<playrestsound marzanna "marzanna">>
         Marzanna: No no no no no no no not him! It can't be!
     <<endif>>
     <<if $mathilda == true>>
         <<emotionsprite  "emotionmathilda_scream" "mt_scream">> 
-        <<playrestsound mathilda "mathilda ">>
+        <<playrestsound mathilda "mathilda">>
         Mathilda: Hugh, are you alright?!
     <<endif>>
     <<if $nanditha == true>>
@@ -2528,7 +2528,7 @@ position: 799,-45
         Nanditha: What happened?
         <<if $marzanna == true>>
             <<emotionsprite  "emotionmarzanna_sad" "mz_sad">>
-            <<playrestsound marzanna "marzanna ">>
+            <<playrestsound marzanna "marzanna">>
             Marzanna: He got cursed.
         <<endif>>
     <<endif>>
@@ -2582,7 +2582,7 @@ position: 803,229
         Mathilda: He was the most intelligent among us... I bet he has something of use on him.
     <<elseif $marzanna == true>>
         <<emotionsprite "emotionmarzanna_sad" "mz_sad">>
-        <<playrestsound marzanna "marzanna ">>
+        <<playrestsound marzanna "marzanna">>
         Marzanna: I will take this to remind me of him...
     <<elseif $nanditha == true>>
         <<emotionsprite  "emotionnanditha_idle" "n_idle">>
@@ -2614,12 +2614,12 @@ position: 803,229
 <<else>>
     <<if $marzanna == true>>
         <<emotionsprite  "emotionmarzanna_sad" "mz_sad">> 
-        <<playrestsound marzanna "marzanna ">>
+        <<playrestsound marzanna "marzanna">>
         Marzanna: The effigy was cursed! I tried to warn him, why didn't he listen to me?
     <<endif>>
     <<if $mathilda == true>>
         <<emotionsprite "emotionmathilda_sad" "mt_sad">> 
-        <<playrestsound mathilda "mathilda ">>
+        <<playrestsound mathilda "mathilda">>
         Mathilda: How is that even possible?
     <<endif>>
     <<if $nanditha == true>>
@@ -2699,19 +2699,19 @@ position: 1058,-327
     Marzanna found a Tarot card!
     <<destroypopup "popup5card" "popup5card">>
     <<emotionsprite "emotionmarzanna_afraid" "mz_afraid">> 
-    <<playrestsound marzanna "marzanna ">>
+    <<playrestsound marzanna "marzanna">>
     Marzanna: The moon... that's not a good sign.
     <<if $ashok == true>>
         <<emotionsprite "emotionashok_idle" "a_idle">> 
         <<playrestsound ashok "ashok">>
         Ashok: Why was there a single card in the storage shelf?
         <<emotionsprite "emotionmarzanna_idle" "mz_idle">> 
-        <<playrestsound marzanna "marzanna ">>
+        <<playrestsound marzanna "marzanna">>
         Marzanna: Maybe as a warning: Getting out of here won't be as easy as we think.
     <<endif>>
 <<else>>
     <<emotionsprite "emotionmarzanna_idle" "mz_idle">> 
-    <<playrestsound marzanna "marzanna ">>
+    <<playrestsound marzanna "marzanna">>
     Marzanna: This was the only card here...
 <<endif>>
 <<destroyemotion "emotionmarzanna_afraid" "mz_afraid">>
@@ -2770,25 +2770,25 @@ position: 1067,-187
     <<activateemotion "emotionmarzanna_afraid" "mz_afraid">>
     <<if $mathilda == true>>
         <<emotionsprite "emotionmathilda_afraid" "mt_afraid">>
-        <<playrestsound mathilda "mathilda ">>
+        <<playrestsound mathilda "mathilda">>
         Mathilda: NANDITHA! Are you alright?
         <<if $light == false>>
             <<if $candle == true>>
                 <<emotionsprite "emotionmathilda_sad" "mt_sad">>
-                <<playrestsound mathilda "mathilda ">>
+                <<playrestsound mathilda "mathilda">>
                 Mathilda: She's not breathing...
             <<elseif $item4candle == true>>
                 <<emotionsprite "emotionmathilda_sad" "mt_sad">>
-                <<playrestsound mathilda "mathilda ">>
+                <<playrestsound mathilda "mathilda">>
                 Mathilda: I need to light the candle so we can see what happened!
             <<else>>
                 <<emotionsprite "emotionmathilda_sad" "mt_sad">>
-                <<playrestsound mathilda "mathilda ">>
+                <<playrestsound mathilda "mathilda">>
                 Mathilda: She's not answering...
             <<endif>>
         <<else>>
             <<emotionsprite "emotionmathilda_sad" "mt_sad">>
-            <<playrestsound mathilda "mathilda ">>
+            <<playrestsound mathilda "mathilda">>
             Mathilda: Why did she have to touch that stupid machine? 
         <<endif>>
     <<endif>>
@@ -2813,7 +2813,7 @@ position: 1067,-187
     <<endif>>
     <<if $marzanna == true>>
         <<emotionsprite "emotionmarzanna_afraid" "mz_afraid">>
-        <<playrestsound marzanna "marzanna ">>
+        <<playrestsound marzanna "marzanna">>
         Marzanna: Death awaits wherever we go.
     
     <<endif>>
@@ -2847,13 +2847,13 @@ Hugh: This is an animal cage and judging from the smell, it had been inhabited r
 <<if $item5finger == false>>
     <<if $mathilda == true>>
         <<emotionsprite "emotionmathilda_idle" "mt_idle">>
-        <<playrestsound mathilda "mathilda ">>
+        <<playrestsound mathilda "mathilda">>
         Marthilda: What's that inside?
         <<emotionsprite "emotionhugh_idle" "h_idle">>
         <<playrestsound hugh "hugh">>
         Hugh: Looks like... a finger?
         <<emotionsprite "emotionmathilda_annoyed" "mt_annoyed">>
-        <<playrestsound mathilda "mathilda ">>
+        <<playrestsound mathilda "mathilda">>
         Mathilda: Gross!
     <<endif>>
     <<if $ashok == true && visited("interaction1crate") == true>>
@@ -2863,7 +2863,7 @@ Hugh: This is an animal cage and judging from the smell, it had been inhabited r
     <<endif>>
     <<if $marzanna == true && $item3key == true>>
         <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
-        <<playrestsound marzanna "marzanna ">>
+        <<playrestsound marzanna "marzanna">>
         Marzanna: Maybe your special key fits here...
     <<endif>>
     <<if $item3key == true>>
@@ -2877,7 +2877,7 @@ Hugh: This is an animal cage and judging from the smell, it had been inhabited r
         Hugh: Finally! I knew this key had to be useful at some point!
         <<if $mathilda == true>>
             <<emotionsprite "emotionmathilda_idle" "mt_idle">>
-            <<playrestsound mathilda "mathilda ">>
+            <<playrestsound mathilda "mathilda">>
             Mathilda: Is there really a finger?
             <<emotionsprite "emotionhugh_afraid" "h_afraid">>
             <<playrestsound hugh "hugh">>
@@ -2921,7 +2921,7 @@ position: 1060,82
 <<activateemotion "emotionmathilda_idle" "mt_idle">>
 <<if $item4candle == true && $candle == false>>
     <<emotionsprite "emotionmathilda_happy" "mt_happy">>
-    <<playrestsound mathilda "mathilda ">>
+    <<playrestsound mathilda "mathilda">>
     Mathilda: Nice! I can light my candle with this burner!
     <<setburnersprite "burner_triggered" "burner_triggered">> 
     <<destroyemotion "emotionmathilda_happy" "mt_happy">>
@@ -2931,11 +2931,11 @@ position: 1060,82
 <<elseif $item4candle == false>>
     <<activateemotion "emotionmathilda_idle" "mt_idle">>
     <<emotionsprite "emotionmathilda_idle" "mt_idle">>
-    <<playrestsound mathilda "mathilda ">>
+    <<playrestsound mathilda "mathilda">>
     Mathilda: I wish this burner was portable. We wouldn't have to worry about the flickering lights anymore.
 <<else>>
     <<emotionsprite "emotionmathilda_happy" "mt_happy">>
-    <<playrestsound mathilda "mathilda ">>
+    <<playrestsound mathilda "mathilda">>
     Mathilda: These bunsen burners have always been my favourite part about chemistry class.
 <<endif>>
 <<destroyemotion "emotionmathilda_idle" "mt_idle">>
@@ -2969,7 +2969,7 @@ position: 1066,220
         Mathilda: Nanditha was smart in her own way, look what she found, I bet it will get us out of here.
     <<elseif $marzanna == true>>
         <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
-        <<playrestsound marzanna "marzanna ">>
+        <<playrestsound marzanna "marzanna">>
         Marzanna: We should look through her ashes to see if she had something we could use...
     <<elseif $hugh == true>>
         <<emotionsprite "emotionhugh_idle" "h_idle">> 
@@ -3006,7 +3006,7 @@ position: 1066,220
         Ashok: 
     <<elseif $marzanna == true>>
         <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
-        <<playrestsound marzanna "marzanna ">>
+        <<playrestsound marzanna "marzanna">>
         Marzanna: Wait, what's that?
     <<elseif $hugh == true>>
         <<emotionsprite "emotionhugh_idle" "h_idle">> 
@@ -3025,12 +3025,12 @@ position: 1066,220
     <<endif>>
     <<if $mathilda == true>>
         <<emotionsprite "emotionmathilda_sad" "mt_sad">> 
-        <<playrestsound mathilda "mathilda ">>
+        <<playrestsound mathilda "mathilda">>
         Mathilda: She did not deserve to die like this.
     <<endif>>
     <<if $marzanna == true>>
         <<emotionsprite "emotionmarzanna_afraid" "mz_afraid">> 
-        <<playrestsound marzanna "marzanna ">>
+        <<playrestsound marzanna "marzanna">>
         Marzanna: Just a pile of ashes is left of her...
     <<endif>>
     <<if $hugh == true>>
@@ -3071,7 +3071,7 @@ position: 180,450
         <<playrestsound ashok "ashok">>
         Ashok: Hey Marzanna, try to use the key you found on this door!
         <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
-        <<playrestsound marzanna "marzanna ">>
+        <<playrestsound marzanna "marzanna">>
         Marzanna: Uhm, okay...
         // <<playsound door_opens>>
         //  <<wait 1>>
@@ -3100,7 +3100,7 @@ position: -374,428
 <<if $door23 == false>>
     <<if $key23 == false>> //if the player did not offer the key yet
       <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
-      <<playrestsound marzanna "marzanna ">>
+      <<playrestsound marzanna "marzanna">>
         Marzanna: I can't open it, maybe there's an other key somewhere?
          <<destroyemotion "emotionmarzanna_idle" "mz_idle">>
         <<jump room_investigate>>
@@ -3112,7 +3112,7 @@ position: -374,428
         //<<playsound door_opens>>
         //  <<wait 2>>
         <<emotionsprite "emotionmarzanna_happy" "mz_happy">>
-        <<playrestsound marzanna "marzanna ">>
+        <<playrestsound marzanna "marzanna">>
         Marzanna: Thank you, Hugh!
         <<destroyemotion "emotionmarzanna_happy" "mz_happy">>
         <<set $door23 = true>>
@@ -3144,7 +3144,7 @@ position: 687,419
     <<if $key34 == false>> //if the player did not find the key yet
         <<if $mathilda == true>>
             <<emotionsprite "emotionmathilda_idle" "mt_idle">>
-            <<playrestsound mathilda "mathilda ">>
+            <<playrestsound mathilda "mathilda">>
             Mathilda: Here we go again, it's locked.
         <<else>>
            <<emotionsprite "emotionhugh_annoyed" "h_annoyed">>
@@ -3154,7 +3154,7 @@ position: 687,419
         <<if $item3key == true>>
             <<if $marzanna == true>>
                 <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
-                <<playrestsound marzanna "marzanna ">>
+                <<playrestsound marzanna "marzanna">>
                 Marzanna: Hugh...
             <<endif>>
             <<emotionsprite "emotionhugh_happy" "h_happy">>
@@ -3185,7 +3185,7 @@ position: 687,419
         <<set $actions = $actions - 1>>
         <<if $mathilda == true>>
            <<emotionsprite "emotionmathilda_happy" "mt_happy">>
-           <<playrestsound mathilda "mathilda ">>
+           <<playrestsound mathilda "mathilda">>
            Mathilda: My key fits!
         <<elseif $marzanna == true && visited("interaction3globe") == false && $backupkey34 == true>>
             <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
@@ -3280,7 +3280,7 @@ position: 946,417
         //  <<wait 2>>
         <<if $mathilda == true>>
             <<emotionsprite "emotionmathilda_happy" "mt_happy">>
-            <<playrestsound mathilda "mathilda ">>
+            <<playrestsound mathilda "mathilda">>
             Mathilda: I'm proud of you, Nanditha.
         <<endif>>
         <<set $door45 = true>>
@@ -3315,7 +3315,7 @@ position: 1209,417
     <<if $key51 == false>> //if the key has not been found yet
         <<if $marzanna == true>>
             <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
-            <<playrestsound marzanna "marzanna ">>
+            <<playrestsound marzanna "marzanna">>
             Marzanna: I don't need to try the door to know it's locked... All of them have been so far. 
         <<elseif $nanditha == true>>
             <<emotionsprite  "emotionnanditha_happy" "n_happy">>
@@ -3323,7 +3323,7 @@ position: 1209,417
             Nanditha: Oh, I can feel it, this is the last door we need to open. This is the final exit.
         <<elseif $mathilda == true>>
             <<emotionsprite "emotionmathilda_annoyed" "mt_annoyed">>
-            <<playrestsound mathilda "mathilda ">>
+            <<playrestsound mathilda "mathilda">>
             Mathilda: Can't there be an unlocked door for once? How paranoid is the owner of this house?
         <<endif>>
         <<if $hugh == true>>
@@ -3386,7 +3386,7 @@ position: 1209,417
         <<elseif visited("interaction5apparatus") == true && visited("interaction2ashok") == true>>
             <<if $mathilda == true>>
                 <<emotionsprite "emotionmathilda_idle" "mt_idle">>
-                <<playrestsound mathilda "mathilda ">>
+                <<playrestsound mathilda "mathilda">>
                 Mathilda: This is they key we found on Ashok's body... let's try it.
             <<elseif $hugh == true>>
                 <<emotionsprite "emotionhugh_idle" "h_idle">>
@@ -3413,11 +3413,11 @@ position: 1209,417
         <<elseif visited("interaction3telescope") == true && $backupkey51 == true && $nanditha == false && visited("interaction5nanditha") == true>>
             <<if $mathilda == true>>
                 <<emotionsprite "emotionmathilda_sad" "mt_sad">>
-                <<playrestsound mathilda "mathilda ">>
+                <<playrestsound mathilda "mathilda">>
                 Mathilda: Nanditha found this key attached to the telescope... I'll give it a try.
             <<elseif $marzanna == true>>
                 <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
-                <<playrestsound marzanna "marzanna ">>
+                <<playrestsound marzanna "marzanna">>
                 Marzanna: Maybe it's the key from Nanditha's ashes...
             <<elseif $hugh == true>>
                 <<emotionsprite "emotionhugh_idle" "h_idle">>
@@ -3432,7 +3432,7 @@ position: 1209,417
         <<else>>
             <<if $marzanna == true>>
                 <<emotionsprite "emotionmarzanna_afraid" "mz_afraid">>
-                <<playrestsound marzanna "marzanna ">>
+                <<playrestsound marzanna "marzanna">>
                 Marzanna: We are stuck, I know it! We need to go back...
                 <<destroyemotion "emotionmarzanna_afraid" "mz_afraid">>
             <<endif>>
