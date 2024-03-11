@@ -74,6 +74,13 @@ public GameObject Nandithadeath;
           public GameObject play;
 
            public GameObject win;
+
+           public GameObject mathilda_death;
+           public GameObject ashok_death;
+           public GameObject marzanna_death;
+           public GameObject hugh_death;
+           public GameObject nanditha_death;
+
 public GameObject oldbookshelf;
 public GameObject newbookshelf;
     private void Start()
@@ -147,11 +154,50 @@ dialogueRunner.AddCommandHandler("enableHughCorpse", EnableHughCorpse);
           dialogueRunner.AddCommandHandler("disablebookshelfold", Disablebookshelfold);
           dialogueRunner.AddCommandHandler("Winscreen", WinScreen);
 
+        dialogueRunner.AddCommandHandler("enableMathildaDeath", EnableMathildaDeath);
+        dialogueRunner.AddCommandHandler("enableAshokDeath", EnableAshokDeath);
+        dialogueRunner.AddCommandHandler("enableMarzannaDeath", EnableMarzannaDeath);
+        dialogueRunner.AddCommandHandler("enableHughDeath", EnableHughDeath);
+        dialogueRunner.AddCommandHandler("enableNandithaDeath", EnableNandithaDeath);
 
     }
 
     // Yarn command to enable the target game object
-
+private void EnableMathildaDeath()
+    {
+        if (mathilda_death != null)
+        {
+            mathilda_death.SetActive(true);
+        }
+    }
+private void EnableAshokDeath()
+    {
+        if (ashok_death != null)
+        {
+            ashok_death.SetActive(true);
+        }
+    }
+private void EnableMarzannaDeath()
+    {
+        if (marzanna_death != null)
+        {
+            marzanna_death.SetActive(true);
+        }
+    }
+private void EnableHughDeath()
+    {
+        if (hugh_death != null)
+        {
+            hugh_death.SetActive(true);
+        }
+    }
+private void EnableNandithaDeath()
+    {
+        if (nanditha_death != null)
+        {
+            nanditha_death.SetActive(true);
+        }
+    }
 
 private void WinScreen()
     {

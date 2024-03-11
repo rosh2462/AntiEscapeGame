@@ -1171,6 +1171,7 @@ group: room1
 position: 20,236
 ---
 //object gets activated when the variable $mathilda turns false (it's her dead body)
+<<enableMathildaDeath>>
 <<set $actions = $actions - 1>>
 <<activateemotion "emotionhugh_sad" "h_sad">>
 <<activateemotion "emotionnanditha_sad" "n_sad">>
@@ -1495,6 +1496,7 @@ group: room2
 position: 285,248
 ---
 //object gets activated when the variable $ashok turns false (it's his dead body)
+<<enableAshokDeath>>
 <<set $actions = $actions - 1>>
 <<activateemotion "emotionnanditha_sad" "n_sad">>
 <<activateemotion "emotionhugh_idle" "h_idle">>
@@ -1930,6 +1932,7 @@ group: room3
 position: 536,229
 ---
 //object gets activated when the variable $marzanna turns false (it's her dead body/the bookshelf on the floo)
+<<enableMarzannaDeath>>
 <<set $actions = $actions - 1>>
 <<activateemotion "emotionashok_sad" "a_sad">>
 <<activateemotion "emotionnanditha_sad" "n_sad">>
@@ -2568,6 +2571,7 @@ group: room4
 position: 803,229
 ---
 //object gets activated when the variable $hugh turns false (it's his dead body)
+<<enableHughDeath>>
 <<set $actions = $actions - 1>>
 <<activateemotion "emotionmarzanna_sad" "mz_sad">>
 <<activateemotion "emotionmathilda_sad" "mt_sad">>
@@ -2950,6 +2954,7 @@ group: room5
 position: 1066,220
 ---
 //object gets activated when the variable $nanditha turns false (it's her dead body)
+<<enableNandithaDeath>>
 <<set $actions = $actions - 1>>
 <<activateemotion "emotionashok_sad" "a_sad">>
 <<activateemotion "emotionmathilda_sad" "mt_sad">>
