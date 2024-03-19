@@ -60,7 +60,21 @@ public MonsterSoundManager soundManager;
                 case "marzanna":
                 soundManager.Play("marzanna");
                 break;
-
+                case "death_ashok":
+                soundManager.Play("death_ashok");
+                break;
+                case "death_nanditha":
+                soundManager.Play("death_nanditha");
+                break;
+                case "death_marzanna":
+                soundManager.Play("death_marzanna");
+                break;
+                case "death_mathilda":
+                soundManager.Play("death_mathilda");
+                break;
+                case "death_hugh":
+                soundManager.Play("death_hugh");
+                break;
             default:
                 Debug.LogWarning("Sound " + soundName + " not found!");
                 break;

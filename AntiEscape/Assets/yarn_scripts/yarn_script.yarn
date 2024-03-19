@@ -1027,9 +1027,11 @@ position: 18,-322
     <<destroyemotion "emotionhugh_idle" "h_idle">>
     <<destroyemotion "emotionmathilda_annoyed" "mt_annoyed">>
     <<set $mathilda = false>>
+    <<playrestsound death_mathilda "death_mathilda">>
     //<<popupsprite "emotionmathilda_death" "mt_death">>
     <<enabledeathMathilda>>
     Mathilda: AAAAAAAAAAAAH!
+   
     <<disableMathilda>>//disabling mathilda character
     <<disabletoolsitem>>//disabling the tools
     <<disableknife>>//disabling the knife
@@ -1288,6 +1290,7 @@ position: 284,-458
     <<destroyemotion "emotionashok_happy" "a_happy">>
     <<destroyemotion "emotionnanditha_afraid" "n_afraid">>
     <<set $ashok = false>>
+    <<playrestsound death_ashok "death_ashok">>
     <<enabledeathAshok>>
     Ashok: Ugh!
     <<if $nanditha == true>>
@@ -1852,6 +1855,7 @@ position: 539,82
         Marzanna: It's hard to reach...
         <<destroyemotion "emotionmarzanna_idle" "mz_idle">>
         <<set $marzanna = false>>
+         <<playrestsound death_marzanna "death_marzanna">>
         <<enabledeathMarzanna>>
         //<<popupsprite "emotionmarzanna_death" "mz_death">>
         Marzanna: IIIIIIIEEK! //the bookcase falls on Marzanna
@@ -2502,6 +2506,7 @@ position: 799,-45
     Hugh: This one looks espacially strange...
     <<destroyemotion "emotionhugh_idle" "h_idle">>
     <<set $hugh = false>>
+    <<playrestsound death_hugh "death_hugh">>
     <<enabledeathHugh>>
     Hugh: AAARGH!
     <<disableHugh>>
@@ -2752,10 +2757,12 @@ position: 1067,-187
     <<playrestsound nanditha "nanditha">>
     Nanditha: Uh, a lever. Let's see what it does!
     <<destroyemotion "emotionnanditha_idle" "n_idle">>
+     <<playrestsound death_nanditha "death_nanditha">>
     <<enabledeathNanditha>>
     //<<popupsprite "emotionnanditha_death" "n_death">>
     Nanditha: OH!
     <<set $nanditha = false>>
+   
     <<disabledeathNanditha>>
     <<disableNanditha>>
     <<set $item1eye = false>>
