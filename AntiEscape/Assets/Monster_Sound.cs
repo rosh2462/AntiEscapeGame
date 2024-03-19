@@ -21,13 +21,13 @@ public MonsterSoundManager soundManager;
          
         switch (soundName)
         {
-            case "glass_shatter":
+                case "glass_shatter":
                 soundManager.Play("glass_shatter");
                 break;
-            case "stumble":
+                case "stumble":
                 soundManager.Play("stumble");
                 break;
-            case "scroll":
+                case "scroll":
                 soundManager.Play("scroll");
                 break;
                 case "monster40":

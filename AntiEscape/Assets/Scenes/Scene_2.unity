@@ -688,13 +688,14 @@ GameObject:
   m_Component:
   - component: {fileID: 113939401}
   - component: {fileID: 113939402}
+  - component: {fileID: 113939403}
   m_Layer: 0
   m_Name: marzanna_death
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &113939401
 Transform:
   m_ObjectHideFlags: 0
@@ -703,12 +704,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 113939400}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.605096, y: -1.0071547, z: 0.10364197}
+  m_LocalScale: {x: 1.4, y: 0.43, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1733757347}
+  m_Father: {fileID: 1164447667}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &113939402
 MonoBehaviour:
@@ -724,7 +725,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conversationStartNode: interaction3marzanna
   clickSound: {fileID: 0}
-  consoleOutputText: {fileID: 0}
+  consoleOutputText: {fileID: 82135381}
+--- !u!65 &113939403
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113939400}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.76, y: 4.88, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &136691901
 GameObject:
   m_ObjectHideFlags: 0
@@ -755,7 +777,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1332992058}
-  - {fileID: 1382117478}
   m_Father: {fileID: 307202787}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &138365872
@@ -4035,6 +4056,7 @@ Transform:
   - {fileID: 1763787572}
   - {fileID: 1619813}
   - {fileID: 1483102202}
+  - {fileID: 1382117478}
   m_Father: {fileID: 307202787}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &304563657
@@ -4207,7 +4229,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &307202787
 Transform:
   m_ObjectHideFlags: 0
@@ -5638,6 +5660,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &362972676
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 362972677}
+  m_Layer: 0
+  m_Name: death_marzanna
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &362972677
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362972676}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.6039717, y: 0.69706345, z: -0.78998923}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2060588613}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &373349791
 GameObject:
   m_ObjectHideFlags: 0
@@ -10575,13 +10628,14 @@ GameObject:
   m_Component:
   - component: {fileID: 591458938}
   - component: {fileID: 591458939}
+  - component: {fileID: 591458940}
   m_Layer: 0
   m_Name: ashok_death
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &591458938
 Transform:
   m_ObjectHideFlags: 0
@@ -10590,12 +10644,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 591458937}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -12.026225, y: 1.3459852, z: -0.0270546}
+  m_LocalScale: {x: 3.5134768, y: 2.618107, z: 3.7628205}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1322751536}
+  m_Father: {fileID: 1677031196}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &591458939
 MonoBehaviour:
@@ -10611,7 +10665,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conversationStartNode: interaction2ashok
   clickSound: {fileID: 0}
-  consoleOutputText: {fileID: 0}
+  consoleOutputText: {fileID: 82135381}
+--- !u!65 &591458940
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591458937}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &596415718
 GameObject:
   m_ObjectHideFlags: 0
@@ -11316,7 +11391,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1950956855}
-  - {fileID: 1877614199}
   m_Father: {fileID: 1185684128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &667666935
@@ -12377,6 +12451,148 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &716267929
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 716267930}
+  - component: {fileID: 716267932}
+  - component: {fileID: 716267931}
+  m_Layer: 0
+  m_Name: death_ashok
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &716267930
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716267929}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.6039717, y: 0.69706345, z: -0.78998923}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2060588613}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &716267931
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716267929}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &716267932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716267929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6233f9dd41b6484889619e8d3f344f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundManager: {fileID: 2060588615}
 --- !u!1 &716393177
 GameObject:
   m_ObjectHideFlags: 0
@@ -15245,7 +15461,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &952120193
 Transform:
   m_ObjectHideFlags: 0
@@ -16924,7 +17140,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1895709168}
-  - {fileID: 2145867822}
   m_Father: {fileID: 952120193}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1013352637
@@ -17295,6 +17510,37 @@ MonoBehaviour:
   emotionashok_embarassed: {fileID: 21300000, guid: 924a5db04b1a58844a251f1c8b6eb107, type: 3}
   emotionhugh_angry: {fileID: 21300000, guid: 405d33e32a367d942b4f2eb34cee2042, type: 3}
   emotionmathilda_scream: {fileID: 21300000, guid: 35af8574f999dfc40b61ecbc5660fc5b, type: 3}
+--- !u!1 &1031148878
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1031148879}
+  m_Layer: 0
+  m_Name: death_mathilda
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1031148879
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031148878}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.6039717, y: 0.69706345, z: -0.78998923}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2060588613}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1034345765
 GameObject:
   m_ObjectHideFlags: 0
@@ -19164,6 +19410,7 @@ Transform:
   - {fileID: 1350189436}
   - {fileID: 623719442}
   - {fileID: 597441291}
+  - {fileID: 113939401}
   m_Father: {fileID: 1348210563}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1170298964
@@ -21858,7 +22105,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1832291830}
-  - {fileID: 591458938}
   m_Father: {fileID: 1016690289}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1324095234
@@ -25137,13 +25383,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1382117478}
   - component: {fileID: 1382117479}
+  - component: {fileID: 1382117480}
   m_Layer: 0
   m_Name: nanditha_death
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1382117478
 Transform:
   m_ObjectHideFlags: 0
@@ -25152,12 +25399,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1382117477}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.14, y: -2.83, z: -0.010149807}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 136691902}
+  m_Father: {fileID: 301243612}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1382117479
 MonoBehaviour:
@@ -25173,7 +25420,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conversationStartNode: interaction5nanditha
   clickSound: {fileID: 0}
-  consoleOutputText: {fileID: 0}
+  consoleOutputText: {fileID: 82135381}
+--- !u!65 &1382117480
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1382117477}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.7308958, y: 2.982705, z: 1}
+  m_Center: {x: 0.8417145, y: 0.7668953, z: 0}
 --- !u!1 &1388354937
 GameObject:
   m_ObjectHideFlags: 0
@@ -26482,6 +26750,7 @@ Transform:
   - {fileID: 1732376362}
   - {fileID: 1989452066}
   - {fileID: 875619530}
+  - {fileID: 1877614199}
   m_Father: {fileID: 1185684128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1448681490
@@ -27143,6 +27412,37 @@ Transform:
   - {fileID: 353420465}
   - {fileID: 1773490231}
   m_Father: {fileID: 956013984}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1519390306
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1519390307}
+  m_Layer: 0
+  m_Name: death_hugh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1519390307
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519390306}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.6039717, y: 0.69706345, z: -0.78998923}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2060588613}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1523937487
 GameObject:
@@ -28635,6 +28935,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 591458938}
   - {fileID: 1626237027}
   - {fileID: 579677620}
   - {fileID: 819280711}
@@ -29333,7 +29634,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1316199654}
-  - {fileID: 113939401}
   m_Father: {fileID: 1348210563}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1733959785
@@ -31539,13 +31839,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1877614199}
   - component: {fileID: 1877614200}
+  - component: {fileID: 1877614201}
   m_Layer: 0
   m_Name: hugh_death
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1877614199
 Transform:
   m_ObjectHideFlags: 0
@@ -31554,12 +31855,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1877614198}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -12.05, y: -3.52, z: -0.010149807}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 646104363}
+  m_Father: {fileID: 1448363889}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1877614200
 MonoBehaviour:
@@ -31573,9 +31874,61 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9bd63bc0189f2f48b517b91521a650f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conversationStartNode: ' interaction4hugh'
+  conversationStartNode: interaction4hugh
   clickSound: {fileID: 0}
-  consoleOutputText: {fileID: 0}
+  consoleOutputText: {fileID: 82135381}
+--- !u!65 &1877614201
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877614198}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.4, y: 3.31, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1879605988
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1879605989}
+  m_Layer: 0
+  m_Name: death_nanditha
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1879605989
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879605988}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.6039717, y: 0.69706345, z: -0.78998923}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2060588613}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1884545509
 GameObject:
   m_ObjectHideFlags: 0
@@ -32078,6 +32431,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2145867822}
   - {fileID: 1034345766}
   - {fileID: 1709080987}
   - {fileID: 1912477599}
@@ -34445,6 +34799,11 @@ Transform:
   - {fileID: 1320877417}
   - {fileID: 914898049}
   - {fileID: 1174152463}
+  - {fileID: 716267930}
+  - {fileID: 1879605989}
+  - {fileID: 362972677}
+  - {fileID: 1031148879}
+  - {fileID: 1519390307}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &2060588614
@@ -34564,10 +34923,15 @@ MonoBehaviour:
   Monster10: {fileID: 8300000, guid: 1e60aa3aa24f30242890b852e07dd0ec, type: 3}
   Monster1: {fileID: 8300000, guid: f60677ba7c6073445ab1834e2248053b, type: 3}
   ashok: {fileID: 8300000, guid: 9026ad1a43d2dee4d96d7d4e7e4e6108, type: 3}
+  death_ashok: {fileID: 8300000, guid: 480e2a6ab04461947a8352bb70b4bb05, type: 3}
   nanditha: {fileID: 8300000, guid: aceaac0d1ed3534498a552a51f752f9f, type: 3}
+  death_nanditha: {fileID: 8300000, guid: 39bb066ab5d847e40b61f549a3701556, type: 3}
   hugh: {fileID: 8300000, guid: 5c56cee2b48156f4497a206d19f77087, type: 3}
+  death_hugh: {fileID: 8300000, guid: 730e90bcb510f9242b4eae8a840fc7b0, type: 3}
   marzanna: {fileID: 8300000, guid: 27ab0defc56792346b1783b876a87fc7, type: 3}
+  death_marzanna: {fileID: 8300000, guid: b465b3957389a95478a42643d5bad8e7, type: 3}
   mathilda: {fileID: 8300000, guid: ce4490f34073df24ba807d1018a484d3, type: 3}
+  death_mathilda: {fileID: 8300000, guid: f3dc9970ff01d904986c98d470295caf, type: 3}
 --- !u!1 &2074692160
 GameObject:
   m_ObjectHideFlags: 0
@@ -34867,13 +35231,14 @@ GameObject:
   m_Component:
   - component: {fileID: 2145867822}
   - component: {fileID: 2145867823}
+  - component: {fileID: 2145867824}
   m_Layer: 0
   m_Name: mathilda_death
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2145867822
 Transform:
   m_ObjectHideFlags: 0
@@ -34882,12 +35247,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2145867821}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.11, y: -2.55, z: -0.13742016}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1010379613}
+  m_Father: {fileID: 1914796868}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2145867823
 MonoBehaviour:
@@ -34903,7 +35268,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conversationStartNode: interaction1mathilda
   clickSound: {fileID: 0}
-  consoleOutputText: {fileID: 0}
+  consoleOutputText: {fileID: 82135381}
+--- !u!65 &2145867824
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145867821}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.97, y: 2.2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &41558600270522606
 GameObject:
   m_ObjectHideFlags: 0

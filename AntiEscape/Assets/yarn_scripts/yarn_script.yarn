@@ -1035,6 +1035,7 @@ position: 18,-322
     <<disableknife>>//disabling the knife
     <<disabledeathMathilda>> //disabling the mathilda shock sprite
     <<enableMathildaCorpse>>
+    <<enableMathildaDeath>>
     <<set $item2remote = false>>
     <<set $key34 = false>>
     <<set $item4candle = false>>
@@ -1171,7 +1172,7 @@ group: room1
 position: 20,236
 ---
 //object gets activated when the variable $mathilda turns false (it's her dead body)
-<<enableMathildaDeath>>
+
 <<set $actions = $actions - 1>>
 <<activateemotion "emotionhugh_sad" "h_sad">>
 <<activateemotion "emotionnanditha_sad" "n_sad">>
@@ -1269,9 +1270,10 @@ position: 284,-458
     <<emotionsprite "emotionashok_idle" "a_idle">>
     <<playrestsound ashok "ashok">>
     Ashok: I'll just try to smash it.
-    <<playrestsound Trap "glass_shatter">>
+    
     <<emotionsprite "emotionashok_happy" "a_happy">> 
     <<playrestsound ashok "ashok">>
+    <<playrestsound Trap "glass_shatter">>
     Ashok: It worked! We can get out through the hole I made!
     <<destroyemotion "emotionashok_happy" "a_happy">>
 <<else>>
@@ -1295,6 +1297,7 @@ position: 284,-458
     <<endif>>
     <<disabledeathAshok>> 
     <<enableAshokCorpse>>
+    <<enableAshokDeath>>
     <<set $item1letter = false>>
     <<set $item3code = false>>
     <<set $key51 = false>>
@@ -1496,7 +1499,6 @@ group: room2
 position: 285,248
 ---
 //object gets activated when the variable $ashok turns false (it's his dead body)
-<<enableAshokDeath>>
 <<set $actions = $actions - 1>>
 <<activateemotion "emotionnanditha_sad" "n_sad">>
 <<activateemotion "emotionhugh_idle" "h_idle">>
@@ -1864,6 +1866,7 @@ position: 539,82
         <<disablebookshelf>>
         <<enablevault>>
         <<enableMarzannaCorpse>>
+        <<enableMarzannaDeath>>
         <<set $key12 = false>>
         <<set $item4grimoire = false>>
         <<set $item5card = false>>
@@ -1932,7 +1935,7 @@ group: room3
 position: 536,229
 ---
 //object gets activated when the variable $marzanna turns false (it's her dead body/the bookshelf on the floo)
-<<enableMarzannaDeath>>
+
 <<set $actions = $actions - 1>>
 <<activateemotion "emotionashok_sad" "a_sad">>
 <<activateemotion "emotionnanditha_sad" "n_sad">>
@@ -2509,6 +2512,7 @@ position: 799,-45
     <<activateemotion "emotionashok_annoyed" "a_annoyed">>
     <<disabledeathHugh>>
     <<enableHughCorpse>>
+    <<enableHughDeath>>
     <<set $key23 = false>>
     <<set $item3key = false>>
     <<set $item5finger = false>>
@@ -2571,7 +2575,6 @@ group: room4
 position: 803,229
 ---
 //object gets activated when the variable $hugh turns false (it's his dead body)
-<<enableHughDeath>>
 <<set $actions = $actions - 1>>
 <<activateemotion "emotionmarzanna_sad" "mz_sad">>
 <<activateemotion "emotionmathilda_sad" "mt_sad">>
@@ -2762,6 +2765,7 @@ position: 1067,-187
         <<set $key51 = false>>
     <<endif>>
     <<setgeneratorsprite "generator_triggered" "generator_triggered">>
+    <<enableNandithaDeath>>
     //nanditha get's electrocuted, the generator shuts down
     <<if visited("room1_enter") == true>>
         <<set $light = false>>
@@ -2954,7 +2958,7 @@ group: room5
 position: 1066,220
 ---
 //object gets activated when the variable $nanditha turns false (it's her dead body)
-<<enableNandithaDeath>>
+
 <<set $actions = $actions - 1>>
 <<activateemotion "emotionashok_sad" "a_sad">>
 <<activateemotion "emotionmathilda_sad" "mt_sad">>
