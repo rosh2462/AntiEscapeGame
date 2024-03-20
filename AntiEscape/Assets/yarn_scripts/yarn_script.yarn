@@ -2075,6 +2075,8 @@ position: 539,-742
         Hugh: That sounds just plain stupid.
     <<endif>>
     <<set $lock1 = true>>
+    <<lock2 lock2 "lock2">>
+    <<wait  1>>
     <<setretinaopensprite "retinascanner_open" "retinascanner_open">>
     //<<playsound unlock>>
     // <<wait  1>>
@@ -2106,6 +2108,8 @@ position: 539,-742
         Hugh: I don't think that a glass eye could pass a retina scanner but I'm out of options here...
     <<endif>>
     <<set $lock1 = true>>
+    <<lock2 lock2 "lock2">>
+    <<wait  1>>
     <<setretinaopensprite "retinascanner_open" "retinascanner_open">>
 <<endif>>
 <<if $item2remote == true && $lock2 == false && $mathilda == true>>
@@ -2118,11 +2122,13 @@ position: 539,-742
         Ashok: Remote controls are rarely used for vaults, as far as I know.
     <<endif>>
     <<set $lock2 = true>>
+      <<lock lock_1 "lock1">>
     //<<playsound unlock>>
-    //  <<wait  1>>
+     <<wait  1>>
     <<setremoteopensprite "remotescanner_open" "remotescanner_open" >>
     <<emotionsprite "emotionmathilda_happy" "mt_happy">>
     <<playrestsound mathilda "mathilda">>
+    
     Mathilda: Neat! I didn't think it would actually work but I guess it just did!
     <<destroyemotion "emotionmathilda_happy" "mt_happy">>
     // <<else>>
@@ -2162,7 +2168,8 @@ position: 539,-742
     <<endif>>
     <<set $lock3 = true>>
         //<<playsound unlock>>
-    //  <<wait  1>>
+     <<lock3 lock3 "lock3">>
+    <<wait  1>>
         <<setdialopensprite "diallock_open" "diallock_open" >>
         <<emotionsprite "emotionashok_happy" "a_happy">>
         <<playrestsound ashok "ashok">>
@@ -2187,6 +2194,8 @@ position: 539,-742
         Mathilda: I guess I'll give this code that I found on Ashok a try...
     <<endif>>
     <<set $lock3 = true>>
+     <<lock3 lock3 "lock3">>
+    <<wait  1>>
     <<setdialopensprite "diallock_open" "diallock_open" >>
 <<endif>>
 <<if $item5finger == true && $lock4 == false && $hugh == true>>
@@ -2208,6 +2217,8 @@ position: 539,-742
         Hugh: Sorry, I'll do it now.
     <<endif>>
     <<set $lock4 = true>>
+    <<lock4 lock4 "lock4">>
+    <<wait  1>>
     <<setfingeropensprite "fingerprint_open" "fingerprint_open" >>
     //<<playsound unlock>>
     //   <<wait  1>>
@@ -2238,6 +2249,8 @@ position: 539,-742
         Ashok: Hugh had a separated finger with him... The fingerprint scanner might recognize it.
     <<endif>>
     <<set $lock3 = true>>
+     <<lock3 lock3 "lock3">>
+    <<wait  1>>
     <<setdialopensprite "diallock_open" "diallock_open" >>
 <<endif>>
 <<if $lock1 == true && $lock2 == true && $lock3 == true && $lock4 == true>>
