@@ -709,7 +709,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -453.1, y: 370.1}
-  m_SizeDelta: {x: 345.9, y: 50}
+  m_SizeDelta: {x: 492.8, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &488272329
 MonoBehaviour:
@@ -731,7 +731,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Source - www.freesound.org
+  m_text: 'Sound credits - www.freesound.org
 
 '
   m_isRightToLeft: 0
