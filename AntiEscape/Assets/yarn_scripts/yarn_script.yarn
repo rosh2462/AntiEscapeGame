@@ -1897,7 +1897,7 @@ position: 539,82
         <<endif>>
     <<endif>>
 <<else>>
-    <<set $lock4 = true>>
+    //<<set $lock4 = true>>
      <<disablebookshelfold>>
     <<enablebookshelfnew>>
     <<emotionsprite "emotionmarzanna_idle" "mz_idle">>
@@ -2167,9 +2167,10 @@ position: 539,-742
         Nanditha: It was a date, right? 23rd of April 1999.
     <<endif>>
     <<set $lock3 = true>>
-        //<<playsound unlock>>
      <<lock3 lock3 "lock3">>
     <<wait  1>>
+        //<<playsound unlock>>
+    //  <<wait  1>>
         <<setdialopensprite "diallock_open" "diallock_open" >>
         <<emotionsprite "emotionashok_happy" "a_happy">>
         <<playrestsound ashok "ashok">>
@@ -2194,7 +2195,7 @@ position: 539,-742
         Mathilda: I guess I'll give this code that I found on Ashok a try...
     <<endif>>
     <<set $lock3 = true>>
-     <<lock3 lock3 "lock3">>
+    <<lock3 lock3 "lock3">>
     <<wait  1>>
     <<setdialopensprite "diallock_open" "diallock_open" >>
 <<endif>>
@@ -2248,10 +2249,10 @@ position: 539,-742
         <<playrestsound ashok "ashok">>
         Ashok: Hugh had a separated finger with him... The fingerprint scanner might recognize it.
     <<endif>>
-    <<set $lock3 = true>>
-     <<lock3 lock3 "lock3">>
+    <<set $lock4 = true>>
+    <<lock4 lock4 "lock4">>
     <<wait  1>>
-    <<setdialopensprite "diallock_open" "diallock_open" >>
+    <<setfingeropensprite "fingerprint_open" "fingerprint_open" >>
 <<endif>>
 <<if $lock1 == true && $lock2 == true && $lock3 == true && $lock4 == true>>
     <<if $hugh == true>>
